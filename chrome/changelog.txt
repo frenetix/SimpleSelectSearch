@@ -1,0 +1,14 @@
+New on v 0.1.7.3
+ - Added the "Search on all!" feature
+ - Improved some code.
+ - Provided new an exiting ways to support me ;)
+New on v 0.1.7.1
+ - Fixed a bug introduced on 0.1.7 where all the Search Strings where transformed to lowercase (Thanks Keith!)
+New on v 0.1.7
+ - Added "New tab position" parameter: You can now select where you want your new tabs to open (Thanks Damien, I know this doesn't work exactly as you wanted, but it's something).
+ - Fixed little bug on "Featured Search Engines" list, where some search engines wouldn't work.
+ - %s on search URL now supports %S (Thanks Ahmed!)
+ - Fixed typo on Help (thanks Theodor!)
+ - Using "Open sans" as a default font for options -nicer, right?-.
+ - Added Update notification
+ - New Donate button... I hope you like it :)

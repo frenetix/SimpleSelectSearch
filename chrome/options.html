@@ -1,0 +1,201 @@
+<html>
+<head>
+	<title>Options</title>
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,600,300' rel='stylesheet' type='text/css'>
+<link href="styles/SearchSelection.css" rel="stylesheet" type="text/css" />
+<link href="styles/widgets.css" rel="stylesheet" type="text/css" />
+<link href="styles/trash.css" rel="stylesheet" type="text/css" />
+<link href="grid/css/jquery-ui-1.8.13.custom.css" rel="stylesheet" type="text/css" />
+<link href="grid/css/ui.jqgrid.css" rel="stylesheet" type="text/css" />
+
+<link type="text/css" rel="stylesheet" href="styles/ui.notify.css" />
+
+<script src="scripts/jquery-1.7.2.min.js"></script>
+<script src="scripts/options.js"></script>
+<script src="scripts/jquery.tablednd_0_5.js"></script>
+<script src="grid/js/i18n/grid.locale-en.js"></script>
+<script src="grid/js/jquery.jqGrid.min.js"></script>
+<script src="scripts/extendedURLs.js"></script>
+
+<script src="scripts/jquery-ui.js"></script>
+<script src="scripts/jquery.notify.min.js" ></script>
+<script src="https://apis.google.com/js/plusone.js"></script>
+
+</head>
+<body>
+<div class="heading"><a href="http://simpleselectsearch.blogspot.com/" target="_blank" style="text-decoration:none; color:#000000;"><img src="images/16.png" border="0"/> Simple = Select + Search</a> 
+<div class="gPlus">
+<g:plusone href="https://chrome.google.com/webstore/detail/aagminaekdpcfimcbhknlgjmpnnnmooo"></g:plusone>
+
+</div>
+</div>
+<div class="rightMenu">
+
+	<ul>
+		<li id="o_searchEngines" class="translate selected searchEngines">Search engines</li>
+		<li id="o_help" class="translate help">Help</li>
+		<li id="o_supportMe" class="translate support">Support me :)</li>
+		<li id="o_importExport" class="translate i-o">Import/export</li>
+		<li id="o_advancedConfig" class="translate otherStuff">Advanced config</li>
+		<li id="o_credits" class="translate credits">Credits/Disclaimer</li>
+	</ul>
+	<br/>
+	<br/>
+
+	<div width="100px">
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post"><font size="1">
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHVwYJKoZIhvcNAQcEoIIHSDCCB0QCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCvMrYpoZAkHrPOkVI2s2RqV3z5qphHF0IizITJtf6yoIdjYfidRE8A1yf56maX04QqLj0rVKKb1wylGvxztIn8ievIEHt7dGMRdp262k2GmVRnM4z02bmeYgJTNz6Rr51mYkzRDn1g3rMEd9wfNhCMDdMpVhYVyNZHrfnK29tK7zELMAkGBSsOAwIaBQAwgdQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIh4oa3Um6KZiAgbBdriYa8fBRR6aPk9D7XGmqyB288cc5ZHDyFc0PtCndxGwa5piel85Uteb1sc0PShhrax9Pbz4BoZPBgOHbwtmBTjIFtPf3GEDXImLS2VJnyHV0jXUbVv5vLsCr/RjM4dHxjQeOSF8RPPnK3+4Sf5BPnT41j/yot9+myd42+pkivxxsfbr7I0cga+sKzmcjjt3Hw3ZHP1tmnt69DFV1W2k3HGBczSK1tyV1PyOl9XSmzKCCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTEyMDEwNTE2NTQ0N1owIwYJKoZIhvcNAQkEMRYEFHmdZL5THF3oHYdWdW2Rfmb3g3wdMA0GCSqGSIb3DQEBAQUABIGAAITysnsJvhz0ICrJ7h+uERtiPlWoI93StBl8mAi/0mp8N/bcQt37jQ6Jg2OiMpeQysmpY3Ia1fw9uNEFjAZSQS8GqPe2jef5cy6bxSsc83dBxq4/oQNWVZxw+uNzgzbhhGBZQruEzDBK5bnXffsEDus+udeqpw9cgONdCbx4Bx0=-----END PKCS7-----
+	">
+	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+	<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+	</form>
+	<br/>
+	<br/>
+	<br/><span class="translateHTML" id="o_checkOutMyBlog">
+	Check out my <a href="http://simpleselectsearch.blogspot.com/" target="_blank">blog</a> for more.
+	</span><br/><br/><br/>
+	<span id="currentVersion" class="realSmall"></span>
+	</font>
+	</div>
+</div>
+
+
+<div class="content searchEngines">
+
+	<h1 class="translate" id="o_mySearchEngines">My Search Engines</h1><span class="translate" id="o_mySearchEnginesDesc">
+	These are your configured search engines. Select other engines from the Featured Search Engines list below or create your own. Check the help for instructions.</span>
+	<div id="data_table">
+	</div>
+	<br />
+
+
+	<h2 class="translate" id="o_featuredSearchEngines">Featured Search Engines</h2>
+	<span class="translate" id="o_featuredSearchEngnesDesc"> Double click on a URL to include it in your Search Engines' list.</span><br />
+	<span class="translateHTML" id="o_groupBy">Group By:&nbsp;&nbsp;  </span><select id="chngroup" class="selector">
+		<option value="clear" class="translate" id="o_ungrouped">Ungrouped</option>
+		<option value="type" class="translate" id="o_type">Type</option>
+		<option value="language" class="translate" id="o_language">Language</option>
+
+	</select>
+	<br />
+	<br />
+
+	<table id="externalURLTable"></table>
+</div>
+
+<div class="content help">
+	<h1  class="translate" id="o_helpHowDoI">Help! how do I edit the Search Engines' list?</h1>
+	<div class="translateHTML" id="o_helpHowDoIDescription">
+	It's really easy! <br />
+	Just click on any row's edit icon (the one with the little pencil) or just click the "name" column and edit its values.�
+	<ul>
+		<li>The "name" column refers to what you'll see on the context menu.</li>
+		<li>The "Search URL" refers to what the search engine needs to run your query.</li>
+		<li>The <span class="searchString">%s</span> symbol will be replaced with the selected text on your browser.</li>
+	</ul>
+	You can decide the order of your search engines by dragging them up and down... do it over the "#" column, where the up and down arrows appear. Your mouse pointer will change when you're over the right spot, and you'll figure it out.
+	<h2>Here's a simple way to create a Search URL of your own:</h2>
+	<ul>
+		<li>On your preferred site, perform a search for the word "TESTSEARCH".</li>
+		<li> Then just copy the URL that was generated within the site, that might look like this, for example, on IMDB: http://www.imdb.com/find?s=all;q=<span class="searchString">TESTSEARCH</span>.</li>
+		<li>Now just replace <span class="searchString">TESTSEARCH</span> with <span class="searchString">%s</span> and paste it here, on the "Search URL" column.</li>
+		<li>Then indicate a name to that Search URL and you're done!</li>
+	</ul>
+	Make sure you check first if the site you'd like to add is on the "Other search engines" table. I'm updating that table every now and the. If you have any suggestions for that list, they are more than welcome.
+	<br/>
+	<br/> You can sort the URLs order by hovering over the first column.
+	</div>
+
+</div>
+<div class="content support">
+
+	<h1 class="translate" id="o_SupportThisHumble">Support this humble extension developer</h1>
+	<div class="translateHTML" id="o_SupportThisHumbleDescription">
+	Of course, this extension is for free -I built it to use it myself, actually-... but if you really enjoy using it, and you'd like to show your appreciation, here's a list of things that might make me happy :)
+	<ul>
+		<li><b>Show me the money:</b> Hit the <b>donate</b> button at the top right of this page... and send me a few bucks!</li>
+		<li><b>Make Amazon pay me:</b> Use any of the Amazon links featured on the options page, search stuff using my extension and buy it! If I had the links set up properly and my affiliate account is working -haven't tested it yet-, I might get a few bucks from Amazon... and it costs you zero!</li>
+		<li><b>Guerrilla advertising:</b> <a href="http://twitter.com/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http://bit.ly/HzSP8p @frenetix_" title="Click to send this page to Twitter!" target="_blank">Share on Twitter</a>, <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p" target="_blank">post on Facebook</a>, G+ or wherever you feel this extension might be well received</li>
+		<li><b>More Guerrilla advertising:</b> Visit my blog, post a comment link to any of those posts. G+ the posts you like.</li>
+		<li><b>Boost my self esteem:</b> Rate the extension on Google's webstore, say how much you love it!</li>
+
+	</ul>
+	</div>
+
+
+</div>
+
+<div class="content i-o">
+	<h1  class="translate" id="o_importExport">Import/Export Config</h1>
+	<DIV class="translateHTML" id="o_importExportDescription">
+	Here's all the config info. Just copy & save it on any text file...<br />
+	If you want to import your previously saved config, just paste it here and click on the import button.<br /><br />
+	</DIV>
+	<textarea id="importExport" wrap rows="12" style="width:100%;padding: 5px;"></textarea><br/><br/>
+	<input type="button" class="translateVAL" id="importConfig" value="import" /> -
+	<input type="button" class="translateVAL" id="undoLastImport" value="undo last import" />
+
+
+</div>
+
+<div class="content otherStuff">
+	<h1 class="translate" id="o_otherStuffYouCan">Other stuff you can configure</h1>
+	<input type="checkbox" id="newTab" > <span class="translate" id="o_openLinksInNewTab">Open links in new tab.</span>
+	<br />
+	<div class="newTabOptions">
+	<input type="checkbox" id="newTabSelected" class="newTabOptions"> <span class="translate" id="o_giveNewTabFocus">Give new tab focus.</span>
+	<br />
+
+	<span class="translate" id="o_newTabPosition">New tab's position:</span>
+	<select  id="newTabPosition" class="selector newTabOptions" >
+			<option value="Last" class="translate" id="o_last">Last</option>
+			<option value="First" class="translate" id="o_first">First</option>
+			<option value="Next" class="translate" id="o_next">Next</option>
+			<option value="Previous" class="translate" id="o_previous">Previous</option>
+	</select>
+	</div>
+	<br />
+	<input type="checkbox" id="showBlog" > <span class="translate" id="o_showThePleaseCheckOut">Show the "Please, Check out my blog!" link :).</span>
+	<div class="translateHTML" id="o_hideThisLink">Hide this link only if it really hurts your eyes!... <i>every time someone hides this link, <a href="http://2.bp.blogspot.com/-6FkW_onHQ1Y/TgNUqC5LD1I/AAAAAAAABCs/drzXBGoksys/s640/Kitten-Running.jpg" target="_blank">a kitten dies</a></i> :o(.</div>
+	<br />
+	<br />
+	<input type="checkbox" id="trackGA"> <span class="translate" id="o_trackSearchEngines">Track search engines usage.</span>
+	<div class="translateHTML" id="o_leavingThisCheckbox"> Leaving this checkbox marked means I'll be tracking your search engines' usage.
+	<br/>The gathered information is used by me, only for statistical analysis purposes.
+	<br/>No user information is being tracked.
+	<br/>No search terms are being tracked (only the search engine used). You can read more about this on <a href="http://simpleselectsearch.blogspot.com/" target="_blank">my blog</a>.</div>
+	<br /><br /><button id="eraseOptions"  class="translate" >Restore default options</button>
+	<br /><br />
+</div>
+
+<div class="content credits">
+
+	<h1 class="translateHTML" id="o_credits">Credits</h1><div class="translateHTML" id="o_developedBy"> 
+	Developed by <a href="https://plus.google.com/u/0/100927641416387074874/about" target="_blank">Diego Presno</a>. Follow me on tweeter <a href="http://twitter.com/#!/frenetix_" target="_blank">@frenetix_</a>
+	<br />
+	All images/icons designed by <a href="http://germanrivas.com/" target="_blank">germanrivas.com</a>.<br/><br />
+	<h2>Disclaimer</h2>
+	Please, be warned: the usage of this extension is being tracked by Google Analytics.
+	It also tracks which search engines are the most used by users, so I can then be able to add them to the featured Search Engines list.<br/>
+	The extension does not track the identity of its user, nor what terms they're looking for.
+	Only the search URL syntax is being recorded.<br/>
+	No individual information will be shared with third parties. The only information published will be about the most used sites. An example of the published information can be found on my <a href="http://simpleselectsearch.blogspot.com/" target="_blank">blog</a>.
+	</div>
+
+</div>
+
+
+<div id="container" style="display:none">
+
+	<div id="default">
+		<h1>#{title}</h1>
+		<p>#{text}</p>
+	</div>
+</div>
+
+</body>
+</html>
