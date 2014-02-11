@@ -1,18 +1,18 @@
 {
-  "name": "__MSG_extName__",
-  "default_locale": "en",
-  "description": "__MSG_extDescription__",
-  "version": "0.2.2",
-   "manifest_version": 2,
-  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com https://apis.google.com; object-src 'self'",
-  "permissions": ["contextMenus"],
-  "icons": {
-    "16": "images/16.png",
-    "48": "images/48.png",
-    "128": "images/128.png"
-  },
-  "background": {
-    "scripts": ["scripts/background.js"]
-  },
-  "options_page": "options.html"
+    "name"                    : "__MSG_extName__",
+    "description"             : "__MSG_extDescription__",
+    "version"                 : "0.2.2",
+    "manifest_version"        : 2,
+    "permissions"             : ["contextMenus"],
+    "default_locale"          : "en",
+    "content_security_policy" : "script-src 'self' https://ssl.google-analytics.com https://apis.google.com; object-src 'self'",
+    "options_page"            : "options.html",
+    "background"              : {
+        "scripts": ["scripts/background.js"]
+    },
+    "icons"                   : {
+        "16"  : "images/16.png",
+        "48"  : "images/48.png",
+        "128" : "images/128.png"
+    }
 }
