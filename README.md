@@ -1,8 +1,10 @@
 Simple=Select+Search
 ====================
 
-Search the WWW with SSS! Highlight and click, that's it!
---------------------------------------------------------
+Highlight & click, that's it!
+-------------------------------
+
+[![Crowdin](https://crowdin.net/badges/simpleselectsearch/localized.png)](https://crowdin.net/project/simpleselectsearch)
 
 ### INTRODUCTION ###
 
@@ -18,28 +20,28 @@ Current version of SSS (0.2.2):
 ### CHANGELOG ###
 
 ##### FUTURE VERSIONS #####
-- [] Option to opening search results in incognito mode (https://github.com/frenetix/SimpleSelectSearch/issues/1)
-- [] Option to replace in search links spaces (%20) with plus character (+) (https://github.com/frenetix/SimpleSelectSearch/issues/2)
-- [] Option to hiding/showing "Search everywhere" menu option (https://github.com/frenetix/SimpleSelectSearch/issues/3)
-- [] Group search engines (https://github.com/frenetix/SimpleSelectSearch/issues/4)
-- [] Option to opening search results always in the current tab (https://github.com/frenetix/SimpleSelectSearch/issues/5)
+- Option to opening search results in incognito mode (https://github.com/frenetix/SimpleSelectSearch/issues/1)
+- Option to replace in search links spaces (%20) with plus character (+) (https://github.com/frenetix/SimpleSelectSearch/issues/2)
+- Option to hiding/showing "Search everywhere" menu option (https://github.com/frenetix/SimpleSelectSearch/issues/3)
+- Group search engines (https://github.com/frenetix/SimpleSelectSearch/issues/4)
+- Option to opening search results always in the current tab (https://github.com/frenetix/SimpleSelectSearch/issues/5)
 
 ##### DEPLOYED VERSIONS #####
 
 ###### 0.1.7 ######
 
-- [x] Added "New tab position" parameter: You can now select where you want your new tabs to open (Thanks Damien, I know this doesn't work exactly as you wanted, but it's something).
-- [x] Fixed little bug on "Featured Search Engines" list, where some search engines wouldn't work.
-- [x] %s on search URL now supports %S (Thanks Ahmed!)
-- [x] Fixed typo on Help (thanks Theodor!)
-- [x] Using "Open sans" as a default font for options -nicer, right?-.
-- [x] Added Update notification
-- [x] New Donate button... I hope you like it :)
+- Added "New tab position" parameter: You can now select where you want your new tabs to open (Thanks Damien, I know this doesn't work exactly as you wanted, but it's something).
+- Fixed little bug on "Featured Search Engines" list, where some search engines wouldn't work.
+- %s on search URL now supports %S (Thanks Ahmed!)
+- Fixed typo on Help (thanks Theodor!)
+- Using "Open sans" as a default font for options -nicer, right?-.
+- Added Update notification
+- New Donate button... I hope you like it :)
 
 ###### 0.1.7.3 ######
- - Added the "Search on all!" feature
- - Improved some code.
- - Provided new an exiting ways to support me ;)
+- Added the "Search on all!" feature
+- Improved some code.
+- Provided new an exiting ways to support me ;)
 
 ###### 0.1.7.1 ######
-- [x] Fixed a bug introduced on 0.1.7 where all the Search Strings where transformed to lowercase (Thanks Keith!)
+- Fixed a bug introduced on 0.1.7 where all the Search Strings where transformed to lowercase (Thanks Keith!)
