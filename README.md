@@ -19,11 +19,11 @@ Current version of SSS (0.2.2):
 ### CHANGELOG ###
 
 ##### FUTURE VERSIONS #####
-- Option to opening search results in incognito mode (https://github.com/frenetix/SimpleSelectSearch/issues/1)
-- Option to replace in search links spaces (%20) with plus character (+) (https://github.com/frenetix/SimpleSelectSearch/issues/2)
-- Option to hiding/showing "Search everywhere" menu option (https://github.com/frenetix/SimpleSelectSearch/issues/3)
-- Group search engines (https://github.com/frenetix/SimpleSelectSearch/issues/4)
-- Option to opening search results always in the current tab (https://github.com/frenetix/SimpleSelectSearch/issues/5)
+- Option to opening search results in incognito mode [:id::one:](https://github.com/frenetix/SimpleSelectSearch/issues/1)
+- Option to replace in search links spaces (%20) with plus character (+) [:id::two:](https://github.com/frenetix/SimpleSelectSearch/issues/2)
+- Option to hiding/showing "Search everywhere" menu option [:id::three:](https://github.com/frenetix/SimpleSelectSearch/issues/3)
+- Group search engines [:id::four:](https://github.com/frenetix/SimpleSelectSearch/issues/4)
+- Option to opening search results always in the current tab [:id::five:](https://github.com/frenetix/SimpleSelectSearch/issues/5)
 
 ##### DEPLOYED VERSIONS #####
 
