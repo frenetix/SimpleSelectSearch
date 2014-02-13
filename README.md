@@ -20,9 +20,13 @@ Simple=Select+Search (SSS in shorthand) is an Google Chrome extension which allo
 
 ##### FUTURE VERSIONS #####
 [:id::zero::zero::one:](https://github.com/frenetix/SimpleSelectSearch/issues/1) Option to opening search results in incognito mode
+
 [:id::zero::zero::two:](https://github.com/frenetix/SimpleSelectSearch/issues/2) Option to replace in search links spaces (%20) with plus character (+)
+
 [:id::zero::zero::three:](https://github.com/frenetix/SimpleSelectSearch/issues/3) Option to hiding/showing "Search everywhere" menu option
+
 [:id::zero::zero::four:](https://github.com/frenetix/SimpleSelectSearch/issues/4) Group search engines
+
 [:id::zero::zero::five:](https://github.com/frenetix/SimpleSelectSearch/issues/5) Option to opening search results always in the current tab
 
 ##### DEPLOYED VERSIONS #####
