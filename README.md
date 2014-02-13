@@ -1,7 +1,7 @@
 Simple=Select+Search
 ====================
 
-###Highlight & click, that's it!###
+###HIGHLIGHT & CLICK, THAT'S IT!###
 
 [![Crowdin](https://crowdin.net/badges/simpleselectsearch/localized.png)](https://crowdin.net/project/simpleselectsearch)
 
@@ -11,7 +11,7 @@ Simple=Select+Search (SSS in shorthand) is an Google Chrome extension which allo
 
 ### FEATURES ###
 
-Current version of SSS (0.2.2):
+:zero::two::two:
 - you can copy highligted text and call defined search engines for results
 - you can set own search engines (in native Google Chrome way! You can go to Settings > Search > Manage search engines, copy design engine, paste it into SSS options and it'll work!)
 - you can manage (to some level) how context menu with engines will look like
@@ -19,16 +19,15 @@ Current version of SSS (0.2.2):
 ### CHANGELOG ###
 
 ##### FUTURE VERSIONS #####
-- Option to opening search results in incognito mode [:id::one:](https://github.com/frenetix/SimpleSelectSearch/issues/1)
-- Option to replace in search links spaces (%20) with plus character (+) [:id::two:](https://github.com/frenetix/SimpleSelectSearch/issues/2)
-- Option to hiding/showing "Search everywhere" menu option [:id::three:](https://github.com/frenetix/SimpleSelectSearch/issues/3)
-- Group search engines [:id::four:](https://github.com/frenetix/SimpleSelectSearch/issues/4)
-- Option to opening search results always in the current tab [:id::five:](https://github.com/frenetix/SimpleSelectSearch/issues/5)
+[:id::zero::zero::one:](https://github.com/frenetix/SimpleSelectSearch/issues/1) Option to opening search results in incognito mode
+[:id::zero::zero::two:](https://github.com/frenetix/SimpleSelectSearch/issues/2) Option to replace in search links spaces (%20) with plus character (+)
+[:id::zero::zero::three:](https://github.com/frenetix/SimpleSelectSearch/issues/3) Option to hiding/showing "Search everywhere" menu option
+[:id::zero::zero::four:](https://github.com/frenetix/SimpleSelectSearch/issues/4) Group search engines
+[:id::zero::zero::five:](https://github.com/frenetix/SimpleSelectSearch/issues/5) Option to opening search results always in the current tab
 
 ##### DEPLOYED VERSIONS #####
 
-###### 0.1.7 ######
-
+:vs::zero::one::seven:
 - Added "New tab position" parameter: You can now select where you want your new tabs to open (Thanks Damien, I know this doesn't work exactly as you wanted, but it's something).
 - Fixed little bug on "Featured Search Engines" list, where some search engines wouldn't work.
 - %s on search URL now supports %S (Thanks Ahmed!)
@@ -37,10 +36,10 @@ Current version of SSS (0.2.2):
 - Added Update notification
 - New Donate button... I hope you like it :)
 
-###### 0.1.7.3 ######
+:vs::zero::one::seven::three:
 - Added the "Search on all!" feature
 - Improved some code.
 - Provided new an exiting ways to support me ;)
 
-###### 0.1.7.1 ######
+:vs::zero::one::seven::one:
 - Fixed a bug introduced on 0.1.7 where all the Search Strings where transformed to lowercase (Thanks Keith!)
