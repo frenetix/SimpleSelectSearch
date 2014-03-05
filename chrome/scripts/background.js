@@ -145,7 +145,7 @@ function createMenu () {
     if (SSS.configCurrent.menuShowSearchAll) {
         chrome.contextMenus.create ({
             "title"    : chrome.i18n.getMessage ("bg_searchEverywhere"),
-            "parentId" : id,
+            "parentId" : menuId,
             "contexts" : ["selection"],
             "onclick"  : bulkSearch ()
         });
