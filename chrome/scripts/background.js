@@ -120,7 +120,10 @@ function bulkSearch(info, tab) {
 
 function searchOnNewTab(newTabIndex, info, tab) {
 
-	var newTab = {"url": config.searchEngines[newTabIndex].url.replace(new RegExp("%s", "g"), info.selectionText).replace(new RegExp("%S", "g"), info.selectionText)}
+	var newTab = {
+		url: config.searchEngines[newTabIndex].url.replace(new RegExp("%s", "g"), info.selectionText).replace(new RegExp("%S", "g"), info.selectionText),
+		openerTabId: tab.id
+	};
 
 				if (config.newTabPosition == "First") {
 					newTab.index = 0;
