@@ -74,7 +74,8 @@ function initializeConfig(localConfig, defaultConfig) {
 
 	function genericSearch(info, tab, idSE) {
 
-		var urlSE = config.searchEngines[idSE].url.replace(/%s/g, info.selectionText).replace(/%S/g, info.selectionText);
+		var sanitizedSelectionText = encodeURIComponent(info.selectionText); //fixes stuff like & in search string
+		var urlSE = config.searchEngines[idSE].url.replace(/%s/g, sanitizedSelectionText).replace(/%S/g, sanitizedSelectionText); // replace %s with search string
 
 
 		if (config.searchEngines[idSE].incognito){
