@@ -7,9 +7,9 @@ var defaultConfig = {
 	"trackGA":true,
 	"showBlog":true,
 	"searchEngines" : [
-	{"name":"Youtube","url":"http://www.youtube.com/results?search_query=%s&aq=f"},
-	{"name":"IMDB","url":"http://www.imdb.com/find?q=%s&s=all"},
-	{"name":"Wikipedia","url":"http://en.wikipedia.org/w/index.php?title=Special:Search&search=%s"}
+	{"name":"Youtube","url":"http://www.youtube.com/results?search_query=%s&aq=f","incognito":false,"plus":true},
+	{"name":"IMDB","url":"http://www.imdb.com/find?q=%s&s=all","incognito":false,"plus":true},
+	{"name":"Wikipedia","url":"http://en.wikipedia.org/w/index.php?title=Special:Search&search=%s","incognito":false,"plus":true}
 	]
 };
 
@@ -73,9 +73,12 @@ function initializeConfig(localConfig, defaultConfig) {
 	}
 
 	function genericSearch(info, tab, idSE) {
-
-		var sanitizedSelectionText = encodeURIComponent(info.selectionText); //fixes stuff like & in search string
-		var urlSE = config.searchEngines[idSE].url.replace(/%s/g, sanitizedSelectionText).replace(/%S/g, sanitizedSelectionText); // replace %s with search string
+        
+        var selectedText = encodeURIComponent(info.selectionText); //fixes stuff like & in search string
+        
+        if (config.searchEngines[idSE].plus) selectedText = selectedText.replace(/%20/g, "+"); //plus vs %20
+        
+		var urlSE = config.searchEngines[idSE].url.replace(/%s/g, selectedText).replace(/%S/g, selectedText); // replace %s with search string
 
 
 		if (config.searchEngines[idSE].incognito){
