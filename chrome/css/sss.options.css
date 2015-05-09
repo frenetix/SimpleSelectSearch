@@ -1,0 +1,228 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/*
+* customize global & bootstrap basic
+*/
+
+a, a:link, a:hover, a:visited, a:active, a:focus, h1, h2 {
+  color: #0084ae;
+}
+
+.main ul {
+  padding-top: 10px;
+}
+.main li {
+  padding-bottom:10px;
+}
+.btn-primary {
+  color: #fff !important;
+  background-color: #0084ae;
+  border-color: #0084ae;
+}
+
+select {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.jumbotron {
+  background-color: #f2f9fb;
+}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*
+* Angular fixes (need to understand why I need this)
+*/
+
+.ng-hide {display: none;}
+
+.fade.in {
+  opacity: 1;
+  transition: opacity 3.0s linear;
+}
+
+/*
+ * content transition animation *
+ */
+
+ .options-container.ng-enter{
+   transition: 0.4s linear all;
+ }
+ .options-container.ng-enter {
+   z-index: 100;
+   opacity: 0;
+ }
+ .options-container.ng-enter.ng-enter-active {
+   opacity: 1;
+ }
+ .options-container.ng-leave {
+   z-index: 101;
+   opacity: 1;
+ }
+ .options-container.ng-leave.ng-leave-active {
+   opacity: 0;
+ }
+
+/*
+ * Global add-ons
+ */
+
+ .sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+ .navbar-fixed-top {
+  border: 0;
+}
+
+.navbar {
+  background-color:#fff;
+  box-shadow: 0px 5px 5px #eee;
+}
+
+/* 
+* Google plus icon 
+*/
+
+.gPlus {
+  margin-top:12px;
+  margin-right: -20px;
+  margin-left: 5px;
+
+}
+
+/*
+ * Sidebar
+ */
+ .sidebar {
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid #eee;
+  background-color: #fff;
+}
+
+/* 
+* Sidebar navigation 
+*/
+.nav-sidebar {
+  margin-right: -21px; 
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #0084ae;
+}
+
+.sidebar form {text-align:center;}
+
+.sidebar .separator {height:20px;}
+
+/* 
+* Animations for navs 
+*/
+
+.nav-sidebar > .active > a {    
+	transition: background-color 500ms linear;
+}
+
+.nav-sidebar > li > a, 
+.nav > li > a  {    
+	transition: background-color 200ms linear;
+}
+
+/*
+* Tables for Search engines
+*/
+
+.table, .searchEngines {
+  table-layout:fixed;
+  cursor: pointer;
+}
+
+.table div, .searchEngines div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.searchEngines div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.searchEngines .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row .header {
+  font-weight: bold;
+  cursor:auto;
+}
+
+.searchEngines .row {
+  border-top: 1px solid #eee;
+  transition: background-color 200ms linear;
+}
+.searchEngines .row:hover {
+  background-color:#f9f9f9;
+  transition: background-color 500ms linear;
+
+}
+
+.danger {background-color: #fee;}
+
+.light {color: #f0f0f0;}
+
+.searchString {
+  color: #0084ae;
+  font-weight: bold;
+}
+
+.sorter-icon {
+  font-size: 0.8em;
+  color: #0084ae;
+}
+
+/* 
+* Dragable table 
+*/
+
+.as-sortable-item, .as-sortable-placeholder {
+  border: 0px;
+  min-height: 40px;
+  margin: 0px;
+  border-radius: 0px;
+}
+
+.as-sortable-placeholder {
+  box-sizing: border-box;
+  background-color: #f2f9fb;
+}
+
