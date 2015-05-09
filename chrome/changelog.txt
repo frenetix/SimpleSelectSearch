@@ -1,3 +1,14 @@
+New on v 0.2
+ - AngularJS & Bootsrap for options.html
+ - New design
+ - New "incognito" feature for each search engine
+ - Added new localization files
+ 	- Catalan 10%
+ 	- Dutch 100%
+ 	- French 100%
+ 	- Polish 100%
+ 	- Russian 26%
+ 	- Spanish 100%
 New on v 0.1.7.3
  - Added the "Search on all!" feature
  - Improved some code.
