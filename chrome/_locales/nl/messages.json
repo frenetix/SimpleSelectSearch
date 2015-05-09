@@ -1,0 +1,242 @@
+{
+  "extName":{
+    "message":"Simple = Select + Search",
+    "description":"Extension's name. Use   instead of spaces."
+  },
+  "extDescription":{
+    "message":"Selecteer de tekst, klik er met de rechtermuisknop op en kies dan voor Uw favoriete zoekmachine. U kunt bepaalde dingen configureren.",
+    "description":""
+  },
+  "bg_searchStringOn":{
+    "message":"Zoeken naar '%s'",
+    "description":""
+  },
+  "bg_searchEverywhere":{
+    "message":"Zoek overal!",
+    "description":""
+  },
+  "bg_openOnNewTab":{
+    "message":"Open in nieuw tabblad",
+    "description":""
+  },
+  "bg_options":{
+    "message":"Opties...",
+    "description":""
+  },
+  "bg_extensionBlog":{
+    "message":"Blog van deze uitbreiding...",
+    "description":""
+  },
+  "bg_installMessage":{
+    "message":"Uitbreiding met succes geïnstalleerd! <br\/> Bekijk de Opties... pagina om deze te configureren, en om er achter te komen op welke manieren U allemaal Uw nederige uitbreiding verlener kan ondersteunen. ;)",
+    "description":""
+  },
+  "bg_updateMessage":{
+    "message":"Uitbreiding met succes bijgewerkt naar {VersionNumber}<br\/> Bezoek <a href=http:\/\/simpleselectsearch.blogspot.com>Mijn blog<\/a> voor de lijst met verbeteringen.",
+    "description":""
+  },
+  "o_name":{
+    "message":"Naam",
+    "description":""
+  },
+  "o_searchURL":{
+    "message":"Zoek URL",
+    "description":""
+  },
+  "o_cancel":{
+    "message":"Annuleren",
+    "description":""
+  },
+  "o_edit":{
+    "message":"Bewerken",
+    "description":""
+  },
+  "o_new":{
+    "message":"Nieuw",
+    "description":""
+  },
+  "o_ok":{
+    "message":"OK",
+    "description":""
+  },
+  "o_sureYouWantToDelete":{
+    "message":"Weet U zeker dat U deze rij wilt verwijderen?",
+    "description":""
+  },
+  "o_confirmImport":{
+    "message":"Ik ga nu de tekst invoeren... Mocht er iets mis gaan, klik dan op *laatste invoer ongedaan maken*. Ik zou je ook adviseren altijd een back-up te bewaren van de configuratie...  In het geval er iets mis mocht gaan :)",
+    "description":""
+  },
+  "o_importSuccesfull":{
+    "message":"Invoer succesvol! Voordat U de pagina herlaad, controleer de zoekmachine lijst om er zeker van te zijn dat alles goed werkt. Als de lijst leeg is, klik dan op *laatste invoer ongedaan maken*.",
+    "description":""
+  },
+  "o_confirmRestore":{
+    "message":"Ik ga nu de configuratie herstellen naar de laatste keer dat u op de *invoer* knop klikte.",
+    "description":""
+  },
+  "o_restoreSuccesfull":{
+    "message":"Configuratie hersteld naar het punt vóór de laatste invoer... Als dit niet helpt, kunt U nog altijd de instellingen resetten naar de Standaard instellingen -zie de knop onderaan deze pagina-... Of U kunt Uw back-up configuratie gebruiken, als U die heeft ;)",
+    "description":""
+  },
+  "o_nothingToRestore":{
+    "message":"Sorry, ik heb niets om te herstellen.",
+    "description":""
+  },
+  "o_thankYou":{
+    "message":"Hartelijk dank!",
+    "description":""
+  },
+  "o_type":{
+    "message":"Type",
+    "description":""
+  },
+  "o_language":{
+    "message":"Taal",
+    "description":""
+  },
+  "o_moreSearchEngines":{
+    "message":"Meer zoekmachines",
+    "description":""
+  },
+  "o_selectAURL":{
+    "message":"Selecteer een URL",
+    "description":""
+  },
+  "o_mySearchEngines":{
+    "message":"Mijn zoekmachines",
+    "description":""
+  },
+  "o_mySearchEnginesDesc":{
+    "message":"Dit zijn uw geconfigureerde zoekmachines. Selecteer andere zoekmachines uit de Aanbevolen Zoekmachines lijst hieronder of maak er zelf een. Bekijk help voor instructies.",
+    "description":""
+  },
+  "o_featuredSearchEngines":{
+    "message":"Aanbevolen zoekmachines",
+    "description":""
+  },
+  "o_featuredSearchEngnesDesc":{
+    "message":" Dubbelklik op een URL om deze toe te voegen aan Uw Zoekmachine lijst.",
+    "description":""
+  },
+  "o_groupBy":{
+    "message":"Groeperen op:&nbsp;&nbsp;  ",
+    "description":""
+  },
+  "o_ungrouped":{
+    "message":"Niet-gegroepeerd",
+    "description":""
+  },
+  "o_helpHowDoI":{
+    "message":"Help! Hoe bewerk ik de zoekmachines lijst?",
+    "description":""
+  },
+  "o_helpHowDoIDescription":{
+    "message":"Het is erg gemakkelijk!<br \/> Klik op het pictogram Bewerken (diegene met het potloodje) of klik op de \"naam\" kolom om de waarden te bewerken. <ul> <li> De \"naam\" kolom verwijst naar wat je ziet in het context-menu.<\/li><li>De \"Zoek URL\" verwijst naar wat de zoekmachine nodig heeft om uw verzoek uit te voeren.<\/li> <\/ul>Het<span class=\"searchString\">%s<\/span>symbool zal worden vervangen door de door U geselecteerde tekst.<\/li> <\/ul>U kunt de volgorde van de zoekmachines bepalen door ze via de \"#\"-kolom op en neer te slepen... (waar de pijlen omhoog en omlaag worden weergegeven). Uw muisaanwijzer verandert als je op de juiste plek zit, je ziet het vanzelf! <h2>Hier is een eenvoudige manier om een Zoek URL van je zelf te maken:<\/h2> <ul> <li>Ga naar Uw favoriete website, en zoek hier naar het woord \"TESTSEARCH\".<\/li> <li> Kopieer dan de URL die bovenin de adresbalk staat, bijvoorbeeld op IMDB: http:\/\/www.imdb.com\/find?s=all;q=<span class=\"searchString\">TESTSEARCH<\/span>.<\/li> <li>Nu vervangt U <span class=\"searchString\">TESTSEARCH<\/span> met <span class=\"searchString\">%s<\/span> en plakt U deze hier in de \"Zoek URL\" kolom.<\/li> <li>Geef Uw nieuwe Zoekmachine een naam, en klaar is Kees! <\/li> <\/ul> Controleer even van te voren of Uw Zoekmachine niet al op de \"Andere Zoekmachine's lijst\" staat, deze update ik regelmatig. Als U suggesties heeft voor de lijst bent U meer dan welkom om deze aan mij door te geven. <br\/> U kunt de URL's te sorteren door met de muis over de eerste kolom te gaan.",
+    "description":""
+  },
+  "o_SupportThisHumble":{
+    "message":"Ondersteun deze bescheiden extensie ontwikkelaar",
+    "description":""
+  },
+  "o_SupportThisHumbleDescription":{
+    "message":"Natuurlijk, is deze uitbreiding gratis - Ik bouwde het eigenlijk om zelf te gebruiken... maar als je er echt tevreden over bent, en je wilt graag je blijk van waardering laten zien, heb ik hier een lijst van dingen de mij gelukkig maken :) <ul> <li><b>Show me the money:<\/b> Klik op de <b>Doneer<\/b> knop rechts bovenaan deze pagina... en stuur me een paar euro's!<\/li> <li><b>Gebruik Amazon's voorgestelde links:<\/b> Gebruik een link van Amazon op de optie pagina, gebruik de zoek uitbreiding om naar leuke spullen te zoeken op Amazon en koop het! Als U een van mijn Amazon links gebruikt om iets te kopen, zal Amazon mij een mooie beloning geven, en dat terwijl het U helemaal niets extra's kost@!<\/li><li><b>Guerrilla advertising:<\/b> <a href=\"http:\/\/twitter.com\/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http:\/\/bit.ly\/HzSP8p @frenetix_\" title=\"Click to send this page to Twitter!\" target=\"_blank\">Deel op Twitter<\/a>, <a href=\"https:\/\/www.facebook.com\/sharer\/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">Deel op Facebook<\/a>, G+ of waar jij denkt dat deze uitbreiding goed ontvangen zal worden<\/li> <li><b>Meer Guerrilla reclame:<\/b> bezoek aan mijn blog, plaats commentaar met een link naar een van deze berichten. G+ de berichten die jij leuk vind.<\/li><li><b>Stimuleer mijn gevoel van eigenwaarde:<\/b> Stem op de uitbreiding op Google's webstore, en zeg hoeveel u er van houd!<\/li> <\/ul>",
+    "description":""
+  },
+  "o_importExport":{
+    "message":"Importeer\/Exporteer configuratie",
+    "description":""
+  },
+  "o_importExportDescription":{
+    "message":"Hier is alle configuratie info. Gewoon kopiëren & plakken\/opslaan in een tekstbestand... <br\/> als je je vorige opgeslagen configuratie wilt invoeren, plak je het gewoon hier en klik je op de Invoer knop.<br\/><br\/>",
+    "description":""
+  },
+  "importConfig":{
+    "message":"importeren",
+    "description":""
+  },
+  "undoLastImport":{
+    "message":"Maak laatste invoer ongedaan",
+    "description":""
+  },
+  "o_otherStuffYouCan":{
+    "message":"Andere dingen die u kunt configureren",
+    "description":""
+  },
+  "o_openLinksInNewTab":{
+    "message":"Koppelingen in nieuw tabblad openen.",
+    "description":""
+  },
+  "o_giveNewTabFocus":{
+    "message":"Nieuwe tab focus geven.",
+    "description":""
+  },
+  "o_newTabPosition":{
+    "message":"Nieuwe tab positie:",
+    "description":""
+  },
+  "o_last":{
+    "message":"Laatste",
+    "description":""
+  },
+  "o_first":{
+    "message":"Eerste",
+    "description":""
+  },
+  "o_next":{
+    "message":"Volgende",
+    "description":""
+  },
+  "o_previous":{
+    "message":"Vorige",
+    "description":""
+  },
+  "o_showThePleaseCheckOut":{
+    "message":"Toon de \"Alstublieft, bekijk mijn blog!\" koppeling :).",
+    "description":""
+  },
+  "o_hideThisLink":{
+    "message":"Verberg deze link alleen als het echt pijn aan je ogen doet!... <i>elke keer dat iemand deze link verbergt, <a href=\"http:\/\/2.bp.blogspot.com\/-6FkW_onHQ1Y\/TgNUqC5LD1I\/AAAAAAAABCs\/drzXBGoksys\/s640\/Kitten-Running.jpg\" target=\"_blank\">sterft er ergens een klein poesje<\/a> :o(.",
+    "description":""
+  },
+  "o_trackSearchEngines":{
+    "message":" Volg zoekmachines gebruik.",
+    "description":""
+  },
+  "o_leavingThisCheckbox":{
+    "message":"Als je dit vakje gemarkeerd laat staan, kan ik volgen hoe je de zoekmachines gebruikt. <br\/>The verkregen informatie is word alleen door mij gebruikt, en alleen voor statische analyse doeleinden, <br\/>Geen gebruiker informatie word opgeslagen <br\/>Ook kan ik niet zien naar wát er precies gezocht word (alleen welke zoekmachine je gebruikt). Wil je hier meer over weten, lees dan mijn <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a>.",
+    "description":""
+  },
+  "eraseOptions":{
+    "message":"Standaard instellingen herstellen",
+    "description":""
+  },
+  "o_developedBy":{
+    "message":"   Ontwikkeld door <a href=\"https:\/\/plus.google.com\/u\/0\/100927641416387074874\/about\" target=\"_blank\"> Diego Presno<\/a>. Volg mij op Twitter <a href=\"http:\/\/twitter.com\/#!\/frenetix_\" target=\"_blank@frenetix_<\/a> <br\/> Alle afbeeldingen\/pictogrammen ontworpen door <a href=\"http:\/\/germanrivas.com\/\" target=\"_blank\">germanrivas.com<\/a>.<br\/><br\/> <h2>Disclaimer<\/h2> Alstublieft, wees gewaarschuwd: het gebruik van deze uitbreiding wordt bijgehouden door Google Analytics. Het volgt ook welke zoekmachines het meest door de gebruikers gebruikt worden, waardoor ik in staat ben deze later toe te voegen op de Aanbevolen Zoekmachine lijst.<br\/> De uitbreiding onthoud niet de identiteit van de gebruiker, noch waar er naar gezocht word. Alleen de zoekopdracht URL-syntaxis wordt opgenomen.<br\/> Geen individuele informatie zal worden gedeeld met derden. De enige gepubliceerde informatie zullen de meest gebruikte sites zijn. Een voorbeeld van de gepubliceerde informatie is te vinden op mijn <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a>.",
+    "description":""
+  },
+  "o_searchEngines":{
+    "message":"Zoekmachines",
+    "description":""
+  },
+  "o_help":{
+    "message":"Hulp",
+    "description":""
+  },
+  "o_supportMe":{
+    "message":"Steun mij :)",
+    "description":""
+  },
+  "o_advancedConfig":{
+    "message":"Geavanceerde configuratie",
+    "description":""
+  },
+  "o_credits":{
+    "message":"Credits\/Disclaimer",
+    "description":""
+  },
+  "o_checkOutMyBlog":{
+    "message":"Bekijk mijn <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a> voor meer. <br\/> <br\/> <a href=\"http:\/\/simpleselectsearch.blogspot.com\/2012\/11\/help-me-translate.html\">Help met vertalen!<\/a>",
+    "description":""
+  }
+}
