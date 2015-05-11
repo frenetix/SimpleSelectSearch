@@ -205,7 +205,7 @@ function createMenu () {
 
 }
 
-// initialize menu
+// Initialize menu
 createMenu ();
 
 // Google Analytics stuff
@@ -221,45 +221,6 @@ _gaq.push(['_trackPageview']);
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 
-/////// Access external feed to check for updates ///////
-/*
-// Ajax object
-function createAjaxObj(){
-	var httprequest=false;
-	httprequest=new XMLHttpRequest();
-	if (httprequest.overrideMimeType)
-		httprequest.overrideMimeType('text/xml');
-	return httprequest;
-}
-
-// Ajax read feed
-function ajaxReadFeed(){
-	ajaxinstance=createAjaxObj();
-	ajaxinstance.onreadystatechange=parseFeed;
-	ajaxinstance.open('GET', "https://www.repeatserver.com/Users/frenetix/news.xml", true);
-	ajaxinstance.send(null);
-}
-
-// Parse Ajax results
-function parseFeed(){
-	if (ajaxinstance.readyState == 4){ 
-		//if request of file completed
-		if (ajaxinstance.status==200){ 
-			//if request was successful
-			parser=new DOMParser();
-			xmlDoc=parser.parseFromString(ajaxinstance.responseText,"text/xml");
-			alert(xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue);
-		}
-	}
-}
-
-
-function dateDiff(date1,date2){
-	var timeDiff = Math.abs(date2.getTime() - date1.getTime());
-	var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
-	return diffDays;
-}
-*/
 //open Options if first time or updates happened
 
 function getVersion() {
@@ -270,23 +231,10 @@ function getVersion() {
 // Check if the version has changed.
 var currVersion = getVersion();
 var prevVersion = localStorage['version'];
-/*var lastCheckDate = new Date(localStorage['lastCheckDate']);
-if (lastCheckDate == 'Invalid Date') 
-	lastCheckDate = new Date('9/12/2007');
-*/
-//var dateNow = new Date();
 
 if (typeof prevVersion == 'undefined') {
-//	localStorage['lastCheckDate'] = dateNow;
 	chrome.tabs.create({"url": "options.html"});
-
 }
-/*else {
-	if(dateDiff(lastCheckDate,dateNow)>1){
-		ajaxReadFeed();
-		localStorage['lastCheckDate'] = dateNow;
-	}
-}*/
 
 localStorage['version'] = currVersion;
 
