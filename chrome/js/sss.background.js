@@ -72,21 +72,26 @@ function initializeConfig(localConfig, defaultConfig) {
 		return localConfig;
 	}
 
-	function genericSearch(info, tab, idSE) {
-        
+	function createURL(idSE, info){
+
         var selectedText = encodeURIComponent(info.selectionText); //fixes stuff like & in search string
         
         if (config.searchEngines[idSE].plus) selectedText = selectedText.replace(/%20/g, "+"); //plus vs %20
         
-		var urlSE = config.searchEngines[idSE].url.replace(/%s/g, selectedText).replace(/%S/g, selectedText); // replace %s with search string
+		return config.searchEngines[idSE].url.replace(/%s/g, selectedText).replace(/%S/g, selectedText); // replace %s with search string
 
+	}
+
+	function genericSearch(info, tab, idSE) {
+
+		var urlSE = createURL(idSE, info);
 
 		if (config.searchEngines[idSE].incognito){
 			chrome.windows.create({"url": urlSE, "incognito": true});
 		}
 		else if (config.newTab) { 
 			//for "remember an update my created tabs" feature, here I'll store the ID of the created tab and then reuse it with an update. to store the ID of a created tab use a callback function on the tabs.create thing = function(Tab tab) {...};
-			searchOnNewTab(urlSE, info, tab);
+			searchOnNewTab(urlSE, tab);
 		}
 		else {
 			//Todo: Refactor this out of the else and use the newTab variable
@@ -124,12 +129,12 @@ function initializeConfig(localConfig, defaultConfig) {
 		for (i = 0; i < config.searchEngines.length; ++i)
 		{
 
-			searchOnNewTab(i, info, tab);
+			searchOnNewTab(createURL(i, info), tab);
 			trackGA(i);
 		}
 	}
 
-	function searchOnNewTab(urlSE, info, tab) {
+	function searchOnNewTab(urlSE, tab) {
 
 		var newTab = {"url": urlSE, openerTabId: tab.id};
 
@@ -216,12 +221,46 @@ _gaq.push(['_trackPageview']);
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 
-
-//open Options if first time
-
-function onInstall() {
-	chrome.tabs.create({"url": "options.html"});
+/////// Access external feed to check for updates ///////
+/*
+// Ajax object
+function createAjaxObj(){
+	var httprequest=false;
+	httprequest=new XMLHttpRequest();
+	if (httprequest.overrideMimeType)
+		httprequest.overrideMimeType('text/xml');
+	return httprequest;
 }
+
+// Ajax read feed
+function ajaxReadFeed(){
+	ajaxinstance=createAjaxObj();
+	ajaxinstance.onreadystatechange=parseFeed;
+	ajaxinstance.open('GET', "https://www.repeatserver.com/Users/frenetix/news.xml", true);
+	ajaxinstance.send(null);
+}
+
+// Parse Ajax results
+function parseFeed(){
+	if (ajaxinstance.readyState == 4){ 
+		//if request of file completed
+		if (ajaxinstance.status==200){ 
+			//if request was successful
+			parser=new DOMParser();
+			xmlDoc=parser.parseFromString(ajaxinstance.responseText,"text/xml");
+			alert(xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue);
+		}
+	}
+}
+
+
+function dateDiff(date1,date2){
+	var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+	var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+	return diffDays;
+}
+*/
+//open Options if first time or updates happened
 
 function getVersion() {
 	var details = chrome.app.getDetails();
@@ -231,11 +270,23 @@ function getVersion() {
 // Check if the version has changed.
 var currVersion = getVersion();
 var prevVersion = localStorage['version'];
+/*var lastCheckDate = new Date(localStorage['lastCheckDate']);
+if (lastCheckDate == 'Invalid Date') 
+	lastCheckDate = new Date('9/12/2007');
+*/
+//var dateNow = new Date();
 
-if (currVersion != prevVersion) {
-    if (typeof prevVersion == 'undefined') {
-    	onInstall();
-    }
-    localStorage['version'] = currVersion;
+if (typeof prevVersion == 'undefined') {
+//	localStorage['lastCheckDate'] = dateNow;
+	chrome.tabs.create({"url": "options.html"});
 
 }
+/*else {
+	if(dateDiff(lastCheckDate,dateNow)>1){
+		ajaxReadFeed();
+		localStorage['lastCheckDate'] = dateNow;
+	}
+}*/
+
+localStorage['version'] = currVersion;
+
