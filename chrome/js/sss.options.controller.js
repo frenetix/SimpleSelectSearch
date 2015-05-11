@@ -1,6 +1,6 @@
 var bg = chrome.extension.getBackgroundPage(); // Background Page object. ToDo: should this be a service?
 
-angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize']).controller('sssData', ['$scope', '$http', '$templateCache', '$sce',
+angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize', 'ui.bootstrap']).controller('sssData', ['$scope', '$http', '$templateCache', '$sce',
 	function($scope, $http, $templateCache, $sce) {
 
 		$scope.localConfig = bg.config; // JSON: User's config. Core.
@@ -35,7 +35,11 @@ angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize']).controller('sssD
 	 		}
 	 		$scope.isDirty = false;
 	 	};
-
+        
+        // sometimes we need to translate with javascript
+        $scope.i18nTranslate = function (key) {
+            return chrome.i18n.getMessage(key);
+        }
 
 		//  Show/hide delete button
 		$scope.hoverIn = function(){

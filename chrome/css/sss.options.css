@@ -43,10 +43,10 @@ body {
 
 .ng-hide {display: none;}
 
-.fade.in {
+/*.fade.in {
   opacity: 1;
   transition: opacity 3.0s linear;
-}
+}*/
 
 /*
  * content transition animation *
@@ -209,6 +209,20 @@ body {
   font-size: 0.8em;
   color: #0084ae;
 }
+
+/* Specify styling for tooltip contents */
+            .tooltip.customClass .tooltip-inner {
+                color: #0084ae;
+                background-color: #f2f9fb;
+                border: 1px solid #0084ae;
+                 box-shadow: 0px 5px 5px #eee;
+                 overflow-x: auto;
+            }
+ 
+            /* Hide arrow */
+            .tooltip.customClass .tooltip-arrow {
+                display: none;
+            }
 
 /* 
 * Dragable table 
