@@ -11,7 +11,7 @@ Simple=Select+Search (SSS in shorthand) is a Google Chrome extension which allow
 
 ### FEATURES ###
 
-:zero::two::two:
+:zero::three::two:
 - you can copy highligted text and call defined search engines for results
 - you can set own search engines (in native Google Chrome way! You can go to Settings > Search > Manage search engines, copy design engine, paste it into SSS options and it'll work!)
 - you can manage (to some level) how context menu with engines will look like
