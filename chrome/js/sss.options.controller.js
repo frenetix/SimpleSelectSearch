@@ -1,6 +1,7 @@
 var bg = chrome.extension.getBackgroundPage(); // Background Page object. ToDo: should this be a service?
+localStorage['newOptionsSeen'] = bg.currVersion; // this should not be there. This is used to hide the "New stuff!!" from menu
 
-angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize', 'ui.bootstrap']).controller('sssData', ['$scope', '$http', '$templateCache', '$sce',
+angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize', 'ui.bootstrap']).controller('sssData', ['$scope', '$http', '$templateCache', '$sce',  
 	function($scope, $http, $templateCache, $sce) {
 
 		$scope.localConfig = bg.config; // JSON: User's config. Core.
@@ -10,6 +11,7 @@ angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize', 'ui.bootstrap']).
 		$scope.isDirty = false; // prevents adding multiple null rows
 		$scope.backup = null; // used as restore point for import-export.
 		$scope.import = localStorage["config"]; //import/export textarea default value
+		$scope.loading = false;
 
 		//  Watcher: persists data.
 		$scope.$watch('localConfig', function() {
@@ -35,10 +37,10 @@ angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize', 'ui.bootstrap']).
 	 		}
 	 		$scope.isDirty = false;
 	 	};
-        
+
         // sometimes we need to translate with javascript
         $scope.i18nTranslate = function (key) {
-            return chrome.i18n.getMessage(key);
+        	return chrome.i18n.getMessage(key);
         }
 
 		//  Show/hide delete button
@@ -83,7 +85,7 @@ angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize', 'ui.bootstrap']).
 		// https://docs.angularjs.org/api/ng/service/$sce
 		$scope.highlightURL = function (url) {
 			return	url.replace(/%s/g, "<span class='searchString'>%s</span>")
-				.replace(/%S/g, "<span class='searchString'>%S</span>");
+			.replace(/%S/g, "<span class='searchString'>%S</span>");
 		};
 
 
@@ -122,7 +124,7 @@ angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize', 'ui.bootstrap']).
 	 			$scope.localConfig = bg.config;
 	 			$scope.editRow = null; 
 
-	 			alert(chrome.i18n.getMessage("o_resetDefaultSuccess"));
+	 			$scope.addAlert(chrome.i18n.getMessage("o_resetDefaultSuccess"), "success");
 
 	 			$scope.template = "options/searchEngines.html";
 
@@ -147,38 +149,35 @@ angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize', 'ui.bootstrap']).
 
 	 	//Import JSON config
 	 	$scope.importConfig = function () {
-	 		if (confirm(chrome.i18n.getMessage("o_confirmImport"))) {
 
-	 			bg._gaq.push(['_trackEvent', 'Options', 'Import Config', 'Import Config']);
+	 		bg._gaq.push(['_trackEvent', 'Options', 'Import Config', 'Import Config']);
 
-	 			//ToDo: Try/catch goes here.
-	 			$scope.backup = $scope.localConfig;
-	 			bg.config = JSON.parse($scope.import);
-	 			//ToDo: the following refactors witht the same as $scope.watch and undoLastImport
+ 			//ToDo: Try/catch goes here.
+ 			$scope.backup = $scope.localConfig;
+ 			bg.config = JSON.parse($scope.import);
+ 			//ToDo: the following refactors witht the same as $scope.watch and undoLastImport
 
-	 			localStorage["config"] = JSON.stringify(bg.config);
-	 			bg.createMenu ();
-	 			$scope.checkIsDirty();
-	 			$scope.localConfig = bg.config;
-	 			$scope.editRow = null; 
+ 			localStorage["config"] = JSON.stringify(bg.config);
+ 			bg.createMenu ();
+ 			$scope.checkIsDirty();
+ 			$scope.localConfig = bg.config;
+ 			$scope.editRow = null; 
 
 
-	 			alert(chrome.i18n.getMessage("o_importSuccesfull"));
+ 			$scope.addAlert(chrome.i18n.getMessage("o_importSuccesfull"), "success");
 
-	 			$scope.template = "options/searchEngines.html";
+ 			$scope.template = "options/searchEngines.html";
 
-	 		};
-	 	};
+ 		};
 
 	 	//Undo last import 
 	 	$scope.undoLastImport = function () {
-	 		if (confirm(chrome.i18n.getMessage("o_confirmRestore"))) {
-	 			bg._gaq.push(['_trackEvent', 'Options', 'Undo Import', 'Undo Import']);
+	 		bg._gaq.push(['_trackEvent', 'Options', 'Undo Import', 'Undo Import']);
 
 			//ToDo: implement Try/Catch here
 			bg.config = $scope.backup;
 			$scope.backup = null;
-			alert(chrome.i18n.getMessage("o_restoreSuccesfull"));
+			$scope.addAlert(chrome.i18n.getMessage("o_restoreSuccesfull"), "success");
 
 			//ToDo: the following refactors witht the same as $scope.watch and importConfig()
 
@@ -188,9 +187,35 @@ angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize', 'ui.bootstrap']).
 			$scope.localConfig = bg.config;
 			$scope.editRow = null; 
 			$scope.template = "options/searchEngines.html";
+		};
+
+		$scope.alerts = [];
+		$scope.confirms = [];
+
+		$scope.addAlert = function(msg, msgType) {
+			if (typeof msgType == "undefined")
+				msgType = "danger";
+			$scope.alerts.push({type: msgType, msg: msg});
+		};
+
+		$scope.closeAlert = function(index) {
+			$scope.alerts = [];
+		};
+
+		$scope.closeConfirm = function(index) {
+			$scope.confirms.splice(index, 1);
+		};
+
+		$scope.addConfirm = function(msg, yesAction){
+			$scope.alerts = [];
+			$scope.confirms.push({msg: chrome.i18n.getMessage(msg), action: yesAction});
 		}
-	}
-}])
+
+		$scope.yesConfirm = function(yesAction, index) {
+			$scope.confirms.splice(index, 1);
+			yesAction();
+		}
+	}])
 
 
 	/* example API call for Crowdin... does not retrieve contributors yet... worthless for now.

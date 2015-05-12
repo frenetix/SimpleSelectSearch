@@ -23,7 +23,10 @@
   
 </head>
 
-<body>
+<body ng-controller="sssData">
+  <!-- Alerts -->
+
+
   <!-- Top nav -->
   <nav class="navbar navbar-fixed-top" role="navigation">
     <div class="container-fluid">
@@ -31,6 +34,15 @@
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         </button>
         <a class="navbar-brand" href="#">Simple = Select + Search</a>
+      </div>
+      <div class="alert-container">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+        <alert ng-repeat="confirm in confirms" type="warning" close="closeConfirm($index)">{{confirm.msg}}
+          <div class="form-controls-alert">
+            <button class="btn btn-default" data-ng-click="closeConfirm($index)">No</button>
+            <button class="btn btn-danger" data-ng-click="yesConfirm(confirm.action, $index)">Yes</button> 
+          </div>
+        </alert>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -47,7 +59,7 @@
   </nav>
 
   <!-- container + row -->
-  <div class="container-fluid" ng-controller="sssData">
+  <div class="container-fluid" >
 
     <div class="row">
 
@@ -99,6 +111,7 @@
    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
     <!-- Angular includes -->
+
 
     <div class="options-container" ng-include="template">
     </div>

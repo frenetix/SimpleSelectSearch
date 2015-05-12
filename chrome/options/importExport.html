@@ -8,7 +8,7 @@
     <textarea  class="form-control" rows="12" ng-model="$parent.import" ></textarea>
   </div>
   <div class="form-group">
-  	<a href="" class="btn btn-primary" ng-click="importConfig()" i18n-content="importConfig">Import</a>
-  	<a href="" class="btn btn-default" ng-click="undoLastImport()" ng-disabled="backup == null" i18n-content="undoLastImport">Undo last import</a>
+  	<a href="" class="btn btn-primary" ng-click="addConfirm('o_confirmImport',importConfig)"  i18n-content="importConfig">Import</a>
+  	<a href="" class="btn btn-default" ng-click="addConfirm('o_confirmRestore',undoLastImport)" ng-disabled="backup == null" i18n-content="undoLastImport">Undo last import</a>
   </div>
 </form>

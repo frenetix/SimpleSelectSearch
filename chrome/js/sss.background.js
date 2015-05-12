@@ -5,7 +5,6 @@ var defaultConfig = {
 	"newTabSelected":true,
 	"newTabPosition":"Last",
 	"trackGA":true,
-	"showBlog":true,
 	"searchEngines" : [
 	{"name":"Youtube","url":"http://www.youtube.com/results?search_query=%s&aq=f","incognito":false,"plus":true},
 	{"name":"IMDB","url":"http://www.imdb.com/find?q=%s&s=all","incognito":false,"plus":true},
@@ -106,10 +105,6 @@ function initializeConfig(localConfig, defaultConfig) {
 		chrome.tabs.create({"url": "options.html"});
 	}
 
-	function openBlog() {
-		chrome.tabs.create({"url": "http://simpleselectsearch.blogspot.com/"});
-	}
-
 	function checkboxOnClick() {
 		if (config.newTab) {
 			config.newTab=false;
@@ -183,12 +178,11 @@ function createMenu () {
 		// check new tab
 		var child =	chrome.contextMenus.create({"title": chrome.i18n.getMessage("bg_openOnNewTab"), "type": "checkbox", "checked": config.newTab, "parentId": id,  "contexts":[context], "onclick":checkboxOnClick});
 		// options
-		var child = 	chrome.contextMenus.create(  {"title": chrome.i18n.getMessage("bg_options"), "parentId": id, "contexts":[context], "onclick": openOptions });
-		//Blog
-		if (config.showBlog){
-			var child = 	chrome.contextMenus.create(  {"type": "separator", "parentId": id, "contexts":[context] });
-			var child = 	chrome.contextMenus.create(  {"title": chrome.i18n.getMessage("bg_extensionBlog"), "parentId": id, "contexts":[context], "onclick": openBlog });
-		}
+		var optionsText = chrome.i18n.getMessage("bg_options");
+		if (newOptionsSeen != currVersion)
+			optionsText += " New stuff!!";
+		var child =	chrome.contextMenus.create(  {"title": optionsText, "parentId": id, "contexts":[context], "onclick": openOptions });
+		
 	}
 	else
 	{
@@ -205,9 +199,6 @@ function createMenu () {
 
 }
 
-// Initialize menu
-createMenu ();
-
 // Google Analytics stuff
 
 var _gaq = _gaq || [];
@@ -222,7 +213,6 @@ _gaq.push(['_trackPageview']);
 })();
 
 //open Options if first time or updates happened
-
 function getVersion() {
 	var details = chrome.app.getDetails();
 	return details.version;
@@ -231,10 +221,15 @@ function getVersion() {
 // Check if the version has changed.
 var currVersion = getVersion();
 var prevVersion = localStorage['version'];
+var newOptionsSeen = localStorage['newOptionsSeen'];
 
 if (typeof prevVersion == 'undefined') {
+	// new install opens options.html
 	chrome.tabs.create({"url": "options.html"});
-}
+};
 
-localStorage['version'] = currVersion;
+if (currVersion != prevVersion)
+	localStorage['version'] = currVersion;
 
+// Initialize menu
+createMenu ();
