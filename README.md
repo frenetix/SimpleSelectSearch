@@ -1,4 +1,4 @@
-﻿Simple=Select+Search
+Simple=Select+Search
 ====================
 
 ###HIGHLIGHT & CLICK, THAT'S IT!###
@@ -7,7 +7,7 @@
 
 ### INTRODUCTION ###
 
-Simple=Select+Search (SSS in shorthand) is an Google Chrome extension which allows it's users to perform intuitive, simple yet powerful way to search the World Wide Web. Most natural and fastest way - just highlight text and click on search engine in context menu. No typing, no waiting, no struggling.
+Simple=Select+Search (SSS in shorthand) is a Google Chrome extension which allows users an alternative to perform intuitive, simple yet powerful way to search the World Wide Web. Most natural and fastest way - just highlight text and click on search engine in context menu. No typing, no waiting, no struggling.
 
 ### FEATURES ###
 
@@ -19,13 +19,24 @@ Simple=Select+Search (SSS in shorthand) is an Google Chrome extension which allo
 ### CHANGELOG ###
 
 ##### FUTURE VERSIONS #####
-- [:id::zero::zero::one:](https://github.com/frenetix/SimpleSelectSearch/issues/1) Option to opening search results in incognito mode
-- [:id::zero::zero::two:](https://github.com/frenetix/SimpleSelectSearch/issues/2) Option to replace in search links spaces (%20) with plus character (+)
 - [:id::zero::zero::three:](https://github.com/frenetix/SimpleSelectSearch/issues/3) Option to hiding/showing "Search everywhere" menu option
 - [:id::zero::zero::four:](https://github.com/frenetix/SimpleSelectSearch/issues/4) Group search engines
-- [:id::zero::zero::five:](https://github.com/frenetix/SimpleSelectSearch/issues/5) Option to opening search results always in the current tab
+- [:id::zero::zero::five:](https://github.com/frenetix/SimpleSelectSearch/issues/5) Option to opening search results always in the same tab
 
 ##### DEPLOYED VERSIONS #####
+
+:vs::zero::three::two:
+- AngularJS & Bootsrap for options.html
+- New design
+- Option to opening search results in incognito mode
+- Option to replace in search links spaces (%20) with plus character (+)
+- Added new localization files
+    - Catalan 10%
+	- Dutch 100%
+	- French 100%
+	- Polish 100%
+	- Russian 26%
+	- Spanish 100%
 
 :vs::zero::one::seven:
 - Added "New tab position" parameter: You can now select where you want your new tabs to open (Thanks Damien, I know this doesn't work exactly as you wanted, but it's something).
