@@ -34,6 +34,7 @@ Check out my messy [Trello](https://trello.com/b/I1jBV5mD) to follow the latests
 - New design
 - Option to opening search results in incognito mode
 - Option to replace in search links spaces (%20) with plus character (+)
+- Support for special characters in selected text (including &)
 - Added new localization files
     - Catalan 10%
 	- Dutch 100%
