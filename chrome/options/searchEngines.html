@@ -25,7 +25,7 @@
 			</div>
 			<div class="col-md-6" ng-click="setEdit($index)"> 
 				<input type="text" ng-model="se.url" ng-show="editRow==$index" class="form-control" placeholder="Engine URL (remember to use %s)" />
-				<span ng-hide="editRow==$index" ng-bind-html="highlightURL(se.url)"></span>
+				<span ng-hide="editRow==$index" ng-bind-html="se.url | highlight:'%s'"></span>
 			</div>
 			<div class="col-md-1 text-center" ng-click="se.plus = !se.plus">
 				<span ng-class="{ 'light': !se.plus}" class="glyphicon glyphicon-plus"></span>
@@ -77,7 +77,7 @@
 	<tbody>
 		<tr ng-repeat="x in featuredURLs | orderBy:sortType:sortReverse" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
 			<td><div>{{x.name}}</div></td>
-			<td><div ng-bind-html="highlightURL(x.url)"></div></td>
+			<td><div ng-bind-html="x.url | highlight:'%s'"></div></td>
 			<td><div>{{x.type}}</div></td>
 			<td><div>{{x.language}}</div></td>
 			<td  class="text-center">

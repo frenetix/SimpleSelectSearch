@@ -4,7 +4,7 @@
   <div class="form-group">
     <input type="checkbox" ng-model="localConfig.newTab" id="newTab"> <label  i18n-content="o_openLinksInNewTab" for="newTab">Open links in new tab.</label>
   </div>
-  
+
   <div class="form-group">
     <input type="checkbox" ng-model="localConfig.newTabSelected" ng-disabled="!localConfig.newTab" id="newTabSelected"> 
     <label  i18n-content="o_giveNewTabFocus" for="newTabSelected">Give new tab focus.</label>
@@ -27,15 +27,8 @@
     </div>
   </div>
   <div class="form-group">
-    <button data-ng-click="addConfirm('o_areYouSure',restoreDefaultOptions)" class="btn btn-primary" i18n-content="eraseOptions">Restore default options</button>
-    <!-- <button data-ng-click="displayRestorePopup=true" class="btn btn-primary" i18n-content="eraseOptions">Restore default options</button> -->
+    <button data-ng-click="addConfirm('o_areYouSure',restoreDefaultOptions)" class="btn btn-primary" i18n-content="eraseOptions">Restore default options
+    </button>
   </div>
 </form>
 
-<div class="alert alert-warning alert-dismissible fade in" data-ng-show="displayRestorePopup" role="alert">
-  <h6 i18n-content="o_areYouSure"></h6>
-  <div class="form-controls-alert">
-    <button class="btn btn-default" data-ng-click="displayRestorePopup=false">No</button>
-    <button class="btn btn-danger" data-ng-click="restoreDefaultOptions()">Yes</button>
-  </div>
-</div><!-- end alert -->   

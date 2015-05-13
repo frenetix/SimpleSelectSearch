@@ -1,14 +1,14 @@
- <h1 i18n-content="o_importExport">Import/Export Config</h1>
- <DIV i18n-content="o_importExportDescription">
-  Here''s all the config info. Just copy & save it on any text file...<br />
-  If you want to import your previously saved config, just paste it here and click on the import button.<br /><br />
+<h1 i18n-content="o_importExport">Import/Export Config</h1>
+<DIV i18n-content="o_importExportDescription">
+	Here''s all the config info. Just copy & save it on any text file...<br />
+	If you want to import your previously saved config, just paste it here and click on the import button.<br /><br />
 </DIV>
 <form>
-  <div class="form-group">
-    <textarea  class="form-control" rows="12" ng-model="$parent.import" ></textarea>
-  </div>
-  <div class="form-group">
-  	<a href="" class="btn btn-primary" ng-click="addConfirm('o_confirmImport',importConfig)"  i18n-content="importConfig">Import</a>
-  	<a href="" class="btn btn-default" ng-click="addConfirm('o_confirmRestore',undoLastImport)" ng-disabled="backup == null" i18n-content="undoLastImport">Undo last import</a>
-  </div>
+	<div class="form-group">
+		<textarea  class="form-control" rows="12" ng-model="import" ></textarea>
+	</div>
+	<div class="form-group">
+		<a href="" class="btn btn-primary" ng-click="addConfirm('o_confirmImport',importConfig)"  i18n-content="importConfig">Import</a>
+		<a href="" class="btn btn-default" ng-click="addConfirm('o_confirmRestore',undoLastImport)" ng-disabled="backup == null" i18n-content="undoLastImport">Undo last import</a>
+	</div>
 </form>
