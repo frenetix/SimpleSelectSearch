@@ -1,6 +1,4 @@
-
-
-// function generates the actual URL combining the selected text with the search engine config
+var _MENU_OPTIONS_MESSAGE =  " (minor updates)";// function generates the actual URL combining the selected text with the search engine config
 //
 // fixes stuff like & in search string
 // plus vs %20
@@ -23,7 +21,6 @@ function genericSearch(info, tab, idSE) {
 		searchOnNewTab(urlSE, tab);
 	}
 	else {
-		//Todo: Refactor this out of the else and use the newTab variable
 		chrome.tabs.update(tab.id,{"url": urlSE});
 	};
 	trackGA(idSE);
@@ -101,7 +98,7 @@ function createMenu () {
 		// options
 		var optionsText = chrome.i18n.getMessage("bg_options");
 		if (newOptionsSeen != currVersion)
-			optionsText += " New stuff!!";
+			optionsText += _MENU_OPTIONS_MESSAGE;
 		var child =	chrome.contextMenus.create(  {"title": optionsText, "parentId": id, "contexts":[context], "onclick": openOptions });
 	}
 	else
