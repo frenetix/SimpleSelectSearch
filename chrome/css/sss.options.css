@@ -275,3 +275,15 @@ body {
 .form-controls-alert {
   text-align: right;
 }
+
+.form-controls-alert {
+  text-align: right;
+}
+.form-controls-alert button  {
+  margin-left:10px;
+  margin-top: 20px;
+}
+
+.form-controls-alert .btn {
+    width: 100px;
+}

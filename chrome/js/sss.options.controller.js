@@ -32,11 +32,6 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
 	 		$scope.isDirty = false;
 	 	};
 
-        // sometimes we need to translate with javascript
-        $scope.i18nTranslate = function (key) {
-        	return chrome.i18n.getMessage(key);
-        }
-
 		//  Show/hide delete button
 		$scope.hoverIn = function(){
 			this.hoverTable = true;
@@ -158,7 +153,7 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
 		$scope.addAlert = function(msg, msgType) {
 			if (typeof msgType == "undefined")
 				msgType = "danger";
-			$scope.alerts.push({type: msgType, msg: chrome.i18n.getMessage(msg)});
+			$scope.alerts.push({type: msgType, msg: sssService.i18nTranslate(msg)});
 		};
 
 		$scope.closeAlert = function(index) {
@@ -171,7 +166,7 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
 
 		$scope.addConfirm = function(msg, yesAction){
 			$scope.alerts = [];
-			$scope.confirms.push({msg: chrome.i18n.getMessage(msg), action: yesAction});
+			$scope.confirms.push({msg: sssService.i18nTranslate(msg), action: yesAction});
 			$scope.test = "confirm";
 		}
 

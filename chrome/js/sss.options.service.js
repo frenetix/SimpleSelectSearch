@@ -17,30 +17,9 @@ angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize', 'ui.bootstrap', '
 		return tempConfig;
 	}
 
-	/*	service.init = function..*/
-	service.defaultConfig = {
-		"newTab":true,
-		"newTabSelected":true,
-		"newTabPosition":"Last",
-		"trackGA":true,
-		"searchEngines" : [
-		{"name":"Youtube","url":"http://www.youtube.com/results?search_query=%s&aq=f","incognito":false,"plus":false},
-		{"name":"IMDB","url":"http://www.imdb.com/find?q=%s&s=all","incognito":false,"plus":true},
-		{"name":"Wikipedia","url":"http://en.wikipedia.org/w/index.php?title=Special:Search&search=%s","incognito":false,"plus":false}
-		]
-	};
-
-	service.amazonSites = [
-	{"language":"en-us","name":"Amazon","url":"http://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=aps&linkCode=ur2&camp=1789&creative=9325","type":"Comerce","language":"English"},
-	{"language":"en-us","name":"Amazon Kindle","url":"http://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=digital-text&linkCode=ur2&camp=1789&creative=9325","type":"Comerce","language":"English"},
-	{"language":"de-de","name":"Amazon DE","url":"http://www.amazon.de/gp/search?ie=UTF8&keywords=%s&tag=sisese0b-21&index=aps&linkCode=ur2&camp=1638&creative=6742","type":"Comerce","language":"English"},
-	{"language":"es-es","name":"Amazon ES","url":"http://www.amazon.es/gp/search?ie=UTF8&keywords=%s&tag=sisese0c-21&index=aps&linkCode=ur2&camp=3626&creative=24790","type":"Comerce","language":"English"},
-	{"language":"it","name":"Amazon IT","url":"http://www.amazon.it/gp/search?ie=UTF8&keywords=%s&tag=sisese07-21&index=aps&linkCode=ur2&camp=3370&creative=23322","type":"Comerce","language":"English"},
-	{"language":"en-us","name":"Amazon Mp3","url":"http://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=digital-music&linkCode=ur2&camp=1789&creative=9325","type":"Comerce","language":"English"},
-	{"language":"en-us","name":"Amazon Music","url":"http://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=music&linkCode=ur2&camp=1789&creative=9325","type":"Comerce","language":"English"},
-	{"language":"en-gb","name":"Amazon UK","url":"http://www.amazon.co.uk/gp/search?ie=UTF8&keywords=%s&tag=sisese-21&index=aps&linkCode=ur2&camp=1634&creative=6738","type":"Comerce","language":"English"},
-	{"language":"en-ca","name":"Amazon Canada","url":"http://www.amazon.ca/gp/search?ie=UTF8&camp=15121&creative=330641&index=aps&keywords=%s&linkCode=ur2&tag=sisese0b-20","type":"Comerce","language":"English"}
-	];
+	service.i18nTranslate = function (key) {
+		return chrome.i18n.getMessage(key);
+	}
 
 	service.bg = chrome.extension.getBackgroundPage();
 
@@ -51,6 +30,30 @@ angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize', 'ui.bootstrap', '
 	}
 
 	localStorage['newOptionsSeen'] = service.bg.currVersion; 
+
+	service.defaultConfig = {
+		"newTab":true,
+		"newTabSelected":true,
+		"newTabPosition":"Last",
+		"trackGA":true,
+		"searchEngines" : [
+		{"name":"Youtube", "url":"http://www.youtube.com/results?search_query=%s&aq=f", "incognito":false,"plus":false, "group":null},
+		{"name":"IMDB", "url":"http://www.imdb.com/find?q=%s&s=all", "incognito":false,"plus":true, "group":null},
+		{"name":"Wikipedia", "url":"http://en.wikipedia.org/w/index.php?title=Special:Search&search=%s", "incognito":false,"plus":false, "group":null}
+		]
+	};
+
+	service.amazonSites = [
+	{"language":"en-us", "name":"Amazon", "url":"http://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=aps&linkCode=ur2&camp=1789&creative=9325", "type":"Comerce", "language":"English"},
+	{"language":"en-us", "name":"Amazon Kindle", "url":"http://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=digital-text&linkCode=ur2&camp=1789&creative=9325", "type":"Comerce", "language":"English"},
+	{"language":"de-de", "name":"Amazon DE", "url":"http://www.amazon.de/gp/search?ie=UTF8&keywords=%s&tag=sisese0b-21&index=aps&linkCode=ur2&camp=1638&creative=6742", "type":"Comerce", "language":"English"},
+	{"language":"es-es", "name":"Amazon ES", "url":"http://www.amazon.es/gp/search?ie=UTF8&keywords=%s&tag=sisese0c-21&index=aps&linkCode=ur2&camp=3626&creative=24790", "type":"Comerce", "language":"English"},
+	{"language":"it", "name":"Amazon IT", "url":"http://www.amazon.it/gp/search?ie=UTF8&keywords=%s&tag=sisese07-21&index=aps&linkCode=ur2&camp=3370&creative=23322", "type":"Comerce", "language":"English"},
+	{"language":"en-us", "name":"Amazon Mp3", "url":"http://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=digital-music&linkCode=ur2&camp=1789&creative=9325", "type":"Comerce", "language":"English"},
+	{"language":"en-us", "name":"Amazon Music", "url":"http://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=music&linkCode=ur2&camp=1789&creative=9325", "type":"Comerce", "language":"English"},
+	{"language":"en-gb", "name":"Amazon UK", "url":"http://www.amazon.co.uk/gp/search?ie=UTF8&keywords=%s&tag=sisese-21&index=aps&linkCode=ur2&camp=1634&creative=6738", "type":"Comerce", "language":"English"},
+	{"language":"en-ca", "name":"Amazon Canada", "url":"http://www.amazon.ca/gp/search?ie=UTF8&camp=15121&creative=330641&index=aps&keywords=%s&linkCode=ur2&tag=sisese0b-20", "type":"Comerce", "language":"English"}
+	];
 	
 	service.featuredSearchEngines = [
 	{"name":"Amazon","url":"http://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=aps&linkCode=ur2&camp=1789&creative=9325","type":"Commerce","language":"English"},
