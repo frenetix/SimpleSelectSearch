@@ -26,12 +26,13 @@
 <body>
   <!-- Top nav -->
   <nav class="navbar navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
+    <div class="container-fluid" >
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         </button>
         <a class="navbar-brand" href="#">Simple = Select + Search</a>
       </div>
+
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="http://simpleselectsearch.blogspot.com/" target="_blank" i18n-content="bg_extensionBlog">Blog</a></li>
@@ -48,19 +49,18 @@
 
   <!-- container + row -->
   <div class="container-fluid" ng-controller="sssData">
-
     <div class="row">
 
       <!-- Left nav -->
       <div class="col-sm-3 col-md-2 sidebar">
         <ul class="nav nav-sidebar">
           <li ng-class="{ 'active': template == 'options/searchEngines.html' }"><a href="#" ng-click="template='options/searchEngines.html'" i18n-content="o_searchEngines">Search engines</a></li>  
-          <li ng-class="{ 'active': template == 'options/help.html' }"><a href="#" ng-click="template='options/help.html'" i18n-content="o_help">Help</a></li>
-          <li ng-class="{ 'active': template == 'options/supportMe.html' }"><a href="#" ng-click="template='options/supportMe.html'" i18n-content="o_supportMe">Support me :)</a></li>
+          <li ng-class="{ 'active': template == 'options/advancedConfig.html' }"><a href="#" ng-click="template='options/advancedConfig.html'" i18n-content="o_advancedConfig">Advanced config</a></li>
           <li ng-class="{ 'active': template == 'options/importExport.html' }"><a href="#" ng-click="template='options/importExport.html'" i18n-content="o_importExport">Import/export</a></li>
         </ul>
         <ul class="nav nav-sidebar">
-          <li ng-class="{ 'active': template == 'options/advancedConfig.html' }"><a href="#" ng-click="template='options/advancedConfig.html'" i18n-content="o_advancedConfig">Advanced config</a></li>
+          <li ng-class="{ 'active': template == 'options/help.html' }"><a href="#" ng-click="template='options/help.html'" i18n-content="o_help">Help</a></li>
+          <li ng-class="{ 'active': template == 'options/supportMe.html' }"><a href="#" ng-click="template='options/supportMe.html'" i18n-content="o_supportMe">Support me :)</a></li>
           <li ng-class="{ 'active': template == 'options/creditsDisclaimer.html' }"><a href="#" ng-click="template='options/creditsDisclaimer.html'" i18n-content="o_credits">Credits/Disclaimer</a></li>
 
         </ul>
@@ -96,9 +96,19 @@
    <!-- END Left nav -->     
 
    <!-- Main content area -->
-   <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+   <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" >
 
     <!-- Angular includes -->
+      <!-- Alerts -->
+      <div class="alert-container" >
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+        <alert ng-repeat="confirm in confirms" type="warning" close="closeConfirm($index)">{{confirm.msg}}
+          <div class="form-controls-alert">
+            <button class="btn btn-default" data-ng-click="closeConfirm($index)">No</button>
+            <button class="btn btn-danger" data-ng-click="yesConfirm(confirm.action, $index)">Yes</button> 
+          </div>
+        </alert>
+      </div>
 
     <div class="options-container" ng-include="template">
     </div>
@@ -120,11 +130,13 @@
 <script src="js/lib/ng-sortable.min.js"></script> 
 <script src="js/lib/angular-sanitize.min.js"></script> 
 <script src="js/lib/ui-bootstrap-tpls-0.13.0.min.js"></script> 
+<script src="js/lib/ui-utils.min.js"></script> 
 
 
 <!--sss code-->
-<script src="js/sss.init.extendedURLs.js"></script>
+<script src="js/sss.options.service.js"></script>
 <script src="js/sss.options.controller.js"></script>
+<script src="js/sss.options.controller.credits.js"></script>
 <script src="js/sss.options.directive.js"></script>
 
 <!--external -->

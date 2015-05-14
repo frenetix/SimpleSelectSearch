@@ -4,7 +4,7 @@
   <div class="form-group">
     <input type="checkbox" ng-model="localConfig.newTab" id="newTab"> <label  i18n-content="o_openLinksInNewTab" for="newTab">Open links in new tab.</label>
   </div>
-  
+
   <div class="form-group">
     <input type="checkbox" ng-model="localConfig.newTabSelected" ng-disabled="!localConfig.newTab" id="newTabSelected"> 
     <label  i18n-content="o_giveNewTabFocus" for="newTabSelected">Give new tab focus.</label>
@@ -15,11 +15,6 @@
       <option value="Next"  i18n-content="o_next">Next</option>
       <option value="Previous"  i18n-content="o_previous">Previous</option>
     </select>
-  </div>
-  <div class="form-group">
-    <input type="checkbox" ng-model="localConfig.showBlog" id="showBlog"> <label  i18n-content="o_showThePleaseCheckOut" for="showBlog">Show the "Please, Check out my blog!" link :).</label>
-    <div  i18n-content="o_hideThisLink">Hide this link only if it really hurts your eyes!... <i>every time someone hides this link, <a href="http://2.bp.blogspot.com/-6FkW_onHQ1Y/TgNUqC5LD1I/AAAAAAAABCs/drzXBGoksys/s640/Kitten-Running.jpg" target="_blank">a kitten dies</a></i> :o(.
-    </div>
   </div>
 
   <div class="form-group">
@@ -32,14 +27,8 @@
     </div>
   </div>
   <div class="form-group">
-    <button data-ng-click="displayRestorePopup=true" class="btn btn-primary" i18n-content="eraseOptions">Restore default options</button>
+    <button data-ng-click="addConfirm('o_areYouSure',restoreDefaultOptions)" class="btn btn-primary" i18n-content="eraseOptions">Restore default options
+    </button>
   </div>
 </form>
 
-<div class="alert alert-warning alert-dismissible fade in" data-ng-show="displayRestorePopup" role="alert">
-  <h6 i18n-content="o_areYouSure"></h6>
-  <div class="form-controls-alert">
-    <button class="btn btn-default" data-ng-click="displayRestorePopup=false">No</button>
-    <button class="btn btn-danger" data-ng-click="restoreDefaultOptions()">Yes</button>
-  </div>
-</div><!-- end alert -->   

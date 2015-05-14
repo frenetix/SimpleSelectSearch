@@ -116,7 +116,7 @@
     "description":""
   },
   "o_featuredSearchEngnesDesc":{
-    "message":" Double-cliquez sur une URL à inclure dans la liste de vos moteurs de recherche.",
+    "message":"Cliquez sur une URL à inclure dans la liste de vos moteurs de recherche.",
     "description":""
   },
   "o_groupBy":{
@@ -191,14 +191,6 @@
     "message":"Précédent",
     "description":""
   },
-  "o_showThePleaseCheckOut":{
-    "message":"Montrer le lien \"SVP, Consulter mon blog!\":).",
-    "description":""
-  },
-  "o_hideThisLink":{
-    "message":"Cacher ce lien seulement s'il vous fait vraiment mal vos yeux!... <i>A chaque fois que quelqu'un cache ce lien, <a href=\"http:\/\/2.bp.blogspot.com\/-6FkW_onHQ1Y\/TgNUqC5LD1I\/AAAAAAAABCs\/drzXBGoksys\/s640\/Kitten-Running.jpg\" target=\"_blank\"> un chaton meurt !!! <\/a><\/i>:o(.",
-    "description":""
-  },
   "o_trackSearchEngines":{
     "message":"Suivre l'usage des moteurs de recherche.",
     "description":""
@@ -236,7 +228,39 @@
     "description":""
   },
   "o_checkOutMyBlog":{
-    "message":"Consultez mon <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\"> blog<\/a> pour en savoir plus. <br\/> <br\/> <a href=\"http:\/\/simpleselectsearch.blogspot.com\/2012\/11\/help-me-translate.html\">Aidez moi à traduire!<\/a>",
+    "message":"Consultez mon blog pour en savoir plus.",
+    "description":""
+  },
+  "o_sort":{
+    "message":"Tri",
+    "description":""
+  },
+  "o_incognito":{
+    "message":"Incognito",
+    "description":""
+  },
+  "o_resetDefaultSuccess":{
+    "message":"Vous avez maintenant des paramètres par défaut :)",
+    "description":""
+  },
+  "o_areYouSure":{
+    "message":"Êtes-vous sûr(e)?",
+    "description":""
+  },
+  "o_helpMeTranslate":{
+    "message":"M'aider à traduire !",
+    "description":""
+  },
+  "o_GitHubContributors":{
+    "message":"Super génial <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'> GitHub<\/a> contributeurs",
+    "description":""
+  },
+  "o_CrowdinContributors":{
+    "message":"Super génial <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'> Crowdin<\/a> contributeurs (traducteurs)",
+    "description":""
+  },
+  "o_plusExplain":{
+    "message":"Plus versus Espace : certains moteurs de recherche utilisent « + » au lieu d'un espace pour séparer les mots de votre recherche.",
     "description":""
   }
 }

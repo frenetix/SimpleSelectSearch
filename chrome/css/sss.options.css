@@ -46,7 +46,7 @@ body {
 /*.fade.in {
   opacity: 1;
   transition: opacity 3.0s linear;
-}*/
+  }*/
 
 /*
  * content transition animation *
@@ -196,11 +196,22 @@ body {
 
 }
 
+.searchEngines .ng-enter, .searchEngines  .ng-leave {
+ transition: 0.4s linear all !important;
+}
+.searchEngines .ng-enter {
+  opacity:1;
+}
+.searchEngines .ng-leave {
+  opacity:0;
+}
+
 .danger {background-color: #fee;}
 
 .light {color: #f0f0f0;}
 
-.searchString {
+/* highlights %s on search engines list*/
+.ui-match {
   color: #0084ae;
   font-weight: bold;
 }
@@ -210,19 +221,20 @@ body {
   color: #0084ae;
 }
 
+
 /* Specify styling for tooltip contents */
-            .tooltip.customClass .tooltip-inner {
-                color: #0084ae;
-                background-color: #f2f9fb;
-                border: 1px solid #0084ae;
-                 box-shadow: 0px 5px 5px #eee;
-                 overflow-x: auto;
-            }
- 
-            /* Hide arrow */
-            .tooltip.customClass .tooltip-arrow {
-                display: none;
-            }
+.tooltip.customClass .tooltip-inner {
+  color: #0084ae;
+  background-color: #f2f9fb;
+  border: 1px solid #0084ae;
+  box-shadow: 0px 5px 5px #eee;
+  white-space:pre-wrap;
+}
+
+/* Hide arrow */
+.tooltip.customClass .tooltip-arrow {
+  display: none;
+}
 
 /* 
 * Dragable table 
@@ -240,3 +252,26 @@ body {
   background-color: #f2f9fb;
 }
 
+/*
+* Alert  (review this)
+*/
+
+.alert-container {
+  position:absolute;
+  left:50%;
+}
+
+.alert-container > div {
+  opacity:0.95;
+  transition: 0.2s linear opacity;
+  position:relative;
+  left:-50%;
+}
+
+.alert-container .ng-enter, .alert-container .ng-leave  {
+  opacity:0 !important;
+}
+
+.form-controls-alert {
+  text-align: right;
+}

@@ -1,156 +1,69 @@
-// Todo's
-
-var defaultConfig = {
-	"newTab":true,
-	"newTabSelected":true,
-	"newTabPosition":"Last",
-	"trackGA":true,
-	"showBlog":true,
-	"searchEngines" : [
-	{"name":"Youtube","url":"http://www.youtube.com/results?search_query=%s&aq=f","incognito":false,"plus":true},
-	{"name":"IMDB","url":"http://www.imdb.com/find?q=%s&s=all","incognito":false,"plus":true},
-	{"name":"Wikipedia","url":"http://en.wikipedia.org/w/index.php?title=Special:Search&search=%s","incognito":false,"plus":true}
-	]
-};
-
-var amazonSites = [
-{"language":"en-us","name":"Amazon","url":"http://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=aps&linkCode=ur2&camp=1789&creative=9325","type":"Comerce","language":"English"},
-{"language":"en-us","name":"Amazon Kindle","url":"http://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=digital-text&linkCode=ur2&camp=1789&creative=9325","type":"Comerce","language":"English"},
-{"language":"de-de","name":"Amazon DE","url":"http://www.amazon.de/gp/search?ie=UTF8&keywords=%s&tag=sisese0b-21&index=aps&linkCode=ur2&camp=1638&creative=6742","type":"Comerce","language":"English"},
-{"language":"es-es","name":"Amazon ES","url":"http://www.amazon.es/gp/search?ie=UTF8&keywords=%s&tag=sisese0c-21&index=aps&linkCode=ur2&camp=3626&creative=24790","type":"Comerce","language":"English"},
-{"language":"it","name":"Amazon IT","url":"http://www.amazon.it/gp/search?ie=UTF8&keywords=%s&tag=sisese07-21&index=aps&linkCode=ur2&camp=3370&creative=23322","type":"Comerce","language":"English"},
-{"language":"en-us","name":"Amazon Mp3","url":"http://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=digital-music&linkCode=ur2&camp=1789&creative=9325","type":"Comerce","language":"English"},
-{"language":"en-us","name":"Amazon Music","url":"http://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=music&linkCode=ur2&camp=1789&creative=9325","type":"Comerce","language":"English"},
-{"language":"en-gb","name":"Amazon UK","url":"http://www.amazon.co.uk/gp/search?ie=UTF8&keywords=%s&tag=sisese-21&index=aps&linkCode=ur2&camp=1634&creative=6738","type":"Comerce","language":"English"},
-{"language":"en-ca","name":"Amazon Canada","url":"http://www.amazon.ca/gp/search?ie=UTF8&camp=15121&creative=330641&index=aps&keywords=%s&linkCode=ur2&tag=sisese0b-20","type":"Comerce","language":"English"}
-];
-
-var config = initializeConfig(localStorage["config"], defaultConfig);
-
-function applyLocalization(tempConfig) {
-	var languageFound = false;
-	for (i in amazonSites){
-		if (window.navigator.language.toLowerCase()==amazonSites[i].language) { 
-			tempConfig.searchEngines.splice(tempConfig.searchEngines.length,0,JSON.parse('{"name": "'+ amazonSites[i].name +'", "url": "'+ amazonSites[i].url +'"}'));
-			languageFound = true;
-		}
-	}
-	if (!languageFound) {
-		tempConfig.searchEngines.splice(tempConfig.searchEngines.length,0,JSON.parse('{"name": "'+ amazonSites[0].name +'", "url": "'+ amazonSites[0].url +'"}'));
-		tempConfig.searchEngines.splice(tempConfig.searchEngines.length,0,JSON.parse('{"name": "'+ amazonSites[1].name +'", "url": "'+ amazonSites[1].url +'"}'));
-	}
-	return tempConfig;
+var _MENU_OPTIONS_MESSAGE =  " (minor updates)";// function generates the actual URL combining the selected text with the search engine config
+//
+// fixes stuff like & in search string
+// plus vs %20
+// replace %s with search string
+function createURL(idSE, info) {
+	var selectedText = encodeURIComponent(info.selectionText); 
+	if (config.searchEngines[idSE].plus) 
+		selectedText = selectedText.replace(/%20/g, "+"); 
+	return config.searchEngines[idSE].url.replace(/%s/g, selectedText).replace(/%S/g, selectedText); 
 }
 
-function initializeConfig(localConfig, defaultConfig) {
-	if (localConfig == undefined) {
-			//future me: load defaultConfig from website, dynamically
-				//see this, http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml
-				//but i guess it will be easier to just load a page with the JSON... except for performance
-				localConfig = applyLocalization(defaultConfig);
-			// insert code for localization for amazon here 
-			// window.navigator.language
-
-
-
-			localStorage["config"] = JSON.stringify(localConfig);
-
-		}
-		else {
-			localConfig = JSON.parse(localConfig);
-
-			//compares localConfig with defaultConfig
-			for (var key in defaultConfig) {
-				if (defaultConfig.hasOwnProperty(key)) {
-					if (localConfig[key] == undefined) {
-						console.log(key + " -> " + defaultConfig[key] + " ---> " + localConfig[key] );
-						localConfig[key] = defaultConfig[key];
-					}
-				}
-			}
-		};
-		return localConfig;
+// standard search function
+function genericSearch(info, tab, idSE) {
+	var urlSE = createURL(idSE, info);
+	if (config.searchEngines[idSE].incognito){
+		chrome.windows.create({"url": urlSE, "incognito": true});
 	}
-
-	function createURL(idSE, info){
-
-        var selectedText = encodeURIComponent(info.selectionText); //fixes stuff like & in search string
-        
-        if (config.searchEngines[idSE].plus) selectedText = selectedText.replace(/%20/g, "+"); //plus vs %20
-        
-		return config.searchEngines[idSE].url.replace(/%s/g, selectedText).replace(/%S/g, selectedText); // replace %s with search string
-
+	else if (config.newTab) { 
+		// ToDo: for "remember an update my created tabs" feature, here I'll store the ID of the created tab and then reuse it with an update. to store the ID of a created tab use a callback function on the tabs.create thing = function(Tab tab) {...};
+		searchOnNewTab(urlSE, tab);
 	}
+	else {
+		chrome.tabs.update(tab.id,{"url": urlSE});
+	};
+	trackGA(idSE);
+}
 
-	function genericSearch(info, tab, idSE) {
+// opens options.html
+function openOptions() {
+	chrome.tabs.create({"url": "options.html"});
+}
 
-		var urlSE = createURL(idSE, info);
+// Enables/disables Open in new tab
+function checkOnNewTab() {
+	config.newTab = !config.newTab;
+	localStorage["config"] = JSON.stringify(config);
+	// ToDo: do i need to save the whole object?
+}
 
-		if (config.searchEngines[idSE].incognito){
-			chrome.windows.create({"url": urlSE, "incognito": true});
-		}
-		else if (config.newTab) { 
-			//for "remember an update my created tabs" feature, here I'll store the ID of the created tab and then reuse it with an update. to store the ID of a created tab use a callback function on the tabs.create thing = function(Tab tab) {...};
-			searchOnNewTab(urlSE, tab);
-		}
-		else {
-			//Todo: Refactor this out of the else and use the newTab variable
-			chrome.tabs.update(tab.id,{"url": urlSE});
 
-		};
-		trackGA(idSE);
-
+// Search everywhere!
+function bulkSearch(info, tab) {
+	for (i = 0; i < config.searchEngines.length; ++i)
+	{
+		searchOnNewTab(createURL(i, info), tab);
+		// ToDo: if incognito open in incognito
+		trackGA(i);
 	}
+}
 
-	function openOptions() {
-		chrome.tabs.create({"url": "options.html"});
+// Open results in new tab
+function searchOnNewTab(urlSE, tab) {
+	var newTab = {"url": urlSE, openerTabId: tab.id};
+	if (config.newTabPosition == "First") {
+		newTab.index = 0;
 	}
-
-	function openBlog() {
-		chrome.tabs.create({"url": "http://simpleselectsearch.blogspot.com/"});
+	else if (config.newTabPosition == "Next") {
+		newTab.index = tab.index +1;
 	}
-
-	function checkboxOnClick() {
-		if (config.newTab) {
-			config.newTab=false;
-
-		}
-		else {
-			config.newTab=true;
-
-		};
-
-		localStorage["config"] = JSON.stringify(config);
-		// ToDo: do i need to save the whole object?
-
+	else if (config.newTabPosition == "Previous") {
+		newTab.index = tab.index;
 	}
-
-	function bulkSearch(info, tab) {
-		for (i = 0; i < config.searchEngines.length; ++i)
-		{
-
-			searchOnNewTab(createURL(i, info), tab);
-			trackGA(i);
-		}
-	}
-
-	function searchOnNewTab(urlSE, tab) {
-
-		var newTab = {"url": urlSE, openerTabId: tab.id};
-
-
-		if (config.newTabPosition == "First") {
-			newTab.index = 0;
-		}
-		else if (config.newTabPosition == "Next") {
-			newTab.index = tab.index +1;
-		}
-		else if (config.newTabPosition == "Previous") {
-			newTab.index = tab.index;
-		}
-		newTab.active = config.newTabSelected;
-		chrome.tabs.create(newTab);
-	}
+	newTab.active = config.newTabSelected;
+	chrome.tabs.create(newTab);
+}
 
 
 //Tracks google analytics
@@ -181,32 +94,22 @@ function createMenu () {
 	  	// separator
 	  	var child = 	chrome.contextMenus.create(  {"type": "separator", "parentId": id, "contexts":[context] });
 		// check new tab
-		var child =	chrome.contextMenus.create({"title": chrome.i18n.getMessage("bg_openOnNewTab"), "type": "checkbox", "checked": config.newTab, "parentId": id,  "contexts":[context], "onclick":checkboxOnClick});
+		var child =	chrome.contextMenus.create({"title": chrome.i18n.getMessage("bg_openOnNewTab"), "type": "checkbox", "checked": config.newTab, "parentId": id,  "contexts":[context], "onclick":checkOnNewTab});
 		// options
-		var child = 	chrome.contextMenus.create(  {"title": chrome.i18n.getMessage("bg_options"), "parentId": id, "contexts":[context], "onclick": openOptions });
-		//Blog
-		if (config.showBlog){
-			var child = 	chrome.contextMenus.create(  {"type": "separator", "parentId": id, "contexts":[context] });
-			var child = 	chrome.contextMenus.create(  {"title": chrome.i18n.getMessage("bg_extensionBlog"), "parentId": id, "contexts":[context], "onclick": openBlog });
-		}
+		var optionsText = chrome.i18n.getMessage("bg_options");
+		if (newOptionsSeen != currVersion)
+			optionsText += _MENU_OPTIONS_MESSAGE;
+		var child =	chrome.contextMenus.create(  {"title": optionsText, "parentId": id, "contexts":[context], "onclick": openOptions });
 	}
 	else
 	{
 		title = title + " ";
-
-
 		for (i = 0; i < config.searchEngines.length; ++i)
 		{
 			var id = chrome.contextMenus.create({"title": title + config.searchEngines[i].name, "contexts":[context], "onclick": function(idSE) { return function(info, tab) {genericSearch(info, tab, idSE) } }(i) });
 		}
-
-
 	}
-
 }
-
-// initialize menu
-createMenu ();
 
 // Google Analytics stuff
 
@@ -221,47 +124,7 @@ _gaq.push(['_trackPageview']);
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 
-/////// Access external feed to check for updates ///////
-/*
-// Ajax object
-function createAjaxObj(){
-	var httprequest=false;
-	httprequest=new XMLHttpRequest();
-	if (httprequest.overrideMimeType)
-		httprequest.overrideMimeType('text/xml');
-	return httprequest;
-}
-
-// Ajax read feed
-function ajaxReadFeed(){
-	ajaxinstance=createAjaxObj();
-	ajaxinstance.onreadystatechange=parseFeed;
-	ajaxinstance.open('GET', "https://www.repeatserver.com/Users/frenetix/news.xml", true);
-	ajaxinstance.send(null);
-}
-
-// Parse Ajax results
-function parseFeed(){
-	if (ajaxinstance.readyState == 4){ 
-		//if request of file completed
-		if (ajaxinstance.status==200){ 
-			//if request was successful
-			parser=new DOMParser();
-			xmlDoc=parser.parseFromString(ajaxinstance.responseText,"text/xml");
-			alert(xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue);
-		}
-	}
-}
-
-
-function dateDiff(date1,date2){
-	var timeDiff = Math.abs(date2.getTime() - date1.getTime());
-	var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
-	return diffDays;
-}
-*/
 //open Options if first time or updates happened
-
 function getVersion() {
 	var details = chrome.app.getDetails();
 	return details.version;
@@ -270,23 +133,17 @@ function getVersion() {
 // Check if the version has changed.
 var currVersion = getVersion();
 var prevVersion = localStorage['version'];
-/*var lastCheckDate = new Date(localStorage['lastCheckDate']);
-if (lastCheckDate == 'Invalid Date') 
-	lastCheckDate = new Date('9/12/2007');
-*/
-//var dateNow = new Date();
+var newOptionsSeen = localStorage['newOptionsSeen'];
 
-if (typeof prevVersion == 'undefined') {
-//	localStorage['lastCheckDate'] = dateNow;
-	chrome.tabs.create({"url": "options.html"});
+if (currVersion != prevVersion)
+	localStorage['version'] = currVersion;
 
+var config = {};
+if (typeof localStorage["config"] == 'undefined') {
+	openOptions();
 }
-/*else {
-	if(dateDiff(lastCheckDate,dateNow)>1){
-		ajaxReadFeed();
-		localStorage['lastCheckDate'] = dateNow;
-	}
-}*/
-
-localStorage['version'] = currVersion;
-
+else {
+	config = JSON.parse(localStorage["config"]);
+	// Initialize menu
+	createMenu ();
+}
