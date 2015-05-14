@@ -30,6 +30,12 @@ Check out my messy [Trello](https://trello.com/b/I1jBV5mD) to follow the latests
 ##### DEPLOYED VERSIONS #####
 
 :vs::zero::three::two:
+Live on Chrome store 05/14/2015
+- Performance fixes for options page
+- Code cleanup related to AngularJS (my lack of knowledge of it)
+- Updated localization files with new translations from 0.3.2
+
+:vs::zero::three::two:
 - AngularJS & Bootsrap for options.html
 - New design
 - Option to opening search results in incognito mode
