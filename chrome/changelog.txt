@@ -1,3 +1,7 @@
+New on v 0.3.4
+ - bug fixes
+ - code cleanup related to AngularJS (the lack of knowledge of :)
+ - updated localization files for existing languages
 New on v 0.3.2
  - AngularJS & Bootsrap for options.html
  - New design
