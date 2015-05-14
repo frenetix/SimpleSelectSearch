@@ -15,7 +15,7 @@
 			</div>
 		</div>
 
-		<div ng-repeat="se in localConfig.searchEngines"   ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-class="{'danger': se.name == null}" data-as-sortable-item class="row div-table">
+		<div ng-repeat="se in localConfig.searchEngines"   ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-class="{'danger': se.name == null}" data-as-sortable-item class="row div-table" ng-animate="'animate'">
 			<div class="col-md-1 glyphicon glyphicon-menu-hamburger text-center" data-as-sortable-item-handle>
 
 			</div>
@@ -75,7 +75,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr ng-repeat="x in featuredURLs | orderBy:sortType:sortReverse" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+		<tr ng-repeat="x in featuredURLs | orderBy:sortType:sortReverse" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" >
 			<td><div>{{x.name}}</div></td>
 			<td><div ng-bind-html="x.url | highlight:'%s'"></div></td>
 			<td><div>{{x.type}}</div></td>

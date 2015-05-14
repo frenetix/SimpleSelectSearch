@@ -1,4 +1,4 @@
-New on v 0.2
+New on v 0.3.2
  - AngularJS & Bootsrap for options.html
  - New design
  - New "incognito" feature for each search engine

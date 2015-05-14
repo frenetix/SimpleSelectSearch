@@ -1,9 +1,9 @@
-angular.module('sss').controller('sssData', ['$scope', '$sce', 'bgPage', 
-	function($scope, $sce, bgPage) {
+angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService', 
+	function($scope, $sce ,sssService) {
 
-		$scope.localConfig = bgPage.bg.config; // JSON: User's config. Core.
-		$scope.featuredURLs = mydata; // List of featured URLs. ToDo: Review scope issues
-		$scope.currentVersion = "Version: " + bgPage.bg.currVersion;  // String of current version displayed in SideNav. ToDo:refactor name in bg
+		$scope.localConfig = sssService.bg.config; // JSON: User's config. Core.
+		$scope.featuredURLs = sssService.featuredSearchEngines; // List of featured URLs.
+		$scope.currentVersion = "Version: " + sssService.bg.currVersion;  // String of current version displayed in SideNav. ToDo:refactor name in bg
 		$scope.editRow = null; // index used to show INPUT in SearchEngine Table 
 		$scope.isDirty = false; // prevents adding multiple null rows
 		$scope.backup = null; // used as restore point for import-export.
@@ -13,8 +13,8 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'bgPage',
 		//  Watcher: persists data.
 		$scope.$watch('localConfig', function() {
 			//ToDo: the following refactors witht the same as importConfig() & undoLastImport()
-			localStorage["config"] = JSON.stringify(bgPage.bg.config);
-			bgPage.bg.createMenu ();
+			localStorage["config"] = JSON.stringify(sssService.bg.config);
+			sssService.bg.createMenu ();
 			$scope.checkIsDirty();
 			$scope.import = localStorage["config"];
 		}, true);
@@ -70,7 +70,7 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'bgPage',
 		// Delete Search engine from list. 
 		// ToDo: do I need to show a confirm message?
 		$scope.deleteSearchEngine = function (index) {
-			bgPage.bg.config.searchEngines.splice(index,1);
+			sssService.bg.config.searchEngines.splice(index,1);
 			$scope.editRow = null;
 		};
 
@@ -92,18 +92,18 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'bgPage',
 	 	// Reset default options
 	 	$scope.restoreDefaultOptions = function () {
 
-	 		bgPage.bg._gaq.push(['_trackEvent', 'Options', 'Reset defaults', 'Reset defaults']);
+	 		sssService.bg._gaq.push(['_trackEvent', 'Options', 'Reset defaults', 'Reset defaults']);
 
 	 		//ToDo: Try/catch goes here.
 	 		$scope.backup = $scope.localConfig;
-	 		bgPage.bg.config = bgPage.defaultConfig;
+	 		sssService.bg.config = sssService.defaultConfig;
 
 	 		//ToDo: the following refactors witht the same as $scope.watch and undoLastImport
 
-	 		localStorage["config"] = JSON.stringify(bgPage.bg.config);
-	 		bgPage.bg.createMenu ();
+	 		localStorage["config"] = JSON.stringify(sssService.bg.config);
+	 		sssService.bg.createMenu ();
 	 		$scope.checkIsDirty();
-	 		$scope.localConfig = bgPage.bg.config;
+	 		$scope.localConfig = sssService.bg.config;
 	 		$scope.editRow = null; 
 	 		$scope.addAlert("o_resetDefaultSuccess", "success");
 	 		$scope.template = "options/searchEngines.html";
@@ -114,17 +114,17 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'bgPage',
 	 	//Import JSON config
 	 	$scope.importConfig = function () {
 
-	 		bgPage.bg._gaq.push(['_trackEvent', 'Options', 'Import Config', 'Import Config']);
+	 		sssService.bg._gaq.push(['_trackEvent', 'Options', 'Import Config', 'Import Config']);
 
  			//ToDo: Try/catch goes here.
  			$scope.backup = $scope.localConfig;
- 			bgPage.bg.config = JSON.parse($scope.import);
+ 			sssService.bg.config = JSON.parse($scope.import);
 
  			//ToDo: the following refactors witht the same as $scope.watch and undoLastImport
- 			localStorage["config"] = JSON.stringify(bgPage.bg.config);
- 			bgPage.bg.createMenu ();
+ 			localStorage["config"] = JSON.stringify(sssService.bg.config);
+ 			sssService.bg.createMenu ();
  			$scope.checkIsDirty();
- 			$scope.localConfig = bgPage.bg.config;
+ 			$scope.localConfig = sssService.bg.config;
  			$scope.editRow = null; 
  			$scope.addAlert("o_importSuccesfull", "success");
  			$scope.template = "options/searchEngines.html";
@@ -133,19 +133,19 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'bgPage',
 
 	 	//Undo last import 
 	 	$scope.undoLastImport = function () {
-	 		bgPage.bg._gaq.push(['_trackEvent', 'Options', 'Undo Import', 'Undo Import']);
+	 		sssService.bg._gaq.push(['_trackEvent', 'Options', 'Undo Import', 'Undo Import']);
 
 			//ToDo: implement Try/Catch here
-			bgPage.bg.config = $scope.backup;
+			sssService.bg.config = $scope.backup;
 			$scope.backup = null;
 			$scope.addAlert("o_restoreSuccesfull", "success");
 
 			//ToDo: the following refactors witht the same as $scope.watch and importConfig()
 
-			localStorage["config"] = JSON.stringify(bgPage.bg.config);
-			bgPage.bg.createMenu ();
+			localStorage["config"] = JSON.stringify(sssService.bg.config);
+			sssService.bg.createMenu ();
 			$scope.checkIsDirty();
-			$scope.localConfig = bgPage.bg.config;
+			$scope.localConfig = sssService.bg.config;
 			$scope.editRow = null; 
 			$scope.template = "options/searchEngines.html";
 		};
@@ -180,9 +180,3 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'bgPage',
 			yesAction();
 		}
 	}])
-
-	/*.controller('sssAlerts', ['$scope', 
-		function($scope) {
-
-		}])
-	*/

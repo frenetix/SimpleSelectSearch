@@ -116,7 +116,7 @@
     "description":""
   },
   "o_featuredSearchEngnesDesc":{
-    "message":" Haz doble click en una URL para incluirla en tu lista de Motores de Búsqueda.",
+    "message":"Haz click en una dirección URL para incluirla en la lista de los motores de búsqueda.",
     "description":""
   },
   "o_groupBy":{
@@ -191,14 +191,6 @@
     "message":"Anterior",
     "description":""
   },
-  "o_showThePleaseCheckOut":{
-    "message":"Deja el link de \"Por favor, visita mi blog!\" visible :).",
-    "description":""
-  },
-  "o_hideThisLink":{
-    "message":"Oculta este link sólo si verlo daña tu retina!... <i>Cada vez que alguien oculta este link, <a href=\"http:\/\/2.bp.blogspot.com\/-6FkW_onHQ1Y\/TgNUqC5LD1I\/AAAAAAAABCs\/drzXBGoksys\/s640\/Kitten-Running.jpg\" target=\"_blank\">muere un gatito<\/a><\/i> :o(.",
-    "description":""
-  },
   "o_trackSearchEngines":{
     "message":" Envía información estadística sobre motores de búsqueda.",
     "description":""
@@ -236,7 +228,39 @@
     "description":""
   },
   "o_checkOutMyBlog":{
-    "message":"Más info en mi <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a>.",
+    "message":"Visita mi blog para más información.",
+    "description":""
+  },
+  "o_sort":{
+    "message":"Ordenar",
+    "description":""
+  },
+  "o_incognito":{
+    "message":"Incognito",
+    "description":""
+  },
+  "o_resetDefaultSuccess":{
+    "message":"Ahora tienes opciones por defecto :)",
+    "description":""
+  },
+  "o_areYouSure":{
+    "message":"¿Estás seguro?",
+    "description":""
+  },
+  "o_helpMeTranslate":{
+    "message":"Ayúdame a traducir!",
+    "description":""
+  },
+  "o_GitHubContributors":{
+    "message":"Súper colaboradores de <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'> GitHub<\/a>",
+    "description":""
+  },
+  "o_CrowdinContributors":{
+    "message":"Increíbles colaboradores de <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'> Crowdin<\/a> (traductores)",
+    "description":""
+  },
+  "o_plusExplain":{
+    "message":"Más vs. espacio: Algunos motores de búsqueda utilizan ' +' en lugar de un espacio para separar palabras que estás buscando.",
     "description":""
   }
 }

@@ -196,6 +196,16 @@ body {
 
 }
 
+.searchEngines .ng-enter, .searchEngines  .ng-leave {
+ transition: 0.4s linear all !important;
+}
+.searchEngines .ng-enter {
+  opacity:1;
+}
+.searchEngines .ng-leave {
+  opacity:0;
+}
+
 .danger {background-color: #fee;}
 
 .light {color: #f0f0f0;}

@@ -116,7 +116,7 @@
     "description":""
   },
   "o_featuredSearchEngnesDesc":{
-    "message":" Double click on a URL to include it in your Search Engines' list.",
+    "message":"Click on a URL to include it in your Search Engines' list.",
     "description":""
   },
   "o_groupBy":{
@@ -191,14 +191,6 @@
     "message":"Anterior",
     "description":""
   },
-  "o_showThePleaseCheckOut":{
-    "message":"Show the \"Please, Check out my blog!\" link :).",
-    "description":""
-  },
-  "o_hideThisLink":{
-    "message":"Hide this link only if it really hurts your eyes!... <i>every time someone hides this link, <a href=\"http:\/\/2.bp.blogspot.com\/-6FkW_onHQ1Y\/TgNUqC5LD1I\/AAAAAAAABCs\/drzXBGoksys\/s640\/Kitten-Running.jpg\" target=\"_blank\">a kitten dies<\/a><\/i> :o(.",
-    "description":""
-  },
   "o_trackSearchEngines":{
     "message":" Seguiment de l'ús dels motors de cerca.",
     "description":""
@@ -212,7 +204,7 @@
     "description":""
   },
   "o_developedBy":{
-    "message":"   Developed by <a href=\"https:\/\/plus.google.com\/u\/0\/100927641416387074874\/about\" target=\"_blank\">Diego Presno<\/a>. Follow me on tweeter <a href=\"http:\/\/twitter.com\/#!\/frenetix_\" target=\"_blank\">@frenetix_<\/a>  <br \/>  All images\/icons designed by <a href=\"http:\/\/germanrivas.com\/\" target=\"_blank\">germanrivas.com<\/a>.<br\/><br \/>  <h2>Disclaimer<\/h2>  Please, be warned: the usage of this extension is being tracked by Google Analytics.  It also tracks which search engines are the most used by users, so I can then be able to add them to the featured Search Engines list.<br\/>  The extension does not track the identity of its user, nor what terms they're looking for.  Only the search URL syntax is being recorded.<br\/>  No individual information will be shared with third parties. The only information published will be about the most used sites. An example of the published information can be found on my <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a>.",
+    "message":"   Developed by <a href=\"https:\/\/plus.google.com\/u\/0\/100927641416387074874\/about\" target=\"_blank\">Diego Presno<\/a>. Follow me on Twitter <a href=\"http:\/\/twitter.com\/#!\/frenetix_\" target=\"_blank\">@frenetix_<\/a>  <br \/>  All images\/icons designed by <a href=\"http:\/\/germanrivas.com\/\" target=\"_blank\">germanrivas.com<\/a>.<br\/><br \/>  <h2>Disclaimer<\/h2>  Please, be warned: the usage of this extension is being tracked by Google Analytics.  It also tracks which search engines are the most used by users, so I can then be able to add them to the featured Search Engines list.<br\/>  The extension does not track the identity of its user, nor what terms they're looking for.  Only the search URL syntax is being recorded.<br\/>  No individual information will be shared with third parties. The only information published will be about the most used sites. An example of the published information can be found on my <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a>.",
     "description":""
   },
   "o_searchEngines":{
@@ -236,7 +228,39 @@
     "description":""
   },
   "o_checkOutMyBlog":{
-    "message":"Check out my <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a> for more. <br\/> <br\/> <a href=\"http:\/\/simpleselectsearch.blogspot.com\/2012\/11\/help-me-translate.html\">Help me translate!<\/a>",
+    "message":"Check out my blog for more.",
+    "description":""
+  },
+  "o_sort":{
+    "message":"Sort",
+    "description":""
+  },
+  "o_incognito":{
+    "message":"Incognito",
+    "description":""
+  },
+  "o_resetDefaultSuccess":{
+    "message":"You now have default settings :)",
+    "description":""
+  },
+  "o_areYouSure":{
+    "message":"Are you sure?",
+    "description":""
+  },
+  "o_helpMeTranslate":{
+    "message":"Help me translate!",
+    "description":""
+  },
+  "o_GitHubContributors":{
+    "message":"Super awesome <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'>GitHub<\/a> contributors",
+    "description":""
+  },
+  "o_CrowdinContributors":{
+    "message":"Super awesome <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'>Crowdin<\/a> contributors (translators)",
+    "description":""
+  },
+  "o_plusExplain":{
+    "message":"Plus versus space: some search engines use '+' instead of a space to separate words you're looking for.",
     "description":""
   }
 }

@@ -116,7 +116,7 @@
     "description":""
   },
   "o_featuredSearchEngnesDesc":{
-    "message":"Kliknij dwa razy na URL, aby dołączyć go do listy Twoich Wyszukiwarek",
+    "message":"Kliknij na URL, aby dodać go do swojej listy wyszukiwarek.",
     "description":""
   },
   "o_groupBy":{
@@ -191,14 +191,6 @@
     "message":"Poprzednia",
     "description":""
   },
-  "o_showThePleaseCheckOut":{
-    "message":"Pokazuj link \"Proszę, sprawdź mojego bloga\" :)",
-    "description":""
-  },
-  "o_hideThisLink":{
-    "message":"Ukryj ten link tylko jeśli mocno bije Ci po oczach!... <i>za każdym razem, gdy ktoś go chowa, <a href=\"http:\/\/2.bp.blogspot.com\/-6FkW_onHQ1Y\/TgNUqC5LD1I\/AAAAAAAABCs\/drzXBGoksys\/s640\/Kitten-Running.jpg\" target=\"_blank\">umiera kotek<\/a><\/i> :o(.",
-    "description":""
-  },
   "o_trackSearchEngines":{
     "message":"Śledzenie używanych wyszukiwarek",
     "description":""
@@ -236,7 +228,39 @@
     "description":""
   },
   "o_checkOutMyBlog":{
-    "message":"Sprawdź mojego <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">bloga<\/a>, by dowiedzieć się więcej. <br\/> <br\/> <a href=\"http:\/\/simpleselectsearch.blogspot.com\/2012\/11\/help-me-translate.html\">Pomóż mi w przetłumaczeniu rozszerzenia!<\/a>",
+    "message":"Odwiedź mojego bloga by dowiedzieć się więcej.",
+    "description":""
+  },
+  "o_sort":{
+    "message":"Sortowanie",
+    "description":""
+  },
+  "o_incognito":{
+    "message":"Incognito",
+    "description":""
+  },
+  "o_resetDefaultSuccess":{
+    "message":"Masz teraz domyślne ustawienia :)",
+    "description":""
+  },
+  "o_areYouSure":{
+    "message":"Na pewno tego chcesz?",
+    "description":""
+  },
+  "o_helpMeTranslate":{
+    "message":"Pomóż mi w tłumaczeniu!",
+    "description":""
+  },
+  "o_GitHubContributors":{
+    "message":"Super fantastyczni <a href='https:\/\/github.com\/frenetix\/SimpleSelectSeach' target='_blank'>GitHub<\/a> współpracownicy",
+    "description":""
+  },
+  "o_CrowdinContributors":{
+    "message":"Super fantastyczni <a href='https:\/\/crowdin\/com\/projects\/simpleselectsearch' target='_blank'>Crowdin<\/a> tłumacze",
+    "description":""
+  },
+  "o_plusExplain":{
+    "message":"Plus kontra spacja: niektóre wyszukiwarki używają znaku '+' zamiast spacji, by oddzielać od siebie słowa, których szukasz.",
     "description":""
   }
 }

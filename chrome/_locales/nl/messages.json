@@ -116,7 +116,7 @@
     "description":""
   },
   "o_featuredSearchEngnesDesc":{
-    "message":" Dubbelklik op een URL om deze toe te voegen aan Uw Zoekmachine lijst.",
+    "message":"Click on a URL to include it in your Search Engines' list.",
     "description":""
   },
   "o_groupBy":{
@@ -191,14 +191,6 @@
     "message":"Vorige",
     "description":""
   },
-  "o_showThePleaseCheckOut":{
-    "message":"Toon de \"Alstublieft, bekijk mijn blog!\" koppeling :).",
-    "description":""
-  },
-  "o_hideThisLink":{
-    "message":"Verberg deze link alleen als het echt pijn aan je ogen doet!... <i>elke keer dat iemand deze link verbergt, <a href=\"http:\/\/2.bp.blogspot.com\/-6FkW_onHQ1Y\/TgNUqC5LD1I\/AAAAAAAABCs\/drzXBGoksys\/s640\/Kitten-Running.jpg\" target=\"_blank\">sterft er ergens een klein poesje<\/a> :o(.",
-    "description":""
-  },
   "o_trackSearchEngines":{
     "message":" Volg zoekmachines gebruik.",
     "description":""
@@ -236,7 +228,39 @@
     "description":""
   },
   "o_checkOutMyBlog":{
-    "message":"Bekijk mijn <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a> voor meer. <br\/> <br\/> <a href=\"http:\/\/simpleselectsearch.blogspot.com\/2012\/11\/help-me-translate.html\">Help met vertalen!<\/a>",
+    "message":"Check out my blog for more.",
+    "description":""
+  },
+  "o_sort":{
+    "message":"Sort",
+    "description":""
+  },
+  "o_incognito":{
+    "message":"Incognito",
+    "description":""
+  },
+  "o_resetDefaultSuccess":{
+    "message":"You now have default settings :)",
+    "description":""
+  },
+  "o_areYouSure":{
+    "message":"Are you sure?",
+    "description":""
+  },
+  "o_helpMeTranslate":{
+    "message":"Help me translate!",
+    "description":""
+  },
+  "o_GitHubContributors":{
+    "message":"Super awesome <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'>GitHub<\/a> contributors",
+    "description":""
+  },
+  "o_CrowdinContributors":{
+    "message":"Super awesome <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'>Crowdin<\/a> contributors (translators)",
+    "description":""
+  },
+  "o_plusExplain":{
+    "message":"Plus versus space: some search engines use '+' instead of a space to separate words you're looking for.",
     "description":""
   }
 }
