@@ -193,7 +193,6 @@ body {
 .searchEngines .row:hover {
   background-color:#f9f9f9;
   transition: background-color 500ms linear;
-
 }
 
 .searchEngines .ng-enter, .searchEngines  .ng-leave {
@@ -204,6 +203,9 @@ body {
 }
 .searchEngines .ng-leave {
   opacity:0;
+}
+.supportEmptyString {
+  min-height:27px;
 }
 
 .danger {background-color: #fee;}

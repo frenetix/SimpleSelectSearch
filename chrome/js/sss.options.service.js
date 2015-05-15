@@ -21,16 +21,6 @@ angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize', 'ui.bootstrap', '
 		return service.bg.i18n(key);
 	}
 
-	service.bg = chrome.extension.getBackgroundPage();
-
-	if (typeof localStorage["config"] == "undefined") {
-		service.bg.config = applyLocalization(service.defaultConfig);
-		localStorage["config"] = JSON.stringify(service.bg.config);
-		service.bg.createMenu();
-	}
-
-	localStorage['newOptionsSeen'] = service.bg.currVersion; 
-
 	service.defaultConfig = {
 		"newTab":true,
 		"newTabSelected":true,
@@ -121,4 +111,15 @@ angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize', 'ui.bootstrap', '
 	{"name":"DramaWiki","url":"http://wiki.d-addicts.com/index.php?title=Special:Search&search=%s","type":"Knowledge","language":"English"},
 	{"name":"AsianMediaWiki","url":"http://asianwiki.com/index.php?title=Special%3ASearch&search=%s&go=Go","type":"Movies","language":"English"}
 	];
+
+	service.bg = chrome.extension.getBackgroundPage();
+
+	if (typeof localStorage["config"] == "undefined") {
+		service.bg.config = applyLocalization(service.defaultConfig);
+		localStorage["config"] = JSON.stringify(service.bg.config);
+		service.bg.createMenu();
+	}
+
+	localStorage['newOptionsSeen'] = service.bg.currVersion; 
+
 })

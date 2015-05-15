@@ -1,4 +1,6 @@
-var _MENU_OPTIONS_MESSAGE =  " (minor updates)";// function generates the actual URL combining the selected text with the search engine config
+var _MENU_OPTIONS_MESSAGE =  " (minor updates)";
+var _CONTEXT = "selection";
+// function generates the actual URL combining the selected text with the search engine config
 //
 // fixes stuff like & in search string
 // plus vs %20
@@ -78,31 +80,52 @@ function trackGA(idSE) {
 
 // Create menu items
 function createMenu () {
-	chrome.contextMenus.removeAll();
-	var context = "selection";
-	var title = i18n("bg_searchStringOn");
-	if (config.searchEngines.length > 1){
-		var id = chrome.contextMenus.create({"title": title, "contexts":[context], "onclick": function(idSE) { return function(info, tab) {genericSearch(info, tab, idSE) } }(0)});
+	chrome.contextMenus.removeAll(); // reset menu
+	var title = i18n("bg_searchStringOn"); // title for SSS menu
+
+	// check if there's more than one link, else show on root
+	if (config.searchEngines.length > 1){ 
+		
+		var id = chrome.contextMenus.create({"title": title, "contexts":[_CONTEXT], "onclick": function(idSE) { return function(info, tab) {genericSearch(info, tab, idSE) } }(0)});
+
+		var nestGroups = !allEmptyGroups();
+
+	if (nestGroups){
+			var flags = [], l = config.searchEngines.length, i;
+			for( i=0; i<l; i++) {
+				if( flags[config.searchEngines[i].group]) 
+					continue;
+				flags[config.searchEngines[i].group] = true;
+				if(!isEmptyOrNull(config.searchEngines[i].group))
+					var child = chrome.contextMenus.create({"title": config.searchEngines[i].group, "parentId": id, "id": config.searchEngines[i].group, "contexts":[_CONTEXT], "onclick": function(idSE) { return function(info, tab) {genericSearch(info, tab, idSE) } }(0)});
+			}
+		}
+
 		for (i = 0; i < config.searchEngines.length; ++i)
 		{
-			var child = 	chrome.contextMenus.create(  {"title": config.searchEngines[i].name + ((config.searchEngines[i].incognito) ? " (i)" : ""), "parentId": id, "contexts":[context], "onclick": function(idSE) { return function(info, tab) {genericSearch(info, tab, idSE) } }(i)});
+			var child = 	chrome.contextMenus.create(  {"title": config.searchEngines[i].name + ((config.searchEngines[i].incognito) ? " (i)" : ""), "parentId": nestGroups && config.searchEngines[i].group ? config.searchEngines[i].group : id, "contexts":[_CONTEXT], "onclick": function(idSE) { return function(info, tab) {genericSearch(info, tab, idSE) } }(i)});
 		}
+
 		// separator
-		createMenuSeparator(id, context);
-		//search on all
-		var child = 	chrome.contextMenus.create(  {"title": i18n("bg_searchEverywhere"), "parentId": id, "contexts":[context], "onclick": bulkSearch });
+		createMenuSeparator(id, _CONTEXT);
+
+		//search everywhere
+		createMenuChild(i18n("bg_searchEverywhere"), id, bulkSearch);
+
 	  	// separator
-	  	createMenuSeparator(id, context);
+	  	createMenuSeparator(id, _CONTEXT);
+
 		// check new tab
-		var child =	chrome.contextMenus.create({"title": i18n("bg_openOnNewTab"), "type": "checkbox", "checked": config.newTab, "parentId": id,  "contexts":[context], "onclick":checkOnNewTab});
+		createMenuChild(i18n("bg_openOnNewTab"), id, checkOnNewTab, config.newTab)
+
 		// options
 		var optionsText = i18n("bg_options");
 		if (newOptionsSeen != currVersion)
 			optionsText += _MENU_OPTIONS_MESSAGE;
-		var child =	chrome.contextMenus.create(  {"title": optionsText, "parentId": id, "contexts":[context], "onclick": openOptions });
+
+		createMenuChild(optionsText, id, openOptions);
 	}
-	else
-	{
+	else {
 		title = title + " ";
 		for (i = 0; i < config.searchEngines.length; ++i)
 		{
@@ -111,12 +134,25 @@ function createMenu () {
 	}
 }
 
-function createMenuSeparator(id, context) {
-	var child = 	chrome.contextMenus.create(  {"type": "separator", "parentId": id, "contexts":[context] });
+// Menu helpers
 
+function createMenuSeparator(id, context) {
+	var id = chrome.contextMenus.create(  {"type": "separator", "parentId": id, "contexts":[context] });
 }
-function i18n("key"){
-	chrome.i18n.getMessage("key");
+
+function createMenuChild(title, id, onclick, checked){
+	if (typeof checked == "undefined") {
+		var id = chrome.contextMenus.create(  {"title": title, "parentId": id,  "contexts":[_CONTEXT], "onclick": onclick });
+	}
+	else {
+		var id =	chrome.contextMenus.create({"title": title, "parentId": id, "type": "checkbox", "checked": checked,  "contexts":[_CONTEXT], "onclick":onclick});
+	}
+}
+
+
+
+function i18n(key){
+	return chrome.i18n.getMessage(key);
 }
 // Google Analytics stuff
 
@@ -160,4 +196,13 @@ function allEmptyGroups() {
 		if(config.searchEngines[i].group !== "none") return false;
 	}
 	return true;
+}
+
+function isEmptyOrNull(val) {
+	if (typeof val == "undefined")
+		return true;
+	if (!val)
+		return true;
+	if (val.trim() === "")
+		return true;
 }

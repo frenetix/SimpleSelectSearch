@@ -28,10 +28,9 @@
 				<input type="text" ng-model="se.url" ng-show="editRow==$index" class="form-control" placeholder="Engine URL (remember to use %s)" />
 				<span ng-hide="editRow==$index" ng-bind-html="se.url | highlight:'%s'"></span>
 			</div>
-			<div class="col-md-1" ng-click="setEdit($index)" ng-blur="setEdit(-1)">
-			<input ng-model="se.group"/>
-				<select ng-model="se.group" ng-options="seGroup.group for seGroup in localConfig.searchEngines | unique:'group'" ng-show="editRow==$index" class="form-control" placeholder="Menu Group" ></select>
-				<span ng-hide="editRow==$index">{{se.group}}</span>
+			<div class="col-md-1 supportEmptyString" ng-click="setEdit($index)" ng-blur="setEdit(-1)">
+				<input ng-model="se.group" ng-show="editRow==$index" class="form-control" placeholder="Menu Group"/> 
+				<span ng-hide="editRow==$index" >{{se.group}}</span>
 			</div>
 			<div class="col-md-1 text-center" ng-click="se.plus = !se.plus">
 				<span ng-class="{ 'light': !se.plus}" class="glyphicon glyphicon-plus"></span>
