@@ -80,7 +80,7 @@ function trackGA(idSE) {
 function createMenu () {
 	chrome.contextMenus.removeAll();
 	var context = "selection";
-	var title = chrome.i18n.getMessage("bg_searchStringOn");
+	var title = i18n("bg_searchStringOn");
 	if (config.searchEngines.length > 1){
 		var id = chrome.contextMenus.create({"title": title, "contexts":[context], "onclick": function(idSE) { return function(info, tab) {genericSearch(info, tab, idSE) } }(0)});
 		for (i = 0; i < config.searchEngines.length; ++i)
@@ -88,15 +88,15 @@ function createMenu () {
 			var child = 	chrome.contextMenus.create(  {"title": config.searchEngines[i].name + ((config.searchEngines[i].incognito) ? " (i)" : ""), "parentId": id, "contexts":[context], "onclick": function(idSE) { return function(info, tab) {genericSearch(info, tab, idSE) } }(i)});
 		}
 		// separator
-		var child = 	chrome.contextMenus.create(  {"type": "separator", "parentId": id, "contexts":[context] });
+		createMenuSeparator(id, context);
 		//search on all
-		var child = 	chrome.contextMenus.create(  {"title": chrome.i18n.getMessage("bg_searchEverywhere"), "parentId": id, "contexts":[context], "onclick": bulkSearch });
+		var child = 	chrome.contextMenus.create(  {"title": i18n("bg_searchEverywhere"), "parentId": id, "contexts":[context], "onclick": bulkSearch });
 	  	// separator
-	  	var child = 	chrome.contextMenus.create(  {"type": "separator", "parentId": id, "contexts":[context] });
+	  	createMenuSeparator(id, context);
 		// check new tab
-		var child =	chrome.contextMenus.create({"title": chrome.i18n.getMessage("bg_openOnNewTab"), "type": "checkbox", "checked": config.newTab, "parentId": id,  "contexts":[context], "onclick":checkOnNewTab});
+		var child =	chrome.contextMenus.create({"title": i18n("bg_openOnNewTab"), "type": "checkbox", "checked": config.newTab, "parentId": id,  "contexts":[context], "onclick":checkOnNewTab});
 		// options
-		var optionsText = chrome.i18n.getMessage("bg_options");
+		var optionsText = i18n("bg_options");
 		if (newOptionsSeen != currVersion)
 			optionsText += _MENU_OPTIONS_MESSAGE;
 		var child =	chrome.contextMenus.create(  {"title": optionsText, "parentId": id, "contexts":[context], "onclick": openOptions });
@@ -111,6 +111,13 @@ function createMenu () {
 	}
 }
 
+function createMenuSeparator(id, context) {
+	var child = 	chrome.contextMenus.create(  {"type": "separator", "parentId": id, "contexts":[context] });
+
+}
+function i18n("key"){
+	chrome.i18n.getMessage("key");
+}
 // Google Analytics stuff
 
 var _gaq = _gaq || [];
@@ -146,4 +153,11 @@ else {
 	config = JSON.parse(localStorage["config"]);
 	// Initialize menu
 	createMenu ();
+}
+
+function allEmptyGroups() {
+	for(var i=0; i<config.searchEngines.length; i++) {
+		if(config.searchEngines[i].group !== "none") return false;
+	}
+	return true;
 }

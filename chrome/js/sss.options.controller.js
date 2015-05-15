@@ -153,7 +153,7 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
 		$scope.addAlert = function(msg, msgType) {
 			if (typeof msgType == "undefined")
 				msgType = "danger";
-			$scope.alerts.push({type: msgType, msg: sssService.i18nTranslate(msg)});
+			$scope.alerts.push({type: msgType, msg: sssService.i18n(msg)});
 		};
 
 		$scope.closeAlert = function(index) {
@@ -166,7 +166,7 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
 
 		$scope.addConfirm = function(msg, yesAction){
 			$scope.alerts = [];
-			$scope.confirms.push({msg: sssService.i18nTranslate(msg), action: yesAction});
+			$scope.confirms.push({msg: sssService.i18n(msg), action: yesAction});
 			$scope.test = "confirm";
 		}
 

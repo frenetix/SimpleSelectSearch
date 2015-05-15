@@ -17,8 +17,8 @@ angular.module('sss', ['ngAnimate','ui.sortable','ngSanitize', 'ui.bootstrap', '
 		return tempConfig;
 	}
 
-	service.i18nTranslate = function (key) {
-		return chrome.i18n.getMessage(key);
+	service.i18n = function (key) {
+		return service.bg.i18n(key);
 	}
 
 	service.bg = chrome.extension.getBackgroundPage();

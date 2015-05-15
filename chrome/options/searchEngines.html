@@ -6,8 +6,9 @@
 
 		<div class="row header">
 			<div class="col-md-1 text-center"><span i18n-content="o_sort">Sort</span></div>
-			<div class="col-md-2"><span i18n-content="o_name">Name</span></div>
+			<div class="col-md-1"><span i18n-content="o_name">Name</span></div>
 			<div class="col-md-6"><span i18n-content="o_searchURL">Search URL</span></div>
+			<div class="col-md-1"><span >Group</span></div>
 			<div class="col-md-1 text-center"  tooltip="{{ i18nTranslate('o_plusExplain') }}" tooltip-class="customClass">+ vs _</div>
 			<div class="col-md-1 text-center" i18n-content="o_incognito">Incognito</div>
 			<div class="col-md-1 text-center">
@@ -19,13 +20,18 @@
 			<div class="col-md-1 glyphicon glyphicon-menu-hamburger text-center" data-as-sortable-item-handle>
 
 			</div>
-			<div class="col-md-2" ng-click="setEdit($index)" ng-blur="setEdit(-1)">
+			<div class="col-md-1" ng-click="setEdit($index)" ng-blur="setEdit(-1)">
 				<input type="text" ng-model="se.name" ng-show="editRow==$index" class="form-control" placeholder="Engine name" />
 				<span ng-hide="editRow==$index">{{se.name}}</span>
 			</div>
 			<div class="col-md-6" ng-click="setEdit($index)"> 
 				<input type="text" ng-model="se.url" ng-show="editRow==$index" class="form-control" placeholder="Engine URL (remember to use %s)" />
 				<span ng-hide="editRow==$index" ng-bind-html="se.url | highlight:'%s'"></span>
+			</div>
+			<div class="col-md-1" ng-click="setEdit($index)" ng-blur="setEdit(-1)">
+			<input ng-model="se.group"/>
+				<select ng-model="se.group" ng-options="seGroup.group for seGroup in localConfig.searchEngines | unique:'group'" ng-show="editRow==$index" class="form-control" placeholder="Menu Group" ></select>
+				<span ng-hide="editRow==$index">{{se.group}}</span>
 			</div>
 			<div class="col-md-1 text-center" ng-click="se.plus = !se.plus">
 				<span ng-class="{ 'light': !se.plus}" class="glyphicon glyphicon-plus"></span>
