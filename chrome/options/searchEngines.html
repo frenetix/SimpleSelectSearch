@@ -8,7 +8,7 @@
 			<div class="col-md-1 text-center"><span i18n-content="o_sort">Sort</span></div>
 			<div class="col-md-1"><span i18n-content="o_name">Name</span></div>
 			<div class="col-md-6"><span i18n-content="o_searchURL">Search URL</span></div>
-			<div class="col-md-1"><span >Group</span></div>
+			<div class="col-md-1"><span i18n-content="o_group">Group</span></div>
 			<div class="col-md-1 text-center"  tooltip="{{ i18nTranslate('o_plusExplain') }}" tooltip-class="customClass">+ vs _</div>
 			<div class="col-md-1 text-center" i18n-content="o_incognito">Incognito</div>
 			<div class="col-md-1 text-center">
@@ -63,8 +63,8 @@
 				<span ng-show="sortType == 'name' && !sortReverse" class="sorter-icon glyphicon glyphicon-menu-down"></span>
 				<span ng-show="sortType == 'name' && sortReverse" class="sorter-icon glyphicon glyphicon-menu-up"></span>
 			</th>
-			<th class="col-md-7" i18n-content="o_searchURL">Search URL
-			</th>
+		<!-- 	<th class="col-md-7" i18n-content="o_searchURL">Search URL
+			</th> -->
 			<th class="col-md-1">
 				<a href="#" ng-click="sortType = 'type'; sortReverse = !sortReverse" i18n-content="o_type">Type</a>
 				<span ng-show="sortType == 'type' && !sortReverse" class="sorter-icon glyphicon glyphicon-menu-down"></span>
@@ -80,10 +80,10 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr ng-repeat="x in featuredURLs | orderBy:sortType:sortReverse" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" >
+		<tr ng-repeat="x in featuredURLs | orderBy:sortType:sortReverse" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
 			<td><div>{{x.name}}</div></td>
-			<td><div ng-bind-html="x.url | highlight:'%s'"></div></td>
-			<td><div>{{x.type}}</div></td>
+<!-- 			<td><div ng-bind-html="x.url | highlight:'%s'"></div></td>
+ -->			<td><div>{{x.type}}</div></td>
 			<td><div>{{x.language}}</div></td>
 			<td  class="text-center">
 				<button disabled  ng-show="!hoverTable" class="light btn  btn-sm glyphicon glyphicon-ok" ></button>

@@ -1,34 +1,56 @@
 <h1 i18n-content="o_otherStuffYouCan">Other stuff you can configure</h1>
 <form>
-
-  <div class="form-group">
-    <input type="checkbox" ng-model="localConfig.newTab" id="newTab"> <label  i18n-content="o_openLinksInNewTab" for="newTab">Open links in new tab.</label>
-  </div>
-
-  <div class="form-group">
-    <input type="checkbox" ng-model="localConfig.newTabSelected" ng-disabled="!localConfig.newTab" id="newTabSelected"> 
-    <label  i18n-content="o_giveNewTabFocus" for="newTabSelected">Give new tab focus.</label>
-    <label  i18n-content="o_newTabPosition">New tab´s position:</label>
-    <select  id="newTabPosition" class="selector newTabOptions" ng-model="localConfig.newTabPosition" ng-disabled="!localConfig.newTab">
-      <option value="Last"  i18n-content="o_last">Last</option>
-      <option value="First"  i18n-content="o_first">First</option>
-      <option value="Next"  i18n-content="o_next">Next</option>
-      <option value="Previous"  i18n-content="o_previous">Previous</option>
-    </select>
-  </div>
-
-  <div class="form-group">
-
-    <input type="checkbox" ng-model="localConfig.trackGA" id="trackGA"> <label  i18n-content="o_trackSearchEngines" for="trackGA">Track search engines usage.</label>
-    <div  i18n-content="o_leavingThisCheckbox"> Leaving this checkbox marked means I'll be tracking your search engines' usage.
-      <p>The gathered information is used by me, only for statistical analysis purposes.</p>
-      <p>No user information is being tracked.</p>
-      <p>No search terms are being tracked (only the search engine used). You can read more about this on <a href="http://simpleselectsearch.blogspot.com/" target="_blank">my blog</a>.</p>
+    <h3 i18n-content="o_tabs">Tabs</h3>
+    <div class="form-group">
+        <input type="checkbox" ng-model="localConfig.newTab" id="newTab">
+        <label i18n-content="o_openLinksInNewTab" for="newTab">Open links in new tab.</label>
     </div>
-  </div>
-  <div class="form-group">
-    <button data-ng-click="addConfirm('o_areYouSure',restoreDefaultOptions)" class="btn btn-primary" i18n-content="eraseOptions">Restore default options
-    </button>
-  </div>
-</form>
 
+    <div class="form-group">
+        <input type="checkbox" ng-model="localConfig.newTabSelected" ng-disabled="!localConfig.newTab" id="newTabSelected">
+        <label i18n-content="o_giveNewTabFocus" for="newTabSelected">Give new tab focus.</label>
+    </div>
+    <div class="form-group">
+        <label i18n-content="o_newTabPosition">New tab´s position:</label>
+        <div class="btn-group" role="group">
+            <button ng-disabled="!localConfig.newTab" ng-click="localConfig.newTabPosition='Last'" ng-class="{'btn-primary' : localConfig.newTabPosition == 'Last'}" class='btn btn-default' i18n-content="o_last">Last</button>
+            <button ng-disabled="!localConfig.newTab" ng-click="localConfig.newTabPosition='First'" ng-class="{'btn-primary' : localConfig.newTabPosition == 'First'}" class='btn btn-default' i18n-content="o_first">First</button>
+            <button ng-disabled="!localConfig.newTab" ng-click="localConfig.newTabPosition='Next'" ng-class="{'btn-primary' : localConfig.newTabPosition == 'Next'}" class='btn btn-default' i18n-content="o_next">Next</button>
+            <button ng-disabled="!localConfig.newTab" ng-click="localConfig.newTabPosition='Previous'" ng-class="{'btn-primary' : localConfig.newTabPosition == 'Previous'}" class='btn btn-default' i18n-content="o_previous">Previous</button>
+        </div>
+    </div>
+
+    <h3 i18n-content="bg_searchEverywhere">Search everywhere</h3>
+    <div class="form-group">
+        <input type="checkbox" ng-model="localConfig.searchEverywhere" id="searchEverywhere">
+        <label i18n-content="o_showSearchEverywhere" for="searchEverywhere">Show "Search everywhere" option.</label>
+    </div>
+
+    <div class="form-group">
+        <input type="checkbox" ng-model="localConfig.searchEverywhereGroups" id="searchEverywhereGroups">
+        <label i18n-content="o_showSearchEverywhereGroups" for="searchEverywhereGroups">Show "Search everywhere" option within groups.</label>
+    </div>
+
+    <div class="form-group">
+        <h4 i18n-content="o_groupsUsed">Used groups</h4>
+        <ul>
+            <li ng-repeat="g in localConfig.searchEngines | unique: 'group'" ng-if="g.group">{{g.group}}</li>
+
+        </ul>
+    </div>
+
+    <div class="form-group">
+        <input type="checkbox" ng-model="localConfig.trackGA" id="trackGA">
+        <label i18n-content="o_trackSearchEngines" for="trackGA">Track search engines usage.</label>
+        <div i18n-content="o_leavingThisCheckbox"> Leaving this checkbox marked means I'll be tracking your search engines' usage.
+            <p>The gathered information is used by me, only for statistical analysis purposes.</p>
+            <p>No user information is being tracked.</p>
+            <p>No search terms are being tracked (only the search engine used). You can read more about this on <a href="http://simpleselectsearch.blogspot.com/" target="_blank">my blog</a>.</p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button data-ng-click="addConfirm('o_areYouSure',restoreDefaultOptions)" class="btn btn-primary" i18n-content="eraseOptions">Restore default options
+        </button>
+    </div>
+</form>

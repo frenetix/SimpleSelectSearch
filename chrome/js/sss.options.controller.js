@@ -12,7 +12,7 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
 
 		//  Watcher: persists data.
 		$scope.$watch('localConfig', function() {
-			//ToDo: the following refactors witht the same as importConfig() & undoLastImport()
+			// FIXME: the following refactors witht the same as importConfig() & undoLastImport()
 			localStorage["config"] = JSON.stringify(sssService.bg.config);
 			sssService.bg.createMenu ();
 			$scope.checkIsDirty();
@@ -63,7 +63,7 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
 		};
 
 		// Delete Search engine from list. 
-		// ToDo: do I need to show a confirm message?
+		// NOTE: do I need to show a confirm message?
 		$scope.deleteSearchEngine = function (index) {
 			sssService.bg.config.searchEngines.splice(index,1);
 			$scope.editRow = null;
@@ -89,11 +89,11 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
 
 	 		sssService.bg._gaq.push(['_trackEvent', 'Options', 'Reset defaults', 'Reset defaults']);
 
-	 		//ToDo: Try/catch goes here.
+	 		// ToDo: Try/catch goes here.
 	 		$scope.backup = $scope.localConfig;
 	 		sssService.bg.config = sssService.defaultConfig;
 
-	 		//ToDo: the following refactors witht the same as $scope.watch and undoLastImport
+	 		// FIXME: the following refactors witht the same as $scope.watch and undoLastImport
 
 	 		localStorage["config"] = JSON.stringify(sssService.bg.config);
 	 		sssService.bg.createMenu ();
@@ -104,18 +104,18 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
 	 		$scope.template = "options/searchEngines.html";
 	 	};
 
-	 	/// Import & Export \\\
+	 	/// Region: Import & Export \\\
 
 	 	//Import JSON config
 	 	$scope.importConfig = function () {
 
 	 		sssService.bg._gaq.push(['_trackEvent', 'Options', 'Import Config', 'Import Config']);
 
- 			//ToDo: Try/catch goes here.
+ 			// ToDo: Try/catch goes here.
  			$scope.backup = $scope.localConfig;
  			sssService.bg.config = JSON.parse($scope.import);
 
- 			//ToDo: the following refactors witht the same as $scope.watch and undoLastImport
+ 			// FIXME: the following refactors witht the same as $scope.watch and undoLastImport
  			localStorage["config"] = JSON.stringify(sssService.bg.config);
  			sssService.bg.createMenu ();
  			$scope.checkIsDirty();
@@ -130,12 +130,12 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
 	 	$scope.undoLastImport = function () {
 	 		sssService.bg._gaq.push(['_trackEvent', 'Options', 'Undo Import', 'Undo Import']);
 
-			//ToDo: implement Try/Catch here
+			// ToDo: implement Try/Catch here
 			sssService.bg.config = $scope.backup;
 			$scope.backup = null;
 			$scope.addAlert("o_restoreSuccesfull", "success");
 
-			//ToDo: the following refactors witht the same as $scope.watch and importConfig()
+			// FIXME: the following refactors witht the same as $scope.watch and importConfig()
 
 			localStorage["config"] = JSON.stringify(sssService.bg.config);
 			sssService.bg.createMenu ();
@@ -144,8 +144,11 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
 			$scope.editRow = null; 
 			$scope.template = "options/searchEngines.html";
 		};
+        
+        /// Endregion \\\
 
-		// ALERTS: get out of here
+		// Region: ALERTS
+        // FUTURE: get out of here
 
 		$scope.alerts = [];
 		$scope.confirms = [];
@@ -174,4 +177,6 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
 			$scope.confirms.splice(index, 1);
 			yesAction();
 		}
+        
+        // Endregion
 	}])
