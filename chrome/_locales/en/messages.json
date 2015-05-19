@@ -294,5 +294,9 @@
     "o_tabs": {
         "message": "Tabs",
         "description": ""
+    },
+    "o_sortBy": {
+        "message": "Sort by:",
+        "description": ""
     }
 }
