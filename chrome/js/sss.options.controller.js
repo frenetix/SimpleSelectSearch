@@ -52,15 +52,9 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
                 url: featuredOptional === undefined ? null : featuredOptional.x.url,
                 incognito: false
             };
-            if ($scope.localConfig.searchEngines.map(function (x) {
-                    return x.name;
-                }).indexOf($scope.inserted.name) == -1) {
                 $scope.localConfig.searchEngines.push($scope.inserted);
                 $scope.editRow = $scope.localConfig.searchEngines.length - 1;
                 $scope.checkIsDirty();
-            } else {
-                $scope.addAlert("o_cannotAddDuplicates", "warning");
-            }
         };
 
         // Delete Search engine from list. 
@@ -162,7 +156,7 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
         /// Endregion \\\
 
         // Region: ALERTS
-        // FUTURE: get out of here
+        // FUTURE: get this out of here
 
         $scope.alerts = [];
         $scope.confirms = [];

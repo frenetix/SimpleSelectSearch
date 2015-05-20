@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <div ng-repeat="se in localConfig.searchEngines" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-class="{'danger': se.name == null}" data-as-sortable-item class="row div-table" ng-animate="'animate'">
+        <div ng-repeat="se in localConfig.searchEngines track by $index" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-class="{'danger': se.name == null}" data-as-sortable-item class="row div-table" ng-animate="'animate'">
             <div class="col-md-1 glyphicon glyphicon-menu-hamburger text-center" data-as-sortable-item-handle>
 
             </div>
@@ -82,11 +82,8 @@
 <div ng-repeat="x in featuredURLs | orderBy:sortType:sortReverse" ng-class="{'light': x.isUsed}" class="featuredURLs" ng-click="addSearchEngine(this)">
     <ul>
         <li>{{x.name}}</li>
-        <!-- 			<td><div ng-bind-html="x.url | highlight:'%s'"></div></td>
- -->
         <li>{{x.type}}</li>
         <li>{{x.language}}</li>
-
     </ul>
     <button ng-click="addSearchEngine(this)" class="btn btn-primary btn-sm glyphicon glyphicon-ok" ng-disabled="x.isUsed"></button>
 </div>

@@ -209,7 +209,7 @@ function createMenu() {
         for (i = 0; i < config.searchEngines.length; i++) {
             var id = chrome.contextMenus.create({
                 "title": title + config.searchEngines[i].name,
-                "contexts": [context],
+                "contexts": [CONTEXT],
                 "onclick": function (idSE) {
                     return function (info, tab) {
                         genericSearch(info, tab, idSE)
@@ -277,9 +277,10 @@ if (typeof localStorage["config"] == 'undefined') {
 } else {
     config = JSON.parse(localStorage["config"]);
 
-    if (typeof config.searchEverywhere == "undefined")
+    if (typeof config.searchEverywhere == "undefined") {
         config.searchEverywhere = true; // FUTURE: remove after a while, this is as of 0.4 so users won't loose the SearchEverywhere option
-
+        config.searchEverywhereGroups = true;
+    }
     createMenu(); // Initialize menu
 }
 

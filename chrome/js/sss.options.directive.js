@@ -17,16 +17,3 @@ angular.module('sss').directive('i18nContent', function($compile) {
 		}
 	};
 })
-
-/*.directive('i18nSubstitute', function() {
-	return {
-		restrict: 'M',
-		require: '^i18nContent',
-		link: function (scope, element, attr, i18nContent) {
-			var match = attr.i18nSubstitute.match(/^\$([1-9]):(.*)$/);
-			if (match) {
-				i18nContent.addSubstitute(parseInt(match[1]) - 1, match[2]);
-			}
-		}
-	};
-})*/

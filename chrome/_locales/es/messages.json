@@ -4,7 +4,7 @@
     "description":"Extension's name. Use   instead of spaces."
   },
   "extDescription":{
-    "message":"Selecciona algún texto, haz click derecho y busca en tus motores de búsqueda favoritos. Puedes configurar alguna que otra cosa.",
+    "message":"Click derecho sobre una selección de texto para realizar búsquedas en múltiples sitios desde Chrome. Sencilla de configurar. Sporta agrupar búsquedas, abrir en ventana incógnito y más.",
     "description":""
   },
   "bg_searchStringOn":{
@@ -196,7 +196,7 @@
     "description":""
   },
   "o_leavingThisCheckbox":{
-    "message":"Si dejas esta opción activada significa que estaré guardando la estadística de los motores de búsqueda que utilizas.  <br\/>La información recabada sólo será utilizada con fines de análisis estadístico.  <br\/>No se guarda información de usuarios.  <br\/>No se guarda qué estás buscando, si no en qué motores de búsqued lo haces. Hay más información al respecto en <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">mi blog<\/a> (inglés).",
+    "message":"La información recabada sólo será utilizada con fines de análisis estadístico.  <br\/>No se guarda información de usuarios.  <br\/>No se guarda qué estás buscando, si no en qué motores de búsqued lo haces. Hay más información al respecto en <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">mi blog<\/a> (inglés).",
     "description":""
   },
   "eraseOptions":{
@@ -261,6 +261,34 @@
   },
   "o_plusExplain":{
     "message":"Más vs. espacio: Algunos motores de búsqueda utilizan ' +' en lugar de un espacio para separar palabras que estás buscando.",
+    "description":""
+  },
+  "o_cannotAddDuplicates":{
+    "message":"Lo siteno, no puedo agregar entradas duplicadas.",
+    "description":""
+  },
+  "o_group":{
+    "message":"Grupo",
+    "description":""
+  },
+  "o_groupsUsed":{
+    "message":"Grupos utilizados",
+    "description":""
+  },
+  "o_showSearchEverywhere":{
+    "message":"Mostrar la opción 'Buscar en todos!'.",
+    "description":""
+  },
+  "o_showSearchEverywhereGroups":{
+    "message":"Mostrar la opción 'Buscar en todos!' dentro de tus grupos.",
+    "description":""
+  },
+  "o_tabs":{
+    "message":"Pestañas",
+    "description":""
+  },
+  "o_sortBy":{
+    "message":"Sort by:",
     "description":""
   }
 }

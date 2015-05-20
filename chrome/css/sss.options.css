@@ -370,3 +370,8 @@ body {
 .sortURLs.row {
     padding-bottom: 10px;
 }
+
+.gitHubAvatar {
+    width:30px;
+    float: right;
+}
