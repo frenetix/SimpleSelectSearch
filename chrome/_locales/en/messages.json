@@ -4,7 +4,7 @@
         "description": "Extension's name. Use   instead of spaces."
     },
     "extDescription": {
-        "message": "Right click on selected text to search on multiple search engines for Chrome. Simple to configure. Supports grouping search engines, openning in incongito, and more.",
+        "message": "Right click on selected text to search on multiple search engines for Chrome. Supports grouping engines, incongito, and more.",
         "description": ""
     },
     "bg_searchStringOn": {
