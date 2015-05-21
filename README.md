@@ -16,18 +16,24 @@ More information on my [Blog](http://simpleselectsearch.blogspot.com/).
 :zero::three::four:
 - you can copy highligted text and call defined search engines for results
 - you can set own search engines (in native Google Chrome way! You can go to Settings > Search > Manage search engines, copy design engine, paste it into SSS options and it'll work!)
-- you can manage (to some level) how context menu with engines will look like
+- you can manage how context menu with engines will look like
 
 ### CHANGELOG ###
 
 ##### FUTURE VERSIONS #####
-- [:id::zero::zero::three:](https://github.com/frenetix/SimpleSelectSearch/issues/3) Option to hiding/showing "Search everywhere" menu option
-- [:id::zero::zero::four:](https://github.com/frenetix/SimpleSelectSearch/issues/4) Group search engines
 - [:id::zero::zero::five:](https://github.com/frenetix/SimpleSelectSearch/issues/5) Option to opening search results always in the same tab
 
 Check out my messy [Trello](https://trello.com/b/I1jBV5mD) to follow the latests updates.
 
 ##### DEPLOYED VERSIONS #####
+
+:vs::zero::four:
+Live on Chrome store 05/20/2015
+- New groups feature
+- Ability to turn "Search everywhere!" off 
+- New UI for featured search engines and credits page
+- Having multiple search engines with same name is now possible again
+- Localization updates
 
 :vs::zero::three::four:
 Live on Chrome store 05/14/2015
