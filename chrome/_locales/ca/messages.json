@@ -4,7 +4,7 @@
     "description":"Extension's name. Use   instead of spaces."
   },
   "extDescription":{
-    "message":"Select some text, right click on it and then search on your favourite search engines. You can configure some stuff.",
+    "message":"Right click on selected text to search on multiple search engines for Chrome. Simple to configure. Supports grouping search engines, openning in incongito, and more.",
     "description":""
   },
   "bg_searchStringOn":{
@@ -76,7 +76,7 @@
     "description":""
   },
   "o_restoreSuccesfull":{
-    "message":"Config saved before last import was just restored... if this doesn't help, you can always reset the options to the default settings -the button at the bottom of this page-... or might try and retrieve the config backup you should have done ;)",
+    "message":"Config saved before last import was just restored... if this doesn't help, you can always reset the options to the default settings with the button in the 'Advanced settings' page... or might try and retrieve a config backup if you did one before ;)",
     "description":""
   },
   "o_nothingToRestore":{
@@ -196,7 +196,7 @@
     "description":""
   },
   "o_leavingThisCheckbox":{
-    "message":"Leaving this checkbox marked means I'll be tracking your search engines' usage.  <br\/>The gathered information is used by me, only for statistical analysis purposes.  <br\/>No user information is being tracked.  <br\/>No search terms are being tracked (only the search engine used). You can read more about this on <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">my blog<\/a>.",
+    "message":"Tracked information is used by me, only for statistical analysis purposes.  <br\/>No user information is being tracked.  <br\/>No search terms are being tracked (only the search engine used). You can read more about this on <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">my blog<\/a>.",
     "description":""
   },
   "eraseOptions":{
@@ -261,6 +261,34 @@
   },
   "o_plusExplain":{
     "message":"Plus versus space: some search engines use '+' instead of a space to separate words you're looking for.",
+    "description":""
+  },
+  "o_cannotAddDuplicates":{
+    "message":"Sorry, I cannot add duplicate name entries.",
+    "description":""
+  },
+  "o_group":{
+    "message":"Group",
+    "description":""
+  },
+  "o_groupsUsed":{
+    "message":"Used groups",
+    "description":""
+  },
+  "o_showSearchEverywhere":{
+    "message":"Show 'Search everywhere' option.",
+    "description":""
+  },
+  "o_showSearchEverywhereGroups":{
+    "message":"Show 'Search everywhere' option within groups.",
+    "description":""
+  },
+  "o_tabs":{
+    "message":"Tabs",
+    "description":""
+  },
+  "o_sortBy":{
+    "message":"Sort by:",
     "description":""
   }
 }

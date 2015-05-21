@@ -4,7 +4,7 @@
     "description":"Extension's name. Use   instead of spaces."
   },
   "extDescription":{
-    "message":"Selecteer de tekst, klik er met de rechtermuisknop op en kies dan voor Uw favoriete zoekmachine. U kunt bepaalde dingen configureren.",
+    "message":"Right click on selected text to search on multiple search engines for Chrome. Simple to configure. Supports grouping search engines, openning in incongito, and more.",
     "description":""
   },
   "bg_searchStringOn":{
@@ -261,6 +261,34 @@
   },
   "o_plusExplain":{
     "message":"Plus versus space: some search engines use '+' instead of a space to separate words you're looking for.",
+    "description":""
+  },
+  "o_cannotAddDuplicates":{
+    "message":"Sorry, I cannot add duplicate name entries.",
+    "description":""
+  },
+  "o_group":{
+    "message":"Group",
+    "description":""
+  },
+  "o_groupsUsed":{
+    "message":"Used groups",
+    "description":""
+  },
+  "o_showSearchEverywhere":{
+    "message":"Show 'Search everywhere' option.",
+    "description":""
+  },
+  "o_showSearchEverywhereGroups":{
+    "message":"Show 'Search everywhere' option within groups.",
+    "description":""
+  },
+  "o_tabs":{
+    "message":"Tabs",
+    "description":""
+  },
+  "o_sortBy":{
+    "message":"Sort by:",
     "description":""
   }
 }

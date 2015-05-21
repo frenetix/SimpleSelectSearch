@@ -4,7 +4,7 @@
     "description":"Extension's name. Use   instead of spaces."
   },
   "extDescription":{
-    "message":"Zaznacz tekst, kliknij na zaznaczeniu prawym przyciskiem myszy, a następnie szukaj zaznaczonego tekstu w swoich ulubionych wyszukiwarkach. Kilka rzeczy możesz skonfigurować.",
+    "message":"Right click on selected text to search on multiple search engines for Chrome. Simple to configure. Supports grouping search engines, openning in incongito, and more.",
     "description":""
   },
   "bg_searchStringOn":{
@@ -261,6 +261,34 @@
   },
   "o_plusExplain":{
     "message":"Plus kontra spacja: niektóre wyszukiwarki używają znaku '+' zamiast spacji, by oddzielać od siebie słowa, których szukasz.",
+    "description":""
+  },
+  "o_cannotAddDuplicates":{
+    "message":"Sorry, I cannot add duplicate name entries.",
+    "description":""
+  },
+  "o_group":{
+    "message":"Group",
+    "description":""
+  },
+  "o_groupsUsed":{
+    "message":"Used groups",
+    "description":""
+  },
+  "o_showSearchEverywhere":{
+    "message":"Show 'Search everywhere' option.",
+    "description":""
+  },
+  "o_showSearchEverywhereGroups":{
+    "message":"Show 'Search everywhere' option within groups.",
+    "description":""
+  },
+  "o_tabs":{
+    "message":"Tabs",
+    "description":""
+  },
+  "o_sortBy":{
+    "message":"Sort by:",
     "description":""
   }
 }

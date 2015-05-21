@@ -1,90 +1,89 @@
 <h2 class="sub-header" i18n-content="o_mySearchEngines">My Search Engines</h2>
 <p i18n-content="o_mySearchEnginesDesc"></p>
 
-<form class="form searchEngines" >	
-	<div data-as-sortable="board.dragControlListeners" data-ng-model="localConfig.searchEngines" >
+<form class="form searchEngines">
+    <div data-as-sortable="board.dragControlListeners" data-ng-model="localConfig.searchEngines">
 
-		<div class="row header">
-			<div class="col-md-1 text-center"><span i18n-content="o_sort">Sort</span></div>
-			<div class="col-md-2"><span i18n-content="o_name">Name</span></div>
-			<div class="col-md-6"><span i18n-content="o_searchURL">Search URL</span></div>
-			<div class="col-md-1 text-center"  tooltip="{{ i18nTranslate('o_plusExplain') }}" tooltip-class="customClass">+ vs _</div>
-			<div class="col-md-1 text-center" i18n-content="o_incognito">Incognito</div>
-			<div class="col-md-1 text-center">
-				<button class="btn btn-primary glyphicon glyphicon-plus" ng-click="addSearchEngine()" ng-disabled="isDirty"></button>
-			</div>
-		</div>
+        <div class="row header">
+            <div class="col-md-1 text-center"><span i18n-content="o_sort">Sort</span>
+            </div>
+            <div class="col-md-1"><span i18n-content="o_name">Name</span>
+            </div>
+            <div class="col-md-6"><span i18n-content="o_searchURL">Search URL</span>
+            </div>
+            <div class="col-md-1"><span i18n-content="o_group">Group</span>
+            </div>
+            <div class="col-md-1 text-center" tooltip="{{ i18nTranslate('o_plusExplain') }}" tooltip-class="customClass">+ vs _</div>
+            <div class="col-md-1 text-center" i18n-content="o_incognito">Incognito</div>
+            <div class="col-md-1 text-center">
+                <button class="btn btn-primary glyphicon glyphicon-plus" ng-click="addSearchEngine()" ng-disabled="isDirty"></button>
+            </div>
+        </div>
 
-		<div ng-repeat="se in localConfig.searchEngines"   ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-class="{'danger': se.name == null}" data-as-sortable-item class="row div-table" ng-animate="'animate'">
-			<div class="col-md-1 glyphicon glyphicon-menu-hamburger text-center" data-as-sortable-item-handle>
+        <div ng-repeat="se in localConfig.searchEngines track by $index" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-class="{'danger': se.name == null}" data-as-sortable-item class="row div-table" ng-animate="'animate'">
+            <div class="col-md-1 glyphicon glyphicon-menu-hamburger text-center" data-as-sortable-item-handle>
 
-			</div>
-			<div class="col-md-2" ng-click="setEdit($index)" ng-blur="setEdit(-1)">
-				<input type="text" ng-model="se.name" ng-show="editRow==$index" class="form-control" placeholder="Engine name" />
-				<span ng-hide="editRow==$index">{{se.name}}</span>
-			</div>
-			<div class="col-md-6" ng-click="setEdit($index)"> 
-				<input type="text" ng-model="se.url" ng-show="editRow==$index" class="form-control" placeholder="Engine URL (remember to use %s)" />
-				<span ng-hide="editRow==$index" ng-bind-html="se.url | highlight:'%s'"></span>
-			</div>
-			<div class="col-md-1 text-center" ng-click="se.plus = !se.plus">
-				<span ng-class="{ 'light': !se.plus}" class="glyphicon glyphicon-plus"></span>
-			</div>
-			<div class="col-md-1 text-center" ng-click="se.incognito = !se.incognito">
-				<span ng-class="{ 'light': !se.incognito}" class="glyphicon glyphicon-sunglasses"></span>
-			</div>
-			<div  class="col-md-1 text-center">
-				<button disabled  ng-show="!hoverTable" class="light btn  btn-sm glyphicon glyphicon-minus" ></button>
-				<button ng-click="deleteSearchEngine($index)"  ng-show="hoverTable" class="btn btn-danger btn-sm glyphicon glyphicon-minus" ></button>
-			</div>
+            </div>
+            <div class="col-md-1" ng-click="setEdit($index)" ng-blur="setEdit(-1)">
+                <input type="text" ng-model="se.name" ng-show="editRow==$index" class="form-control" placeholder="Engine name" />
+                <span ng-hide="editRow==$index">{{se.name}}</span>
+            </div>
+            <div class="col-md-6" ng-click="setEdit($index)">
+                <input type="text" ng-model="se.url" ng-show="editRow==$index" class="form-control" placeholder="Engine URL (remember to use %s)" />
+                <span ng-hide="editRow==$index" ng-bind-html="se.url | highlight:'%s'"></span>
+            </div>
+            <div class="col-md-1 supportEmptyString" ng-click="setEdit($index)" ng-blur="setEdit(-1)">
+                <input ng-model="se.group" ng-show="editRow==$index" class="form-control" placeholder="Menu Group" />
+                <span ng-hide="editRow==$index">{{se.group}}</span>
+            </div>
+            <div class="col-md-1 text-center" ng-click="se.plus = !se.plus">
+                <span ng-class="{ 'light': !se.plus}" class="glyphicon glyphicon-plus"></span>
+            </div>
+            <div class="col-md-1 text-center" ng-click="se.incognito = !se.incognito">
+                <span ng-class="{ 'light': !se.incognito}" class="glyphicon glyphicon-sunglasses"></span>
+            </div>
+            <div class="col-md-1 text-center">
+                <button disabled ng-show="!hoverTable" class="light btn  btn-sm glyphicon glyphicon-minus"></button>
+                <button ng-click="deleteSearchEngine($index)" ng-show="hoverTable" class="btn btn-danger btn-sm glyphicon glyphicon-minus"></button>
+            </div>
 
-		</div>	
+        </div>
 
 
-	</div>
+    </div>
 
 </form>
 
 
 <h2 class="sub-header" i18n-content="o_featuredSearchEngines">Other search engines</h2>
 <p i18n-content="o_featuredSearchEngnesDesc"></p>
+<div class="sortURLs row">
+    <div class="col-md-12">
+        <div i18n-content="o_sortBy">Sort by</div>
+        <div>
+            <a href="#" ng-click="sortType = 'name'; sortReverse = !sortReverse" i18n-content="o_name">Name</a>
+            <span ng-show="sortType == 'name' && !sortReverse" class="sorter-icon glyphicon glyphicon-menu-down"></span>
+            <span ng-show="sortType == 'name' && sortReverse" class="sorter-icon glyphicon glyphicon-menu-up"></span>
+        </div>
+        <div>
+            <a href="#" ng-click="sortType = 'type'; sortReverse = !sortReverse" i18n-content="o_type">Type</a>
+            <span ng-show="sortType == 'type' && !sortReverse" class="sorter-icon glyphicon glyphicon-menu-down"></span>
+            <span ng-show="sortType == 'type' && sortReverse" class="sorter-icon glyphicon glyphicon-menu-up"></span>
+        </div>
+        <div>
+            <a href="#" ng-click="sortType = 'language'; sortReverse = !sortReverse" i18n-content="o_language">Language</a>
+            <span ng-show="sortType == 'language' && !sortReverse" class="sorter-icon glyphicon glyphicon-menu-down"></span>
+            <span ng-show="sortType == 'language' && sortReverse" class="sorter-icon glyphicon glyphicon-menu-up"></span>
+        </div>
+    </div>
+</div>
 
 
-<table class="table table-responsive table-hover">
-	<thead>
-		<tr>
-			<th class="col-md-2">
-				<a href="#" ng-click="sortType = 'name'; sortReverse = !sortReverse" i18n-content="o_name">Name</a>
-				<span ng-show="sortType == 'name' && !sortReverse" class="sorter-icon glyphicon glyphicon-menu-down"></span>
-				<span ng-show="sortType == 'name' && sortReverse" class="sorter-icon glyphicon glyphicon-menu-up"></span>
-			</th>
-			<th class="col-md-7" i18n-content="o_searchURL">Search URL
-			</th>
-			<th class="col-md-1">
-				<a href="#" ng-click="sortType = 'type'; sortReverse = !sortReverse" i18n-content="o_type">Type</a>
-				<span ng-show="sortType == 'type' && !sortReverse" class="sorter-icon glyphicon glyphicon-menu-down"></span>
-				<span ng-show="sortType == 'type' && sortReverse" class="sorter-icon glyphicon glyphicon-menu-up"></span>
-			</th>
-			<th class="col-md-1">
-				<a href="#" ng-click="sortType = 'language'; sortReverse = !sortReverse" i18n-content="o_language">Language</a>
-				<span ng-show="sortType == 'language' && !sortReverse" class="sorter-icon glyphicon glyphicon-menu-down"></span>
-				<span ng-show="sortType == 'language' && sortReverse" class="sorter-icon glyphicon glyphicon-menu-up"></span>
-			</th>
-			<th class="col-md-1 text-center">
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr ng-repeat="x in featuredURLs | orderBy:sortType:sortReverse" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" >
-			<td><div>{{x.name}}</div></td>
-			<td><div ng-bind-html="x.url | highlight:'%s'"></div></td>
-			<td><div>{{x.type}}</div></td>
-			<td><div>{{x.language}}</div></td>
-			<td  class="text-center">
-				<button disabled  ng-show="!hoverTable" class="light btn  btn-sm glyphicon glyphicon-ok" ></button>
-				<button ng-click="addSearchEngine(this)"  ng-show="hoverTable" class="btn btn-primary btn-sm glyphicon glyphicon-ok" ></button>
-			</td>
-		</tr>
-
-	</tbody>
-</table>
+<div ng-repeat="x in featuredURLs | orderBy:sortType:sortReverse" ng-class="{'light': x.isUsed}" class="featuredURLs" ng-click="addSearchEngine(this)">
+    <ul>
+        <li>{{x.name}}</li>
+        <li>{{x.type}}</li>
+        <li>{{x.language}}</li>
+    </ul>
+    <button ng-click="addSearchEngine(this)" class="btn btn-primary btn-sm glyphicon glyphicon-ok" ng-disabled="x.isUsed"></button>
+</div>

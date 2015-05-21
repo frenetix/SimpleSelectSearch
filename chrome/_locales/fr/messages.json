@@ -4,7 +4,7 @@
     "description":"Extension's name. Use   instead of spaces."
   },
   "extDescription":{
-    "message":"Sélectionnez du texte, un clic droit dessus puis chercher sur vos moteurs de recherche préférés. Vous pouvez configurer quelques trucs.",
+    "message":"Faites un clic droit sur le texte sélectionné pour la recherche sur plusieurs moteurs de recherche pour Chrome. Simple à configurer. Prend en charge le regroupement de moteurs de recherche, ouverture en incongito et plus encore.",
     "description":""
   },
   "bg_searchStringOn":{
@@ -196,7 +196,7 @@
     "description":""
   },
   "o_leavingThisCheckbox":{
-    "message":"Laisser cette case cochée me permettre de suivre l'utilisation de vos moteurs de recherche.  <br\/> L'information recueillie est utilisée par moi, qu'à des fins d'analyses statistiques.  <br\/> Aucune information utilisateur ne sera récoltée.  <br\/> Aucun des termes de recherche ne sont suivis (seulement le moteur de recherche utilisé). Vous pouvez en savoir plus à ce sujet sur <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\"> mon blog<\/a>.",
+    "message":"L'information recueillie est utilisée par moi, qu'à des fins d'analyses statistiques.  <br\/> Aucune information utilisateur ne sera récoltée.  <br\/> Aucun des termes de recherche ne sont suivis (seulement le moteur de recherche utilisé). Vous pouvez en savoir plus à ce sujet sur <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\"> mon blog<\/a>.",
     "description":""
   },
   "eraseOptions":{
@@ -261,6 +261,34 @@
   },
   "o_plusExplain":{
     "message":"Plus versus Espace : certains moteurs de recherche utilisent « + » au lieu d'un espace pour séparer les mots de votre recherche.",
+    "description":""
+  },
+  "o_cannotAddDuplicates":{
+    "message":"Désolé, je ne peux pas ajouter un nom déjà utilisé.",
+    "description":""
+  },
+  "o_group":{
+    "message":"Groupe",
+    "description":""
+  },
+  "o_groupsUsed":{
+    "message":"Groupes utilisés",
+    "description":""
+  },
+  "o_showSearchEverywhere":{
+    "message":"Montrer l'option « Rechercher partout ».",
+    "description":""
+  },
+  "o_showSearchEverywhereGroups":{
+    "message":"Montrer l'option « Rechercher partout » au sein des groupes.",
+    "description":""
+  },
+  "o_tabs":{
+    "message":"Onglets",
+    "description":""
+  },
+  "o_sortBy":{
+    "message":"Trier par:",
     "description":""
   }
 }

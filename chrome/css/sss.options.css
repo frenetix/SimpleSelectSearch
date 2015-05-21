@@ -1,277 +1,377 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
 /*
 * customize global & bootstrap basic
 */
 
-a, a:link, a:hover, a:visited, a:active, a:focus, h1, h2 {
-  color: #0084ae;
+a,
+a:link,
+a:hover,
+a:visited,
+a:active,
+a:focus,
+h1,
+h2 {
+    color: #0084ae;
 }
 
 .main ul {
-  padding-top: 10px;
+    padding-top: 10px;
 }
+
 .main li {
-  padding-bottom:10px;
+    padding-bottom: 10px;
 }
+
 .btn-primary {
-  color: #fff !important;
-  background-color: #0084ae;
-  border-color: #0084ae;
+    color: #fff !important;
+    background-color: #0084ae;
+    border-color: #0084ae;
 }
 
 select {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 15px;
-  padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .jumbotron {
-  background-color: #f2f9fb;
+    background-color: #f2f9fb;
 }
-
 /* Move down content because we have a fixed navbar that is 50px tall */
-body {
-  padding-top: 50px;
-  font-family: "Open Sans", sans-serif;
-}
 
+body {
+    padding-top: 50px;
+    font-family: "Open Sans", sans-serif;
+}
 /*
 * Angular fixes (need to understand why I need this)
 */
 
-.ng-hide {display: none;}
-
+.ng-hide {
+    display: none;
+}
 /*.fade.in {
   opacity: 1;
   transition: opacity 3.0s linear;
   }*/
-
 /*
  * content transition animation *
  */
 
- .options-container.ng-enter{
-   transition: 0.4s linear all;
- }
- .options-container.ng-enter {
-   z-index: 100;
-   opacity: 0;
- }
- .options-container.ng-enter.ng-enter-active {
-   opacity: 1;
- }
- .options-container.ng-leave {
-   z-index: 101;
-   opacity: 1;
- }
- .options-container.ng-leave.ng-leave-active {
-   opacity: 0;
- }
+.options-container.ng-enter {
+    transition: 0.4s linear all;
+}
 
+.options-container.ng-enter {
+    z-index: 100;
+    opacity: 0;
+}
+
+.options-container.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+.options-container.ng-leave {
+    z-index: 101;
+    opacity: 1;
+}
+
+.options-container.ng-leave.ng-leave-active {
+    opacity: 0;
+}
 /*
  * Global add-ons
  */
 
- .sub-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
 }
-
 /*
  * Top navigation
  * Hide default border to remove 1px line.
  */
- .navbar-fixed-top {
-  border: 0;
+
+.navbar-fixed-top {
+    border: 0;
 }
 
 .navbar {
-  background-color:#fff;
-  box-shadow: 0px 5px 5px #eee;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px #eee;
 }
-
 /* 
 * Google plus icon 
 */
 
 .gPlus {
-  margin-top:12px;
-  margin-right: -20px;
-  margin-left: 5px;
-
+    margin-top: 12px;
+    margin-right: -20px;
+    margin-left: 5px;
 }
-
 /*
  * Sidebar
  */
- .sidebar {
-  position: fixed;
-  top: 51px;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  display: block;
-  padding: 20px;
-  overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  border-right: 1px solid #eee;
-  background-color: #fff;
-}
 
+.sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+    
+    border-right: 1px solid #eee;
+    background-color: #fff;
+}
 /* 
 * Sidebar navigation 
 */
+
 .nav-sidebar {
-  margin-right: -21px; 
-  margin-bottom: 20px;
-  margin-left: -20px;
+    margin-right: -21px;
+    margin-bottom: 20px;
+    margin-left: -20px;
 }
+
 .nav-sidebar > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
+
 .nav-sidebar > .active > a,
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
-  color: #fff;
-  background-color: #0084ae;
+    color: #fff;
+    background-color: #0084ae;
 }
 
-.sidebar form {text-align:center;}
+.sidebar form {
+    text-align: center;
+}
 
-.sidebar .separator {height:20px;}
-
+.sidebar .separator {
+    height: 20px;
+}
 /* 
 * Animations for navs 
 */
 
-.nav-sidebar > .active > a {    
-	transition: background-color 500ms linear;
+.nav-sidebar > .active > a {
+    transition: background-color 500ms linear;
 }
 
-.nav-sidebar > li > a, 
-.nav > li > a  {    
-	transition: background-color 200ms linear;
+.nav-sidebar > li > a,
+.nav > li > a {
+    transition: background-color 200ms linear;
 }
-
 /*
 * Tables for Search engines
 */
 
-.table, .searchEngines {
-  table-layout:fixed;
-  cursor: pointer;
+.table,
+.searchEngines {
+    table-layout: fixed;
+    cursor: pointer;
 }
 
-.table div, .searchEngines div {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.table div,
+.searchEngines div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .searchEngines div {
-  padding-top: 5px;
-  padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .searchEngines .row {
-  margin-right: -15px;
-  margin-left: -15px;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 .row .header {
-  font-weight: bold;
-  cursor:auto;
+    font-weight: bold;
+    cursor: auto;
 }
 
 .searchEngines .row {
-  border-top: 1px solid #eee;
-  transition: background-color 200ms linear;
+    border-top: 1px solid #eee;
+    transition: background-color 200ms linear;
 }
+
 .searchEngines .row:hover {
-  background-color:#f9f9f9;
-  transition: background-color 500ms linear;
-
+    background-color: #f9f9f9;
+    transition: background-color 500ms linear;
 }
 
-.searchEngines .ng-enter, .searchEngines  .ng-leave {
- transition: 0.4s linear all !important;
-}
-.searchEngines .ng-enter {
-  opacity:1;
-}
+.searchEngines .ng-enter,
 .searchEngines .ng-leave {
-  opacity:0;
+    transition: 0.4s linear all !important;
 }
 
-.danger {background-color: #fee;}
+.searchEngines .ng-enter {
+    opacity: 1;
+}
 
-.light {color: #f0f0f0;}
+.searchEngines .ng-leave {
+    opacity: 0;
+}
 
+.supportEmptyString {
+    min-height: 27px;
+}
+
+.danger {
+    background-color: #fee;
+}
+
+.light {
+    color: #f0f0f0;
+}
 /* highlights %s on search engines list*/
+
 .ui-match {
-  color: #0084ae;
-  font-weight: bold;
+    color: #0084ae;
+    font-weight: bold;
 }
 
 .sorter-icon {
-  font-size: 0.8em;
-  color: #0084ae;
+    font-size: 0.8em;
+    color: #0084ae;
 }
-
-
 /* Specify styling for tooltip contents */
+
 .tooltip.customClass .tooltip-inner {
-  color: #0084ae;
-  background-color: #f2f9fb;
-  border: 1px solid #0084ae;
-  box-shadow: 0px 5px 5px #eee;
-  white-space:pre-wrap;
+    color: #0084ae;
+    background-color: #f2f9fb;
+    border: 1px solid #0084ae;
+    box-shadow: 0px 5px 5px #eee;
+    white-space: pre-wrap;
 }
-
 /* Hide arrow */
-.tooltip.customClass .tooltip-arrow {
-  display: none;
-}
 
+.tooltip.customClass .tooltip-arrow {
+    display: none;
+}
 /* 
 * Dragable table 
 */
 
-.as-sortable-item, .as-sortable-placeholder {
-  border: 0px;
-  min-height: 40px;
-  margin: 0px;
-  border-radius: 0px;
+.as-sortable-item,
+.as-sortable-placeholder {
+    border: 0px;
+    min-height: 40px;
+    margin: 0px;
+    border-radius: 0px;
 }
 
 .as-sortable-placeholder {
-  box-sizing: border-box;
-  background-color: #f2f9fb;
+    box-sizing: border-box;
+    background-color: #f2f9fb;
 }
-
 /*
 * Alert  (review this)
 */
 
 .alert-container {
-  position:absolute;
-  left:50%;
+    position: absolute;
+    left: 50%;
 }
 
 .alert-container > div {
-  opacity:0.95;
-  transition: 0.2s linear opacity;
-  position:relative;
-  left:-50%;
+    opacity: 0.95;
+    transition: 0.2s linear opacity;
+    position: relative;
+    left: -50%;
 }
 
-.alert-container .ng-enter, .alert-container .ng-leave  {
-  opacity:0 !important;
+.alert-container .ng-enter,
+.alert-container .ng-leave {
+    opacity: 0 !important;
 }
 
 .form-controls-alert {
-  text-align: right;
+    text-align: right;
+}
+
+.form-controls-alert {
+    text-align: right;
+}
+
+.form-controls-alert button {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.form-controls-alert .btn {
+    width: 100px;
+}
+
+.featuredURLs {
+    border-top: 0px;
+    width: 46%;
+    max-width: 180px;
+    display: inline-block;
+    margin-right: 2%;
+    padding-top: 15px;
+    vertical-align: top;
+    box-shadow: 0px 0px 15px #f0f0f0;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.featuredURLs ul {
+    list-style: none;
+    font-size: 0.8em;
+    padding-left: 0px;
+}
+
+.featuredURLs li:first-child {
+    font-size: 1em;
+    color: #0084ae;
+    font-weight: bold;
+}
+
+.featuredURLs .btn {
+    float: right;
+    background-color: #f2f9fb;
+    border-color: #f2f9fb;
+    transition: 0.2s linear all;
+}
+
+.featuredURLs:hover .btn {
+    background-color: #0084ae;
+    border-color: #0084ae;
+    transition: 0.2s linear all;
+}
+
+.featuredURLs:hover {
+    background-color: #f2f9fb;
+    transition: 0.2s linear all;
+    box-shadow: 5px 5px 15px #f0f0f0;
+}
+
+.sortURLs div div {
+    width: 100px;
+    display: block;
+    float: left;
+}
+
+.sortURLs.row {
+    padding-bottom: 10px;
+}
+
+.gitHubAvatar {
+    width:30px;
+    float: right;
 }

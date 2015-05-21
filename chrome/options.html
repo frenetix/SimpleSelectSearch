@@ -1,146 +1,160 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="sss" ng-init="template='options/searchEngines.html'">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  
-  <title>Options</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- Lib styles -->
+    <title>Options: Simple = Select + Search</title>
+    
+    <!-- Lib styles -->
 
-  <link href="css/lib/ng-sortable.min.css" rel="stylesheet">
-  <link href="css/lib/ng-sortable.style.min.css" rel="stylesheet">
-  <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/ng-sortable.min.css" rel="stylesheet">
+    <link href="css/lib/ng-sortable.style.min.css" rel="stylesheet">
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom styles  -->
 
-  <!-- Custom styles for this template -->
-
-  <link href="css/bootstrap.dashboard.css" rel="stylesheet">
-  <link href="css/sss.options.css" rel="stylesheet">
-  
+    <link href="css/sss.options.css" rel="stylesheet">
+    
 </head>
-
 <body>
-  <!-- Top nav -->
-  <nav class="navbar navbar-fixed-top" role="navigation">
-    <div class="container-fluid" >
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        </button>
-        <a class="navbar-brand" href="#">Simple = Select + Search</a>
-      </div>
-
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://simpleselectsearch.blogspot.com/" target="_blank" i18n-content="bg_extensionBlog">Blog</a></li>
-          <li>
-            <div class="gPlus">
-              <g:plusone href="https://chrome.google.com/webstore/detail/aagminaekdpcfimcbhknlgjmpnnnmooo"></g:plusone>
+    <!-- Region Top nav -->
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                </button>
+                <a class="navbar-brand" href="#">Simple = Select + Search</a>
             </div>
-          </li>
-          <li><a href="http://simpleselectsearch.blogspot.com/" target="_blank"><img src="images/16.png" border="0"/></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <!-- container + row -->
-  <div class="container-fluid" ng-controller="sssData">
-    <div class="row">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://simpleselectsearch.blogspot.com/" target="_blank" i18n-content="bg_extensionBlog">Blog</a>
+                    </li>
+                    <li>
+                        <div class="gPlus">
+                            <g:plusone href="https://chrome.google.com/webstore/detail/aagminaekdpcfimcbhknlgjmpnnnmooo"></g:plusone>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://simpleselectsearch.blogspot.com/" target="_blank"><img src="images/16.png" border="0" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- endregion Top Nav -->
 
-      <!-- Left nav -->
-      <div class="col-sm-3 col-md-2 sidebar">
-        <ul class="nav nav-sidebar">
-          <li ng-class="{ 'active': template == 'options/searchEngines.html' }"><a href="#" ng-click="template='options/searchEngines.html'" i18n-content="o_searchEngines">Search engines</a></li>  
-          <li ng-class="{ 'active': template == 'options/advancedConfig.html' }"><a href="#" ng-click="template='options/advancedConfig.html'" i18n-content="o_advancedConfig">Advanced config</a></li>
-          <li ng-class="{ 'active': template == 'options/importExport.html' }"><a href="#" ng-click="template='options/importExport.html'" i18n-content="o_importExport">Import/export</a></li>
-        </ul>
-        <ul class="nav nav-sidebar">
-          <li ng-class="{ 'active': template == 'options/help.html' }"><a href="#" ng-click="template='options/help.html'" i18n-content="o_help">Help</a></li>
-          <li ng-class="{ 'active': template == 'options/supportMe.html' }"><a href="#" ng-click="template='options/supportMe.html'" i18n-content="o_supportMe">Support me :)</a></li>
-          <li ng-class="{ 'active': template == 'options/creditsDisclaimer.html' }"><a href="#" ng-click="template='options/creditsDisclaimer.html'" i18n-content="o_credits">Credits/Disclaimer</a></li>
+    <!-- container + row -->
+    <div class="container-fluid" ng-controller="sssData">
+        <div class="row">
 
-        </ul>
-        <p class="separator"></p>
-        <ul class="nav nav-sidebar">
-          <li>
-           <a href="http://simpleselectsearch.blogspot.com/" target="_blank" i18n-content="o_checkOutMyBlog">Check out my blog for more.</a>
-         </li>
-         <li>
-          <a href="http://simpleselectsearch.blogspot.com/2012/11/help-me-translate.html" target="_blank" i18n-content="o_helpMeTranslate">Help me translate!</a>
-        </li>
-        <li>
-          <a target="_blank" href="https://crowdin.net/project/simpleselectsearch"><img src="https://crowdin.net/badges/simpleselectsearch/localized.png" /></a>
-        </li>
-        <li class="realSmall">
-         <a href="http://simpleselectsearch.blogspot.com/search/label/Change-log" target="_blank"  id="currentVersion" >{{currentVersion}}</a> 
-       </li>
-     </ul>
+            <!-- Region Left nav -->
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li ng-class="{ 'active': template == 'options/searchEngines.html' }"><a href="#" ng-click="template='options/searchEngines.html'" i18n-content="o_searchEngines">Search engines</a>
+                    </li>
+                    <li ng-class="{ 'active': template == 'options/advancedConfig.html' }"><a href="#" ng-click="template='options/advancedConfig.html'" i18n-content="o_advancedConfig">Advanced config</a>
+                    </li>
+                    <li ng-class="{ 'active': template == 'options/importExport.html' }"><a href="#" ng-click="template='options/importExport.html'" i18n-content="o_importExport">Import/export</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li ng-class="{ 'active': template == 'options/help.html' }"><a href="#" ng-click="template='options/help.html'" i18n-content="o_help">Help</a>
+                    </li>
+                    <li ng-class="{ 'active': template == 'options/supportMe.html' }"><a href="#" ng-click="template='options/supportMe.html'" i18n-content="o_supportMe">Support me :)</a>
+                    </li>
+                    <li ng-class="{ 'active': template == 'options/creditsDisclaimer.html' }"><a href="#" ng-click="template='options/creditsDisclaimer.html'" i18n-content="o_credits">Credits/Disclaimer</a>
+                    </li>
+
+                </ul>
+                <p class="separator"></p>
+                <ul class="nav nav-sidebar">
+                    <li>
+                        <a href="http://simpleselectsearch.blogspot.com/" target="_blank" i18n-content="o_checkOutMyBlog">Check out my blog for more.</a>
+                    </li>
+                    <li>
+                        <a href="http://simpleselectsearch.blogspot.com/2012/11/help-me-translate.html" target="_blank" i18n-content="o_helpMeTranslate">Help me translate!</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://crowdin.net/project/simpleselectsearch"><img src="https://crowdin.net/badges/simpleselectsearch/localized.png" />
+                        </a>
+                    </li>
+                    <li class="realSmall">
+                        <a href="http://simpleselectsearch.blogspot.com/search/label/Change-log" target="_blank" id="currentVersion">{{currentVersion}}</a>
+                    </li>
+                </ul>
 
 
-     <!-- PayPal -->
+                <!-- PayPal -->
 
-     <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-       <input type="hidden" name="cmd" value="_s-xclick">
-       <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
        ">
-       <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-       <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-     </form>
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                </form>
 
 
-   </div>
-   <!-- END Left nav -->     
+            </div>
+            <!-- Endregion Left nav -->
 
-   <!-- Main content area -->
-   <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" >
+            <!-- Region Main content area -->
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
-    <!-- Angular includes -->
-      <!-- Alerts -->
-      <div class="alert-container" >
-        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
-        <alert ng-repeat="confirm in confirms" type="warning" close="closeConfirm($index)">{{confirm.msg}}
-          <div class="form-controls-alert">
-            <button class="btn btn-default" data-ng-click="closeConfirm($index)">No</button>
-            <button class="btn btn-danger" data-ng-click="yesConfirm(confirm.action, $index)">Yes</button> 
-          </div>
-        </alert>
-      </div>
+                <!-- Angular includes -->
+                <!-- Alerts -->
+                <div class="alert-container">
+                    <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+                    <alert ng-repeat="confirm in confirms" type="warning" close="closeConfirm($index)">{{confirm.msg}}
+                        <div class="form-controls-alert">
+                            <button class="btn btn-default" data-ng-click="closeConfirm($index)">No</button>
+                            <button class="btn btn-danger" data-ng-click="yesConfirm(confirm.action, $index)">Yes</button>
+                        </div>
+                    </alert>
+                </div>
 
-    <div class="options-container" ng-include="template">
+                <div class="options-container" ng-include="template">
+                </div>
+
+                <!-- END Angular includes -->
+
+            </div>
+
+            <!-- Endregion Main content area -->
+        </div>
     </div>
+    <!-- END container + row -->
 
-    <!-- END Angular includes -->
+    <!-- Region script references -->
+    
+    <!--Libs-->
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-animate.min.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/ng-sortable.min.js"></script>
+    <script src="js/lib/angular-sanitize.min.js"></script>
+    <script src="js/lib/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script src="js/lib/ui-utils.min.js"></script>
 
-  </div>
+    <!--sss code-->
+    <script src="js/sss.options.service.js"></script>
+    <script src="js/sss.options.controller.js"></script>
+    <script src="js/sss.options.controller.credits.js"></script>
+    <script src="js/sss.options.directive.js"></script>
 
-  <!-- END Main content area -->
-</div>
-</div>
-<!-- END container + row -->
-
-<!--Libs-->
-<script src="js/lib/angular.min.js"></script>
-<script src="js/lib/angular-animate.min.js"></script>
-<script src="js/lib/jquery.min.js"></script>
-<script src="js/lib/bootstrap.min.js"></script>
-<script src="js/lib/ng-sortable.min.js"></script> 
-<script src="js/lib/angular-sanitize.min.js"></script> 
-<script src="js/lib/ui-bootstrap-tpls-0.13.0.min.js"></script> 
-<script src="js/lib/ui-utils.min.js"></script> 
-
-
-<!--sss code-->
-<script src="js/sss.options.service.js"></script>
-<script src="js/sss.options.controller.js"></script>
-<script src="js/sss.options.controller.credits.js"></script>
-<script src="js/sss.options.directive.js"></script>
-
-<!--external -->
-<script src="https://apis.google.com/js/plusone.js"></script>
+    <!--external -->
+    <script src="https://apis.google.com/js/plusone.js"></script>
+    
+    <!-- Endregion -->
 
 </body>
+
 </html>
