@@ -4,7 +4,7 @@
     "description":"Extension's name. Use   instead of spaces."
   },
   "extDescription":{
-    "message":"Faites un clic droit sur le texte sélectionné pour la recherche sur plusieurs moteurs de recherche pour Chrome. Simple à configurer. Prend en charge le regroupement de moteurs de recherche, ouverture en incongito et plus encore.",
+    "message":"Faites un clic droit sur le texte sélectionné pour la recherche sur plusieurs moteurs de recherche pour Chrome.",
     "description":""
   },
   "bg_searchStringOn":{

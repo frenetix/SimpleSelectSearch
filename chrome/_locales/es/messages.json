@@ -4,7 +4,7 @@
     "description":"Extension's name. Use   instead of spaces."
   },
   "extDescription":{
-    "message":"Click derecho sobre una selección de texto para realizar búsquedas en múltiples sitios desde Chrome. Sencilla de configurar. Sporta agrupar búsquedas, abrir en ventana incógnito y más.",
+    "message":"Click derecho sobre texto seleccionado busca en múltiples sitios desde Chrome. Sporta agrupar búsquedas, abrir en incógnito, etc.",
     "description":""
   },
   "bg_searchStringOn":{
@@ -288,7 +288,7 @@
     "description":""
   },
   "o_sortBy":{
-    "message":"Sort by:",
+    "message":"Ordenar por:",
     "description":""
   }
 }

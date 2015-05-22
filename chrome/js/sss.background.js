@@ -78,9 +78,15 @@ function checkOnNewTab() {
 
 // Open results in new tab
 function searchOnNewTab(urlSE, tab) {
-    var newTab = {
-        "url": urlSE,
-        openerTabId: tab.id
+    if (tab.id > -1) {
+        var newTab = {
+            "url": urlSE,
+            openerTabId: tab.id
+        }
+    } else {
+        var newTab = {
+            "url": urlSE
+        }
     };
     if (config.newTabPosition == "First") {
         newTab.index = 0;
@@ -91,7 +97,7 @@ function searchOnNewTab(urlSE, tab) {
     }
     newTab.active = config.newTabSelected;
     chrome.tabs.create(newTab);
-}
+};
 
 // Search everywhere!
 // ToDo: if incognito open in incognito
@@ -112,9 +118,9 @@ function bulkSearch(info, tab, group) {
 // Create menu items
 function createMenu() {
     chrome.contextMenus.removeAll(); // reset menu
-    var SELength = config.searchEngines.length; 
+    var SELength = config.searchEngines.length;
     var title = i18n("bg_searchStringOn"); // title for SSS menu
-    if (SELength > 1) {     // checks if there's more than one link, else show on root
+    if (SELength > 1) { // checks if there's more than one link, else show on root
         var id = chrome.contextMenus.create({
             "title": title,
             "contexts": [CONTEXT],
@@ -125,10 +131,10 @@ function createMenu() {
             }(0)
         });
         // Creates menu groups, if there's any
-        var nestGroups = !allEmptyGroups(), 
+        var nestGroups = !allEmptyGroups(),
             groups = []; // Todo: get rid of groups and use flags only
         if (nestGroups) {
-            var flags = [],                
+            var flags = [],
                 i;
             for (i = 0; i < SELength; i++) {
                 if (flags[config.searchEngines[i].group])
@@ -151,7 +157,7 @@ function createMenu() {
             }
         }
 
-        for (i = 0; i < SELength; i++) { 
+        for (i = 0; i < SELength; i++) {
             var child = chrome.contextMenus.create({
                 "title": config.searchEngines[i].name + ((config.searchEngines[i].incognito) ? " (i)" : ""),
                 "parentId": nestGroups && config.searchEngines[i].group ? config.searchEngines[i].group : id,
