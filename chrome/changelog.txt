@@ -1,3 +1,12 @@
+New on v 0.4.1
+ - bug fix
+ - Localization updates
+New on v 0.4
+ - New groups feature
+ - Ability to turn "Search everywhere!" off
+ - New UI for featured search engines and credits page
+ - Having multiple search engines with same name is now possible again
+ - Localization updates
 New on v 0.3.4
  - bug fixes
  - code cleanup related to AngularJS (the lack of knowledge of :)
