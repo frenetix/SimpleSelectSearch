@@ -65,7 +65,7 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
         };
 
         // Sets row to be edited
-        $scope.setEdit = function (index) {
+        $scope.setEdit = function (index) { // ToDo: Apply focus to field
             $scope.editRow = index;
         };
 

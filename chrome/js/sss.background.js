@@ -134,25 +134,26 @@ function createMenu() {
         var nestGroups = !allEmptyGroups(),
             groups = []; // Todo: get rid of groups and use flags only
         if (nestGroups) {
-            var flags = [],
-                i;
+            var i;
             for (i = 0; i < SELength; i++) {
-                if (flags[config.searchEngines[i].group])
-                    continue;
-                flags[config.searchEngines[i].group] = true;
-                if (!isEmptyOrNull(config.searchEngines[i].group)) {
-                    groups.push(config.searchEngines[i].group);
-                    var child = chrome.contextMenus.create({
-                        "title": config.searchEngines[i].group,
-                        "parentId": id,
-                        "id": config.searchEngines[i].group,
-                        "contexts": [CONTEXT],
-                        "onclick": function (idSE) {
-                            return function (info, tab) {
-                                genericSearch(info, tab, idSE)
-                            }
-                        }(0)
-                    });
+                if (groups[config.searchEngines[i].group]) {
+                    groups[config.searchEngines[i].group] ++;
+                } else {
+                    groups[config.searchEngines[i].group] = 1;
+                    if (!isEmptyOrNull(config.searchEngines[i].group)) {
+                        groups.push(config.searchEngines[i].group);
+                        var child = chrome.contextMenus.create({
+                            "title": config.searchEngines[i].group,
+                            "parentId": id,
+                            "id": config.searchEngines[i].group,
+                            "contexts": [CONTEXT],
+                            "onclick": function (idSE) {
+                                return function (info, tab) {
+                                    genericSearch(info, tab, idSE)
+                                }
+                            }(0)
+                        });
+                    }
                 }
             }
         }
@@ -194,19 +195,22 @@ function createMenu() {
 
         if (config.searchEverywhereGroups) {
             for (i = 0; i < groups.length; i++) {
-                // separator
-                createMenuSeparator(groups[i], CONTEXT);
-                //search everywhere
-                var id = chrome.contextMenus.create({
-                    "title": i18n("bg_searchEverywhere"),
-                    "parentId": groups[i],
-                    "contexts": [CONTEXT],
-                    "onclick": function (group) {
-                        return function (info, tab) {
-                            bulkSearch(info, tab, group)
-                        }
-                    }(groups[i])
-                });
+
+                if (groups[groups[i]] > 1) { // ToDo: there's gotta be a better way
+                    // separator
+                    createMenuSeparator(groups[i], CONTEXT);
+                    //search everywhere
+                    var id = chrome.contextMenus.create({
+                        "title": i18n("bg_searchEverywhere"),
+                        "parentId": groups[i],
+                        "contexts": [CONTEXT],
+                        "onclick": function (group) {
+                            return function (info, tab) {
+                                bulkSearch(info, tab, group)
+                            }
+                        }(groups[i])
+                    });
+                }
             }
         }
 

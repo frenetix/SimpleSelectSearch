@@ -53,33 +53,46 @@
     </div>
 
 </form>
-
+<!-- Region Featured Search Engines -->
 
 <h2 class="sub-header" i18n-content="o_featuredSearchEngines">Other search engines</h2>
 <p i18n-content="o_featuredSearchEngnesDesc"></p>
-<div class="sortURLs row">
-    <div class="col-md-12">
-        <div i18n-content="o_sortBy">Sort by</div>
-        <div>
+<div class="row sortURLs">
+    <form>
+        <div i18n-content="o_sortBy" class="col-md-1">
+            Sort by
+        </div>
+        <div class="col-md-1">
             <a href="#" ng-click="sortType = 'name'; sortReverse = !sortReverse" i18n-content="o_name">Name</a>
             <span ng-show="sortType == 'name' && !sortReverse" class="sorter-icon glyphicon glyphicon-menu-down"></span>
             <span ng-show="sortType == 'name' && sortReverse" class="sorter-icon glyphicon glyphicon-menu-up"></span>
         </div>
-        <div>
+        <div class="col-md-1">
             <a href="#" ng-click="sortType = 'type'; sortReverse = !sortReverse" i18n-content="o_type">Type</a>
             <span ng-show="sortType == 'type' && !sortReverse" class="sorter-icon glyphicon glyphicon-menu-down"></span>
             <span ng-show="sortType == 'type' && sortReverse" class="sorter-icon glyphicon glyphicon-menu-up"></span>
         </div>
-        <div>
+        <div class="col-md-1">
             <a href="#" ng-click="sortType = 'language'; sortReverse = !sortReverse" i18n-content="o_language">Language</a>
             <span ng-show="sortType == 'language' && !sortReverse" class="sorter-icon glyphicon glyphicon-menu-down"></span>
             <span ng-show="sortType == 'language' && sortReverse" class="sorter-icon glyphicon glyphicon-menu-up"></span>
         </div>
-    </div>
+        <div class="col-md-8">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                    <input ng-model="searchText" type="text" class="form-control" placeholder="Type to filter">
+                </div>
+            </div>
+
+        </div>
+    </form>
 </div>
 
 
-<div ng-repeat="x in featuredURLs | orderBy:sortType:sortReverse" ng-class="{'light': x.isUsed}" class="featuredURLs" ng-click="addSearchEngine(this)">
+<div ng-repeat="x in featuredURLs | orderBy:sortType:sortReverse | filter: searchText" ng-class="{'light': x.isUsed}" class="featuredURLs" ng-click="addSearchEngine(this)">
     <ul>
         <li>{{x.name}}</li>
         <li>{{x.type}}</li>

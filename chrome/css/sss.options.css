@@ -361,12 +361,6 @@ body {
     box-shadow: 5px 5px 15px #f0f0f0;
 }
 
-.sortURLs div div {
-    width: 100px;
-    display: block;
-    float: left;
-}
-
 .sortURLs.row {
     padding-bottom: 10px;
 }
