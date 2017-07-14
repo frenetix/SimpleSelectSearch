@@ -4,7 +4,7 @@
     "description":"Extension's name. Use   instead of spaces."
   },
   "extDescription":{
-    "message":"Right click on selected text to search on multiple search engines for Chrome. Supports grouping engines, incongito, and more.",
+    "message":"Klik met rechts op de tekst om met meerdere zoekmachines te zoeken in Chrome. Ondersteunt grouping engines, incongito, en meer.",
     "description":""
   },
   "bg_searchStringOn":{
@@ -116,7 +116,7 @@
     "description":""
   },
   "o_featuredSearchEngnesDesc":{
-    "message":"Click on a URL to include it in your Search Engines' list.",
+    "message":"Klik op een URL om hem op te nemen in uw zoekmachine lijst.",
     "description":""
   },
   "o_groupBy":{
@@ -228,11 +228,11 @@
     "description":""
   },
   "o_checkOutMyBlog":{
-    "message":"Check out my blog for more.",
+    "message":"Bekijk mijn blog voor meer.",
     "description":""
   },
   "o_sort":{
-    "message":"Sort",
+    "message":"Sorteer",
     "description":""
   },
   "o_incognito":{
@@ -240,55 +240,55 @@
     "description":""
   },
   "o_resetDefaultSuccess":{
-    "message":"You now have default settings :)",
+    "message":"U hebt nu de standaard instellingen :)",
     "description":""
   },
   "o_areYouSure":{
-    "message":"Are you sure?",
+    "message":"Weet je het zeker?",
     "description":""
   },
   "o_helpMeTranslate":{
-    "message":"Help me translate!",
+    "message":"Help me vertalen!",
     "description":""
   },
   "o_GitHubContributors":{
-    "message":"Super awesome <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'>GitHub<\/a> contributors",
+    "message":"Erg coole <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'> GitHub<\/a> mensen die hebben geholpen",
     "description":""
   },
   "o_CrowdinContributors":{
-    "message":"Super awesome <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'>Crowdin<\/a> contributors (translators)",
+    "message":"Super coole <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'> Crowdin<\/a> mensen (vertalers)",
     "description":""
   },
   "o_plusExplain":{
-    "message":"Plus versus space: some search engines use '+' instead of a space to separate words you're looking for.",
+    "message":"Plus of spatie: sommige search engines gebruiken ' +' in plaats van een spatie om de woorden te scheiden die U zoekt.",
     "description":""
   },
   "o_cannotAddDuplicates":{
-    "message":"Sorry, I cannot add duplicate name entries.",
+    "message":"Sorry, namen kunnen niet gelijk zijn.",
     "description":""
   },
   "o_group":{
-    "message":"Group",
+    "message":"Groep",
     "description":""
   },
   "o_groupsUsed":{
-    "message":"Used groups",
+    "message":"Gebruikte groepen",
     "description":""
   },
   "o_showSearchEverywhere":{
-    "message":"Show 'Search everywhere' option.",
+    "message":"Toon 'Zoek overal' optie.",
     "description":""
   },
   "o_showSearchEverywhereGroups":{
-    "message":"Show 'Search everywhere' option within groups.",
+    "message":"Toon 'Zoek overal' optie binnen de groepen.",
     "description":""
   },
   "o_tabs":{
-    "message":"Tabs",
+    "message":"Tabbladen",
     "description":""
   },
   "o_sortBy":{
-    "message":"Sort by:",
+    "message":"Sorteer op:",
     "description":""
   }
 }
