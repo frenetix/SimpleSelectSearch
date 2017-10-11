@@ -4,7 +4,7 @@
     "description":"Extension's name. Use   instead of spaces."
   },
   "extDescription":{
-    "message":"Right click on selected text to search on multiple search engines for Chrome. Supports grouping engines, incongito, and more.",
+    "message":"Chrome-Erweiterung, welche dir erlaubt mit nur einem Rechtsklick auf jeden beliebigen markierten Text eine mehrfach Suche auszuführen.\nUnterstützt gruppieren der Suchmaschinen, inkognito Modus und einiges mehr.",
     "description":""
   },
   "bg_searchStringOn":{
@@ -16,11 +16,11 @@
     "description":""
   },
   "bg_openOnNewTab":{
-    "message":"Open on new tab",
+    "message":"In neuem Tab öffnen",
     "description":""
   },
   "bg_options":{
-    "message":"Options...",
+    "message":"Optionen...",
     "description":""
   },
   "bg_extensionBlog":{
@@ -40,19 +40,19 @@
     "description":""
   },
   "o_searchURL":{
-    "message":"Search URL",
+    "message":"Such-URL",
     "description":""
   },
   "o_cancel":{
-    "message":"cancel",
+    "message":"abbrechen",
     "description":""
   },
   "o_edit":{
-    "message":"edit",
+    "message":"bearbeiten",
     "description":""
   },
   "o_new":{
-    "message":"new",
+    "message":"neu",
     "description":""
   },
   "o_ok":{
@@ -248,7 +248,7 @@
     "description":""
   },
   "o_helpMeTranslate":{
-    "message":"Help me translate!",
+    "message":"Hilf mit, bei der Übersetzung!",
     "description":""
   },
   "o_GitHubContributors":{
@@ -264,23 +264,23 @@
     "description":""
   },
   "o_cannotAddDuplicates":{
-    "message":"Sorry, I cannot add duplicate name entries.",
+    "message":"Ich kann keinen doppelten Namenseintrag hinzufügen.",
     "description":""
   },
   "o_group":{
-    "message":"Group",
+    "message":"Gruppe",
     "description":""
   },
   "o_groupsUsed":{
-    "message":"Used groups",
+    "message":"Verwendete Gruppen",
     "description":""
   },
   "o_showSearchEverywhere":{
-    "message":"Show 'Search everywhere' option.",
+    "message":"\"Überall suchen\" Option anzeigen.",
     "description":""
   },
   "o_showSearchEverywhereGroups":{
-    "message":"Show 'Search everywhere' option within groups.",
+    "message":"\"Überall suchen\" Option in Gruppen anzeigen.",
     "description":""
   },
   "o_tabs":{
@@ -288,7 +288,7 @@
     "description":""
   },
   "o_sortBy":{
-    "message":"Sort by:",
+    "message":"Sortieren nach:",
     "description":""
   }
 }
