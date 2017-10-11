@@ -8,11 +8,11 @@
     "description":""
   },
   "bg_searchStringOn":{
-    "message":"Search '%s' on",
+    "message":"Suche nach '%s'",
     "description":""
   },
   "bg_searchEverywhere":{
-    "message":"Search everywhere!",
+    "message":"Suche überall!",
     "description":""
   },
   "bg_openOnNewTab":{
