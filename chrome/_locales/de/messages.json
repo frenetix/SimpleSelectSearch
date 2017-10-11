@@ -1,6 +1,6 @@
 {
   "extName":{
-    "message":"Simple = Select + Search",
+    "message":"Simple = markieren & suchen",
     "description":"Extension's name. Use   instead of spaces."
   },
   "extDescription":{
@@ -60,7 +60,7 @@
     "description":""
   },
   "o_sureYouWantToDelete":{
-    "message":"Sure you want to delete this row?",
+    "message":"Sicher, dass du diese Zeile löschen willst?",
     "description":""
   },
   "o_confirmImport":{
