@@ -236,7 +236,7 @@
     "description":""
   },
   "o_incognito":{
-    "message":"Incognito",
+    "message":"Inkognito",
     "description":""
   },
   "o_resetDefaultSuccess":{
@@ -256,11 +256,11 @@
     "description":""
   },
   "o_CrowdinContributors":{
-    "message":"Super awesome <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'>Crowdin<\/a> contributors (translators)",
+    "message":"Fantastische <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'> Crowdin<\/a> Beitragende (Übersetzer)",
     "description":""
   },
   "o_plusExplain":{
-    "message":"Plus versus space: some search engines use '+' instead of a space to separate words you're looking for.",
+    "message":"\"Plus\" im Vergleich zu \"Space\": einige Suchmaschinen verwenden ein ' +' anstatt einem Leerzeichen um Wörter zu trennen die Sie suchen.",
     "description":""
   },
   "o_cannotAddDuplicates":{
