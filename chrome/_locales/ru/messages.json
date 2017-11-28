@@ -144,11 +144,11 @@
         "description": ""
     },
     "o_importExport": {
-        "message": "Import\/Export Config",
+        "message": "Импорт\/Экспорт настроек",
         "description": ""
     },
     "o_importExportDescription": {
-        "message": "Here's all the config info. Just copy & save it on any text file...<br \/>  If you want to import your previously saved config, just paste it here and click on the import button.<br \/><br \/>",
+        "message": "Здесь вся информация о конфигурации. Просто скопируйте и вставьте в текстовый файл...<br \/>  Если вы хотите загрузить предварительно сохранённый файл настроек, вставьте его сюда и нажмите кнопку \"Импортировать\".<br \/><br \/>",
         "description": ""
     },
     "importConfig": {
@@ -168,7 +168,7 @@
         "description": ""
     },
     "o_giveNewTabFocus": {
-        "message": "Give new tab focus.",
+        "message": "Переключать фокус на новую вкладку.",
         "description": ""
     },
     "o_newTabPosition": {
@@ -192,47 +192,47 @@
         "description": ""
     },
     "o_trackSearchEngines": {
-        "message": " Track search engines usage.",
+        "message": " Отслеживать использование поисковых систем.",
         "description": ""
     },
     "o_leavingThisCheckbox": {
-        "message": "Tracked information is used by me, only for statistical analysis purposes.  <br\/>No user information is being tracked.  <br\/>No search terms are being tracked (only the search engine used). You can read more about this on <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">my blog<\/a>.",
+        "message": "Собираемая информация используется только мной, для анализа статистики.  <br\/>Информация о пользователе не отслеживается.  <br\/>Поисковые запросы не отслеживаются (только используемые поисковые системы). Вы можите прочитать об этом больше в <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">моём блоге<\/a>.",
         "description": ""
     },
     "eraseOptions": {
-        "message": "Restore default options",
+        "message": "Восстановить настройки по-умолчанию",
         "description": ""
     },
     "o_developedBy": {
-        "message": "   Developed by <a href=\"https:\/\/plus.google.com\/u\/0\/100927641416387074874\/about\" target=\"_blank\">Diego Presno<\/a>. Follow me on Twitter <a href=\"http:\/\/twitter.com\/#!\/frenetix_\" target=\"_blank\">@frenetix_<\/a>  <br \/>  All images\/icons designed by <a href=\"http:\/\/germanrivas.com\/\" target=\"_blank\">germanrivas.com<\/a>.<br\/><br \/>  <h2>Disclaimer<\/h2>  Please, be warned: the usage of this extension is being tracked by Google Analytics.  It also tracks which search engines are the most used by users, so I can then be able to add them to the featured Search Engines list.<br\/>  The extension does not track the identity of its user, nor what terms they're looking for.  Only the search URL syntax is being recorded.<br\/>  No individual information will be shared with third parties. The only information published will be about the most used sites. An example of the published information can be found on my <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a>.",
+        "message": "   Разработано <a href=\"https:\/\/plus.google.com\/u\/0\/100927641416387074874\/about\" target=\"_blank\">Diego Presno<\/a>. Твиттер: <a href=\"http:\/\/twitter.com\/#!\/frenetix_\" target=\"_blank\">@frenetix_<\/a>  <br \/>  Все изображения\/иконки разработаны <a href=\"http:\/\/germanrivas.com\/\" target=\"_blank\">germanrivas.com<\/a>.<br\/><br \/>  <h2>Отказ от ответственности<\/h2>  Внимание: использование этого расширения отслеживается с помощью Google Analytics.  Также отслеживаются используемые поисковые системы, чтобы добавлять их в список популярных поисковых систем.<br\/>  Расширение не отслеживает идентификатор пользователя или поисковые запросы. Записывается только синтаксис поисковых URL.<br\/> Индивидуальная информация не будет передаваться другим сторонам. Единственная публикуемая информация - список самых часто используемых поисковых систем. Пример публикуемой информации можно найти в моём <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">блоге<\/a>.",
         "description": ""
     },
     "o_searchEngines": {
-        "message": "Search engines",
+        "message": "Поисковые системы",
         "description": ""
     },
     "o_help": {
-        "message": "Help",
+        "message": "Справка",
         "description": ""
     },
     "o_supportMe": {
-        "message": "Support me :)",
+        "message": "Поддержите меня :)",
         "description": ""
     },
     "o_advancedConfig": {
-        "message": "Advanced config",
+        "message": "Продвинутые опции",
         "description": ""
     },
     "o_credits": {
-        "message": "Credits\/Disclaimer",
+        "message": "Участники проекта\/Отказ от ответственности",
         "description": ""
     },
     "o_checkOutMyBlog": {
-        "message": "Check out my blog for more.",
+        "message": "Смотрите мой блог для более детальной информации(english).",
         "description": ""
     },
     "o_sort": {
-        "message": "Sort",
+        "message": "Сортировать",
         "description": ""
     },
     "o_incognito": {
@@ -240,7 +240,7 @@
         "description": ""
     },
     "o_resetDefaultSuccess": {
-        "message": "You now have default settings :)",
+        "message": "Теперь у вас есть настройки по-умолчанию :)",
         "description": ""
     },
     "o_areYouSure": {
