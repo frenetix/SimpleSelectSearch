@@ -28,31 +28,31 @@
         "description": ""
     },
     "bg_installMessage": {
-        "message": "Extension succesfully installed. <br\/> Check out on Options page to configure it, and to know about diferent ways to support your humble extension provider ;)",
+        "message": "Rozšíření se úspěšně nainstalovalo. <br\/> Podívejte se na stránku Nastavení a upravte si ho a zjistěte jak podpořit skromného tvůrce tohoto rozšíření ;)",
         "description": ""
     },
     "bg_updateMessage": {
-        "message": "Extension succesfully updated to {VersionNumber}<br\/>Visit <a href=http:\/\/simpleselectsearch.blogspot.com>my blog<\/a> for a list of improvements.",
+        "message": "Rozšíření se úspěšně aktualizovalo na {VersionNumber}<br\/>Navštivte<a href=http:\/\/simpleselectsearch.blogspot.com>můj blog<\/a>pro seznam vylepšení.",
         "description": ""
     },
     "o_name": {
-        "message": "Name",
+        "message": "Název",
         "description": ""
     },
     "o_searchURL": {
-        "message": "Search URL",
+        "message": "Vyhledávací URL",
         "description": ""
     },
     "o_cancel": {
-        "message": "cancel",
+        "message": "zrušit",
         "description": ""
     },
     "o_edit": {
-        "message": "edit",
+        "message": "upravit",
         "description": ""
     },
     "o_new": {
-        "message": "new",
+        "message": "nový",
         "description": ""
     },
     "o_ok": {
@@ -60,7 +60,7 @@
         "description": ""
     },
     "o_sureYouWantToDelete": {
-        "message": "Sure you want to delete this row?",
+        "message": "Jste si jist, že chcete vymazat tento řádek?",
         "description": ""
     },
     "o_confirmImport": {
@@ -84,27 +84,27 @@
         "description": ""
     },
     "o_thankYou": {
-        "message": "Thank you!",
+        "message": "Děkuji!",
         "description": ""
     },
     "o_type": {
-        "message": "Type",
+        "message": "Typ",
         "description": ""
     },
     "o_language": {
-        "message": "Language",
+        "message": "Jazyk",
         "description": ""
     },
     "o_moreSearchEngines": {
-        "message": "More Search Engines",
+        "message": "Více vyhledávačů",
         "description": ""
     },
     "o_selectAURL": {
-        "message": "Please select a URL",
+        "message": "Prosím označte URL adresu",
         "description": ""
     },
     "o_mySearchEngines": {
-        "message": "My Search Engines",
+        "message": "Mé vyhledávače",
         "description": ""
     },
     "o_mySearchEnginesDesc": {
