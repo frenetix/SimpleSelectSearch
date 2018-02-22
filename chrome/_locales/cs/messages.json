@@ -112,7 +112,7 @@
         "description": ""
     },
     "o_featuredSearchEngines": {
-        "message": "Featured Search Engines",
+        "message": "Vybrané vyhledávače",
         "description": ""
     },
     "o_featuredSearchEngnesDesc": {
@@ -124,7 +124,7 @@
         "description": ""
     },
     "o_ungrouped": {
-        "message": "Ungrouped",
+        "message": "Neseskupené",
         "description": ""
     },
     "o_helpHowDoI": {
@@ -144,7 +144,7 @@
         "description": ""
     },
     "o_importExport": {
-        "message": "Import\/Export Config",
+        "message": "Import\/Export konfigurační soubor",
         "description": ""
     },
     "o_importExportDescription": {
@@ -152,11 +152,11 @@
         "description": ""
     },
     "importConfig": {
-        "message": "Import",
+        "message": "Importovat",
         "description": ""
     },
     "undoLastImport": {
-        "message": "Undo last import",
+        "message": "Vzít zpět poslední import",
         "description": ""
     },
     "o_otherStuffYouCan": {
@@ -164,7 +164,7 @@
         "description": ""
     },
     "o_openLinksInNewTab": {
-        "message": "Open links in new tab.",
+        "message": "Otevírat odkazy v další kartě.",
         "description": ""
     },
     "o_giveNewTabFocus": {
@@ -176,19 +176,19 @@
         "description": ""
     },
     "o_last": {
-        "message": "Last",
+        "message": "Poslední",
         "description": ""
     },
     "o_first": {
-        "message": "First",
+        "message": "První",
         "description": ""
     },
     "o_next": {
-        "message": "Next",
+        "message": "Další",
         "description": ""
     },
     "o_previous": {
-        "message": "Previous",
+        "message": "Předchozí",
         "description": ""
     },
     "o_trackSearchEngines": {
