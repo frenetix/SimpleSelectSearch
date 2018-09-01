@@ -1,294 +1,294 @@
 {
-  "extName":{
-    "message":"Simple = Select + Search",
-    "description":"Extension's name. Use   instead of spaces."
-  },
-  "extDescription":{
-    "message":"Right click on selected text to search on multiple search engines for Chrome. Supports grouping engines, incongito, and more.",
-    "description":""
-  },
-  "bg_searchStringOn":{
-    "message":"Cercant \"%s\"",
-    "description":""
-  },
-  "bg_searchEverywhere":{
-    "message":"Cerca en qualsevol lloc!",
-    "description":""
-  },
-  "bg_openOnNewTab":{
-    "message":"Obrir en una pestanya nova",
-    "description":""
-  },
-  "bg_options":{
-    "message":"Opcions...",
-    "description":""
-  },
-  "bg_extensionBlog":{
-    "message":"Bloc de l'extensió...",
-    "description":""
-  },
-  "bg_installMessage":{
-    "message":"Extension succesfully installed. <br\/> Check out on Options page to configure it, and to know about diferent ways to support your humble extension provider ;)",
-    "description":""
-  },
-  "bg_updateMessage":{
-    "message":"Extension succesfully updated to {VersionNumber}<br\/>Visit <a href=http:\/\/simpleselectsearch.blogspot.com>my blog<\/a> for a list of improvements.",
-    "description":""
-  },
-  "o_name":{
-    "message":"Nom",
-    "description":""
-  },
-  "o_searchURL":{
-    "message":"Cercar una URL",
-    "description":""
-  },
-  "o_cancel":{
-    "message":"Cancel·lar",
-    "description":""
-  },
-  "o_edit":{
-    "message":"editar",
-    "description":""
-  },
-  "o_new":{
-    "message":"nou",
-    "description":""
-  },
-  "o_ok":{
-    "message":"ok",
-    "description":""
-  },
-  "o_sureYouWantToDelete":{
-    "message":"Segur que voleu suprimir aquesta fila?",
-    "description":""
-  },
-  "o_confirmImport":{
-    "message":"I'm about to try and parse the text on your import\/export textbox... if something goes wrong... just click on the *undo last import* button. I would also recommend that you keep a backup copy of this config... just in case :)",
-    "description":""
-  },
-  "o_importSuccesfull":{
-    "message":"Import successfull. Before reloading this page, check your Search Engines list to make sure everything goes well. If it's empty, then hit the *undo last import* button.",
-    "description":""
-  },
-  "o_confirmRestore":{
-    "message":"I'm about to try and restore the config saved the last time you clicked on the *import* button",
-    "description":""
-  },
-  "o_restoreSuccesfull":{
-    "message":"Config saved before last import was just restored... if this doesn't help, you can always reset the options to the default settings with the button in the 'Advanced settings' page... or might try and retrieve a config backup if you did one before ;)",
-    "description":""
-  },
-  "o_nothingToRestore":{
-    "message":"Ho sento, no tinc res a restaurar",
-    "description":""
-  },
-  "o_thankYou":{
-    "message":"Gràcies!",
-    "description":""
-  },
-  "o_type":{
-    "message":"Tipus",
-    "description":""
-  },
-  "o_language":{
-    "message":"Idioma",
-    "description":""
-  },
-  "o_moreSearchEngines":{
-    "message":"Més motors de cerca",
-    "description":""
-  },
-  "o_selectAURL":{
-    "message":"Si us plau seleccioni un URL",
-    "description":""
-  },
-  "o_mySearchEngines":{
-    "message":"Els meus cercadors",
-    "description":""
-  },
-  "o_mySearchEnginesDesc":{
-    "message":"These are your configured search engines. Select other engines from the Featured Search Engines list below or create your own. Check the help for instructions.",
-    "description":""
-  },
-  "o_featuredSearchEngines":{
-    "message":"Motors de cerca destacats",
-    "description":""
-  },
-  "o_featuredSearchEngnesDesc":{
-    "message":"Click on a URL to include it in your Search Engines' list.",
-    "description":""
-  },
-  "o_groupBy":{
-    "message":"Agrupar per:&nbsp;&nbsp;  ",
-    "description":""
-  },
-  "o_ungrouped":{
-    "message":"No agrupades",
-    "description":""
-  },
-  "o_helpHowDoI":{
-    "message":"Ajuda! com puc editar llista dels motors de cerca?",
-    "description":""
-  },
-  "o_helpHowDoIDescription":{
-    "message":"It's really easy! <br \/>  Just click on any row's edit icon (the one with the little pencil) or just click the \"name\" column and edit its values.  <ul>    <li>The \"name\" column refers to what you'll see on the context menu.<\/li>    <li>The \"Search URL\" refers to what the search engine needs to run your query.<\/li>    <li>The <span class=\"searchString\">%s<\/span> symbol will be replaced with the selected text on your browser.<\/li>  <\/ul>  You can decide the order of your search engines by dragging them up and down... do it over the \"#\" column, where the up and down arrows appear. Your mouse pointer will change when you're over the right spot, and you'll figure it out.  <h2>Here's a simple way to create a Search URL of your own:<\/h2>  <ul>    <li>On your preferred site, perform a search for the word \"TESTSEARCH\".<\/li>    <li> Then just copy the URL that was generated within the site, that might look like this, for example, on IMDB: http:\/\/www.imdb.com\/find?s=all;q=<span class=\"searchString\">TESTSEARCH<\/span>.<\/li>    <li>Now just replace <span class=\"searchString\">TESTSEARCH<\/span> with <span class=\"searchString\">%s<\/span> and paste it here, on the \"Search URL\" column.<\/li>    <li>Then indicate a name to that Search URL and you're done!<\/li>  <\/ul>  Make sure you check first if the site you'd like to add is on the \"Other search engines\" table. I'm updating that table every now and the. If you have any suggestions for that list, they are more than welcome.  <br\/>  <br\/> You can sort the URLs order by hovering over the first column.",
-    "description":""
-  },
-  "o_SupportThisHumble":{
-    "message":"Support this humble extension developer",
-    "description":""
-  },
-  "o_SupportThisHumbleDescription":{
-    "message":"Of course, this extension is for free -I built it to use it myself, actually-... but if you really enjoy using it, and you'd like to show your appreciation, here's a list of things that might make me happy :)  <ul>    <li><b>Show me the money:<\/b> Hit the <b>donate<\/b> button at the top right of this page... and send me a few bucks!<\/li>    <li><b>Use Amazon's featured links:<\/b> Use any of the Amazon links featured on the options page, search stuff using my extension and buy it! If you used one of my links -it doesn't work if you created the link by yourself, it will cost you the same, and Amazon will pay me a handsome reward! :D... and did I mention it costs you zero!?<\/li>    <li><b>Guerrilla advertising:<\/b> <a href=\"http:\/\/twitter.com\/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http:\/\/bit.ly\/HzSP8p @frenetix_\" title=\"Click to send this page to Twitter!\" target=\"_blank\">Share on Twitter<\/a>, <a href=\"https:\/\/www.facebook.com\/sharer\/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">post on Facebook<\/a>, G+ or wherever you feel this extension might be well received<\/li>    <li><b>More Guerrilla advertising:<\/b> Visit my blog, post a comment link to any of those posts. G+ the posts you like.<\/li>    <li><b>Boost my self esteem:<\/b> Rate the extension on Google's webstore, say how much you love it!<\/li>  <\/ul>",
-    "description":""
-  },
-  "o_importExport":{
-    "message":"Configuració d'importació\/exportació",
-    "description":""
-  },
-  "o_importExportDescription":{
-    "message":"Here's all the config info. Just copy & save it on any text file...<br \/>  If you want to import your previously saved config, just paste it here and click on the import button.<br \/><br \/>",
-    "description":""
-  },
-  "importConfig":{
-    "message":"importar",
-    "description":""
-  },
-  "undoLastImport":{
-    "message":"Desfés la darrera importació",
-    "description":""
-  },
-  "o_otherStuffYouCan":{
-    "message":"Altres coses que es poden configurar",
-    "description":""
-  },
-  "o_openLinksInNewTab":{
-    "message":"Obrir els enllaços en una pestanya nova nou.",
-    "description":""
-  },
-  "o_giveNewTabFocus":{
-    "message":"Passar a la nova pestanya.",
-    "description":""
-  },
-  "o_newTabPosition":{
-    "message":"Posició de la nova pestanya:",
-    "description":""
-  },
-  "o_last":{
-    "message":"Darrer",
-    "description":""
-  },
-  "o_first":{
-    "message":"Primer",
-    "description":""
-  },
-  "o_next":{
-    "message":"Següent",
-    "description":""
-  },
-  "o_previous":{
-    "message":"Anterior",
-    "description":""
-  },
-  "o_trackSearchEngines":{
-    "message":" Seguiment de l'ús dels motors de cerca.",
-    "description":""
-  },
-  "o_leavingThisCheckbox":{
-    "message":"Tracked information is used by me, only for statistical analysis purposes.  <br\/>No user information is being tracked.  <br\/>No search terms are being tracked (only the search engine used). You can read more about this on <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">my blog<\/a>.",
-    "description":""
-  },
-  "eraseOptions":{
-    "message":"Restaurar les opcions per defecte",
-    "description":""
-  },
-  "o_developedBy":{
-    "message":"   Developed by <a href=\"https:\/\/plus.google.com\/u\/0\/100927641416387074874\/about\" target=\"_blank\">Diego Presno<\/a>. Follow me on Twitter <a href=\"http:\/\/twitter.com\/#!\/frenetix_\" target=\"_blank\">@frenetix_<\/a>  <br \/>  All images\/icons designed by <a href=\"http:\/\/germanrivas.com\/\" target=\"_blank\">germanrivas.com<\/a>.<br\/><br \/>  <h2>Disclaimer<\/h2>  Please, be warned: the usage of this extension is being tracked by Google Analytics.  It also tracks which search engines are the most used by users, so I can then be able to add them to the featured Search Engines list.<br\/>  The extension does not track the identity of its user, nor what terms they're looking for.  Only the search URL syntax is being recorded.<br\/>  No individual information will be shared with third parties. The only information published will be about the most used sites. An example of the published information can be found on my <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a>.",
-    "description":""
-  },
-  "o_searchEngines":{
-    "message":"Motors de cerca",
-    "description":""
-  },
-  "o_help":{
-    "message":"Ajuda",
-    "description":""
-  },
-  "o_supportMe":{
-    "message":"Doneu-me suport :)",
-    "description":""
-  },
-  "o_advancedConfig":{
-    "message":"Configuració avançada",
-    "description":""
-  },
-  "o_credits":{
-    "message":"Crèdits\/avís legal",
-    "description":""
-  },
-  "o_checkOutMyBlog":{
-    "message":"Check out my blog for more.",
-    "description":""
-  },
-  "o_sort":{
-    "message":"Sort",
-    "description":""
-  },
-  "o_incognito":{
-    "message":"Incognito",
-    "description":""
-  },
-  "o_resetDefaultSuccess":{
-    "message":"You now have default settings :)",
-    "description":""
-  },
-  "o_areYouSure":{
-    "message":"Are you sure?",
-    "description":""
-  },
-  "o_helpMeTranslate":{
-    "message":"Help me translate!",
-    "description":""
-  },
-  "o_GitHubContributors":{
-    "message":"Super awesome <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'>GitHub<\/a> contributors",
-    "description":""
-  },
-  "o_CrowdinContributors":{
-    "message":"Super awesome <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'>Crowdin<\/a> contributors (translators)",
-    "description":""
-  },
-  "o_plusExplain":{
-    "message":"Plus versus space: some search engines use '+' instead of a space to separate words you're looking for.",
-    "description":""
-  },
-  "o_cannotAddDuplicates":{
-    "message":"Sorry, I cannot add duplicate name entries.",
-    "description":""
-  },
-  "o_group":{
-    "message":"Group",
-    "description":""
-  },
-  "o_groupsUsed":{
-    "message":"Used groups",
-    "description":""
-  },
-  "o_showSearchEverywhere":{
-    "message":"Show 'Search everywhere' option.",
-    "description":""
-  },
-  "o_showSearchEverywhereGroups":{
-    "message":"Show 'Search everywhere' option within groups.",
-    "description":""
-  },
-  "o_tabs":{
-    "message":"Tabs",
-    "description":""
-  },
-  "o_sortBy":{
-    "message":"Sort by:",
-    "description":""
-  }
+    "extName": {
+        "message": "Simple = Select + Search",
+        "description": "Extension's name. Use   instead of spaces."
+    },
+    "extDescription": {
+        "message": "Right click on selected text to search on multiple search engines for Chrome. Supports grouping engines, incongito, and more.",
+        "description": ""
+    },
+    "bg_searchStringOn": {
+        "message": "Cercant \"%s\"",
+        "description": ""
+    },
+    "bg_searchEverywhere": {
+        "message": "Cerca en qualsevol lloc!",
+        "description": ""
+    },
+    "bg_openOnNewTab": {
+        "message": "Obrir en una pestanya nova",
+        "description": ""
+    },
+    "bg_options": {
+        "message": "Opcions...",
+        "description": ""
+    },
+    "bg_extensionBlog": {
+        "message": "Bloc de l'extensió...",
+        "description": ""
+    },
+    "bg_installMessage": {
+        "message": "Extension succesfully installed. <br\/> Check out on Options page to configure it, and to know about diferent ways to support your humble extension provider ;)",
+        "description": ""
+    },
+    "bg_updateMessage": {
+        "message": "Extension succesfully updated to {VersionNumber}<br\/>Visit <a href=http:\/\/simpleselectsearch.blogspot.com>my blog<\/a> for a list of improvements.",
+        "description": ""
+    },
+    "o_name": {
+        "message": "Nom",
+        "description": ""
+    },
+    "o_searchURL": {
+        "message": "Cercar una URL",
+        "description": ""
+    },
+    "o_cancel": {
+        "message": "Cancel·lar",
+        "description": ""
+    },
+    "o_edit": {
+        "message": "editar",
+        "description": ""
+    },
+    "o_new": {
+        "message": "nou",
+        "description": ""
+    },
+    "o_ok": {
+        "message": "ok",
+        "description": ""
+    },
+    "o_sureYouWantToDelete": {
+        "message": "Segur que voleu suprimir aquesta fila?",
+        "description": ""
+    },
+    "o_confirmImport": {
+        "message": "I'm about to try and parse the text on your import\/export textbox... if something goes wrong... just click on the *undo last import* button. I would also recommend that you keep a backup copy of this config... just in case :)",
+        "description": ""
+    },
+    "o_importSuccesfull": {
+        "message": "Import successfull. Before reloading this page, check your Search Engines list to make sure everything goes well. If it's empty, then hit the *undo last import* button.",
+        "description": ""
+    },
+    "o_confirmRestore": {
+        "message": "I'm about to try and restore the config saved the last time you clicked on the *import* button",
+        "description": ""
+    },
+    "o_restoreSuccesfull": {
+        "message": "Config saved before last import was just restored... if this doesn't help, you can always reset the options to the default settings with the button in the 'Advanced settings' page... or might try and retrieve a config backup if you did one before ;)",
+        "description": ""
+    },
+    "o_nothingToRestore": {
+        "message": "Ho sento, no tinc res a restaurar",
+        "description": ""
+    },
+    "o_thankYou": {
+        "message": "Gràcies!",
+        "description": ""
+    },
+    "o_type": {
+        "message": "Tipus",
+        "description": ""
+    },
+    "o_language": {
+        "message": "Idioma",
+        "description": ""
+    },
+    "o_moreSearchEngines": {
+        "message": "Més motors de cerca",
+        "description": ""
+    },
+    "o_selectAURL": {
+        "message": "Si us plau seleccioni un URL",
+        "description": ""
+    },
+    "o_mySearchEngines": {
+        "message": "Els meus cercadors",
+        "description": ""
+    },
+    "o_mySearchEnginesDesc": {
+        "message": "These are your configured search engines. Select other engines from the Featured Search Engines list below or create your own. Check the help for instructions.",
+        "description": ""
+    },
+    "o_featuredSearchEngines": {
+        "message": "Motors de cerca destacats",
+        "description": ""
+    },
+    "o_featuredSearchEngnesDesc": {
+        "message": "Click on a URL to include it in your Search Engines' list.",
+        "description": ""
+    },
+    "o_groupBy": {
+        "message": "Agrupar per:&nbsp;&nbsp;  ",
+        "description": ""
+    },
+    "o_ungrouped": {
+        "message": "No agrupades",
+        "description": ""
+    },
+    "o_helpHowDoI": {
+        "message": "Ajuda! com puc editar llista dels motors de cerca?",
+        "description": ""
+    },
+    "o_helpHowDoIDescription": {
+        "message": "It's really easy! <br \/>  Just click on any row's edit icon (the one with the little pencil) or just click the \"name\" column and edit its values.  <ul>    <li>The \"name\" column refers to what you'll see on the context menu.<\/li>    <li>The \"Search URL\" refers to what the search engine needs to run your query.<\/li>    <li>The <span class=\"searchString\">%s<\/span> symbol will be replaced with the selected text on your browser.<\/li>  <\/ul>  You can decide the order of your search engines by dragging them up and down... do it over the \"#\" column, where the up and down arrows appear. Your mouse pointer will change when you're over the right spot, and you'll figure it out.  <h2>Here's a simple way to create a Search URL of your own:<\/h2>  <ul>    <li>On your preferred site, perform a search for the word \"TESTSEARCH\".<\/li>    <li> Then just copy the URL that was generated within the site, that might look like this, for example, on IMDB: http:\/\/www.imdb.com\/find?s=all;q=<span class=\"searchString\">TESTSEARCH<\/span>.<\/li>    <li>Now just replace <span class=\"searchString\">TESTSEARCH<\/span> with <span class=\"searchString\">%s<\/span> and paste it here, on the \"Search URL\" column.<\/li>    <li>Then indicate a name to that Search URL and you're done!<\/li>  <\/ul>  Make sure you check first if the site you'd like to add is on the \"Other search engines\" table. I'm updating that table every now and the. If you have any suggestions for that list, they are more than welcome.  <br\/>  <br\/> You can sort the URLs order by hovering over the first column.",
+        "description": ""
+    },
+    "o_SupportThisHumble": {
+        "message": "Support this humble extension developer",
+        "description": ""
+    },
+    "o_SupportThisHumbleDescription": {
+        "message": "Of course, this extension is for free -I built it to use it myself, actually-... but if you really enjoy using it, and you'd like to show your appreciation, here's a list of things that might make me happy :)  <ul>    <li><b>Show me the money:<\/b> Hit the <b>donate<\/b> button at the top right of this page... and send me a few bucks!<\/li>    <li><b>Use Amazon's featured links:<\/b> Use any of the Amazon links featured on the options page, search stuff using my extension and buy it! If you used one of my links -it doesn't work if you created the link by yourself, it will cost you the same, and Amazon will pay me a handsome reward! :D... and did I mention it costs you zero!?<\/li>    <li><b>Guerrilla advertising:<\/b> <a href=\"http:\/\/twitter.com\/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http:\/\/bit.ly\/HzSP8p @frenetix_\" title=\"Click to send this page to Twitter!\" target=\"_blank\">Share on Twitter<\/a>, <a href=\"https:\/\/www.facebook.com\/sharer\/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">post on Facebook<\/a>, G+ or wherever you feel this extension might be well received<\/li>    <li><b>More Guerrilla advertising:<\/b> Visit my blog, post a comment link to any of those posts. G+ the posts you like.<\/li>    <li><b>Boost my self esteem:<\/b> Rate the extension on Google's webstore, say how much you love it!<\/li>  <\/ul>",
+        "description": ""
+    },
+    "o_importExport": {
+        "message": "Configuració d'importació\/exportació",
+        "description": ""
+    },
+    "o_importExportDescription": {
+        "message": "Here's all the config info. Just copy & save it on any text file...<br \/>  If you want to import your previously saved config, just paste it here and click on the import button.<br \/><br \/>",
+        "description": ""
+    },
+    "importConfig": {
+        "message": "importar",
+        "description": ""
+    },
+    "undoLastImport": {
+        "message": "Desfés la darrera importació",
+        "description": ""
+    },
+    "o_otherStuffYouCan": {
+        "message": "Altres coses que es poden configurar",
+        "description": ""
+    },
+    "o_openLinksInNewTab": {
+        "message": "Obrir els enllaços en una pestanya nova nou.",
+        "description": ""
+    },
+    "o_giveNewTabFocus": {
+        "message": "Passar a la nova pestanya.",
+        "description": ""
+    },
+    "o_newTabPosition": {
+        "message": "Posició de la nova pestanya:",
+        "description": ""
+    },
+    "o_last": {
+        "message": "Darrer",
+        "description": ""
+    },
+    "o_first": {
+        "message": "Primer",
+        "description": ""
+    },
+    "o_next": {
+        "message": "Següent",
+        "description": ""
+    },
+    "o_previous": {
+        "message": "Anterior",
+        "description": ""
+    },
+    "o_trackSearchEngines": {
+        "message": " Seguiment de l'ús dels motors de cerca.",
+        "description": ""
+    },
+    "o_leavingThisCheckbox": {
+        "message": "Tracked information is used by me, only for statistical analysis purposes.  <br\/>No user information is being tracked.  <br\/>No search terms are being tracked (only the search engine used). You can read more about this on <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">my blog<\/a>.",
+        "description": ""
+    },
+    "eraseOptions": {
+        "message": "Restaurar les opcions per defecte",
+        "description": ""
+    },
+    "o_developedBy": {
+        "message": "   Developed by <a href=\"https:\/\/plus.google.com\/u\/0\/100927641416387074874\/about\" target=\"_blank\">Diego Presno<\/a>. Follow me on Twitter <a href=\"http:\/\/twitter.com\/#!\/frenetix_\" target=\"_blank\">@frenetix_<\/a>  <br \/>  All images\/icons designed by <a href=\"http:\/\/germanrivas.com\/\" target=\"_blank\">germanrivas.com<\/a>.<br\/><br \/>  <h2>Disclaimer<\/h2>  Please, be warned: the usage of this extension is being tracked by Google Analytics.  It also tracks which search engines are the most used by users, so I can then be able to add them to the featured Search Engines list.<br\/>  The extension does not track the identity of its user, nor what terms they're looking for.  Only the search URL syntax is being recorded.<br\/>  No individual information will be shared with third parties. The only information published will be about the most used sites. An example of the published information can be found on my <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a>.",
+        "description": ""
+    },
+    "o_searchEngines": {
+        "message": "Motors de cerca",
+        "description": ""
+    },
+    "o_help": {
+        "message": "Ajuda",
+        "description": ""
+    },
+    "o_supportMe": {
+        "message": "Doneu-me suport :)",
+        "description": ""
+    },
+    "o_advancedConfig": {
+        "message": "Configuració avançada",
+        "description": ""
+    },
+    "o_credits": {
+        "message": "Crèdits\/avís legal",
+        "description": ""
+    },
+    "o_checkOutMyBlog": {
+        "message": "Check out my blog for more.",
+        "description": ""
+    },
+    "o_sort": {
+        "message": "Sort",
+        "description": ""
+    },
+    "o_incognito": {
+        "message": "Incognito",
+        "description": ""
+    },
+    "o_resetDefaultSuccess": {
+        "message": "You now have default settings :)",
+        "description": ""
+    },
+    "o_areYouSure": {
+        "message": "Are you sure?",
+        "description": ""
+    },
+    "o_helpMeTranslate": {
+        "message": "Help me translate!",
+        "description": ""
+    },
+    "o_GitHubContributors": {
+        "message": "Super awesome <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'>GitHub<\/a> contributors",
+        "description": ""
+    },
+    "o_CrowdinContributors": {
+        "message": "Super awesome <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'>Crowdin<\/a> contributors (translators)",
+        "description": ""
+    },
+    "o_plusExplain": {
+        "message": "Plus versus space: some search engines use '+' instead of a space to separate words you're looking for.",
+        "description": ""
+    },
+    "o_cannotAddDuplicates": {
+        "message": "Sorry, I cannot add duplicate name entries.",
+        "description": ""
+    },
+    "o_group": {
+        "message": "Group",
+        "description": ""
+    },
+    "o_groupsUsed": {
+        "message": "Used groups",
+        "description": ""
+    },
+    "o_showSearchEverywhere": {
+        "message": "Show 'Search everywhere' option.",
+        "description": ""
+    },
+    "o_showSearchEverywhereGroups": {
+        "message": "Show 'Search everywhere' option within groups.",
+        "description": ""
+    },
+    "o_tabs": {
+        "message": "Tabs",
+        "description": ""
+    },
+    "o_sortBy": {
+        "message": "Sort by:",
+        "description": ""
+    }
 }
