@@ -1,294 +1,294 @@
 {
-  "extName":{
-    "message":"Simple = Select + Search",
-    "description":"Extension's name. Use   instead of spaces."
-  },
-  "extDescription":{
-    "message":"Faites un clic droit sur le texte sélectionné pour la recherche sur plusieurs moteurs de recherche pour Chrome.",
-    "description":""
-  },
-  "bg_searchStringOn":{
-    "message":"Rechercher '%s' sur",
-    "description":""
-  },
-  "bg_searchEverywhere":{
-    "message":"Rechercher partout!",
-    "description":""
-  },
-  "bg_openOnNewTab":{
-    "message":"Ouvrir dans un nouvel onglet",
-    "description":""
-  },
-  "bg_options":{
-    "message":"Options...",
-    "description":""
-  },
-  "bg_extensionBlog":{
-    "message":"Blog à propos de l'extension...",
-    "description":""
-  },
-  "bg_installMessage":{
-    "message":"Extension correctement installé. <br\/> Aller sur la page Options pour le configurer et connaître les différentes façons de  soutenir votre humble fournisseur extension ;)",
-    "description":""
-  },
-  "bg_updateMessage":{
-    "message":"Extension avec succès mis à jour à {VersionNumber} <br\/> Visitez <a href=http:\/\/simpleselectsearch.blogspot.com> mon blog<\/a> pour obtenir la liste des améliorations.",
-    "description":""
-  },
-  "o_name":{
-    "message":"Nom",
-    "description":""
-  },
-  "o_searchURL":{
-    "message":"Recherche URL",
-    "description":""
-  },
-  "o_cancel":{
-    "message":"annuler",
-    "description":""
-  },
-  "o_edit":{
-    "message":"modifier",
-    "description":""
-  },
-  "o_new":{
-    "message":"nouveau",
-    "description":""
-  },
-  "o_ok":{
-    "message":"ok",
-    "description":""
-  },
-  "o_sureYouWantToDelete":{
-    "message":"Etes-vous sûr(e) de vouloir supprimer cette ligne ?",
-    "description":""
-  },
-  "o_confirmImport":{
-    "message":"Je suis sur le point d'importer et intégrer le texte de votre zone de texte import\/export  ... si quelque chose va mal ... il suffit de cliquer sur le bouton *annuler la dernière importation*. Je recommande également que vous gardez une copie de sauvegarde de cette configuration... au cas où :)",
-    "description":""
-  },
-  "o_importSuccesfull":{
-    "message":"Importation réussie. Avant de recharger cette page, vérifier votre liste de moteurs de recherche pour s'assurer que tout se passe bien. S'il est vide, alors cliquez sur le bouton * Annuler dernier import *.",
-    "description":""
-  },
-  "o_confirmRestore":{
-    "message":"Je m'apprête à restaurer la configuration enregistrée la dernière fois que vous avez cliqué sur le bouton *import*",
-    "description":""
-  },
-  "o_restoreSuccesfull":{
-    "message":"La configuration sauvée avant dernière importation a été restaurée... si cela n'aide pas, vous pouvez toujours réinitialiser les options pour les paramètres par défaut - le bouton au bas de cette page-... ou peut-être essayer de récupérer la sauvegarde de la configuration que vous auriez dû faire;)",
-    "description":""
-  },
-  "o_nothingToRestore":{
-    "message":"Désolé, je n'ai rien à restaurer",
-    "description":""
-  },
-  "o_thankYou":{
-    "message":"Merci!",
-    "description":""
-  },
-  "o_type":{
-    "message":"Catégorie",
-    "description":""
-  },
-  "o_language":{
-    "message":"Langue",
-    "description":""
-  },
-  "o_moreSearchEngines":{
-    "message":"Plusieurs de moteurs de recherche",
-    "description":""
-  },
-  "o_selectAURL":{
-    "message":"Veuillez sélectionner une URL",
-    "description":""
-  },
-  "o_mySearchEngines":{
-    "message":"Mes moteurs de recherche",
-    "description":""
-  },
-  "o_mySearchEnginesDesc":{
-    "message":"Ce sont vos moteurs de recherche configurés. Sélectionnez d'autres moteurs dans la liste de moteurs de recherche présentés ci-dessous ou créer les vôtres. Consultez l'aide pour obtenir des instructions.",
-    "description":""
-  },
-  "o_featuredSearchEngines":{
-    "message":"Moteurs de recherche recommandés",
-    "description":""
-  },
-  "o_featuredSearchEngnesDesc":{
-    "message":"Cliquez sur une URL à inclure dans la liste de vos moteurs de recherche.",
-    "description":""
-  },
-  "o_groupBy":{
-    "message":"Regrouper par:&nbsp;&nbsp;  ",
-    "description":""
-  },
-  "o_ungrouped":{
-    "message":"Non groupé(s)",
-    "description":""
-  },
-  "o_helpHowDoI":{
-    "message":"Aide! Comment puis-je modifier liste des moteurs de recherche ?",
-    "description":""
-  },
-  "o_helpHowDoIDescription":{
-    "message":"C'est vraiment facile ! <br \/>Cliquez sur l'icône de modification (le petit crayon) de n'importe quelle ligne ou simplement cliquez sur la colonne « Nom » et modifiez ses valeurs. <ul><li>La colonne « nom » se réfère à ce que vous verrez dans le menu contextuel.<\/li><li>Le « URL de recherche » se réfère à ce que le moteur de recherche a besoin pour exécuter votre requête.<\/li><li>Le symbole <span class=\"searchString\">%s<\/span> sera remplacé par le texte sélectionné dans l'URL sur votre navigateur.<\/li><\/ul>Vous pouvez décider de l'ordre de vos moteurs de recherche en les faisant glisser verticalement... faites-le sur la colonne « # », où les flèches haut et bas apparaissent. Le pointeur de votre souris change lorsque vous êtes au bon endroit, et vous allez vite comprendre.  <h2>Voici un moyen simple de créer une URL de recherche de votre choix :<\/h2> <ul><li>Sur votre site préféré, effectuez une recherche pour le mot « TESTSEARCH ».<\/li> <li>Puis il suffit de copier l'URL qui a été généré au sein du site, ce qui pourrait ressembler à ceci, par exemple, sur IMDB : http:\/\/www.imdb.com\/find?s=all;q=<span class=\"searchString\">TESTSEARCH<\/span>.<\/li>    <li>Maintenant il suffit de remplacer <span class=\"searchString\">TESTSEARCH<\/span> par <span class=\"searchString\">%s<\/span> et collez-le ici, sur la colonne \"URL de recherche\".<\/li><li>Puis indiquez un nom à cette URL de recherche et vous avez terminé!<\/li><\/ul>Vérifiez d'abord que le site que vous souhaitez ajouter est sur la table « Autres moteurs de recherche ». liste que  Je mets à jour cette table de temps en temps et le. Si vous avez des suggestions pour cette liste, ils sont plus que bienvenues.<br\/><br\/>Vous pouvez trier l'ordre des URLs en survolant au-dessus de la première colonne.",
-    "description":""
-  },
-  "o_SupportThisHumble":{
-    "message":"Soutenir l'humble développeur de cette extension",
-    "description":""
-  },
-  "o_SupportThisHumbleDescription":{
-    "message":"Bien sûr, cette extension est gratuite - je l'ai construite pour l'utiliser moi-même, ... mais si vous aimez vraiment l'utiliser, et que vous  souhaitez me montrer votre appréciation, voici une liste des choses qui me rendraient heureux:)  <ul><li><b>M'envoyer de l'argent :<\/b> cliquez sur le bouton <b>faire un don<\/b> en haut à droite de cette page... et m'envoyer un peu d'argent!<\/li>    <li><b>D'utiliser les liens Amazon pré-configurés :<\/b> utiliser un des liens Amazon pré-configurés sur la page d'options,effectuer vos recherches à l'aide de mon extension et achetez-le ! Si vous avez utilisé un de mes liens,  il vous en coûtera le même et Amazon me paiera une belle récompense ! : D - cela ne fonctionne pas si vous avez créé le lien par vous-même,... et ai-je mentionné qu'il vous en coûtera zéro!?<\/li>    <li><b>Guerrilla advertising:<\/b> <a href=\"http:\/\/twitter.com\/home?status=OMG! J'utilise l'extension Chrome Simple=Select+Search et ça déchire! http:\/\/bit.ly\/HzSP8p @frenetix_\" title=\"Cliquez ici pour envoyer cette page à Twitter!\" target=\"_blank\">Share on Twitter<\/a>, <a href=\"https:\/\/www.facebook.com\/sharer\/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">publié sur Facebook<\/a>, G+ où partout où vous vous sentez cette extension pourrait être bien reçu<\/li>    <li><b>Plus de Pub Gurrilla :<\/b> visitez mon blog, poster un lien vers l'un de ces postes. G + les postes que vous aimez.<\/li>    <li><b>Poussez mon amour-propre :<\/b> noter l'extension sur la boutique en ligne de Google, de dire combien vous l'aimez!<\/li>  <\/ul>",
-    "description":""
-  },
-  "o_importExport":{
-    "message":"Importer\/Exporter la configuration",
-    "description":""
-  },
-  "o_importExportDescription":{
-    "message":"Voici toutes les infos de configuration. il suffit juste de copier & coller dans n'importe quel fichier en format texte... <br \/>Si vous voulez importer votre fichier de config enregistré précédemment, coller le texte ici et cliquer sur le bouton import.<br \/><br \/>",
-    "description":""
-  },
-  "importConfig":{
-    "message":"importer",
-    "description":""
-  },
-  "undoLastImport":{
-    "message":"Annuler dernière importation",
-    "description":""
-  },
-  "o_otherStuffYouCan":{
-    "message":"Autres trucs que vous pouvez configurer",
-    "description":""
-  },
-  "o_openLinksInNewTab":{
-    "message":"Ouvrir les liens dans un nouvel onglet.",
-    "description":""
-  },
-  "o_giveNewTabFocus":{
-    "message":"Afficher le nouvel onglet.",
-    "description":""
-  },
-  "o_newTabPosition":{
-    "message":"Position du nouvel onglet:",
-    "description":""
-  },
-  "o_last":{
-    "message":"Dernier",
-    "description":""
-  },
-  "o_first":{
-    "message":"Premier",
-    "description":""
-  },
-  "o_next":{
-    "message":"Prochain",
-    "description":""
-  },
-  "o_previous":{
-    "message":"Précédent",
-    "description":""
-  },
-  "o_trackSearchEngines":{
-    "message":"Suivre l'usage des moteurs de recherche.",
-    "description":""
-  },
-  "o_leavingThisCheckbox":{
-    "message":"L'information recueillie est utilisée par moi, qu'à des fins d'analyses statistiques.  <br\/> Aucune information utilisateur ne sera récoltée.  <br\/> Aucun des termes de recherche ne sont suivis (seulement le moteur de recherche utilisé). Vous pouvez en savoir plus à ce sujet sur <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\"> mon blog<\/a>.",
-    "description":""
-  },
-  "eraseOptions":{
-    "message":"Restaurer les options par défaut",
-    "description":""
-  },
-  "o_developedBy":{
-    "message":"   Développé par <a href=\"https:\/\/plus.google.com\/u\/0\/100927641416387074874\/about\" target=\"_blank\">Diego Presno<\/a>. Suivez moi sur tweeter <a href=\"http:\/\/twitter.com\/#!\/frenetix_\" target=\"_blank\">@frenetix_<\/a> <br \/> Toutes les images\/icônes conçues par <a href=\"http:\/\/germanrivas.com\/\" target=\"_blank\">germanrivas.com<\/a>. <br\/><br \/> <h2>Avertissement<\/h2> s'il vous plaît, mise en garde : L'utilisation de cette extension implique celle de Google Analytics afin de suivre les moteurs de recherche les plus utilisés, afin que je puisse les ajouter à la liste de moteurs de recherche recommandée. <br\/> L'extension ne communique pas l'identité de son utilisateur, ni ses critères de recherche.  Seule  l'URL de recherche est enregistrée. <br\/> Aucune information individuelle n'est partagée avec des tiers. La seule information publiée concerne les sites les plus utilisés. Vous trouveree un exemple de l'information publiée sur mon <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a>.",
-    "description":""
-  },
-  "o_searchEngines":{
-    "message":"Moteurs de recherche",
-    "description":""
-  },
-  "o_help":{
-    "message":"Aide",
-    "description":""
-  },
-  "o_supportMe":{
-    "message":"Me soutenir :)",
-    "description":""
-  },
-  "o_advancedConfig":{
-    "message":"Configuration avancée",
-    "description":""
-  },
-  "o_credits":{
-    "message":"Crédits \/ Mentions légales",
-    "description":""
-  },
-  "o_checkOutMyBlog":{
-    "message":"Consultez mon blog pour en savoir plus.",
-    "description":""
-  },
-  "o_sort":{
-    "message":"Tri",
-    "description":""
-  },
-  "o_incognito":{
-    "message":"Incognito",
-    "description":""
-  },
-  "o_resetDefaultSuccess":{
-    "message":"Vous avez maintenant des paramètres par défaut :)",
-    "description":""
-  },
-  "o_areYouSure":{
-    "message":"Êtes-vous sûr(e)?",
-    "description":""
-  },
-  "o_helpMeTranslate":{
-    "message":"M'aider à traduire !",
-    "description":""
-  },
-  "o_GitHubContributors":{
-    "message":"Super génial <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'> GitHub<\/a> contributeurs",
-    "description":""
-  },
-  "o_CrowdinContributors":{
-    "message":"Super génial <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'> Crowdin<\/a> contributeurs (traducteurs)",
-    "description":""
-  },
-  "o_plusExplain":{
-    "message":"Plus versus Espace : certains moteurs de recherche utilisent « + » au lieu d'un espace pour séparer les mots de votre recherche.",
-    "description":""
-  },
-  "o_cannotAddDuplicates":{
-    "message":"Désolé, je ne peux pas ajouter un nom déjà utilisé.",
-    "description":""
-  },
-  "o_group":{
-    "message":"Groupe",
-    "description":""
-  },
-  "o_groupsUsed":{
-    "message":"Groupes utilisés",
-    "description":""
-  },
-  "o_showSearchEverywhere":{
-    "message":"Montrer l'option « Rechercher partout ».",
-    "description":""
-  },
-  "o_showSearchEverywhereGroups":{
-    "message":"Montrer l'option « Rechercher partout » au sein des groupes.",
-    "description":""
-  },
-  "o_tabs":{
-    "message":"Onglets",
-    "description":""
-  },
-  "o_sortBy":{
-    "message":"Trier par:",
-    "description":""
-  }
+    "extName": {
+        "message": "Simple = Select + Search",
+        "description": "Extension's name. Use   instead of spaces."
+    },
+    "extDescription": {
+        "message": "Faites un clic droit sur le texte sélectionné pour la recherche sur plusieurs moteurs de recherche pour Chrome.",
+        "description": ""
+    },
+    "bg_searchStringOn": {
+        "message": "Rechercher '%s' sur",
+        "description": ""
+    },
+    "bg_searchEverywhere": {
+        "message": "Rechercher partout!",
+        "description": ""
+    },
+    "bg_openOnNewTab": {
+        "message": "Ouvrir dans un nouvel onglet",
+        "description": ""
+    },
+    "bg_options": {
+        "message": "Options...",
+        "description": ""
+    },
+    "bg_extensionBlog": {
+        "message": "Blog à propos de l'extension...",
+        "description": ""
+    },
+    "bg_installMessage": {
+        "message": "Extension correctement installé. <br\/> Aller sur la page Options pour le configurer et connaître les différentes façons de  soutenir votre humble fournisseur extension ;)",
+        "description": ""
+    },
+    "bg_updateMessage": {
+        "message": "Extension avec succès mis à jour à {VersionNumber} <br\/> Visitez <a href=http:\/\/simpleselectsearch.blogspot.com> mon blog<\/a> pour obtenir la liste des améliorations.",
+        "description": ""
+    },
+    "o_name": {
+        "message": "Nom",
+        "description": ""
+    },
+    "o_searchURL": {
+        "message": "Recherche URL",
+        "description": ""
+    },
+    "o_cancel": {
+        "message": "annuler",
+        "description": ""
+    },
+    "o_edit": {
+        "message": "modifier",
+        "description": ""
+    },
+    "o_new": {
+        "message": "nouveau",
+        "description": ""
+    },
+    "o_ok": {
+        "message": "ok",
+        "description": ""
+    },
+    "o_sureYouWantToDelete": {
+        "message": "Etes-vous sûr(e) de vouloir supprimer cette ligne ?",
+        "description": ""
+    },
+    "o_confirmImport": {
+        "message": "Je suis sur le point d'importer et intégrer le texte de votre zone de texte import\/export  ... si quelque chose va mal ... il suffit de cliquer sur le bouton *annuler la dernière importation*. Je recommande également que vous gardez une copie de sauvegarde de cette configuration... au cas où :)",
+        "description": ""
+    },
+    "o_importSuccesfull": {
+        "message": "Importation réussie. Avant de recharger cette page, vérifier votre liste de moteurs de recherche pour s'assurer que tout se passe bien. S'il est vide, alors cliquez sur le bouton * Annuler dernier import *.",
+        "description": ""
+    },
+    "o_confirmRestore": {
+        "message": "Je m'apprête à restaurer la configuration enregistrée la dernière fois que vous avez cliqué sur le bouton *import*",
+        "description": ""
+    },
+    "o_restoreSuccesfull": {
+        "message": "La configuration sauvée avant dernière importation a été restaurée... si cela n'aide pas, vous pouvez toujours réinitialiser les options pour les paramètres par défaut - le bouton au bas de cette page-... ou peut-être essayer de récupérer la sauvegarde de la configuration que vous auriez dû faire;)",
+        "description": ""
+    },
+    "o_nothingToRestore": {
+        "message": "Désolé, je n'ai rien à restaurer",
+        "description": ""
+    },
+    "o_thankYou": {
+        "message": "Merci!",
+        "description": ""
+    },
+    "o_type": {
+        "message": "Catégorie",
+        "description": ""
+    },
+    "o_language": {
+        "message": "Langue",
+        "description": ""
+    },
+    "o_moreSearchEngines": {
+        "message": "Plusieurs de moteurs de recherche",
+        "description": ""
+    },
+    "o_selectAURL": {
+        "message": "Veuillez sélectionner une URL",
+        "description": ""
+    },
+    "o_mySearchEngines": {
+        "message": "Mes moteurs de recherche",
+        "description": ""
+    },
+    "o_mySearchEnginesDesc": {
+        "message": "Ce sont vos moteurs de recherche configurés. Sélectionnez d'autres moteurs dans la liste de moteurs de recherche présentés ci-dessous ou créer les vôtres. Consultez l'aide pour obtenir des instructions.",
+        "description": ""
+    },
+    "o_featuredSearchEngines": {
+        "message": "Moteurs de recherche recommandés",
+        "description": ""
+    },
+    "o_featuredSearchEngnesDesc": {
+        "message": "Cliquez sur une URL à inclure dans la liste de vos moteurs de recherche.",
+        "description": ""
+    },
+    "o_groupBy": {
+        "message": "Regrouper par:&nbsp;&nbsp;  ",
+        "description": ""
+    },
+    "o_ungrouped": {
+        "message": "Non groupé(s)",
+        "description": ""
+    },
+    "o_helpHowDoI": {
+        "message": "Aide! Comment puis-je modifier liste des moteurs de recherche ?",
+        "description": ""
+    },
+    "o_helpHowDoIDescription": {
+        "message": "C'est vraiment facile ! <br \/>Cliquez sur l'icône de modification (le petit crayon) de n'importe quelle ligne ou simplement cliquez sur la colonne « Nom » et modifiez ses valeurs. <ul><li>La colonne « nom » se réfère à ce que vous verrez dans le menu contextuel.<\/li><li>Le « URL de recherche » se réfère à ce que le moteur de recherche a besoin pour exécuter votre requête.<\/li><li>Le symbole <span class=\"searchString\">%s<\/span> sera remplacé par le texte sélectionné dans l'URL sur votre navigateur.<\/li><\/ul>Vous pouvez décider de l'ordre de vos moteurs de recherche en les faisant glisser verticalement... faites-le sur la colonne « # », où les flèches haut et bas apparaissent. Le pointeur de votre souris change lorsque vous êtes au bon endroit, et vous allez vite comprendre.  <h2>Voici un moyen simple de créer une URL de recherche de votre choix :<\/h2> <ul><li>Sur votre site préféré, effectuez une recherche pour le mot « TESTSEARCH ».<\/li> <li>Puis il suffit de copier l'URL qui a été généré au sein du site, ce qui pourrait ressembler à ceci, par exemple, sur IMDB : http:\/\/www.imdb.com\/find?s=all;q=<span class=\"searchString\">TESTSEARCH<\/span>.<\/li>    <li>Maintenant il suffit de remplacer <span class=\"searchString\">TESTSEARCH<\/span> par <span class=\"searchString\">%s<\/span> et collez-le ici, sur la colonne \"URL de recherche\".<\/li><li>Puis indiquez un nom à cette URL de recherche et vous avez terminé!<\/li><\/ul>Vérifiez d'abord que le site que vous souhaitez ajouter est sur la table « Autres moteurs de recherche ». liste que  Je mets à jour cette table de temps en temps et le. Si vous avez des suggestions pour cette liste, ils sont plus que bienvenues.<br\/><br\/>Vous pouvez trier l'ordre des URLs en survolant au-dessus de la première colonne.",
+        "description": ""
+    },
+    "o_SupportThisHumble": {
+        "message": "Soutenir l'humble développeur de cette extension",
+        "description": ""
+    },
+    "o_SupportThisHumbleDescription": {
+        "message": "Bien sûr, cette extension est gratuite - je l'ai construite pour l'utiliser moi-même, ... mais si vous aimez vraiment l'utiliser, et que vous  souhaitez me montrer votre appréciation, voici une liste des choses qui me rendraient heureux:)  <ul><li><b>M'envoyer de l'argent :<\/b> cliquez sur le bouton <b>faire un don<\/b> en haut à droite de cette page... et m'envoyer un peu d'argent!<\/li>    <li><b>D'utiliser les liens Amazon pré-configurés :<\/b> utiliser un des liens Amazon pré-configurés sur la page d'options,effectuer vos recherches à l'aide de mon extension et achetez-le ! Si vous avez utilisé un de mes liens,  il vous en coûtera le même et Amazon me paiera une belle récompense ! : D - cela ne fonctionne pas si vous avez créé le lien par vous-même,... et ai-je mentionné qu'il vous en coûtera zéro!?<\/li>    <li><b>Guerrilla advertising:<\/b> <a href=\"http:\/\/twitter.com\/home?status=OMG! J'utilise l'extension Chrome Simple=Select+Search et ça déchire! http:\/\/bit.ly\/HzSP8p @frenetix_\" title=\"Cliquez ici pour envoyer cette page à Twitter!\" target=\"_blank\">Share on Twitter<\/a>, <a href=\"https:\/\/www.facebook.com\/sharer\/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">publié sur Facebook<\/a>, G+ où partout où vous vous sentez cette extension pourrait être bien reçu<\/li>    <li><b>Plus de Pub Gurrilla :<\/b> visitez mon blog, poster un lien vers l'un de ces postes. G + les postes que vous aimez.<\/li>    <li><b>Poussez mon amour-propre :<\/b> noter l'extension sur la boutique en ligne de Google, de dire combien vous l'aimez!<\/li>  <\/ul>",
+        "description": ""
+    },
+    "o_importExport": {
+        "message": "Importer\/Exporter la configuration",
+        "description": ""
+    },
+    "o_importExportDescription": {
+        "message": "Voici toutes les infos de configuration. il suffit juste de copier & coller dans n'importe quel fichier en format texte... <br \/>Si vous voulez importer votre fichier de config enregistré précédemment, coller le texte ici et cliquer sur le bouton import.<br \/><br \/>",
+        "description": ""
+    },
+    "importConfig": {
+        "message": "importer",
+        "description": ""
+    },
+    "undoLastImport": {
+        "message": "Annuler dernière importation",
+        "description": ""
+    },
+    "o_otherStuffYouCan": {
+        "message": "Autres trucs que vous pouvez configurer",
+        "description": ""
+    },
+    "o_openLinksInNewTab": {
+        "message": "Ouvrir les liens dans un nouvel onglet.",
+        "description": ""
+    },
+    "o_giveNewTabFocus": {
+        "message": "Afficher le nouvel onglet.",
+        "description": ""
+    },
+    "o_newTabPosition": {
+        "message": "Position du nouvel onglet:",
+        "description": ""
+    },
+    "o_last": {
+        "message": "Dernier",
+        "description": ""
+    },
+    "o_first": {
+        "message": "Premier",
+        "description": ""
+    },
+    "o_next": {
+        "message": "Prochain",
+        "description": ""
+    },
+    "o_previous": {
+        "message": "Précédent",
+        "description": ""
+    },
+    "o_trackSearchEngines": {
+        "message": "Suivre l'usage des moteurs de recherche.",
+        "description": ""
+    },
+    "o_leavingThisCheckbox": {
+        "message": "L'information recueillie est utilisée par moi, qu'à des fins d'analyses statistiques.  <br\/> Aucune information utilisateur ne sera récoltée.  <br\/> Aucun des termes de recherche ne sont suivis (seulement le moteur de recherche utilisé). Vous pouvez en savoir plus à ce sujet sur <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\"> mon blog<\/a>.",
+        "description": ""
+    },
+    "eraseOptions": {
+        "message": "Restaurer les options par défaut",
+        "description": ""
+    },
+    "o_developedBy": {
+        "message": "   Développé par <a href=\"https:\/\/plus.google.com\/u\/0\/100927641416387074874\/about\" target=\"_blank\">Diego Presno<\/a>. Suivez moi sur tweeter <a href=\"http:\/\/twitter.com\/#!\/frenetix_\" target=\"_blank\">@frenetix_<\/a> <br \/> Toutes les images\/icônes conçues par <a href=\"http:\/\/germanrivas.com\/\" target=\"_blank\">germanrivas.com<\/a>. <br\/><br \/> <h2>Avertissement<\/h2> s'il vous plaît, mise en garde : L'utilisation de cette extension implique celle de Google Analytics afin de suivre les moteurs de recherche les plus utilisés, afin que je puisse les ajouter à la liste de moteurs de recherche recommandée. <br\/> L'extension ne communique pas l'identité de son utilisateur, ni ses critères de recherche.  Seule  l'URL de recherche est enregistrée. <br\/> Aucune information individuelle n'est partagée avec des tiers. La seule information publiée concerne les sites les plus utilisés. Vous trouveree un exemple de l'information publiée sur mon <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a>.",
+        "description": ""
+    },
+    "o_searchEngines": {
+        "message": "Moteurs de recherche",
+        "description": ""
+    },
+    "o_help": {
+        "message": "Aide",
+        "description": ""
+    },
+    "o_supportMe": {
+        "message": "Me soutenir :)",
+        "description": ""
+    },
+    "o_advancedConfig": {
+        "message": "Configuration avancée",
+        "description": ""
+    },
+    "o_credits": {
+        "message": "Crédits \/ Mentions légales",
+        "description": ""
+    },
+    "o_checkOutMyBlog": {
+        "message": "Consultez mon blog pour en savoir plus.",
+        "description": ""
+    },
+    "o_sort": {
+        "message": "Tri",
+        "description": ""
+    },
+    "o_incognito": {
+        "message": "Incognito",
+        "description": ""
+    },
+    "o_resetDefaultSuccess": {
+        "message": "Vous avez maintenant des paramètres par défaut :)",
+        "description": ""
+    },
+    "o_areYouSure": {
+        "message": "Êtes-vous sûr(e)?",
+        "description": ""
+    },
+    "o_helpMeTranslate": {
+        "message": "M'aider à traduire !",
+        "description": ""
+    },
+    "o_GitHubContributors": {
+        "message": "Super génial <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'> GitHub<\/a> contributeurs",
+        "description": ""
+    },
+    "o_CrowdinContributors": {
+        "message": "Super génial <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'> Crowdin<\/a> contributeurs (traducteurs)",
+        "description": ""
+    },
+    "o_plusExplain": {
+        "message": "Plus versus Espace : certains moteurs de recherche utilisent « + » au lieu d'un espace pour séparer les mots de votre recherche.",
+        "description": ""
+    },
+    "o_cannotAddDuplicates": {
+        "message": "Désolé, je ne peux pas ajouter un nom déjà utilisé.",
+        "description": ""
+    },
+    "o_group": {
+        "message": "Groupe",
+        "description": ""
+    },
+    "o_groupsUsed": {
+        "message": "Groupes utilisés",
+        "description": ""
+    },
+    "o_showSearchEverywhere": {
+        "message": "Montrer l'option « Rechercher partout ».",
+        "description": ""
+    },
+    "o_showSearchEverywhereGroups": {
+        "message": "Montrer l'option « Rechercher partout » au sein des groupes.",
+        "description": ""
+    },
+    "o_tabs": {
+        "message": "Onglets",
+        "description": ""
+    },
+    "o_sortBy": {
+        "message": "Trier par:",
+        "description": ""
+    }
 }
