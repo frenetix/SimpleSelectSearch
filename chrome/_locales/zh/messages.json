@@ -4,7 +4,7 @@
         "description": "Extension's name. Use   instead of spaces."
     },
     "extDescription": {
-        "message": "Right click on selected text to search on multiple search engines for Chrome. Supports grouping engines, incongito, and more.",
+        "message": "右击选中的文本, 以在浏览器中搜索多个搜索引擎的结果。支持对引擎进行分组，匿名浏览状态使用，以及更多功能。",
         "description": ""
     },
     "bg_searchStringOn": {
@@ -12,19 +12,19 @@
         "description": ""
     },
     "bg_searchEverywhere": {
-        "message": "Search everywhere!",
+        "message": "搜遍四海！",
         "description": ""
     },
     "bg_openOnNewTab": {
-        "message": "Open on new tab",
+        "message": "在新标签页中打开",
         "description": ""
     },
     "bg_options": {
-        "message": "Options...",
+        "message": "选项...",
         "description": ""
     },
     "bg_extensionBlog": {
-        "message": "Extension's blog...",
+        "message": "扩展插件的博客",
         "description": ""
     },
     "bg_installMessage": {
@@ -48,19 +48,19 @@
         "description": ""
     },
     "o_edit": {
-        "message": "edit",
+        "message": "编辑",
         "description": ""
     },
     "o_new": {
-        "message": "new",
+        "message": "新的",
         "description": ""
     },
     "o_ok": {
-        "message": "ok",
+        "message": "好的",
         "description": ""
     },
     "o_sureYouWantToDelete": {
-        "message": "Sure you want to delete this row?",
+        "message": "确实要删除此行吗？",
         "description": ""
     },
     "o_confirmImport": {
@@ -68,11 +68,11 @@
         "description": ""
     },
     "o_importSuccesfull": {
-        "message": "Import successfull. Before reloading this page, check your Search Engines list to make sure everything goes well. If it's empty, then hit the *undo last import* button.",
+        "message": "导入成功。在刷新此页前, 请检查您的搜索引擎列表以确保一切顺利进行。如果它是空的, 那么请点击 \"撤消上次导入\" 按钮。",
         "description": ""
     },
     "o_confirmRestore": {
-        "message": "I'm about to try and restore the config saved the last time you clicked on the *import* button",
+        "message": "正在尝试还原上次导入时的保存配置",
         "description": ""
     },
     "o_restoreSuccesfull": {
@@ -80,31 +80,31 @@
         "description": ""
     },
     "o_nothingToRestore": {
-        "message": "Sorry, I've got nothing to restore",
+        "message": "抱歉，无可恢复",
         "description": ""
     },
     "o_thankYou": {
-        "message": "Thank you!",
+        "message": "谢谢你！",
         "description": ""
     },
     "o_type": {
-        "message": "Type",
+        "message": "类型",
         "description": ""
     },
     "o_language": {
-        "message": "Language",
+        "message": "语言类型",
         "description": ""
     },
     "o_moreSearchEngines": {
-        "message": "More Search Engines",
+        "message": "更多搜索引擎",
         "description": ""
     },
     "o_selectAURL": {
-        "message": "Please select a URL",
+        "message": "请选择一个 URL",
         "description": ""
     },
     "o_mySearchEngines": {
-        "message": "My Search Engines",
+        "message": "我的搜索引擎",
         "description": ""
     },
     "o_mySearchEnginesDesc": {
@@ -116,19 +116,19 @@
         "description": ""
     },
     "o_featuredSearchEngnesDesc": {
-        "message": "Click on a URL to include it in your Search Engines' list.",
+        "message": "点击一个网址, 把它纳入至你的搜索引擎列表中。",
         "description": ""
     },
     "o_groupBy": {
-        "message": "Group By:&nbsp;&nbsp;  ",
+        "message": "按照... 分组  ",
         "description": ""
     },
     "o_ungrouped": {
-        "message": "Ungrouped",
+        "message": "未分组",
         "description": ""
     },
     "o_helpHowDoI": {
-        "message": "Help! how do I edit the Search Engines' list?",
+        "message": "求助！我该如何编辑搜索引擎列表？",
         "description": ""
     },
     "o_helpHowDoIDescription": {
@@ -140,31 +140,31 @@
         "description": ""
     },
     "o_SupportThisHumbleDescription": {
-        "message": "Of course, this extension is for free -I built it to use it myself, actually-... but if you really enjoy using it, and you'd like to show your appreciation, here's a list of things that might make me happy :)  <ul>    <li><b>Show me the money:<\/b> Hit the <b>donate<\/b> button at the top right of this page... and send me a few bucks!<\/li>    <li><b>Use Amazon's featured links:<\/b> Use any of the Amazon links featured on the options page, search stuff using my extension and buy it! If you used one of my links -it doesn't work if you created the link by yourself, it will cost you the same, and Amazon will pay me a handsome reward! :D... and did I mention it costs you zero!?<\/li>    <li><b>Guerrilla advertising:<\/b> <a href=\"http:\/\/twitter.com\/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http:\/\/bit.ly\/HzSP8p @frenetix_\" title=\"Click to send this page to Twitter!\" target=\"_blank\">Share on Twitter<\/a>, <a href=\"https:\/\/www.facebook.com\/sharer\/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">post on Facebook<\/a>, G+ or wherever you feel this extension might be well received<\/li>    <li><b>More Guerrilla advertising:<\/b> Visit my blog, post a comment link to any of those posts. G+ the posts you like.<\/li>    <li><b>Boost my self esteem:<\/b> Rate the extension on Google's webstore, say how much you love it!<\/li>  <\/ul>",
+        "message": "当然, 这个扩展是免费的 - 我建立它自己使用它, 实际上 -..., 但如果你真的喜欢使用它, 你想表达你的赞赏, 这里有一个东西, 可能会让我高兴的清单:)  <ul>    <li><b > 告诉我钱:<\/b>  在本页的右上方点击<b > 捐赠 <\/b> 按钮, 赏我几块钱!<\/li>    <li><b > 使用亚马逊的精选链接:<\/b> 使用选项页面上的任何亚马逊链接, 使用我的搜索内容扩展和购买! 如果你使用我的一个链接，亚马逊将支付我一个英俊的奖励!:D -  如果你自己创建的链接它不会启用, 这将花费你一样。 <\/li>    <li><b > Guerrilla广告:<\/b> <a href=\"http:\/\/twitter.com\/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http:\/\/bit.ly\/HzSP8p @frenetix_\"title=\"Click to send this page to Twitter!\"target=\"_blank\"> 在 Twitter 上共享 <\/a>, <a href=\"https:\/\/www.facebook.com\/sharer\/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\"target=\"_blank\"> 在 Facebook 上张贴<\/a>, G + 或任何你觉得可以安利的地方<\/li>    <li><b > 更多Guerrilla广告:<\/b> 访问我的博客, 张贴一个评论链接到任何这些帖子。G + 你喜欢的帖子。<\/li>    <li><b > 提升我的自尊:<\/b>  在谷歌扩展页面打分 , 说你有多喜欢它!<\/li>  <\/ul>",
         "description": ""
     },
     "o_importExport": {
-        "message": "Import\/Export Config",
+        "message": "导入 \/ 导出配置",
         "description": ""
     },
     "o_importExportDescription": {
-        "message": "Here's all the config info. Just copy & save it on any text file...<br \/>  If you want to import your previously saved config, just paste it here and click on the import button.<br \/><br \/>",
+        "message": "这是所有的配置信息。只需复制并保存在任何文本文件里即可。<br \/>  如果要导入以前保存的配置, 只需将其粘贴到此处, 然后单击 \"导入\" 按钮。<br \/><br \/>",
         "description": ""
     },
     "importConfig": {
-        "message": "Import",
+        "message": "导入",
         "description": ""
     },
     "undoLastImport": {
-        "message": "Undo last import",
+        "message": "撤消上次导入",
         "description": ""
     },
     "o_otherStuffYouCan": {
-        "message": "Other stuff you can configure",
+        "message": "其他配置",
         "description": ""
     },
     "o_openLinksInNewTab": {
-        "message": "Open links in new tab.",
+        "message": "在新标签页中打开链接",
         "description": ""
     },
     "o_giveNewTabFocus": {
@@ -176,31 +176,31 @@
         "description": ""
     },
     "o_last": {
-        "message": "Last",
+        "message": "最后一个",
         "description": ""
     },
     "o_first": {
-        "message": "First",
+        "message": "第一个",
         "description": ""
     },
     "o_next": {
-        "message": "Next",
+        "message": "下一个",
         "description": ""
     },
     "o_previous": {
-        "message": "Previous",
+        "message": "上一个",
         "description": ""
     },
     "o_trackSearchEngines": {
-        "message": " Track search engines usage.",
+        "message": " 追踪搜索引擎的使用情况",
         "description": ""
     },
     "o_leavingThisCheckbox": {
-        "message": "Tracked information is used by me, only for statistical analysis purposes.  <br\/>No user information is being tracked.  <br\/>No search terms are being tracked (only the search engine used). You can read more about this on <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">my blog<\/a>.",
+        "message": "跟踪信息仅由我用于统计分析目的。  <br\/> 未跟踪任何用户信息。  <br\/> 并没有跟踪搜索字词 (仅使用搜索引擎)。您可以在 <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\"> 我的博客 <\/a> 上阅读有关此内容的详细信息。",
         "description": ""
     },
     "eraseOptions": {
-        "message": "Restore default options",
+        "message": "还原默认设置",
         "description": ""
     },
     "o_developedBy": {
@@ -208,55 +208,55 @@
         "description": ""
     },
     "o_searchEngines": {
-        "message": "Search engines",
+        "message": "搜索引擎",
         "description": ""
     },
     "o_help": {
-        "message": "Help",
+        "message": "帮助",
         "description": ""
     },
     "o_supportMe": {
-        "message": "Support me :)",
+        "message": "支持我 :)",
         "description": ""
     },
     "o_advancedConfig": {
-        "message": "Advanced config",
+        "message": "高级设置",
         "description": ""
     },
     "o_credits": {
-        "message": "Credits\/Disclaimer",
+        "message": "贡献\/免责声明",
         "description": ""
     },
     "o_checkOutMyBlog": {
-        "message": "Check out my blog for more.",
+        "message": "去我的博客查看细节",
         "description": ""
     },
     "o_sort": {
-        "message": "Sort",
+        "message": "排序",
         "description": ""
     },
     "o_incognito": {
-        "message": "Incognito",
+        "message": "无痕浏览",
         "description": ""
     },
     "o_resetDefaultSuccess": {
-        "message": "You now have default settings :)",
+        "message": "现在是默认设置啦 :)",
         "description": ""
     },
     "o_areYouSure": {
-        "message": "Are you sure?",
+        "message": "您确定吗？",
         "description": ""
     },
     "o_helpMeTranslate": {
-        "message": "Help me translate!",
+        "message": "参与翻译",
         "description": ""
     },
     "o_GitHubContributors": {
-        "message": "Super awesome <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'>GitHub<\/a> contributors",
+        "message": "超级棒的 <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'>GitHub<\/a> 贡献者们",
         "description": ""
     },
     "o_CrowdinContributors": {
-        "message": "Super awesome <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'>Crowdin<\/a> contributors (translators)",
+        "message": "超级棒的 <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'>GitHub<\/a> 贡献者(翻译菌)",
         "description": ""
     },
     "o_plusExplain": {
@@ -264,31 +264,31 @@
         "description": ""
     },
     "o_cannotAddDuplicates": {
-        "message": "Sorry, I cannot add duplicate name entries.",
+        "message": "抱歉，我不能复制名字项",
         "description": ""
     },
     "o_group": {
-        "message": "Group",
+        "message": "组",
         "description": ""
     },
     "o_groupsUsed": {
-        "message": "Used groups",
+        "message": "使用组",
         "description": ""
     },
     "o_showSearchEverywhere": {
-        "message": "Show 'Search everywhere' option.",
+        "message": "显示“搜遍四海”选项",
         "description": ""
     },
     "o_showSearchEverywhereGroups": {
-        "message": "Show 'Search everywhere' option within groups.",
+        "message": "在组内显示\"搜遍四海\"选项",
         "description": ""
     },
     "o_tabs": {
-        "message": "Tabs",
+        "message": "标签",
         "description": ""
     },
     "o_sortBy": {
-        "message": "Sort by:",
+        "message": "排序方式：",
         "description": ""
     }
 }
