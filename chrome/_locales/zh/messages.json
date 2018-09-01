@@ -8,7 +8,7 @@
         "description": ""
     },
     "bg_searchStringOn": {
-        "message": "Search '%s' on",
+        "message": "在... 搜索 '%s'",
         "description": ""
     },
     "bg_searchEverywhere": {
@@ -28,7 +28,7 @@
         "description": ""
     },
     "bg_installMessage": {
-        "message": "Extension succesfully installed. <br\/> Check out on Options page to configure it, and to know about diferent ways to support your humble extension provider ;)",
+        "message": "已成功安装扩展。 <br\/> 来\"选项\"看看配置吧, 以及支持开发者的几种途径 ;)",
         "description": ""
     },
     "bg_updateMessage": {
@@ -36,15 +36,15 @@
         "description": ""
     },
     "o_name": {
-        "message": "Name",
+        "message": "名字",
         "description": ""
     },
     "o_searchURL": {
-        "message": "Search URL",
+        "message": "搜索 URL",
         "description": ""
     },
     "o_cancel": {
-        "message": "cancel",
+        "message": "取消",
         "description": ""
     },
     "o_edit": {
@@ -136,11 +136,11 @@
         "description": ""
     },
     "o_SupportThisHumble": {
-        "message": "Support this humble extension developer",
+        "message": "支持这个谦和的拓展插件开发者",
         "description": ""
     },
     "o_SupportThisHumbleDescription": {
-        "message": "当然, 这个扩展是免费的 - 我建立它自己使用它, 实际上 -..., 但如果你真的喜欢使用它, 你想表达你的赞赏, 这里有一个东西, 可能会让我高兴的清单:)  <ul>    <li><b > 告诉我钱:<\/b>  在本页的右上方点击<b > 捐赠 <\/b> 按钮, 赏我几块钱!<\/li>    <li><b > 使用亚马逊的精选链接:<\/b> 使用选项页面上的任何亚马逊链接, 使用我的搜索内容扩展和购买! 如果你使用我的一个链接，亚马逊将支付我一个英俊的奖励!:D -  如果你自己创建的链接它不会启用, 这将花费你一样。 <\/li>    <li><b > Guerrilla广告:<\/b> <a href=\"http:\/\/twitter.com\/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http:\/\/bit.ly\/HzSP8p @frenetix_\"title=\"Click to send this page to Twitter!\"target=\"_blank\"> 在 Twitter 上共享 <\/a>, <a href=\"https:\/\/www.facebook.com\/sharer\/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\"target=\"_blank\"> 在 Facebook 上张贴<\/a>, G + 或任何你觉得可以安利的地方<\/li>    <li><b > 更多Guerrilla广告:<\/b> 访问我的博客, 张贴一个评论链接到任何这些帖子。G + 你喜欢的帖子。<\/li>    <li><b > 提升我的自尊:<\/b>  在谷歌扩展页面打分 , 说你有多喜欢它!<\/li>  <\/ul>",
+        "message": "当然, 这个扩展是免费的 - 实际上是自用的  -..., 但如果你真的喜欢使用它, 你想表达你的赞赏, 这里有一个可能会让我高兴的清单:)  <ul>    <li><b > 打赏:<\/b>  在本页的右上方点击<b > 捐赠 <\/b> 按钮, 赏我几块钱!<\/li>    <li><b > 使用亚马逊的精选链接:<\/b> 使用选项页面上的任何亚马逊链接, 使用我的搜索内容扩展和购买! 如果你使用我的一个链接，亚马逊将支付我一个英俊的奖励!:D -  如果你自己创建的链接它不会启用, 这将花费你一样。 <\/li>    <li><b > Guerrilla广告:<\/b> <a href=\"http:\/\/twitter.com\/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http:\/\/bit.ly\/HzSP8p @frenetix_\"title=\"Click to send this page to Twitter!\"target=\"_blank\"> 在 Twitter 上共享 <\/a>, <a href=\"https:\/\/www.facebook.com\/sharer\/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\"target=\"_blank\"> 在 Facebook 上张贴<\/a>, G + 或任何你觉得可以安利的地方<\/li>    <li><b > 更多Guerrilla广告:<\/b> 访问我的博客, 张贴一个评论链接到任何这些帖子。G + 你喜欢的帖子。<\/li>    <li><b > 提升我的自尊:<\/b>  在谷歌扩展页面打分 , 说你有多喜欢它!<\/li>  <\/ul>",
         "description": ""
     },
     "o_importExport": {
@@ -172,7 +172,7 @@
         "description": ""
     },
     "o_newTabPosition": {
-        "message": "New tab's position:",
+        "message": "新标签页的位置",
         "description": ""
     },
     "o_last": {
@@ -204,7 +204,7 @@
         "description": ""
     },
     "o_developedBy": {
-        "message": "   Developed by <a href=\"https:\/\/plus.google.com\/u\/0\/100927641416387074874\/about\" target=\"_blank\">Diego Presno<\/a>. Follow me on Twitter <a href=\"http:\/\/twitter.com\/#!\/frenetix_\" target=\"_blank\">@frenetix_<\/a>  <br \/>  All images\/icons designed by <a href=\"http:\/\/germanrivas.com\/\" target=\"_blank\">germanrivas.com<\/a>.<br\/><br \/>  <h2>Disclaimer<\/h2>  Please, be warned: the usage of this extension is being tracked by Google Analytics.  It also tracks which search engines are the most used by users, so I can then be able to add them to the featured Search Engines list.<br\/>  The extension does not track the identity of its user, nor what terms they're looking for.  Only the search URL syntax is being recorded.<br\/>  No individual information will be shared with third parties. The only information published will be about the most used sites. An example of the published information can be found on my <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a>.",
+        "message": "   由<a href=\"https:\/\/plus.google.com\/u\/0\/100927641416387074874\/about\" target=\"_blank\">Diego Presno<\/a>开发  Follow me on Twitter <a href=\"http:\/\/twitter.com\/#!\/frenetix_\" target=\"_blank\">@frenetix_<\/a>  <br \/>  All images\/icons designed by <a href=\"http:\/\/germanrivas.com\/\" target=\"_blank\">germanrivas.com<\/a>.<br\/><br \/>  <h2>免责说明<\/h2>  请注意: 此扩展插件的使用已被Google Analytics追踪.  它也追踪了最多用户使用的搜索引擎，所以我可以把他们加到搜索列表当中。<br\/>  此扩展插件不追踪您的身份以及搜索词，只是搜索引擎链接被记录下来而已<br\/>  您的个人信息不会被第三方分享，唯一会被发布的信息是最多使用的搜索站点。例子: <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a>.",
         "description": ""
     },
     "o_searchEngines": {
@@ -260,7 +260,7 @@
         "description": ""
     },
     "o_plusExplain": {
-        "message": "Plus versus space: some search engines use '+' instead of a space to separate words you're looking for.",
+        "message": "\"+\" v. s. \"空格\": 有些搜索引擎用“+”而不是\"空格\"来分开搜索关键词",
         "description": ""
     },
     "o_cannotAddDuplicates": {
