@@ -4,7 +4,7 @@
         "description": "Extension's name. Use   instead of spaces."
     },
     "extDescription": {
-        "message": "右击选中的文本, 以搜索多个搜索引擎的。支持对引擎进行分组，匿名浏览状态使用，以及更多功能",
+        "message": "Right click on selected text to search on multiple search engines for Chrome. Supports grouping engines, incongito, and more.",
         "description": ""
     },
     "bg_searchStringOn": {
@@ -12,19 +12,19 @@
         "description": ""
     },
     "bg_searchEverywhere": {
-        "message": "搜遍海域！",
+        "message": "Search everywhere!",
         "description": ""
     },
     "bg_openOnNewTab": {
-        "message": "在新标签页中打开",
+        "message": "Open on new tab",
         "description": ""
     },
     "bg_options": {
-        "message": "选项...",
+        "message": "Options...",
         "description": ""
     },
     "bg_extensionBlog": {
-        "message": "扩展插件的博客",
+        "message": "Extension's blog...",
         "description": ""
     },
     "bg_installMessage": {
@@ -48,19 +48,19 @@
         "description": ""
     },
     "o_edit": {
-        "message": "编辑",
+        "message": "edit",
         "description": ""
     },
     "o_new": {
-        "message": "新的",
+        "message": "new",
         "description": ""
     },
     "o_ok": {
-        "message": "好的",
+        "message": "ok",
         "description": ""
     },
     "o_sureYouWantToDelete": {
-        "message": "确实要删除此行吗？",
+        "message": "Sure you want to delete this row?",
         "description": ""
     },
     "o_confirmImport": {
@@ -68,11 +68,11 @@
         "description": ""
     },
     "o_importSuccesfull": {
-        "message": "导入成功。在刷新此页前, 请检查您的搜索引擎列表以确保一切顺利进行。如果它是空的, 那么请点击 \"撤消上次导入\" 按钮。",
+        "message": "Import successfull. Before reloading this page, check your Search Engines list to make sure everything goes well. If it's empty, then hit the *undo last import* button.",
         "description": ""
     },
     "o_confirmRestore": {
-        "message": "正在尝试还原上次导入时的保存配置",
+        "message": "I'm about to try and restore the config saved the last time you clicked on the *import* button",
         "description": ""
     },
     "o_restoreSuccesfull": {
@@ -80,31 +80,31 @@
         "description": ""
     },
     "o_nothingToRestore": {
-        "message": "抱歉，无可恢复",
+        "message": "Sorry, I've got nothing to restore",
         "description": ""
     },
     "o_thankYou": {
-        "message": "谢谢你！",
+        "message": "Thank you!",
         "description": ""
     },
     "o_type": {
-        "message": "类型",
+        "message": "Type",
         "description": ""
     },
     "o_language": {
-        "message": "语言类型",
+        "message": "Language",
         "description": ""
     },
     "o_moreSearchEngines": {
-        "message": "更多搜索引擎",
+        "message": "More Search Engines",
         "description": ""
     },
     "o_selectAURL": {
-        "message": "请选择一个 URL",
+        "message": "Please select a URL",
         "description": ""
     },
     "o_mySearchEngines": {
-        "message": "我的搜索引擎",
+        "message": "My Search Engines",
         "description": ""
     },
     "o_mySearchEnginesDesc": {
@@ -144,27 +144,27 @@
         "description": ""
     },
     "o_importExport": {
-        "message": "导入 \/ 导出配置",
+        "message": "Import\/Export Config",
         "description": ""
     },
     "o_importExportDescription": {
-        "message": "这是所有的配置信息。只需复制并保存在任何文本文件里即可。<br \/>  如果要导入以前保存的配置, 只需将其粘贴到此处, 然后单击 \"导入\" 按钮。<br \/><br \/>",
+        "message": "Here's all the config info. Just copy & save it on any text file...<br \/>  If you want to import your previously saved config, just paste it here and click on the import button.<br \/><br \/>",
         "description": ""
     },
     "importConfig": {
-        "message": "导入",
+        "message": "Import",
         "description": ""
     },
     "undoLastImport": {
-        "message": "撤消上次导入",
+        "message": "Undo last import",
         "description": ""
     },
     "o_otherStuffYouCan": {
-        "message": "其他配置",
+        "message": "Other stuff you can configure",
         "description": ""
     },
     "o_openLinksInNewTab": {
-        "message": "在新标签页中打开链接",
+        "message": "Open links in new tab.",
         "description": ""
     },
     "o_giveNewTabFocus": {
@@ -176,15 +176,15 @@
         "description": ""
     },
     "o_last": {
-        "message": "最后一个",
+        "message": "Last",
         "description": ""
     },
     "o_first": {
-        "message": "第一个",
+        "message": "First",
         "description": ""
     },
     "o_next": {
-        "message": "下一个",
+        "message": "Next",
         "description": ""
     },
     "o_previous": {
