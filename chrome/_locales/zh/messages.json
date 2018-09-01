@@ -32,7 +32,7 @@
         "description": ""
     },
     "bg_updateMessage": {
-        "message": "Extension succesfully updated to {VersionNumber}<br\/>Visit <a href=http:\/\/simpleselectsearch.blogspot.com>my blog<\/a> for a list of improvements.",
+        "message": "拓展插件已成功更新到{VersionNumber} 版本。<br\/>访问<a href=http:\/\/simpleselectsearch.blogspot.com>我的博客<\/a> 来查看更新详情。",
         "description": ""
     },
     "o_name": {
@@ -64,7 +64,7 @@
         "description": ""
     },
     "o_confirmImport": {
-        "message": "I'm about to try and parse the text on your import\/export textbox... if something goes wrong... just click on the *undo last import* button. I would also recommend that you keep a backup copy of this config... just in case :)",
+        "message": "我将尝试分析您的导入 \/ 导出文本框中的文本... 如果出了问题, 请单击 \"撤消上次导入 *\" 按钮。我还建议您保留此配置的备份副本... 以防万一:)",
         "description": ""
     },
     "o_importSuccesfull": {
@@ -76,7 +76,7 @@
         "description": ""
     },
     "o_restoreSuccesfull": {
-        "message": "Config saved before last import was just restored... if this doesn't help, you can always reset the options to the default settings with the button in the 'Advanced settings' page... or might try and retrieve a config backup if you did one before ;)",
+        "message": "从上次导入配置恢复... 如果这没有帮助, 您始终可以使用 \"高级设置\" 页中的按钮将选项重置为默认设置, 或者尝试从配置备份中恢复 ;)",
         "description": ""
     },
     "o_nothingToRestore": {
@@ -108,11 +108,11 @@
         "description": ""
     },
     "o_mySearchEnginesDesc": {
-        "message": "These are your configured search engines. Select other engines from the Featured Search Engines list below or create your own. Check the help for instructions.",
+        "message": "这些是您配置的搜索引擎。从下方的精选搜索引擎列表中选择或创建您自己的引擎。请检查帮助以查看使用说明。",
         "description": ""
     },
     "o_featuredSearchEngines": {
-        "message": "Featured Search Engines",
+        "message": "精选搜索引擎",
         "description": ""
     },
     "o_featuredSearchEngnesDesc": {
