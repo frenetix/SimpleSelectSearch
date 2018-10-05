@@ -260,7 +260,7 @@
         "description": ""
     },
     "o_plusExplain": {
-        "message": "Plus versus space: some search engines use '+' instead of a space to separate words you're looking for.",
+        "message": "Плюс или пробел: некоторые поисковые системы используют \"+\" вместо пробела, чтобы отделить слова, которые вы ищете.",
         "description": ""
     },
     "o_cannotAddDuplicates": {
