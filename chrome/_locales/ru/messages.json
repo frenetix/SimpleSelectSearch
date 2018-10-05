@@ -168,7 +168,7 @@
         "description": ""
     },
     "o_giveNewTabFocus": {
-        "message": "Переключать фокус на новую вкладку.",
+        "message": "Сделать новую вкладку активной.",
         "description": ""
     },
     "o_newTabPosition": {
