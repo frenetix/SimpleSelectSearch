@@ -252,11 +252,11 @@
         "description": ""
     },
     "o_GitHubContributors": {
-        "message": "Super awesome <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'>GitHub<\/a> contributors",
+        "message": "Самые активные участники <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'>GitHub<\/a>",
         "description": ""
     },
     "o_CrowdinContributors": {
-        "message": "Super awesome <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'>Crowdin<\/a> contributors (translators)",
+        "message": "Самые активные участники (переводчики) <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'>Crowdin<\/a>",
         "description": ""
     },
     "o_plusExplain": {
