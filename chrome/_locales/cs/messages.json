@@ -28,11 +28,11 @@
         "description": ""
     },
     "bg_installMessage": {
-        "message": "Rozšíření se úspěšně nainstalovalo. <br\/> Podívejte se na stránku Nastavení a upravte si ho a zjistěte jak podpořit skromného tvůrce tohoto rozšíření ;)",
+        "message": "Rozšíření se úspěšně nainstalovalo. <br/> Podívejte se na stránku Nastavení a upravte si ho a zjistěte jak podpořit skromného tvůrce tohoto rozšíření ;)",
         "description": ""
     },
     "bg_updateMessage": {
-        "message": "Rozšíření se úspěšně aktualizovalo na {VersionNumber}<br\/>Navštivte<a href=http:\/\/simpleselectsearch.blogspot.com>můj blog<\/a>pro seznam vylepšení.",
+        "message": "Rozšíření se úspěšně aktualizovalo na {VersionNumber}<br/>Navštivte<a href=http://simpleselectsearch.blogspot.com>můj blog</a>pro seznam vylepšení.",
         "description": ""
     },
     "o_name": {
@@ -64,7 +64,7 @@
         "description": ""
     },
     "o_confirmImport": {
-        "message": "I'm about to try and parse the text on your import\/export textbox... if something goes wrong... just click on the *undo last import* button. I would also recommend that you keep a backup copy of this config... just in case :)",
+        "message": "I'm about to try and parse the text on your import/export textbox... if something goes wrong... just click on the *undo last import* button. I would also recommend that you keep a backup copy of this config... just in case :)",
         "description": ""
     },
     "o_importSuccesfull": {
@@ -132,7 +132,7 @@
         "description": ""
     },
     "o_helpHowDoIDescription": {
-        "message": "It's really easy! <br \/>  Just click on any row's edit icon (the one with the little pencil) or just click the \"name\" column and edit its values.  <ul>    <li>The \"name\" column refers to what you'll see on the context menu.<\/li>    <li>The \"Search URL\" refers to what the search engine needs to run your query.<\/li>    <li>The <span class=\"searchString\">%s<\/span> symbol will be replaced with the selected text on your browser.<\/li>  <\/ul>  You can decide the order of your search engines by dragging them up and down... do it over the \"#\" column, where the up and down arrows appear. Your mouse pointer will change when you're over the right spot, and you'll figure it out.  <h2>Here's a simple way to create a Search URL of your own:<\/h2>  <ul>    <li>On your preferred site, perform a search for the word \"TESTSEARCH\".<\/li>    <li> Then just copy the URL that was generated within the site, that might look like this, for example, on IMDB: http:\/\/www.imdb.com\/find?s=all;q=<span class=\"searchString\">TESTSEARCH<\/span>.<\/li>    <li>Now just replace <span class=\"searchString\">TESTSEARCH<\/span> with <span class=\"searchString\">%s<\/span> and paste it here, on the \"Search URL\" column.<\/li>    <li>Then indicate a name to that Search URL and you're done!<\/li>  <\/ul>  Make sure you check first if the site you'd like to add is on the \"Other search engines\" table. I'm updating that table every now and the. If you have any suggestions for that list, they are more than welcome.  <br\/>  <br\/> You can sort the URLs order by hovering over the first column.",
+        "message": "It's really easy! <br />  Just click on any row's edit icon (the one with the little pencil) or just click the \"name\" column and edit its values.  <ul>    <li>The \"name\" column refers to what you'll see on the context menu.</li>    <li>The \"Search URL\" refers to what the search engine needs to run your query.</li>    <li>The <span class=\"searchString\">%s</span> symbol will be replaced with the selected text on your browser.</li>  </ul>  You can decide the order of your search engines by dragging them up and down... do it over the \"#\" column, where the up and down arrows appear. Your mouse pointer will change when you're over the right spot, and you'll figure it out.  <h2>Here's a simple way to create a Search URL of your own:</h2>  <ul>    <li>On your preferred site, perform a search for the word \"TESTSEARCH\".</li>    <li> Then just copy the URL that was generated within the site, that might look like this, for example, on IMDB: http://www.imdb.com/find?s=all;q=<span class=\"searchString\">TESTSEARCH</span>.</li>    <li>Now just replace <span class=\"searchString\">TESTSEARCH</span> with <span class=\"searchString\">%s</span> and paste it here, on the \"Search URL\" column.</li>    <li>Then indicate a name to that Search URL and you're done!</li>  </ul>  Make sure you check first if the site you'd like to add is on the \"Other search engines\" table. I'm updating that table every now and the. If you have any suggestions for that list, they are more than welcome.  <br/>  <br/> You can sort the URLs order by hovering over the first column.",
         "description": ""
     },
     "o_SupportThisHumble": {
@@ -140,15 +140,15 @@
         "description": ""
     },
     "o_SupportThisHumbleDescription": {
-        "message": "Of course, this extension is for free -I built it to use it myself, actually-... but if you really enjoy using it, and you'd like to show your appreciation, here's a list of things that might make me happy :)  <ul>    <li><b>Show me the money:<\/b> Hit the <b>donate<\/b> button at the top right of this page... and send me a few bucks!<\/li>    <li><b>Use Amazon's featured links:<\/b> Use any of the Amazon links featured on the options page, search stuff using my extension and buy it! If you used one of my links -it doesn't work if you created the link by yourself, it will cost you the same, and Amazon will pay me a handsome reward! :D... and did I mention it costs you zero!?<\/li>    <li><b>Guerrilla advertising:<\/b> <a href=\"http:\/\/twitter.com\/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http:\/\/bit.ly\/HzSP8p @frenetix_\" title=\"Click to send this page to Twitter!\" target=\"_blank\">Share on Twitter<\/a>, <a href=\"https:\/\/www.facebook.com\/sharer\/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">post on Facebook<\/a>, G+ or wherever you feel this extension might be well received<\/li>    <li><b>More Guerrilla advertising:<\/b> Visit my blog, post a comment link to any of those posts. G+ the posts you like.<\/li>    <li><b>Boost my self esteem:<\/b> Rate the extension on Google's webstore, say how much you love it!<\/li>  <\/ul>",
+        "message": "Of course, this extension is for free -I built it to use it myself, actually-... but if you really enjoy using it, and you'd like to show your appreciation, here's a list of things that might make me happy :)  <ul>    <li><b>Show me the money:</b> Hit the <b>donate</b> button at the top right of this page... and send me a few bucks!</li>    <li><b>Use Amazon's featured links:</b> Use any of the Amazon links featured on the options page, search stuff using my extension and buy it! If you used one of my links -it doesn't work if you created the link by yourself, it will cost you the same, and Amazon will pay me a handsome reward! :D... and did I mention it costs you zero!?</li>    <li><b>Guerrilla advertising:</b> <a href=\"http://twitter.com/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http://bit.ly/HzSP8p @frenetix_\" title=\"Click to send this page to Twitter!\" target=\"_blank\">Share on Twitter</a>, <a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">post on Facebook</a>, G+ or wherever you feel this extension might be well received</li>    <li><b>More Guerrilla advertising:</b> Visit my blog, post a comment link to any of those posts. G+ the posts you like.</li>    <li><b>Boost my self esteem:</b> Rate the extension on Google's webstore, say how much you love it!</li>  </ul>",
         "description": ""
     },
     "o_importExport": {
-        "message": "Import\/Export konfigurační soubor",
+        "message": "Import/Export konfigurační soubor",
         "description": ""
     },
     "o_importExportDescription": {
-        "message": "Here's all the config info. Just copy & save it on any text file...<br \/>  If you want to import your previously saved config, just paste it here and click on the import button.<br \/><br \/>",
+        "message": "Here's all the config info. Just copy & save it on any text file...<br />  If you want to import your previously saved config, just paste it here and click on the import button.<br /><br />",
         "description": ""
     },
     "importConfig": {
@@ -196,7 +196,7 @@
         "description": ""
     },
     "o_leavingThisCheckbox": {
-        "message": "Tracked information is used by me, only for statistical analysis purposes.  <br\/>No user information is being tracked.  <br\/>No search terms are being tracked (only the search engine used). You can read more about this on <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">my blog<\/a>.",
+        "message": "Tracked information is used by me, only for statistical analysis purposes.  <br/>No user information is being tracked.  <br/>No search terms are being tracked (only the search engine used). You can read more about this on <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">my blog</a>.",
         "description": ""
     },
     "eraseOptions": {
@@ -204,7 +204,7 @@
         "description": ""
     },
     "o_developedBy": {
-        "message": "   Developed by <a href=\"https:\/\/plus.google.com\/u\/0\/100927641416387074874\/about\" target=\"_blank\">Diego Presno<\/a>. Follow me on Twitter <a href=\"http:\/\/twitter.com\/#!\/frenetix_\" target=\"_blank\">@frenetix_<\/a>  <br \/>  All images\/icons designed by <a href=\"http:\/\/germanrivas.com\/\" target=\"_blank\">germanrivas.com<\/a>.<br\/><br \/>  <h2>Disclaimer<\/h2>  Please, be warned: the usage of this extension is being tracked by Google Analytics.  It also tracks which search engines are the most used by users, so I can then be able to add them to the featured Search Engines list.<br\/>  The extension does not track the identity of its user, nor what terms they're looking for.  Only the search URL syntax is being recorded.<br\/>  No individual information will be shared with third parties. The only information published will be about the most used sites. An example of the published information can be found on my <a href=\"http:\/\/simpleselectsearch.blogspot.com\/\" target=\"_blank\">blog<\/a>.",
+        "message": "   Developed by <a href=\"https://plus.google.com/u/0/100927641416387074874/about\" target=\"_blank\">Diego Presno</a>. Follow me on Twitter <a href=\"http://twitter.com/#!/frenetix_\" target=\"_blank\">@frenetix_</a>  <br />  All images/icons designed by <a href=\"http://germanrivas.com/\" target=\"_blank\">germanrivas.com</a>.<br/><br />  <h2>Disclaimer</h2>  Please, be warned: the usage of this extension is being tracked by Google Analytics.  It also tracks which search engines are the most used by users, so I can then be able to add them to the featured Search Engines list.<br/>  The extension does not track the identity of its user, nor what terms they're looking for.  Only the search URL syntax is being recorded.<br/>  No individual information will be shared with third parties. The only information published will be about the most used sites. An example of the published information can be found on my <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">blog</a>.",
         "description": ""
     },
     "o_searchEngines": {
@@ -224,7 +224,7 @@
         "description": ""
     },
     "o_credits": {
-        "message": "Credits\/Disclaimer",
+        "message": "Credits/Disclaimer",
         "description": ""
     },
     "o_checkOutMyBlog": {
@@ -252,11 +252,11 @@
         "description": ""
     },
     "o_GitHubContributors": {
-        "message": "Super awesome <a href='https:\/\/github.com\/frenetix\/SimpleSelectSearch' target='_blank'>GitHub<\/a> contributors",
+        "message": "Super awesome <a href='https://github.com/frenetix/SimpleSelectSearch' target='_blank'>GitHub</a> contributors",
         "description": ""
     },
     "o_CrowdinContributors": {
-        "message": "Super awesome <a href='https:\/\/crowdin.com\/project\/simpleselectsearch' target='_blank'>Crowdin<\/a> contributors (translators)",
+        "message": "Super awesome <a href='https://crowdin.com/project/simpleselectsearch' target='_blank'>Crowdin</a> contributors (translators)",
         "description": ""
     },
     "o_plusExplain": {
