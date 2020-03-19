@@ -116,7 +116,7 @@
         "description": ""
     },
     "o_featuredSearchEngnesDesc": {
-        "message": "点击一个网址, 把它纳入至你的搜索引擎列表中。",
+        "message": "点击一个 URL,将其纳入至你的搜索引擎列表中。",
         "description": ""
     },
     "o_groupBy": {
@@ -208,7 +208,7 @@
         "description": ""
     },
     "o_searchEngines": {
-        "message": "我的搜索引擎",
+        "message": "搜索引擎",
         "description": ""
     },
     "o_help": {
@@ -224,7 +224,7 @@
         "description": ""
     },
     "o_credits": {
-        "message": "贡献/免责声明",
+        "message": "贡献者/免责声明",
         "description": ""
     },
     "o_checkOutMyBlog": {
@@ -236,7 +236,7 @@
         "description": ""
     },
     "o_incognito": {
-        "message": "无痕浏览",
+        "message": "无痕模式",
         "description": ""
     },
     "o_resetDefaultSuccess": {
