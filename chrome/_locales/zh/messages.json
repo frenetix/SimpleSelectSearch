@@ -176,19 +176,19 @@
         "description": ""
     },
     "o_last": {
-        "message": "最后",
+        "message": "尾",
         "description": ""
     },
     "o_first": {
-        "message": "最前",
+        "message": "首",
         "description": ""
     },
     "o_next": {
-        "message": "紧邻",
+        "message": "后",
         "description": ""
     },
     "o_previous": {
-        "message": "之前",
+        "message": "前",
         "description": ""
     },
     "o_trackSearchEngines": {
