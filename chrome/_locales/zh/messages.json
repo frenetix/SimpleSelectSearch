@@ -32,7 +32,7 @@
         "description": ""
     },
     "bg_updateMessage": {
-        "message": "拓展插件已成功更新到{VersionNumber} 版本。<br/>访问<a href=http://simpleselectsearch.blogspot.com>我的博客</a> 来查看更新详情。",
+        "message": "扩展程序已成功更新至 {VersionNumber}<br/>访问 <a href=http://simpleselectsearch.blogspot.com>我的 blog</a> 以查看更新的相关详情",
         "description": ""
     },
     "o_name": {
