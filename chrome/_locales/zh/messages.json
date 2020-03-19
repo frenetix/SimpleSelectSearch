@@ -120,7 +120,7 @@
         "description": ""
     },
     "o_groupBy": {
-        "message": "按照... 分组  ",
+        "message": "分组方式:&nbsp;&nbsp;  ",
         "description": ""
     },
     "o_ungrouped": {
