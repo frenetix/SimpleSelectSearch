@@ -8,7 +8,7 @@
         "description": ""
     },
     "bg_searchStringOn": {
-        "message": "在... 搜索 '%s'",
+        "message": "搜索 “%s”",
         "description": ""
     },
     "bg_searchEverywhere": {
