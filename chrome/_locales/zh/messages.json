@@ -28,7 +28,7 @@
         "description": ""
     },
     "bg_installMessage": {
-        "message": "已成功安装扩展。 <br/> 来\"选项\"看看配置吧, 以及支持开发者的几种途径 ;)",
+        "message": "扩展程序已安装成功。<br/> 打开选项页面可以进行配置，以及了解支持扩展开发商的几种途径 ;)",
         "description": ""
     },
     "bg_updateMessage": {
@@ -52,7 +52,7 @@
         "description": ""
     },
     "o_new": {
-        "message": "新的",
+        "message": "新建",
         "description": ""
     },
     "o_ok": {
