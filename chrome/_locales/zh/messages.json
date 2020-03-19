@@ -276,11 +276,11 @@
         "description": ""
     },
     "o_showSearchEverywhere": {
-        "message": "显示“搜遍四海”选项",
+        "message": "显示“一起搜”选项",
         "description": ""
     },
     "o_showSearchEverywhereGroups": {
-        "message": "在组内显示\"搜遍四海\"选项",
+        "message": "在组内显示“一起搜”选项",
         "description": ""
     },
     "o_tabs": {
