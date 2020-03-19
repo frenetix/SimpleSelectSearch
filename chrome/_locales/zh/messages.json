@@ -56,11 +56,11 @@
         "description": ""
     },
     "o_ok": {
-        "message": "好的",
+        "message": "好",
         "description": ""
     },
     "o_sureYouWantToDelete": {
-        "message": "确实要删除此行吗？",
+        "message": "确定要删除此行吗？",
         "description": ""
     },
     "o_confirmImport": {
