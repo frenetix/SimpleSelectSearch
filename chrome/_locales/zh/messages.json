@@ -168,7 +168,7 @@
         "description": ""
     },
     "o_giveNewTabFocus": {
-        "message": "Give new tab focus.",
+        "message": "在新前台标签页中打开",
         "description": ""
     },
     "o_newTabPosition": {
