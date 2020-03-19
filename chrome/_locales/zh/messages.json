@@ -4,7 +4,7 @@
         "description": "Extension's name. Use   instead of spaces."
     },
     "extDescription": {
-        "message": "右击选中的文本, 以在浏览器中搜索多个搜索引擎的结果。支持对引擎进行分组，匿名浏览状态使用，以及更多功能。",
+        "message": "右击选中的文本使用多个搜索引擎在 Chrome 中进行搜索。支持对搜索引擎进行分组、无痕模式下使用，以及更多功能。",
         "description": ""
     },
     "bg_searchStringOn": {
