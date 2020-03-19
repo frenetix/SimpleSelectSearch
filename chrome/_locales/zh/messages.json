@@ -92,7 +92,7 @@
         "description": ""
     },
     "o_language": {
-        "message": "语言类型",
+        "message": "语言",
         "description": ""
     },
     "o_moreSearchEngines": {
@@ -176,7 +176,7 @@
         "description": ""
     },
     "o_last": {
-        "message": "最后一个",
+        "message": "最后",
         "description": ""
     },
     "o_first": {
