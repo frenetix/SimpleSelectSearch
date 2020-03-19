@@ -36,7 +36,7 @@
         "description": ""
     },
     "o_name": {
-        "message": "名字",
+        "message": "名称",
         "description": ""
     },
     "o_searchURL": {
@@ -172,7 +172,7 @@
         "description": ""
     },
     "o_newTabPosition": {
-        "message": "新标签页的位置",
+        "message": "新标签页的位置:",
         "description": ""
     },
     "o_last": {
