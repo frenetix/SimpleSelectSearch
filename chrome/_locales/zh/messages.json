@@ -268,7 +268,7 @@
         "description": ""
     },
     "o_group": {
-        "message": "组",
+        "message": "分组",
         "description": ""
     },
     "o_groupsUsed": {
@@ -284,11 +284,11 @@
         "description": ""
     },
     "o_tabs": {
-        "message": "标签",
+        "message": "标签页",
         "description": ""
     },
     "o_sortBy": {
-        "message": "排序方式：",
+        "message": "排序方式:",
         "description": ""
     }
 }
