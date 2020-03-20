@@ -256,15 +256,15 @@
         "description": ""
     },
     "o_CrowdinContributors": {
-        "message": "超级棒的 <a href='https://github.com/frenetix/SimpleSelectSearch' target='_blank'>GitHub</a> 贡献者(翻译菌)",
+        "message": "超棒的 <a href='https://crowdin.com/project/simpleselectsearch' target='_blank'>Crowdin</a> 贡献者 （翻译者）",
         "description": ""
     },
     "o_plusExplain": {
-        "message": "\"+\" v. s. \"空格\": 有些搜索引擎用“+”而不是\"空格\"来分开搜索关键词",
+        "message": "\"+\" 与 \"空格\": 有些搜索引擎使用 “+” 而不是 \"空格\" 来分开搜索关键词",
         "description": ""
     },
     "o_cannotAddDuplicates": {
-        "message": "抱歉，我不能复制名字项",
+        "message": "抱歉，无法添加重复的名称条目",
         "description": ""
     },
     "o_group": {
@@ -272,7 +272,7 @@
         "description": ""
     },
     "o_groupsUsed": {
-        "message": "使用组",
+        "message": "使用分组",
         "description": ""
     },
     "o_showSearchEverywhere": {
