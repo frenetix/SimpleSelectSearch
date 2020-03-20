@@ -68,11 +68,11 @@
         "description": ""
     },
     "o_importSuccesfull": {
-        "message": "导入成功。在刷新此页前, 请检查您的搜索引擎列表以确保一切顺利进行。如果它是空的, 那么请点击 \"撤消上次导入\" 按钮。",
+        "message": "导入成功。在刷新此页面之前, 请检查你的搜索引擎列表以确保一切正常。如果它是空白的, 那么请点击 “撤销上次导入” 按钮。",
         "description": ""
     },
     "o_confirmRestore": {
-        "message": "正在尝试还原上次导入时的保存配置",
+        "message": "我将尝试恢复上次点击 \"导入\" 按钮时保存的配置",
         "description": ""
     },
     "o_restoreSuccesfull": {
