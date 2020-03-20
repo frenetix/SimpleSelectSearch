@@ -108,7 +108,7 @@
         "description": ""
     },
     "o_mySearchEnginesDesc": {
-        "message": "这些是您配置的搜索引擎。从下方的精选搜索引擎列表中选择或创建您自己的引擎。请检查帮助以查看使用说明。",
+        "message": "这些是您配置的搜索引擎。从下面的“特色搜索引擎”列表中选择其他搜索引擎，或者创建你自己的搜索引擎。请点击帮助以查看使用说明。",
         "description": ""
     },
     "o_featuredSearchEngines": {
@@ -136,7 +136,7 @@
         "description": ""
     },
     "o_SupportThisHumble": {
-        "message": "支持这个谦卑的拓展插件开发者",
+        "message": "支持扩展程序的开发者",
         "description": ""
     },
     "o_SupportThisHumbleDescription": {
