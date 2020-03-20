@@ -140,7 +140,7 @@
         "description": ""
     },
     "o_SupportThisHumbleDescription": {
-        "message": "当然, 这个扩展是免费的 - 实际上是自用的  -但如果你真的喜欢使用它, 你想表达你的赞赏, 这里有一个可能会让我高兴的清单:)  <ul>    <li><b > 打赏:</b>  在本页的右上方点击<b > 捐赠 </b> 按钮, 赏我几块钱!</li>    <li><b > 使用亚马逊的精选链接:</b> 使用选项页面上的任何亚马逊链接, 使用我的搜索内容扩展和购买! 如果你使用我的一个链接，亚马逊将支付我一个英俊的奖励!:D -  如果你自己创建的链接它不会启用, 这将花费你一样。 </li>    <li><b > Guerrilla广告:</b> <a href=\"http://twitter.com/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http://bit.ly/HzSP8p @frenetix_\"title=\"Click to send this page to Twitter!\"target=\"_blank\"> 在 Twitter 上共享 </a>, <a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\"target=\"_blank\"> 在 Facebook 上张贴</a>, G + 或任何你觉得可以安利的地方</li>    <li><b > 更多Guerrilla广告:</b> 访问我的博客, 张贴一个评论链接到任何这些帖子。G + 你喜欢的帖子。</li>    <li><b > 提升我的自尊:</b>  在谷歌扩展页面打分 , 说你有多喜欢它!</li>  </ul>",
+        "message": "Of course, this extension is for free -I built it to use it myself, actually-... but if you really enjoy using it, and you'd like to show your appreciation, here's a list of things that might make me happy :)  <ul>    <li><b>Show me the money:</b> Hit the <b>donate</b> button at the top right of this page... and send me a few bucks!</li>    <li><b>Use Amazon's featured links:</b> Use any of the Amazon links featured on the options page, search stuff using my extension and buy it! If you used one of my links -it doesn't work if you created the link by yourself, it will cost you the same, and Amazon will pay me a handsome reward! :D... and did I mention it costs you zero!?</li>    <li><b>Guerrilla advertising:</b> <a href=\"http://twitter.com/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http://bit.ly/HzSP8p @frenetix_\" title=\"Click to send this page to Twitter!\" target=\"_blank\">Share on Twitter</a>, <a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">post on Facebook</a>, G+ or wherever you feel this extension might be well received</li>    <li><b>More Guerrilla advertising:</b> Visit my blog, post a comment link to any of those posts. G+ the posts you like.</li>    <li><b>Boost my self esteem:</b> Rate the extension on Google's webstore, say how much you love it!</li>  </ul>",
         "description": ""
     },
     "o_importExport": {
@@ -148,7 +148,7 @@
         "description": ""
     },
     "o_importExportDescription": {
-        "message": "这是所有的配置信息。只需复制并保存在任何文本文件里即可。<br />  如果要导入以前保存的配置, 只需将其粘贴到此处, 然后单击 \"导入\" 按钮。<br /><br />",
+        "message": "这里是所有的配置信息。只需复制并保存到任何文本文件即可。<br />  如果要导入之前保存的配置，只需将其粘贴到此处，然后单击 ”导入“ 按钮。<br /><br />",
         "description": ""
     },
     "importConfig": {
