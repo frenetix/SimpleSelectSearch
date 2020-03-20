@@ -64,7 +64,7 @@
         "description": ""
     },
     "o_confirmImport": {
-        "message": "我将尝试分析你 导入 / 导出 文本框中的文本... 如果出现问题，请单击 “撤消上次导入” 按钮。我仍然建议你保留此配置的备份副本... 以防万一 :)",
+        "message": "将尝试分析你 导入 / 导出 文本框中的文本... 如果出现问题，请单击 “撤消上次导入” 按钮。建议你保留此配置的备份副本... 以备不时之需 :)",
         "description": ""
     },
     "o_importSuccesfull": {
@@ -72,7 +72,7 @@
         "description": ""
     },
     "o_confirmRestore": {
-        "message": "我将尝试恢复上次点击 \"导入\" 按钮时保存的配置",
+        "message": "将尝试恢复上次点击 \"导入\" 按钮时保存的配置",
         "description": ""
     },
     "o_restoreSuccesfull": {
