@@ -204,7 +204,7 @@
         "description": ""
     },
     "o_developedBy": {
-        "message": "   由<a href=\"https://plus.google.com/u/0/100927641416387074874/about\" target=\"_blank\">Diego Presno</a>开发  Follow me on Twitter <a href=\"http://twitter.com/#!/frenetix_\" target=\"_blank\">@frenetix_</a>  <br />  All images/icons designed by <a href=\"http://germanrivas.com/\" target=\"_blank\">germanrivas.com</a>.<br/><br />  <h2>免责说明</h2>  请注意: 此扩展插件的使用已被Google Analytics追踪.  它也追踪了最多用户使用的搜索引擎，所以我可以把他们加到搜索列表当中。<br/>  此扩展插件不追踪您的身份以及搜索词，只是搜索引擎链接被记录下来而已<br/>  您的个人信息不会被第三方分享，唯一会被发布的信息是最多使用的搜索站点。例子: <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">blog</a>.",
+        "message": "   Developed by <a href=\"https://plus.google.com/u/0/100927641416387074874/about\" target=\"_blank\">Diego Presno</a>. Follow me on Twitter <a href=\"http://twitter.com/#!/frenetix_\" target=\"_blank\">@frenetix_</a>  <br />  All images/icons designed by <a href=\"http://germanrivas.com/\" target=\"_blank\">germanrivas.com</a>.<br/><br />  <h2>Disclaimer</h2>  Please, be warned: the usage of this extension is being tracked by Google Analytics.  It also tracks which search engines are the most used by users, so I can then be able to add them to the featured Search Engines list.<br/>  The extension does not track the identity of its user, nor what terms they're looking for.  Only the search URL syntax is being recorded.<br/>  No individual information will be shared with third parties. The only information published will be about the most used sites. An example of the published information can be found on my <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">blog</a>.",
         "description": ""
     },
     "o_searchEngines": {
@@ -228,7 +228,7 @@
         "description": ""
     },
     "o_checkOutMyBlog": {
-        "message": "去我的博客查看细节",
+        "message": "查看我的 blog 了解更多",
         "description": ""
     },
     "o_sort": {
@@ -244,15 +244,15 @@
         "description": ""
     },
     "o_areYouSure": {
-        "message": "您确定吗？",
+        "message": "你确定吗？",
         "description": ""
     },
     "o_helpMeTranslate": {
-        "message": "参与翻译",
+        "message": "Help me translate!",
         "description": ""
     },
     "o_GitHubContributors": {
-        "message": "超级棒的 <a href='https://github.com/frenetix/SimpleSelectSearch' target='_blank'>GitHub</a> 贡献者们",
+        "message": "超棒的 <a href='https://github.com/frenetix/SimpleSelectSearch' target='_blank'>GitHub</a> 贡献者",
         "description": ""
     },
     "o_CrowdinContributors": {
