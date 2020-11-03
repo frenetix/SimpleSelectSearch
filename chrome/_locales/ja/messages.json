@@ -4,27 +4,27 @@
         "description": "Extension's name. Use   instead of spaces."
     },
     "extDescription": {
-        "message": "Right click on selected text to search on multiple search engines for Chrome. Supports grouping engines, incongito, and more.",
+        "message": "Chromeで選択したテキストを右クリックして複数の検索エンジンで検索できます。検索エンジンのグループ化、匿名検索などに対応しています。",
         "description": ""
     },
     "bg_searchStringOn": {
-        "message": "Search '%s' on",
+        "message": "'%s'を検索",
         "description": ""
     },
     "bg_searchEverywhere": {
-        "message": "Search everywhere!",
+        "message": "登録した全ての検索エンジンで検索！",
         "description": ""
     },
     "bg_openOnNewTab": {
-        "message": "Open on new tab",
+        "message": "新規タブで開く",
         "description": ""
     },
     "bg_options": {
-        "message": "Options...",
+        "message": "オプション",
         "description": ""
     },
     "bg_extensionBlog": {
-        "message": "Extension's blog...",
+        "message": "この拡張機能作者のブログ",
         "description": ""
     },
     "bg_installMessage": {
