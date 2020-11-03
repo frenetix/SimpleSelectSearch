@@ -28,7 +28,7 @@
         "description": ""
     },
     "bg_installMessage": {
-        "message": "Extension succesfully installed. <br/> Check out on Options page to configure it, and to know about diferent ways to support your humble extension provider ;)",
+        "message": "拡張機能は正常にインストールされました。<br/> オプションページで設定をご確認ください。このページで拡張機能の作者をサポートするさまざまな方法もご紹介しています ;)",
         "description": ""
     },
     "bg_updateMessage": {
