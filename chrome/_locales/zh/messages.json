@@ -196,7 +196,7 @@
         "description": ""
     },
     "o_leavingThisCheckbox": {
-        "message": "跟踪信息仅供我用于统计分析。  <br/> 未跟踪任何用户信息。  <br/> 未跟踪搜索关键词 (仅使用搜索引擎)。您可以在 <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\"> 我的 blog</a> 上了解更多相关信息。",
+        "message": "跟踪信息仅由我用于统计分析目的。  <br/> 未跟踪任何用户信息。  <br/> 并没有跟踪搜索字词 (仅使用搜索引擎)。您可以在 <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\"> 我的博客 </a> 上阅读有关此内容的详细信息。",
         "description": ""
     },
     "eraseOptions": {
