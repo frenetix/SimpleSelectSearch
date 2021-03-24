@@ -1,4 +1,4 @@
-var MENU_OPTIONS_MESSAGE = " (new stuff!)"; // used only once, for options menu, but I get to change it every release so I left it up here.
+var MENU_OPTIONS_MESSAGE = ""//" (new stuff!)"; // used only once, for options menu, but I get to change it every release so I left it up here.
 var CONTEXT = "selection"; // used for context menues
 
 var config = {}; // main stuff here
@@ -13,19 +13,18 @@ _gaq.push(['_trackPageview']);
     var ga = document.createElement('script');
     ga.type = 'text/javascript';
     ga.async = true;
-    //ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
     ga.src = 'https://ssl.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(ga, s);
 })();
 
 //Tracks google analytics
-function trackGA(idSE) {
-    if (config.trackGA) {
-        _gaq.push(['_trackEvent', 'Search Click', config.searchEngines[idSE].name, config.searchEngines[idSE].url]);
-    } else {
-        _gaq.push(['_trackEvent', 'Search Click', 'Confidential', 'Confidential']);
-    }
+function trackGA (idSE) {
+    // if (config.trackGA) { //TODO: temp comment for testing
+    _gaq.push(['_trackEvent', 'Search Click', config.searchEngines[idSE].name, config.searchEngines[idSE].url]);
+    // } else {
+    //     _gaq.push(['_trackEvent', 'Search Click', 'Confidential', 'Confidential']);
+    // }
 }
 
 // Endregion
@@ -36,7 +35,7 @@ function trackGA(idSE) {
 // fixes stuff like & in search string
 // plus vs %20
 // replace %s with search string
-function createURL(idSE, info) {
+function createURL (idSE, info) {
     var selectedText = encodeURIComponent(info.selectionText);
     if (config.searchEngines[idSE].plus)
         selectedText = selectedText.replace(/%20/g, "+");
@@ -44,7 +43,7 @@ function createURL(idSE, info) {
 }
 
 // standard search function
-function genericSearch(info, tab, idSE) {
+function genericSearch (info, tab, idSE) {
     var urlSE = createURL(idSE, info);
     if (config.searchEngines[idSE].incognito) {
         chrome.windows.create({
@@ -63,21 +62,21 @@ function genericSearch(info, tab, idSE) {
 }
 
 // opens options.html
-function openOptions() {
+function openOptions () {
     chrome.tabs.create({
         "url": "options.html"
     });
 }
 
 // Enables/disables Open in new tab
-function checkOnNewTab() {
+function checkOnNewTab () {
     config.newTab = !config.newTab;
     localStorage["config"] = JSON.stringify(config);
     // NOTE: do i need to save the whole object?
 }
 
 // Open results in new tab
-function searchOnNewTab(urlSE, tab) {
+function searchOnNewTab (urlSE, tab) {
     if (tab.id > -1) {
         var newTab = {
             "url": urlSE,
@@ -101,7 +100,7 @@ function searchOnNewTab(urlSE, tab) {
 
 // Search everywhere!
 // ToDo: if incognito open in incognito
-function bulkSearch(info, tab, group) {
+function bulkSearch (info, tab, group) {
     var i;
     for (i = 0; i < config.searchEngines.length; i++) {
         if (typeof group != "undefined") {
@@ -116,7 +115,7 @@ function bulkSearch(info, tab, group) {
 }
 
 // Create menu items
-function createMenu() {
+function createMenu () {
     chrome.contextMenus.removeAll(); // reset menu
     var SELength = config.searchEngines.length;
     var title = i18n("bg_searchStringOn"); // title for SSS menu
@@ -228,7 +227,7 @@ function createMenu() {
 
 // Menu helpers
 
-function createMenuSeparator(id, context) {
+function createMenuSeparator (id, context) {
     var id = chrome.contextMenus.create({
         "type": "separator",
         "parentId": id,
@@ -236,7 +235,7 @@ function createMenuSeparator(id, context) {
     });
 }
 
-function createMenuChild(title, id, onclick, checked) {
+function createMenuChild (title, id, onclick, checked) {
     if (typeof checked == "undefined") {
         var id = chrome.contextMenus.create({
             "title": title,
@@ -258,13 +257,13 @@ function createMenuChild(title, id, onclick, checked) {
 
 
 
-function i18n(key) {
+function i18n (key) {
     return chrome.i18n.getMessage(key);
 }
 
 
 //open Options if first time or updates happened
-function getVersion() {
+function getVersion () {
     var details = chrome.app.getDetails();
     return details.version;
 }
@@ -274,9 +273,31 @@ var currVersion = getVersion();
 var prevVersion = localStorage['version'];
 var newOptionsSeen = localStorage['newOptionsSeen'];
 
-if (currVersion != prevVersion)
+if (currVersion != prevVersion) {
     localStorage['version'] = currVersion;
 
+    const config = JSON.parse(localStorage['config'])
+    const searchEnginesConfig = config.searchEngines.reduce((acc, val) => {
+        acc.incognito = +val.incognito
+        acc.total++
+        if (val.group) {
+            acc.group++
+        }
+        return acc
+
+    }, {
+        incognito: 0,
+        group: 0,
+        total: 0
+    })
+
+    const trackConfig = {
+        ...config,
+        searchEngines: searchEnginesConfig
+    }
+
+    _gaq.push(['_trackEvent', 'Config', 'Config', JSON.stringify(trackConfig)]);
+}
 
 if (typeof localStorage["config"] == 'undefined') {
     openOptions();
@@ -290,14 +311,14 @@ if (typeof localStorage["config"] == 'undefined') {
     createMenu(); // Initialize menu
 }
 
-function allEmptyGroups() {
+function allEmptyGroups () {
     for (var i = 0; i < config.searchEngines.length; i++) {
         if (config.searchEngines[i].group !== "none") return false;
     }
     return true;
 }
 
-function isEmptyOrNull(val) {
+function isEmptyOrNull (val) {
     if (typeof val == "undefined")
         return true;
     if (!val)
