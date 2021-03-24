@@ -4,55 +4,55 @@
         "description": "Extension's name. Use   instead of spaces."
     },
     "extDescription": {
-        "message": "Right click on selected text to search on multiple search engines for Chrome. Supports grouping engines, incongito, and more.",
+        "message": "Clique no botão direito do rato no texto selecionado para pesquisar em vários motores de pesquisa para o Chrome.",
         "description": ""
     },
     "bg_searchStringOn": {
-        "message": "Search '%s' on",
+        "message": "Pesquisar '%s' em",
         "description": ""
     },
     "bg_searchEverywhere": {
-        "message": "Search everywhere!",
+        "message": "Pesquisar em todos os lugares!",
         "description": ""
     },
     "bg_openOnNewTab": {
-        "message": "Open on new tab",
+        "message": "Abrir em novo separador",
         "description": ""
     },
     "bg_options": {
-        "message": "Options...",
+        "message": "Opções...",
         "description": ""
     },
     "bg_extensionBlog": {
-        "message": "Extension's blog...",
+        "message": "Blogue desta extensão...",
         "description": ""
     },
     "bg_installMessage": {
-        "message": "Extension succesfully installed. <br/> Check out on Options page to configure it, and to know about diferent ways to support your humble extension provider ;)",
+        "message": "Extensão instalada com êxito. <br/> Veja a página de Opções para configurá-la e para saber sobre diferentes formas de apoiar o seu humilde desenvolvedor ;)",
         "description": ""
     },
     "bg_updateMessage": {
-        "message": "Extension succesfully updated to {VersionNumber}<br/>Visit <a href=http://simpleselectsearch.blogspot.com>my blog</a> for a list of improvements.",
+        "message": "Extensão atualizada com sucesso para {VersionNumber}<br/>Visite <a href=http://simpleselectsearch.blogspot.com>o meu blogue</a> para obter a lista das atualizações.",
         "description": ""
     },
     "o_name": {
-        "message": "Name",
+        "message": "Nome",
         "description": ""
     },
     "o_searchURL": {
-        "message": "Search URL",
+        "message": "Pesquisar URL",
         "description": ""
     },
     "o_cancel": {
-        "message": "cancel",
+        "message": "cancelar",
         "description": ""
     },
     "o_edit": {
-        "message": "edit",
+        "message": "editar",
         "description": ""
     },
     "o_new": {
-        "message": "new",
+        "message": "novo",
         "description": ""
     },
     "o_ok": {
@@ -60,83 +60,75 @@
         "description": ""
     },
     "o_sureYouWantToDelete": {
-        "message": "Sure you want to delete this row?",
+        "message": "Tem a certeza que deseja excluir esta linha?",
         "description": ""
     },
     "o_confirmImport": {
-        "message": "I'm about to try and parse the text on your import/export textbox... if something goes wrong... just click on the *undo last import* button. I would also recommend that you keep a backup copy of this config... just in case :)",
+        "message": "Estou prestes a testar e analisar o texto na sua caixa de texto de importação/exportação... se algo correr mal... basta clicar sobre o botão *Desfazer a última importação*. Eu também recomendo que mantenha uma cópia de segurança desta configuração... apenas no caso de... :)",
         "description": ""
     },
     "o_importSuccesfull": {
-        "message": "Import successfull. Before reloading this page, check your Search Engines list to make sure everything goes well. If it's empty, then hit the *undo last import* button.",
+        "message": "Importação bem sucedida. Antes de recarregar esta página, verifique a sua lista de Motores de Pesquisa para ter a certeza que tudo corre bem. Se estiver vazio, clique no botão *desfazer última importação*.",
         "description": ""
     },
     "o_confirmRestore": {
-        "message": "I'm about to try and restore the config saved the last time you clicked on the *import* button",
+        "message": "Estou prestes a tentar restaurar a configuração guardada na última vez que clicou no botão *importação*",
         "description": ""
     },
     "o_restoreSuccesfull": {
-        "message": "Config saved before last import was just restored... if this doesn't help, you can always reset the options to the default settings with the button in the 'Advanced settings' page... or might try and retrieve a config backup if you did one before ;)",
+        "message": "A configuração guardada antes da última importação foi agora restaurada... se isso não ajudar, pode sempre redefinir as opções para as definições padrão com o botão na página 'Definições avançadas'... ou pode tentar recuperar a cópia de segurança da configuração, se fez uma antes ;)",
         "description": ""
     },
     "o_nothingToRestore": {
-        "message": "Sorry, I've got nothing to restore",
+        "message": "Desculpe, não tenho nada para restaurar",
         "description": ""
     },
     "o_thankYou": {
-        "message": "Thank you!",
+        "message": "Obrigado!",
         "description": ""
     },
     "o_type": {
-        "message": "Type",
+        "message": "Tipo",
         "description": ""
     },
     "o_language": {
-        "message": "Language",
+        "message": "Idioma",
         "description": ""
     },
     "o_moreSearchEngines": {
-        "message": "More Search Engines",
+        "message": "Mais Motores de Pesquisa",
         "description": ""
     },
     "o_selectAURL": {
-        "message": "Please select a URL",
+        "message": "Por favor selecione um URL",
         "description": ""
     },
     "o_mySearchEngines": {
-        "message": "My Search Engines",
+        "message": "Os Meus Motores de Pesquisa",
         "description": ""
     },
     "o_mySearchEnginesDesc": {
-        "message": "These are your configured search engines. Select other engines from the Featured Search Engines list below or create your own. Check the help for instructions.",
+        "message": "Estes são os motores de pesquisa configurados. Selecione outros Motores de Pesquisa presentes na lista abaixo ou crie os seus próprios. Consulte a Ajuda para obter instruções.",
         "description": ""
     },
     "o_featuredSearchEngines": {
-        "message": "Featured Search Engines",
+        "message": "Motores de Pesquisa Recomendados",
         "description": ""
     },
     "o_featuredSearchEngnesDesc": {
-        "message": "Click on a URL to include it in your Search Engines' list.",
+        "message": "Clique num URL para o incluir na lista dos Motores de Pesquisa.",
         "description": ""
     },
     "o_groupBy": {
-        "message": "Group By:&nbsp;&nbsp;  ",
+        "message": "Agrupar por:&nbsp;&nbsp;  ",
         "description": ""
     },
     "o_ungrouped": {
-        "message": "Ungrouped",
-        "description": ""
-    },
-    "o_type": {
-        "message": "Type",
-        "description": ""
-    },
-    "o_language": {
-        "message": "Language",
+        "message": "Desagrupado",
         "description": ""
     },
     "o_helpHowDoI": {
-        "message": "Help! how do I edit the Search Engines' list?",
+        "message": "Ajuda! Como edito a lista dos Motores de Pesquisa?",
         "description": ""
     },
     "o_helpHowDoIDescription": {
@@ -144,7 +136,7 @@
         "description": ""
     },
     "o_SupportThisHumble": {
-        "message": "Support this humble extension developer",
+        "message": "Apoie este humilde desenvolvedor de extensões",
         "description": ""
     },
     "o_SupportThisHumbleDescription": {
@@ -152,7 +144,7 @@
         "description": ""
     },
     "o_importExport": {
-        "message": "Import/Export Config",
+        "message": "Importar/Exportar Configuração",
         "description": ""
     },
     "o_importExportDescription": {
@@ -160,47 +152,47 @@
         "description": ""
     },
     "importConfig": {
-        "message": "Import",
+        "message": "Importar",
         "description": ""
     },
     "undoLastImport": {
-        "message": "Undo last import",
+        "message": "Desfazer a última importação",
         "description": ""
     },
     "o_otherStuffYouCan": {
-        "message": "Other stuff you can configure",
+        "message": "Outras coisas que você pode configurar",
         "description": ""
     },
     "o_openLinksInNewTab": {
-        "message": "Open links in new tab.",
+        "message": "Abrir os links em novo separador.",
         "description": ""
     },
     "o_giveNewTabFocus": {
-        "message": "Give new tab focus.",
+        "message": "Exibir novo separador.",
         "description": ""
     },
     "o_newTabPosition": {
-        "message": "New tab's position:",
+        "message": "Posição do novo separador:",
         "description": ""
     },
     "o_last": {
-        "message": "Last",
+        "message": "Último",
         "description": ""
     },
     "o_first": {
-        "message": "First",
+        "message": "Primeiro",
         "description": ""
     },
     "o_next": {
-        "message": "Next",
+        "message": "Seguinte",
         "description": ""
     },
     "o_previous": {
-        "message": "Previous",
+        "message": "Anterior",
         "description": ""
     },
     "o_trackSearchEngines": {
-        "message": " Track search engines usage.",
+        "message": "Envia informações estatísticas sobre os motores de pesquisa.",
         "description": ""
     },
     "o_leavingThisCheckbox": {
@@ -208,7 +200,7 @@
         "description": ""
     },
     "eraseOptions": {
-        "message": "Restore default options",
+        "message": "Restaurar as opções padrão",
         "description": ""
     },
     "o_developedBy": {
@@ -216,87 +208,87 @@
         "description": ""
     },
     "o_searchEngines": {
-        "message": "Search engines",
+        "message": "Motores de pesquisa",
         "description": ""
     },
     "o_help": {
-        "message": "Help",
+        "message": "Ajuda",
         "description": ""
     },
     "o_supportMe": {
-        "message": "Support me :)",
+        "message": "Apoia-me :)",
         "description": ""
     },
     "o_advancedConfig": {
-        "message": "Advanced config",
+        "message": "Definições avançadas",
         "description": ""
     },
     "o_credits": {
-        "message": "Credits/Disclaimer",
+        "message": "Créditos/Aviso Legal",
         "description": ""
     },
     "o_checkOutMyBlog": {
-        "message": "Check out my blog for more.",
+        "message": "Visite o meu blogue para mais informações.",
         "description": ""
     },
     "o_sort": {
-        "message": "Sort",
+        "message": "Ordenar",
         "description": ""
     },
     "o_incognito": {
-        "message": "Incognito",
+        "message": "Incógnito",
         "description": ""
     },
     "o_resetDefaultSuccess": {
-        "message": "You now have default settings :)",
+        "message": "Possui agora as definições padrão :)",
         "description": ""
     },
     "o_areYouSure": {
-        "message": "Are you sure?",
+        "message": "Tem a certeza?",
         "description": ""
     },
     "o_helpMeTranslate": {
-        "message": "Help me translate!",
+        "message": "Ajude-me a traduzir!",
         "description": ""
     },
     "o_GitHubContributors": {
-        "message": "Super awesome <a href='https://github.com/frenetix/SimpleSelectSearch' target='_blank'>GitHub</a> contributors",
+        "message": "Super incrível <a href='https://github.com/frenetix/SimpleSelectSearch' target='_blank'>GitHub</a> colaboradores",
         "description": ""
     },
     "o_CrowdinContributors": {
-        "message": "Super awesome <a href='https://crowdin.com/project/simpleselectsearch' target='_blank'>Crowdin</a> contributors (translators)",
+        "message": "Super incrível <a href='https://crowdin.com/project/simpleselectsearch' target='_blank'>Crowdin</a> contribuintes (tradutores)",
         "description": ""
     },
     "o_plusExplain": {
-        "message": "Plus versus space: some search engines use '+' instead of a space to separate words you're looking for.",
+        "message": "Mais versus espaço: alguns motores de pesquisa usam '+' em vez de um espaço ao separar as palavras que pesquisa.",
         "description": ""
     },
     "o_cannotAddDuplicates": {
-        "message": "Sorry, I cannot add duplicate name entries.",
+        "message": "Desculpe, não posso adicionar um nome já utilizado.",
         "description": ""
     },
     "o_group": {
-        "message": "Group",
+        "message": "Grupo",
         "description": ""
     },
     "o_groupsUsed": {
-        "message": "Used groups",
+        "message": "Grupos utilizados",
         "description": ""
     },
     "o_showSearchEverywhere": {
-        "message": "Show 'Search everywhere' option.",
+        "message": "Mostrar a opção 'Pesquise em todos'.",
         "description": ""
     },
     "o_showSearchEverywhereGroups": {
-        "message": "Show 'Search everywhere' option within groups.",
+        "message": "Mostrar a opção 'Pesquise em todos' dentro dos grupos.",
         "description": ""
     },
     "o_tabs": {
-        "message": "Tabs",
+        "message": "Separadores",
         "description": ""
     },
     "o_sortBy": {
-        "message": "Sort by:",
+        "message": "Ordenar por:",
         "description": ""
     }
 }

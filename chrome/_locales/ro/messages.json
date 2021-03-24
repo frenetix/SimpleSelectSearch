@@ -1,0 +1,294 @@
+{
+    "extName": {
+        "message": "Simple = Select + Search",
+        "description": "Extension's name. Use   instead of spaces."
+    },
+    "extDescription": {
+        "message": "Clic dreapta pe textul selectat pentru a căuta pe mai multe motoare de căutare Chrome. Acceptă gruparea motoarelor de căutare, incongito și altele.",
+        "description": ""
+    },
+    "bg_searchStringOn": {
+        "message": "Caută '%s' pe",
+        "description": ""
+    },
+    "bg_searchEverywhere": {
+        "message": "Caută peste tot!",
+        "description": ""
+    },
+    "bg_openOnNewTab": {
+        "message": "Deschide în filă nouă",
+        "description": ""
+    },
+    "bg_options": {
+        "message": "Opțiuni...",
+        "description": ""
+    },
+    "bg_extensionBlog": {
+        "message": "Blogul extensiei...",
+        "description": ""
+    },
+    "bg_installMessage": {
+        "message": "Extensia a fost instalată cu succes. <br/> Vizitează pagina Opțiuni pentru configurare și pentru a afla diferitele moduri în care îl poți susține pe umilul dezvoltator al acesteia ;)",
+        "description": ""
+    },
+    "bg_updateMessage": {
+        "message": "Extensia a fost actualizată cu succes la {VersionNumber}<br/>Vizitează <a href=http://simpleselectsearch.blogspot.com>blogul</a> pentru o listă a îmbunătățirilor.",
+        "description": ""
+    },
+    "o_name": {
+        "message": "Denumire",
+        "description": ""
+    },
+    "o_searchURL": {
+        "message": "URL-ul căutării",
+        "description": ""
+    },
+    "o_cancel": {
+        "message": "anulare",
+        "description": ""
+    },
+    "o_edit": {
+        "message": "modificare",
+        "description": ""
+    },
+    "o_new": {
+        "message": "nou",
+        "description": ""
+    },
+    "o_ok": {
+        "message": "ok",
+        "description": ""
+    },
+    "o_sureYouWantToDelete": {
+        "message": "Ești sigur că dorești să ștergi această linie?",
+        "description": ""
+    },
+    "o_confirmImport": {
+        "message": "Voi încerca analizarea textului furnizat pentru import/export... dacă ceva merge eronat... este suficient un singur clic pe butonul \"anulare ultimul import\". Este de asemenea recomandată păstrarea unei copii de siguranță a acestei configurații... în caz că e necesar :)",
+        "description": ""
+    },
+    "o_importSuccesfull": {
+        "message": "Importarea a fost realizată cu succes. Înainte de a reîncărca această pagină, verifică lista motoarelor de căutare pentru a fi sigur că este totul în regulă. Dacă lista este goală, apăsați butonul *anulare ultimul import*.",
+        "description": ""
+    },
+    "o_confirmRestore": {
+        "message": "Voi încerca restabilirea configurației salvată la ultima apăsare a butonului *import*",
+        "description": ""
+    },
+    "o_restoreSuccesfull": {
+        "message": "Configurație salvată înainte de restaurarea ultimului import... dacă aceasta nu ajută, poți oricând reveni la setările implicite cu ajutorul butonului aflat în pagina 'Setări avansate'... sau ai putea să încerci preluarea unei configurații pe care ai salvat-o -- dacă ai vreo copie de siguranță :)",
+        "description": ""
+    },
+    "o_nothingToRestore": {
+        "message": "Îmi pare rău, nu am ce să restabilesc",
+        "description": ""
+    },
+    "o_thankYou": {
+        "message": "Mulțumesc!",
+        "description": ""
+    },
+    "o_type": {
+        "message": "Tip",
+        "description": ""
+    },
+    "o_language": {
+        "message": "Limbă",
+        "description": ""
+    },
+    "o_moreSearchEngines": {
+        "message": "Mai multe motoare de căutare",
+        "description": ""
+    },
+    "o_selectAURL": {
+        "message": "Alege un URL",
+        "description": ""
+    },
+    "o_mySearchEngines": {
+        "message": "Motoarele mele de căutare",
+        "description": ""
+    },
+    "o_mySearchEnginesDesc": {
+        "message": "Acestea sunt motoarele tale de căutare. Alege alte motoare de căutare din lista de mai jos cu motoare recomandate, sau crează-ți singur un motor de căutare. Pentru instrucțiuni consultă secțiunea Ajutor.",
+        "description": ""
+    },
+    "o_featuredSearchEngines": {
+        "message": "Motoare de căutare recomandate",
+        "description": ""
+    },
+    "o_featuredSearchEngnesDesc": {
+        "message": "Clic pe URL pentru a-l include în lista ta de motoare de căutare.",
+        "description": ""
+    },
+    "o_groupBy": {
+        "message": "Grupează după &nbsp;&nbsp;  ",
+        "description": ""
+    },
+    "o_ungrouped": {
+        "message": "--- Disregarded ---",
+        "description": ""
+    },
+    "o_helpHowDoI": {
+        "message": "Ajutor! Cum modific lista motoarelor de căutare?",
+        "description": ""
+    },
+    "o_helpHowDoIDescription": {
+        "message": "Este foarte simplu! <br />  Clic pe orice linie și-i poți modifica valorile. <ul>    <li>Coloana \"Denumire\" este ceea ce vezi în meniul contextual.</li>    <li>\"URL-ul căutării\" este adresa de care are nevoie motorul de căutare pentru a executa căutarea.</li>    <li>Simbolul <span class=\"searchString\">%s</span> va fi înlocuit cu textul selectat în timpul navigării (cuvintele cheie ale căutării).</li>  </ul>  Poți alege ordinea în care apar motoarele de căutare trăgând în sus și în jos de 'simbolul sandviș' din stânga fiecărei înregistrări.  <h2>Aici este un mod simplu de a-ți adăuga propriul motor de căutare:</h2>  <ul>    <li>În situl preferat, execută o căutare după termenul \"TESTSEARCH\".</li>    <li> Copiază apoi adresa URL generată în sit. Aceasta poate arăta în felul următor (exemplu IMDB): http://www.imdb.com/find?s=all;q=<span class=\"searchString\">TESTSEARCH</span>.</li>    <li>Acum doar trebuie să înlocuiești <span class=\"searchString\">TESTSEARCH</span> cu <span class=\"searchString\">%s</span> și să aplici această adresă în coloana \"URL-ul căutării\".</li>    <li>Indică apoi un nume (o denumire) pentru acel URL ...și gata!</li>  </ul>  Asigură-te mai întâi că situl pe care dorești să îl adaugi nu este în lista \"Motoare de căutare recomandate\". Această listă este actualizată periodic. Dacă ai sugestii pentru această listă, nu ezita să o comunici. .  <br/>  <br/> Poți sorta motoarele de căutare recomandate cu ajutorul funcției speciale.",
+        "description": ""
+    },
+    "o_SupportThisHumble": {
+        "message": "Oferă susținerea ta umilului dezvoltator al acestei extensii",
+        "description": ""
+    },
+    "o_SupportThisHumbleDescription": {
+        "message": "Desigur, această extensie este gratuită -- de fapt, am dezvoltat-o pentru uzul personal... -- dar dacă îți este utilă și dorești să-ți arăți apreciarea, găsești aici o listă a unor lucruri care m-ar face fericit :)  <ul>    <li><b>Dă-mi bani:</b> Apasă butonul <b>donate</b> din colțul dreapta-jos... și trimite-mi câțiva dolari!</li>    <li><b>Folosește motoarele de căutare recomandate ale Amazon:</b> Folosește orice motor Amazon din lista motoarelor de căutare recomandate: caută lucruri folosind această extensie și cumpără-le! Dacă folosești vreunul din motoarele recomandate de mine -- nu funcționează dacă ai creat tu motorul tău de căutare -- vei plăti același preț la cumpărare, dar Amazon îmi va oferi o răsplată minunată! :D ...am menționat oare că nu te costă nimic!?</li>    <li><b>Publicitate Guerrilla:</b> <a href=\"http://twitter.com/home?status=Folosesc extensia Simple=Select+Search pe Chrome și este super-tare! http://bit.ly/HzSP8p @frenetix_\" title=\"Clic pentru a trimite această pagină pe Twitter!\" target=\"_blank\">Împărtășește pe Twitter</a>, <a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">Postează pe Facebook</a>, G+ sau altceva ce simți tu că această extensie va fi bine-primită</li>    <li><b>Mai multă publicitate Guerrilla:</b> Vizitează blogul meu și scrie pe rețelele de socializare un comentariu cu legătură către oricare din articolele de pe blog. G+ articolele care îți plac.</li>    <li><b>Mărește-mi stima de sine:</b> Acordă un rating extensiei în cadrul Google webstore -- spune cât de mult îți place!</li>  </ul>",
+        "description": ""
+    },
+    "o_importExport": {
+        "message": "Configurare import/export",
+        "description": ""
+    },
+    "o_importExportDescription": {
+        "message": "Aici sunt toate setările. Copiază și salvează aceste informații într-un fișier text...<br /> Dacă dorești să imporți o configurație salvată anterior, aplică textul aici și apasă butonul pentru import.<br /><br />",
+        "description": ""
+    },
+    "importConfig": {
+        "message": "Import",
+        "description": ""
+    },
+    "undoLastImport": {
+        "message": "Anulează ultimul import",
+        "description": ""
+    },
+    "o_otherStuffYouCan": {
+        "message": "Alte lucruri care pot fi configurate",
+        "description": ""
+    },
+    "o_openLinksInNewTab": {
+        "message": "Deschide legăturile în file noi.",
+        "description": ""
+    },
+    "o_giveNewTabFocus": {
+        "message": "Deschide noua filă în prim-plan.",
+        "description": ""
+    },
+    "o_newTabPosition": {
+        "message": "Poziția noii file:",
+        "description": ""
+    },
+    "o_last": {
+        "message": "Ultima",
+        "description": ""
+    },
+    "o_first": {
+        "message": "Prima",
+        "description": ""
+    },
+    "o_next": {
+        "message": "Următoarea",
+        "description": ""
+    },
+    "o_previous": {
+        "message": "Precedenta",
+        "description": ""
+    },
+    "o_trackSearchEngines": {
+        "message": " Permite urmărirea utilizării motoarelor de căutare.",
+        "description": ""
+    },
+    "o_leavingThisCheckbox": {
+        "message": "Informațiile urmărite sunt utilizate de către dezvoltator, doar în scopuri de analiză statistică. <br/>Nu sunt urmărite informațiile personale. <br/>Nu sunt urmărite cuvintele cheie ale căutărilor (ci doar motoarele de căutare utilizate). Mai mult informații despre acest subiect pe <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">blog</a>.",
+        "description": ""
+    },
+    "eraseOptions": {
+        "message": "Restabilește setările implicite",
+        "description": ""
+    },
+    "o_developedBy": {
+        "message": "   Dezvoltată de către <a href=\"https://plus.google.com/u/0/100927641416387074874/about\" target=\"_blank\">Diego Presno</a>. Urmărește-mă pe Twitter <a href=\"http://twitter.com/#!/frenetix_\" target=\"_blank\">@frenetix_</a>  <br />  Toate imaginile/iconițele au fost relizate de către <a href=\"http://germanrivas.com/\" target=\"_blank\">germanrivas.com</a>.<br/><br />  <h2>Avertizare</h2>  Ești atenționat: utilizarea acestei extensii este urmărită de către Google Analytics.  Pentru a adăuga noi motoare la lista celor recomandate, sunt urmărite ce motoare de căutare folosesc mai mult utilizatorii.<br/>  Extensia nu urmărește identitatea utilizatorilor săi, nici cuvintele cheie ale căutărilor lor. Este înregistrată doar sintaxa URL a căutărilor.<br/>  Nu vor fi împărtășite terțelor persoane informații individuale. Singura informație care va fi publică este aceea a celor mai utilizate siteuri (motoare). Un exemplu de informație publică poate fi găsit pe <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">blog</a>.",
+        "description": ""
+    },
+    "o_searchEngines": {
+        "message": "Motoare de căutare",
+        "description": ""
+    },
+    "o_help": {
+        "message": "Ajutor",
+        "description": ""
+    },
+    "o_supportMe": {
+        "message": "Susține-mă :)",
+        "description": ""
+    },
+    "o_advancedConfig": {
+        "message": "Setări avansate",
+        "description": ""
+    },
+    "o_credits": {
+        "message": "Credite/Avertizare",
+        "description": ""
+    },
+    "o_checkOutMyBlog": {
+        "message": "Vizitează blogul meu pentru mai mult.",
+        "description": ""
+    },
+    "o_sort": {
+        "message": "Ordonare",
+        "description": ""
+    },
+    "o_incognito": {
+        "message": "Incognito",
+        "description": ""
+    },
+    "o_resetDefaultSuccess": {
+        "message": "Ați revenit la setările implicite :)",
+        "description": ""
+    },
+    "o_areYouSure": {
+        "message": "Ești sigur?",
+        "description": ""
+    },
+    "o_helpMeTranslate": {
+        "message": "Ajută-mă la traducere!",
+        "description": ""
+    },
+    "o_GitHubContributors": {
+        "message": "Foarte-minunații colaboratori <a href='https://github.com/frenetix/SimpleSelectSearch' target='_blank'>GitHub</a>",
+        "description": ""
+    },
+    "o_CrowdinContributors": {
+        "message": "Foarte-minunații colaboratori <a href='https://crowdin.com/project/simpleselectsearch' target='_blank'>Crowdin</a> (traducători)",
+        "description": ""
+    },
+    "o_plusExplain": {
+        "message": "Plus sau spațiu: unele motoare de căutare folosesc '+' în loc de spațiu pentru a separa cuvintele cheie ale căutării.",
+        "description": ""
+    },
+    "o_cannotAddDuplicates": {
+        "message": "--- Disregarded ---",
+        "description": ""
+    },
+    "o_group": {
+        "message": "Grup",
+        "description": ""
+    },
+    "o_groupsUsed": {
+        "message": "Grupuri utilizate",
+        "description": ""
+    },
+    "o_showSearchEverywhere": {
+        "message": "Arată opțiunea \"Caută peste tot\".",
+        "description": ""
+    },
+    "o_showSearchEverywhereGroups": {
+        "message": "Arată în grupuri opțiunea \"Caută peste tot\".",
+        "description": ""
+    },
+    "o_tabs": {
+        "message": "File",
+        "description": ""
+    },
+    "o_sortBy": {
+        "message": "Ordonare după:",
+        "description": ""
+    }
+}

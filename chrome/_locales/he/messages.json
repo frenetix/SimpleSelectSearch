@@ -1,0 +1,294 @@
+{
+    "extName": {
+        "message": "Simple = Select + Search",
+        "description": "Extension's name. Use   instead of spaces."
+    },
+    "extDescription": {
+        "message": "לחץ על הטקסט שנבחר בלחצן העכבר הימני כדי לחפש במספר מנועי חיפוש במקביל. תומך באפשרות לשים מנועי חיפוש בקבוצה, במצב אלמוני ועוד.",
+        "description": ""
+    },
+    "bg_searchStringOn": {
+        "message": "חפש את '%s'",
+        "description": ""
+    },
+    "bg_searchEverywhere": {
+        "message": "חפשו בכל מקום!",
+        "description": ""
+    },
+    "bg_openOnNewTab": {
+        "message": "פתח בכרטיסייה חדשה",
+        "description": ""
+    },
+    "bg_options": {
+        "message": "אפשרויות...",
+        "description": ""
+    },
+    "bg_extensionBlog": {
+        "message": "הבלוג של התוסף...",
+        "description": ""
+    },
+    "bg_installMessage": {
+        "message": "התוסף הותקן בהצלחה. <br/> היכנס לדף האפשרויות כדי להגדיר אותו, וכדי להכיר דרכים אחרות לתמוך בספק התוסף הצנוע שלך ;)",
+        "description": ""
+    },
+    "bg_updateMessage": {
+        "message": "התוסף עודכן בהצלחה ל־{VersionNumber} <br/> בקרו<a href=http://simpleselectsearch.blogspot.com> בבלוג שלי</a> לרשימת השיפורים.",
+        "description": ""
+    },
+    "o_name": {
+        "message": "שם",
+        "description": ""
+    },
+    "o_searchURL": {
+        "message": "חיפוש כתובת URL",
+        "description": ""
+    },
+    "o_cancel": {
+        "message": "ביטול",
+        "description": ""
+    },
+    "o_edit": {
+        "message": "עריכה",
+        "description": ""
+    },
+    "o_new": {
+        "message": "חדש",
+        "description": ""
+    },
+    "o_ok": {
+        "message": "אישור",
+        "description": ""
+    },
+    "o_sureYouWantToDelete": {
+        "message": "האם אתה בטוח שברצונך למחוק שורה זאת?",
+        "description": ""
+    },
+    "o_confirmImport": {
+        "message": "אני עומד לנסות לנתח את הטקסט המיובא או המיוצא שלך... אם משהו ישתבש פשוט לחץ על *לחצן בטל ייבוא אחרון*. אני ממליץ גם לשמור עותק גיבוי של הגדרה זו. רק למקרה :)",
+        "description": ""
+    },
+    "o_importSuccesfull": {
+        "message": "ייבוא מוצלח. לפני טעינה מחדש של הדף הזה בדוק את רשימת מנועי החיפוש שלך כדי לוודא שהכול מתנהל כשורה. אם הוא ריק, לחץ על *לחצן בטל האחרון ייבוא*.",
+        "description": ""
+    },
+    "o_confirmRestore": {
+        "message": "אני עומד לנסות לשחזר מהקונפיג שנשמר בפעם האחרונה שלחצת על כפתור ה*ייבא*",
+        "description": ""
+    },
+    "o_restoreSuccesfull": {
+        "message": "ההגדרות שנשמרו לפני הייבוא האחרון שוחזרו זה עתה... אם זה לא עזר, אתה יכול תמיד לאפס את האפשרויות להגדרות ברירת המחדל באמצעות הכפתור בדף 'הגדרות מתקדמות'... או שתוכל לנסות לשחזר מגיבוי הגדרות שעשית לפני כן... אם דאגת לעשות כזה ;)",
+        "description": ""
+    },
+    "o_nothingToRestore": {
+        "message": "צר לי, אין לי מה לשחזר",
+        "description": ""
+    },
+    "o_thankYou": {
+        "message": "תודה רבה!",
+        "description": ""
+    },
+    "o_type": {
+        "message": "הקלד",
+        "description": ""
+    },
+    "o_language": {
+        "message": "שפה",
+        "description": ""
+    },
+    "o_moreSearchEngines": {
+        "message": "מנועי חיפוש נוספים",
+        "description": ""
+    },
+    "o_selectAURL": {
+        "message": "אנא בחר כתובת אתר",
+        "description": ""
+    },
+    "o_mySearchEngines": {
+        "message": "מנועי החיפוש שלי",
+        "description": ""
+    },
+    "o_mySearchEnginesDesc": {
+        "message": "אלה הם מנועי החיפוש המוגדרים שלך. בחר מנועים נוספים מרשימת מנועי החיפוש המומלצים להלן או צור משלך. עיין בעזרה לקבלת הוראות.",
+        "description": ""
+    },
+    "o_featuredSearchEngines": {
+        "message": "מנועי חיפוש מומלצים",
+        "description": ""
+    },
+    "o_featuredSearchEngnesDesc": {
+        "message": "לחץ על כתובת האתר כדי לכלול אותה ברשימת מנועי החיפוש שלך.",
+        "description": ""
+    },
+    "o_groupBy": {
+        "message": "קבץ לפי:&nbsp;&nbsp;  ",
+        "description": ""
+    },
+    "o_ungrouped": {
+        "message": "לא מקובצים",
+        "description": ""
+    },
+    "o_helpHowDoI": {
+        "message": "הצילו! כיצד אוכל לערוך את רשימת מנועי החיפוש?",
+        "description": ""
+    },
+    "o_helpHowDoIDescription": {
+        "message": "זה ממש קל! < br / > כל שעליך לעשות הוא ללחוץ על אייקון העריכה של כל שורה (זה עם העיפרון הקטן) או פשוט ללחוץ על עמודת ה\"שם\" ולערוך אותה.  <ul><li>העמודה \"שם\" מתייחסת למה שתראו בתפריט תלוי ההקשר.</li>    <li>\"חיפוש כתובת אתר\" מתייחס למה מנוע החיפוש צריך כדי להפעיל את השאילתה שלך.</li>    <li>סמל ה<span class=\"searchString\">%s</span> יוחלף בטקסט הנבחר בדפדפן שלך.</li>  </ul> אתה יכול לקבוע את הסדר של מנועי החיפוש על-ידי גרירתם למעלה ולמטה... עשה זאת על פני העמודה \"#\", היכן שמופיעים החצים מעלה ומטה. סמן העכבר שלך ישתנה כשתעמוד מעל הנקודה הנכונה, ותוכל לסדר אותו.  <h2>הנה דרך פשוטה ליצור כתובת אתר חיפוש משלך:</h2>  <ul><li>כנס לאתר המועדף שלך, בצע בו חיפוש אחר המילה \"TESTSEARCH\".</li>    <li>ואז פשוט תעתיק את כתובת האתר שנוצרת בתיבת הכתובת של הדפדפן אחרי החיפוש. זה עשוי להיראות לדוגמה כך IMDB: http://www.imdb.com/find?s=all;q= <span class=\"searchString\"> TESTSEARCH</span>.</li>    <li>עכשיו רק תחליף את <span class=\"searchString\"> TESTSEARCH</span> <span class=\"searchString\"> %s</span> והדבק את התוצאה כאן, בעמודת \"כתובת חיפוש אתר\".</li>    <li>ואז תן שם לכתובת אתר החיפוש הזה וסיימת!</li>  </ul> הקפד לוודא קודם האם האתר שברצונך להוסיף נמצא כבר בטבלת \"מנועי חיפוש מומלצים\". אני מעדכן את הטבלה הזו מדי פעם. אם יש לך הצעות עבור הרשימה הזו, אתה יותר ממוזמן.  <br/> <br/> באפשרותך למיין את סדר כתובות האתר בריחוף מעל העמודה הראשונה.",
+        "description": ""
+    },
+    "o_SupportThisHumble": {
+        "message": "אנא תמכו במפתח תוכנה דל משאבים",
+        "description": ""
+    },
+    "o_SupportThisHumbleDescription": {
+        "message": "ההרחבה הזו מוצעת כמובן בחינם - בניתי אותה כדי להשתמש בה בעצמי. אבל אם את ממש אוהבת להשתמש בה, ואתה רוצה להפגין את הערכתכם, הנה רשימה של דברים שיכולים לגרום לי אושר :)  <ul><li><b>הראה לי את הכסף:</b> לחץ על כפתור <b>תרום</b> בחלק הימני העליון של עמוד זה, ושלח לי כמה דולרים!</li>    <li><b>השתמש בקישורים המומלצים של אמזון:</b> השתמש בכל אחד מהקישורים המועדפים של אמזון שמופיעים בדף האפשרויות, חפש דברים באמצעות ההרחבה שלי, וקנה אותם! אבל זה עוזר לי רק אם תשתמש באחד הקישורים שלי; זה לא עובד בשבילי אם תשתמש בקישור שיצרת בעצמך, לך זה יעלה אותו דבר, אבל אמזון תשלם לי גמול נאה על כל הפניה! :-)... האם ציינתי כבר שלך זה לא יעלה כלום?</li>    <li><b>Guerrilla advertising:</b> <a href=\"http://twitter.com/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http://bit.ly/HzSP8p @frenetix_\" title=\"Click to send this page to Twitter!\" target=\"_blank\">שתף בטוויטר</a>, <a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">שתף בפייסבוק</a>, G+ or אם נראה לך שההרחבה הזו תתקבל בברכה</li>    <li><b>עוד פרסום גרילה:</b> בקר את הבלוג שלי, פרסם תגובה לכל אחת את הפוסטים. G + להודעות אתה אוהב.</li>    <li><b>להעלות את ההערכה העצמית שלי:</b> דרג את ההרחבה ב-webstore של גוגל, תגיד שאתה אוהב את זה!</li>  </ul>",
+        "description": ""
+    },
+    "o_importExport": {
+        "message": "הגדרות ייבוא/ייצוא",
+        "description": ""
+    },
+    "o_importExportDescription": {
+        "message": "זהו תוכן ההגדרות. העתק ושמור אותו לקובץ טקסט... <br>אם ברצונך לייבא הגדרות ששמרת בעבר, הדבק אותן כאן ולחץ על כפתור ה\"ייבא\"</br>",
+        "description": ""
+    },
+    "importConfig": {
+        "message": "ייבא",
+        "description": ""
+    },
+    "undoLastImport": {
+        "message": "בטל ייבוא אחרון",
+        "description": ""
+    },
+    "o_otherStuffYouCan": {
+        "message": "דברים נוספים שתוכל להגדיר",
+        "description": ""
+    },
+    "o_openLinksInNewTab": {
+        "message": "פתח קישורים בכרטיסיה חדשה.",
+        "description": ""
+    },
+    "o_giveNewTabFocus": {
+        "message": "העבר מיקוד לכרטיסיה החדשה.",
+        "description": ""
+    },
+    "o_newTabPosition": {
+        "message": "מיקום הכרטיסיה החדשה:",
+        "description": ""
+    },
+    "o_last": {
+        "message": "אחרון",
+        "description": ""
+    },
+    "o_first": {
+        "message": "ראשון",
+        "description": ""
+    },
+    "o_next": {
+        "message": "הבא",
+        "description": ""
+    },
+    "o_previous": {
+        "message": "הקודם",
+        "description": ""
+    },
+    "o_trackSearchEngines": {
+        "message": " מעקב אחר השימוש במנועי חיפוש.",
+        "description": ""
+    },
+    "o_leavingThisCheckbox": {
+        "message": "המידע הנאסף משמש אותי בלבד, ורק לצרכי ניתוחים סטטיסטיים. <br>איני אוסף מידע על המשתמשים. <br>איני אוסף את מילות החיפוש בהן אתה משתמש (רק זהות מנוע החיפוש שהשתמשת בו). <br>לקריאה נוספת בעניין, קיראו <a href =\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">בבלוג שלי</a>.",
+        "description": ""
+    },
+    "eraseOptions": {
+        "message": "שחזר לברירות המחדל",
+        "description": ""
+    },
+    "o_developedBy": {
+        "message": "   פותח על ידי <a href=\"https://plus.google.com/u/0/100927641416387074874/about\" target=\"_blank\">דייגו פרסנו</a>. עקוב אחריי בטוויטר <a href=\"http://twitter.com/#!/frenetix_\" target=\"_blank\"> @frenetix_</a> <br /> כל התמונות/סמלים עוצבו על ידי <a href=\"http://germanrivas.com/\" target=\"_blank\"> germanrivas.com</a>. <br/> < br / > <h2>הצהרה</h2>, ראו הוזהרתם: השימוש בהרחבה זו נמצאת במעקב של Google Analytics. האתר עוקב אחר מהם מנועי החיפוש הפופולריים שהמשתמשים משתמשים בהם, כך שאוכל להוסיף אותם לרשימת מנועי החיפוש הנבחרים. <br/> ההרחבה אינה עוקבת אחר זהותו של המשתמש בה, וגם אילו ביטויים הוא מחפש. רק תחביר כתובת החיפוש נרשם. <br/> מידע אישי לא ישותף עם צד שלישי. המידע היחיד שיפורסם נוגע לאתרים השכיחים ביותר בחיפוש. דוגמה למידע שמפורסם ניתן למצוא באתר שלי <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\"> בבלוג שלי</a>.",
+        "description": ""
+    },
+    "o_searchEngines": {
+        "message": "מנועי חיפוש",
+        "description": ""
+    },
+    "o_help": {
+        "message": "עזרה",
+        "description": ""
+    },
+    "o_supportMe": {
+        "message": "תמכו בי :)",
+        "description": ""
+    },
+    "o_advancedConfig": {
+        "message": "הגדרות מתקדמות",
+        "description": ""
+    },
+    "o_credits": {
+        "message": "קרדיטים/דיסקליימר",
+        "description": ""
+    },
+    "o_checkOutMyBlog": {
+        "message": "בדוק את הבלוג שלי למידע נוסף.",
+        "description": ""
+    },
+    "o_sort": {
+        "message": "מיין",
+        "description": ""
+    },
+    "o_incognito": {
+        "message": "אלמוני",
+        "description": ""
+    },
+    "o_resetDefaultSuccess": {
+        "message": "הגדרת בהצלחה הגדרות ברירת מחדל :)",
+        "description": ""
+    },
+    "o_areYouSure": {
+        "message": "האם אתה בטוח?",
+        "description": ""
+    },
+    "o_helpMeTranslate": {
+        "message": "עזור לי לתרגם!",
+        "description": ""
+    },
+    "o_GitHubContributors": {
+        "message": "תורמים <a href='https://github.com/frenetix/SimpleSelectSearch' target='_blank'> GitHub</a> סופר מדהימים",
+        "description": ""
+    },
+    "o_CrowdinContributors": {
+        "message": "<a href='https://crowdin.com/project/simpleselectsearch' target='_blank'> Crowdin</a> תורמים סופר מדהימים (מתרגמים)",
+        "description": ""
+    },
+    "o_plusExplain": {
+        "message": "פלוס או מקף: מספר מנועי חיפוש משתמשים בסימן '+' במקום בסימן רווח כדי להפריד בין מילים במחרוזת החיפוש.",
+        "description": ""
+    },
+    "o_cannotAddDuplicates": {
+        "message": "לצערי, אני לא יכול להוסיף רשומות עם שם זהה.",
+        "description": ""
+    },
+    "o_group": {
+        "message": "קבוצה",
+        "description": ""
+    },
+    "o_groupsUsed": {
+        "message": "קבוצות בשימוש",
+        "description": ""
+    },
+    "o_showSearchEverywhere": {
+        "message": "הצג את האפשרות \"חפש בהכל\".",
+        "description": ""
+    },
+    "o_showSearchEverywhereGroups": {
+        "message": "הצג את האפשרות \"חפש בהכל\" בתוך קבוצות.",
+        "description": ""
+    },
+    "o_tabs": {
+        "message": "כרטיסיות",
+        "description": ""
+    },
+    "o_sortBy": {
+        "message": "מיין לפי:",
+        "description": ""
+    }
+}

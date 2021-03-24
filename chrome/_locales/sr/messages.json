@@ -1,0 +1,294 @@
+{
+    "extName": {
+        "message": "Simple = Select + Search",
+        "description": "Extension's name. Use   instead of spaces."
+    },
+    "extDescription": {
+        "message": "Kliknite desnim tasterom miša na izabrani tekst za pretraživanje na više pretraživača Hroma. Podržava grupisanje pretraživača, incongito i slično.",
+        "description": ""
+    },
+    "bg_searchStringOn": {
+        "message": "Pretražite '%s' na",
+        "description": ""
+    },
+    "bg_searchEverywhere": {
+        "message": "Pretrazite sve!",
+        "description": ""
+    },
+    "bg_openOnNewTab": {
+        "message": "Otvori na novom tabu",
+        "description": ""
+    },
+    "bg_options": {
+        "message": "Opcije...",
+        "description": ""
+    },
+    "bg_extensionBlog": {
+        "message": "Blog proširenja...",
+        "description": ""
+    },
+    "bg_installMessage": {
+        "message": "Proširenje je uspešno instalirano. <br/> Posetite stranicu Opcije da bi ga konfigurisali, kao i da saznate o različitim načinima kako da podržite skromnog programera tog proširenja ;)",
+        "description": ""
+    },
+    "bg_updateMessage": {
+        "message": "Proširenje je uspešno ažurirano na {VersionNumber} <br/> Posetite <a href=http://simpleselectsearch.blogspot.com> moj blog</a> za spisak poboljšanja.",
+        "description": ""
+    },
+    "o_name": {
+        "message": "Ime",
+        "description": ""
+    },
+    "o_searchURL": {
+        "message": "Pretraga URL adrese",
+        "description": ""
+    },
+    "o_cancel": {
+        "message": "otkaži",
+        "description": ""
+    },
+    "o_edit": {
+        "message": "uredi",
+        "description": ""
+    },
+    "o_new": {
+        "message": "novi",
+        "description": ""
+    },
+    "o_ok": {
+        "message": "u redu",
+        "description": ""
+    },
+    "o_sureYouWantToDelete": {
+        "message": "Da li ste sigurni da želite izbrisati ovaj red?",
+        "description": ""
+    },
+    "o_confirmImport": {
+        "message": "Sad ću da pokušam da raščlanim tekst na vašem uvoz/izvoz tekst okviru... ako nešto krene po zlu... samo kliknite na *opozovi zadnji uvoz* dugme. Takođe preporučujem da sačuvate rezervnu kopiju datoteke config... za svaki slučaj :)",
+        "description": ""
+    },
+    "o_importSuccesfull": {
+        "message": "Uvoz je uspešan. Pre ponovnog učitavanja ove stranice, proverite listu pretraživača da li je sve u redu. Ako je lista prazna, onda kliknite na *opozovi zadnji uvoz * dugme.",
+        "description": ""
+    },
+    "o_confirmRestore": {
+        "message": "Sad ću da pokušam da vratim u prethodno stanje config snimljen poslednji put kada ste kliknuli na u *uvoz* dugme",
+        "description": ""
+    },
+    "o_restoreSuccesfull": {
+        "message": "Config sačuvan pre poslednjeg uvoza je vraćen u prethodno stanje... ako ovo nije pomoglo, možete poništiti opcije na podrazumevane postavke pomoću dugmeta na stranici \"Napredne postavke\"... ili možete probati da povratite config rezervne kopije ako ste ih napravili ranije ;)",
+        "description": ""
+    },
+    "o_nothingToRestore": {
+        "message": "Izvinite, nemam ništa u prethodnom stanju",
+        "description": ""
+    },
+    "o_thankYou": {
+        "message": "Hvala!",
+        "description": ""
+    },
+    "o_type": {
+        "message": "Tip",
+        "description": ""
+    },
+    "o_language": {
+        "message": "Jezik",
+        "description": ""
+    },
+    "o_moreSearchEngines": {
+        "message": "Više pretraživača",
+        "description": ""
+    },
+    "o_selectAURL": {
+        "message": "Molim vas izaberite URL",
+        "description": ""
+    },
+    "o_mySearchEngines": {
+        "message": "Moji pretraživači",
+        "description": ""
+    },
+    "o_mySearchEnginesDesc": {
+        "message": "Ovo su vaši konfigurisani pretraživači. Izaberite druge pretraživače sa dole navedenog spiska Istaknutih pretraživača ili napravite svoj. Pogledajte pomoć za uputstva.",
+        "description": ""
+    },
+    "o_featuredSearchEngines": {
+        "message": "Istaknuti pretraživači",
+        "description": ""
+    },
+    "o_featuredSearchEngnesDesc": {
+        "message": "Kliknite na URL adresu da je dodate u svoj spisak pretraživača.",
+        "description": ""
+    },
+    "o_groupBy": {
+        "message": "Grupa:&nbsp;&nbsp;  ",
+        "description": ""
+    },
+    "o_ungrouped": {
+        "message": "Bez grupe",
+        "description": ""
+    },
+    "o_helpHowDoI": {
+        "message": "Pomoć! Kako da izmenim listu pretraživača?",
+        "description": ""
+    },
+    "o_helpHowDoIDescription": {
+        "message": "To je stvarno lako! < br / > Samo kliknite na ikonu za uređivanje bilo kog reda (onaj sa malom olovkom) ili samo kliknite na kolonu \"ime\" i promenite njene vrednosti.  <ul><li>Kolona \"ime\" se odnosi na ono što će te videti u kontekstualnom meniju.</li>    <li>\"Pretraga URL adrese\" se odnosi na ono što pretraživač treba da pokrene da bi pokrenuo vaše pretraživanje.</li>    <li>Simbol <span class=\"searchString\">%s</span> će biti zamenjen izabranim tekstom na vašem pretraživaču.</li>  </ul> Možete promeniti redosled vaših pretraživača prevlačeći ih gore-dole... uradite to preko kolone \"#\", gde se nalaze strelice. Pokazivač miša će se promeniti kada bude na pravom mestu, i shvatićete kako se radi.  <h2>Pokazaću vam jednostavan način kako da sami kreirate URL pretragu:</h2>  <ul><li>Na vašoj željenoj stranici, izvršite pretragu za reč \"TESTSEARCH\".</li>    <li>Onda samo kopirajte URL adresu koja je generisana unutar same stranice, to može da izgleda ovako, na primer, na IMDB: http://www.imdb.com/find?s=all;q= <span class=\"searchString\"> TESTSEARCH</span>.</li>    <li>Sada samo zamenite <span class=\"searchString\"> TESTSEARCH</span> sa <span class=\"searchString\"> %s</span> i nalepite je ovde, u koloni \"Pretraga URL adrese\".</li>    <li>Sad napišite ime za tu URL adresu za pretragu i završili ste!</li>  </ul> Proverite prvo da li je stranica koju ste želeli da dodate na tabeli \"Ostali pretraživači\". S vremena na vreme dodajem nove pretraživače. Ako imate neki predlog za tu listu, slobodno predložite.  <br/> <br/> Redosled URL adresa možete sortirati prelaskom miša preko prve kolone.",
+        "description": ""
+    },
+    "o_SupportThisHumble": {
+        "message": "Podrži skromnog programera ovog proširenja",
+        "description": ""
+    },
+    "o_SupportThisHumbleDescription": {
+        "message": "Naravno, ovo proširenje je besplatno - napravio sam ga zapravo da ga sam koristim... ali ako stvarno uživate da ga koristite, i hteli bi da pokažete zahvalnost, ovde je spisak stvari koje bi me učinile srećnim :)  <ul><li><b>Lovu na sunce:</b> Kliknite na <b>donirati</b> dugme u gornjem desnom uglu stranice... i pošaljite mi par dolara!</li>    <li><b>Koristite Amazon linkove:</b> Iskoristite bilo koji od Amazon linkova napisanih na stranici Opcije, pretražite stvari koristeći moje proširenje i kupujte! Ako ste koristili jedan od mojih linkova Amazon će mene nagraditi a vas će isto koštati -ne radi ako ste sami kreirali link! :D... i da li sam pomenuo da vas ne košta ništa!?</li>    <li><b>Gerila oglašavanje:</b> <a href=\"http://twitter.com/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http://bit.ly/HzSP8p @frenetix_\" title=\"Click to send this page to Twitter!\" target=\"_blank\">Podeli na Twitter-u</a>, <a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">pošalji na Facebook</a>, G+ ili gdegod mislite da bi ovo proširenje bilo nekom zanimljivo </li>    <li><b>Još Gerila marketinga:</b> pogledajte i moj blog, postavite link komentara na bilo koju od tih postova. G+ objavite poruke koje vam se sviđaju.</li>    <li><b>Ojačajte moje samopouzdanje:</b>Ocenite proširenje na Google Webstore-u, recite koliko vam se sviđa!</li>  </ul>",
+        "description": ""
+    },
+    "o_importExport": {
+        "message": "Uvoz/Izvoz konfiguracija",
+        "description": ""
+    },
+    "o_importExportDescription": {
+        "message": "Ovde je sva informacija konfiguracije. Samo kopirajte i sačuvajte podatke kao tekstualnu datoteku...< br / > Ako želite da uvezete svoju prethodno sačuvanu konfiguraciju, samo ovde je nalepite i kliknite na dugme Uvezi. < br / > < br / >",
+        "description": ""
+    },
+    "importConfig": {
+        "message": "Uvoz",
+        "description": ""
+    },
+    "undoLastImport": {
+        "message": "Opozivanje poslednjeg uvoza",
+        "description": ""
+    },
+    "o_otherStuffYouCan": {
+        "message": "Druge stvari koje možete da konfigurišete",
+        "description": ""
+    },
+    "o_openLinksInNewTab": {
+        "message": "Otvori linkove na novoj kartici.",
+        "description": ""
+    },
+    "o_giveNewTabFocus": {
+        "message": "Daj novoj kartici fokus.",
+        "description": ""
+    },
+    "o_newTabPosition": {
+        "message": "Pozicija nove kartice:",
+        "description": ""
+    },
+    "o_last": {
+        "message": "Poslednji",
+        "description": ""
+    },
+    "o_first": {
+        "message": "Prvi",
+        "description": ""
+    },
+    "o_next": {
+        "message": "Sledeći",
+        "description": ""
+    },
+    "o_previous": {
+        "message": "Prethodni",
+        "description": ""
+    },
+    "o_trackSearchEngines": {
+        "message": " Prati upotrebu pretraživača.",
+        "description": ""
+    },
+    "o_leavingThisCheckbox": {
+        "message": "Praćenje informacija ja koristim, samo za statističku analizu.  <br/>Ne prate se korisničke informacije.  <br/> Ne prate se termini za pretragu (samo ih pretraživač koristi). Možete pročitati više o tome na <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\"> mom blogu</a>.",
+        "description": ""
+    },
+    "eraseOptions": {
+        "message": "Povratiti podrazumevane opcije",
+        "description": ""
+    },
+    "o_developedBy": {
+        "message": "   Rayvijen od strane <a href=\"https://plus.google.com/u/0/100927641416387074874/about\" target=\"_blank\"> Diego Presno-a</a>. Pratite me na Twitter-u <a href=\"http://twitter.com/#!/frenetix_\" target=\"_blank\"> @frenetix_</a> <br /> Sve slike/ikone dizajnirao <a href=\"http://germanrivas.com/\" target=\"_blank\"> germanrivas.com</a>. <br/> < br / > <h2>Ograničena odgovornost</h2> Molim vas, budite upozoreni: upotreba ovog proširenja se prati od strane Google Analytics. Oni takođe prate koji pretraživači su najčešće koriste od strane korisnika, tako da mogu da ih dodam na listu istaknutih pretraživača. <br/>  Proširenje ne prati identitet korisnika, niti koji pojam traže.  Samo sintaksa URL pretraživanja je zapisana. <br/> Lične informacije se neće deliti sa trećim licima. Jedina objavljena informacija će biti o najčešće korišćenim lokacijama. Primer objavljenih informacija mogu naći na mom <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\"> blogu</a>.",
+        "description": ""
+    },
+    "o_searchEngines": {
+        "message": "Pretraživači",
+        "description": ""
+    },
+    "o_help": {
+        "message": "Pomoć",
+        "description": ""
+    },
+    "o_supportMe": {
+        "message": "Podrži me :)",
+        "description": ""
+    },
+    "o_advancedConfig": {
+        "message": "Napredna konfiguracija",
+        "description": ""
+    },
+    "o_credits": {
+        "message": "Zasluga/Ograničena odgovornost",
+        "description": ""
+    },
+    "o_checkOutMyBlog": {
+        "message": "Vidi moj blog za više.",
+        "description": ""
+    },
+    "o_sort": {
+        "message": "Sortiranje",
+        "description": ""
+    },
+    "o_incognito": {
+        "message": "Inkognito",
+        "description": ""
+    },
+    "o_resetDefaultSuccess": {
+        "message": "Sada imate podrazumevane postavke :)",
+        "description": ""
+    },
+    "o_areYouSure": {
+        "message": "Jeste li sigurni?",
+        "description": ""
+    },
+    "o_helpMeTranslate": {
+        "message": "Pomozite mi da prevedem!",
+        "description": ""
+    },
+    "o_GitHubContributors": {
+        "message": "Super strava <a href='https://github.com/frenetix/SimpleSelectSearch' target='_blank'> GitHub</a> donatori",
+        "description": ""
+    },
+    "o_CrowdinContributors": {
+        "message": "Super strava <a href='https://crowdin.com/project/simpleselectsearch' target='_blank'> Crowdin</a> saradnici (prevodioci)",
+        "description": ""
+    },
+    "o_plusExplain": {
+        "message": "Plus protiv razmaka: neki pretraživači upotrebljavaju '+' umesto razmaka za razdvajanje reči koje tražiš.",
+        "description": ""
+    },
+    "o_cannotAddDuplicates": {
+        "message": "Nije moguće dodati duplikat postojećeg imena.",
+        "description": ""
+    },
+    "o_group": {
+        "message": "Grupa",
+        "description": ""
+    },
+    "o_groupsUsed": {
+        "message": "Korišćene grupe",
+        "description": ""
+    },
+    "o_showSearchEverywhere": {
+        "message": "Prikaži opciju 'Traži svuda'.",
+        "description": ""
+    },
+    "o_showSearchEverywhereGroups": {
+        "message": "Prikaži opciju 'Traži svuda' unutar grupe.",
+        "description": ""
+    },
+    "o_tabs": {
+        "message": "Kartice",
+        "description": ""
+    },
+    "o_sortBy": {
+        "message": "Sortiraj po:",
+        "description": ""
+    }
+}

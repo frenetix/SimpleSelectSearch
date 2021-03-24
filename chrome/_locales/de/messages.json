@@ -1,0 +1,294 @@
+{
+    "extName": {
+        "message": "Simple = Select + Search",
+        "description": "Extension's name. Use   instead of spaces."
+    },
+    "extDescription": {
+        "message": "Rechtsklick auf den markierten Text um mit Chrome auf mehreren Suchmaschinen zu suchen. Unterstützt das Gruppieren von Suchmaschinen, den Incongito Modus und mehr.",
+        "description": ""
+    },
+    "bg_searchStringOn": {
+        "message": "Suche auf '%s'",
+        "description": ""
+    },
+    "bg_searchEverywhere": {
+        "message": "Überall suchen!",
+        "description": ""
+    },
+    "bg_openOnNewTab": {
+        "message": "In neuer Registerkarte öffnen",
+        "description": ""
+    },
+    "bg_options": {
+        "message": "Optionen...",
+        "description": ""
+    },
+    "bg_extensionBlog": {
+        "message": "Blog dieser Erweiterung...",
+        "description": ""
+    },
+    "bg_installMessage": {
+        "message": "Erweiterung erfolgreich installiert. <br/> Öffnen Sie die Optionen um die Erweiterung zu konfigurieren und etwas über die unterschiedlichen Möglichkeiten zu lernen Ihren bescheidenen Erweiterungsanbieter zu unterstützen ;)",
+        "description": ""
+    },
+    "bg_updateMessage": {
+        "message": "Erweiterung erfolgreich auf {VersionNumber} aktualisiert <br/>Besuchen Sie <a href=http://simpleselectsearch.blogspot.com> meinen Blog</a> um die Liste der Verbesserungen einzusehen.",
+        "description": ""
+    },
+    "o_name": {
+        "message": "Name",
+        "description": ""
+    },
+    "o_searchURL": {
+        "message": "Such-URL",
+        "description": ""
+    },
+    "o_cancel": {
+        "message": "abbrechen",
+        "description": ""
+    },
+    "o_edit": {
+        "message": "bearbeiten",
+        "description": ""
+    },
+    "o_new": {
+        "message": "neu",
+        "description": ""
+    },
+    "o_ok": {
+        "message": "ok",
+        "description": ""
+    },
+    "o_sureYouWantToDelete": {
+        "message": "Sind Sie sicher, dass Sie diese Zeile löschen wollen?",
+        "description": ""
+    },
+    "o_confirmImport": {
+        "message": "Es wird versucht den Text in Ihrer Import-/Export-Textbox... zu analysieren. Falls etwas schief geht... Klicken Sie einfach auf den * letzten Import rückgängig * Button. Ich würde auch empfehlen, dass Sie sich eine Sicherungskopie dieser config erstellen... nur für den Fall dass :)",
+        "description": ""
+    },
+    "o_importSuccesfull": {
+        "message": "Import erfolgreich. Prüfen Sie ihre Suchmaschinenliste, bevor Sie diese Seite neu laden, um sicherzustellen, dass alles gut geht. Wenn die Liste leer ist, drücken Sie den * letzten Import rückgängig * Button.",
+        "description": ""
+    },
+    "o_confirmRestore": {
+        "message": "Ich versuche gerade die Konfiguration wieder herzustellen, welche gespeichert wurde als Sie das letzte Mal den * Import * Button angeklickt haben",
+        "description": ""
+    },
+    "o_restoreSuccesfull": {
+        "message": "Konfiguration gespeichert, bevor der letzte Import wiederhergestellt war... sollte dies nicht helfen, können Sie die Optionen mit dem entsprechenden Button auf der 'Erweiterte Einstellungen' Seite immer auf die Standardeinstellungen zurücksetzen... oder Sie versuchen eine Sicherung der Konfiguration wiederherzustellen, wenn Sie vorher eine erzeugt haben ;)",
+        "description": ""
+    },
+    "o_nothingToRestore": {
+        "message": "Tut mir leid, ich habe nichts zum wiederherstellen",
+        "description": ""
+    },
+    "o_thankYou": {
+        "message": "Vielen Dank!",
+        "description": ""
+    },
+    "o_type": {
+        "message": "Typ",
+        "description": ""
+    },
+    "o_language": {
+        "message": "Sprache",
+        "description": ""
+    },
+    "o_moreSearchEngines": {
+        "message": "Weitere Suchmaschinen",
+        "description": ""
+    },
+    "o_selectAURL": {
+        "message": "Bitte wählen Sie eine URL aus",
+        "description": ""
+    },
+    "o_mySearchEngines": {
+        "message": "Meine Suchmaschinen",
+        "description": ""
+    },
+    "o_mySearchEnginesDesc": {
+        "message": "Dies sind Ihre konfigurierten Suchmaschinen. Wählen Sie andere Suchmaschinen aus der unten aufgeführten Liste der empfohlenen aus oder erstellen Sie eigene. Lesen Sie die Hilfe für weitere Anweisungen.",
+        "description": ""
+    },
+    "o_featuredSearchEngines": {
+        "message": "Empfohlene Suchmaschinen",
+        "description": ""
+    },
+    "o_featuredSearchEngnesDesc": {
+        "message": "Klicken Sie auf eine URL um sie in Ihre Suchmaschinenliste aufzunehmen.",
+        "description": ""
+    },
+    "o_groupBy": {
+        "message": "Gruppieren Sie nach:&nbsp;&nbsp;  ",
+        "description": ""
+    },
+    "o_ungrouped": {
+        "message": "Ohne Gruppierung",
+        "description": ""
+    },
+    "o_helpHowDoI": {
+        "message": "Hilfe! Wie bearbeite ich die Suchmaschinenliste?",
+        "description": ""
+    },
+    "o_helpHowDoIDescription": {
+        "message": "Es ist wirklich einfach! < Br / > Klicken Sie einfach auf das Bearbeiten Symbol (das mit dem kleinen Bleistift) einer beliebigen Zeile oder klicken Sie nur auf die Spalte \"Name\" um dessen Werte zu bearbeiten.  <ul><li>Die Spalte \"Name\" bezieht sich auf das was Sie im Kontextmenü sehen.</li>    <li>Die \"Suche URL\" bezieht sich auf das was die Suchmaschine für Ihre Abfrage ausführen muss.</li>    <li>Das <span class=\"searchString\">%s</span>-Symbol wird mit dem in Ihrem Browser markierten Text ersetzt.</li>  </ul> Sie können die Reihenfolge Ihre Suchmaschinen per Drag &amp; Drop nach oben und unten anpassen... machen Sie dies über die \"#\"-Spalte, in welcher die nach oben und unten Pfeile angezeigt werden. Der Mauszeigers ändert sich wenn man ihn über die richtige Stelle bewegt, was Sie schnell herausfinden werden.  <h2>Hier ist eine einfache Möglichkeit, eine eigene Such-URL zu erstellen:</h2>  <ul><li>Führen Sie auf Ihrer bevorzugten Website eine Suche nach dem Wort \"TESTSEARCH\" aus.</li>    <li>Danach kopieren Sie einfach die URL, die innerhalb dieser Website generiert wurde. Das könnte z.B. auf der IMDB wie folgt aussehen: http://www.imdb.com/find?s=all;q= <span class=\"searchString\"> TESTSEARCH</span>.</li>    <li>Nun ersetzen Sie <span class=\"searchString\"> TESTSEARCH</span> durch <span class=\"searchString\"> %s</span> und fügen Sie den Text hier in der Spalte \"Such URL\" ein.</li>    <li>Geben Sie dann einen Namen für diese Such-URL ein und fertig!</li>  </ul> Sie sollten zuerst prüfen, ob die Website, die Sie hinzufügen möchten in der Tabelle \"Andere Suchmaschinen\" bereits vorhanden ist. Ich aktualisiere diese Tabelle hin und wieder. Wenn Sie Vorschläge für diese Liste haben, sind sie herzlich eingeladen, diese zu melden.  <br/> <br/> Sie können die Reihenfolge der URLs durch Schweben über der ersten Spalte sortieren.",
+        "description": ""
+    },
+    "o_SupportThisHumble": {
+        "message": "Diesen bescheidene Erweiterungsentwickler unterstützen",
+        "description": ""
+    },
+    "o_SupportThisHumbleDescription": {
+        "message": "Natürlich ist diese Erweiterung kostenlos - Ich entwickelte sie für den Eigenbedarf... aber wenn Sie es wirklich genießen sie zu benutzen und Sie mir Ihre Wertschätzung zukommen lassen wollen, so finden Sie hier eine Liste von Dingen, welche mich glücklich machen würden :)  <ul><li><b>Zeigen Sie mir das Geld:</b> Drücken Sie den <b>Spenden</b>-Button oben rechts auf dieser Seite... und schicken Sie mir ein paar Mäuse!</li>    <li><b>Nutzen der Amazon Verknüpfungen:</b> Benutzen Sie irgendeinen der Amazon Links auf der Optionen Seite, suchen Sie Sachen mit meiner Erweiterung und kaufen Sie diese! Wenn Sie einen meiner Links benutzen -es funktioniert nicht, wenn Sie den Link selbst erstellt haben - wird es Sie gleiche kosten aber Amazon zahlt mir eine schöne Belohnung ! : D... und habe ich erwähnt, dass es Sie NULL ksotet!?</li>    <li><b>Guerrilla Werbung:</b> <a href=\"http://twitter.com/home?status=Herrje! Ich verwende die Erweiterung Simple=Select+Search mit Chrome und es funnzt! http://bit.ly/HzSP8p @frenetix_\" title=\"Hier Klicken um diese Seite nach Twitter zu schicken!\" target=\"_blank\">Auf Twitter teilen</a>, <a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">Auf Facebook posten</a>, G+ oder woimmer Sie glauben, dass die Erweiterung gut angenommen wird</li>    <li><b>Mehr Guerilla Werbung:</b> Besuchen Sie meinen Blog, posten Sie einen Kommentarlink zu einem dieser Beiträge. G+ die Beiträge, die Ihnen gefallen.</li>    <li><b>Erhöhung meiner Selbstachtung:</b> Bewerten Sie die Erweiterung auf Googles Webstore, sagen Sie, wie sehr Sie sie lieben!</li>  </ul>",
+        "description": ""
+    },
+    "o_importExport": {
+        "message": "Konfiguration importieren/exportieren",
+        "description": ""
+    },
+    "o_importExportDescription": {
+        "message": "Hier findet sich alle Konfigurationsinformation. Kopieren und Speichern Sie diese in eine beliebige Textdatei... <br /> Wenn Sie Ihre zuvor gespeicherte Konfiguration importieren möchten, fügen Sie diese hier einfach ein und klicken Sie auf die Schaltfläche Import. <br /><br />",
+        "description": ""
+    },
+    "importConfig": {
+        "message": "Importieren",
+        "description": ""
+    },
+    "undoLastImport": {
+        "message": "Den letzten Import rückgängig machen",
+        "description": ""
+    },
+    "o_otherStuffYouCan": {
+        "message": "Andere Sachen, die Sie konfigurieren können",
+        "description": ""
+    },
+    "o_openLinksInNewTab": {
+        "message": "Links in neuem Tab öffnen.",
+        "description": ""
+    },
+    "o_giveNewTabFocus": {
+        "message": "Focus auf die neue Registerkarte geben.",
+        "description": ""
+    },
+    "o_newTabPosition": {
+        "message": "Position der neuen Registrierkarte:",
+        "description": ""
+    },
+    "o_last": {
+        "message": "Letzter",
+        "description": ""
+    },
+    "o_first": {
+        "message": "Erster",
+        "description": ""
+    },
+    "o_next": {
+        "message": "Nächster",
+        "description": ""
+    },
+    "o_previous": {
+        "message": "Vorheriger",
+        "description": ""
+    },
+    "o_trackSearchEngines": {
+        "message": " Suchmaschinen Verwendung nachverfolgen.",
+        "description": ""
+    },
+    "o_leavingThisCheckbox": {
+        "message": "Informationen aus der Nachverfolgung wird von mir nur für statistische Zwecke verwendet.  <br/> Es wird keine Benutzerinformationen nachverfolgt.  <br/> Es werden keine Suchbegriffe nachverfolgt (nur die verwendete Suchmaschine). Lesen Sie mehr dazu auf <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\"> meinem Blog</a>.",
+        "description": ""
+    },
+    "eraseOptions": {
+        "message": "Wiederherstellen der Standardeinstellunegn",
+        "description": ""
+    },
+    "o_developedBy": {
+        "message": "   Von <a href=\"https://plus.google.com/u/0/100927641416387074874/about\" target=\"_blank\"> Diego Presno</a> entwickelt. Folgen Sie mir auf Twitter <a href=\"http://twitter.com/#!/frenetix_\" target=\"_blank\"> @frenetix_</a> <br /> alle Bilder/Icons wurden entworfen von <a href=\"http://germanrivas.com/\" target=\"_blank\"> germanrivas.com</a>. <br/><br/> <h2>Disclaimer</h2> Bitte seien Sie gewarnt: die Verwendung dieser Erweiterung wird durch Google Analytics verfolgt.  Es wird außerdem nachverfolgt, welche Suchmaschinen die durch den Benutzer am häufigsten verwendeten sind. Somit bin ich dann in der Lage, sie zur Liste der empfohlenen Suchmaschinen hinzu zu fügen. <br/>  Die Erweiterung verfolgt die Identität des Benutzers nicht, und auch nicht die gesuchten Begriffe.  Nur die Such-URL Syntax wird aufgezeichnet. <br/>  Keine einzelne Information wird an Dritte weitergegeben. Die einzige Information, welche veröffentlicht wird ist die über die am häufigsten genutzten Seiten. Ein Beispiel für die veröffentlichten Informationen finden Sie auf meinem <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\"> Blog</a>.",
+        "description": ""
+    },
+    "o_searchEngines": {
+        "message": "Suchmaschinen",
+        "description": ""
+    },
+    "o_help": {
+        "message": "Hilfe",
+        "description": ""
+    },
+    "o_supportMe": {
+        "message": "Unterstützen Sie mich :)",
+        "description": ""
+    },
+    "o_advancedConfig": {
+        "message": "Erweiterte Konfiguration",
+        "description": ""
+    },
+    "o_credits": {
+        "message": "Impressum/Disclaimer",
+        "description": ""
+    },
+    "o_checkOutMyBlog": {
+        "message": "Lesen Sie meinen Blog für mehr.",
+        "description": ""
+    },
+    "o_sort": {
+        "message": "Sortieren",
+        "description": ""
+    },
+    "o_incognito": {
+        "message": "Inkognito",
+        "description": ""
+    },
+    "o_resetDefaultSuccess": {
+        "message": "Sie haben nun die Standardeinstellungen :)",
+        "description": ""
+    },
+    "o_areYouSure": {
+        "message": "Sind Sie sicher?",
+        "description": ""
+    },
+    "o_helpMeTranslate": {
+        "message": "Helfen Sie mir beim Übersetzen!",
+        "description": ""
+    },
+    "o_GitHubContributors": {
+        "message": "Fantastische <a href='https://github.com/frenetix/SimpleSelectSearch' target='_blank'> GitHub</a> Beitragende",
+        "description": ""
+    },
+    "o_CrowdinContributors": {
+        "message": "Fantastische <a href='https://crowdin.com/project/simpleselectsearch' target='_blank'> Crowdin</a> Beitragende (Übersetzer)",
+        "description": ""
+    },
+    "o_plusExplain": {
+        "message": "\"Plus\" im Vergleich zu \"Space\": einige Suchmaschinen verwenden ein ' +' anstatt einem Leerzeichen um Wörter zu trennen die Sie suchen.",
+        "description": ""
+    },
+    "o_cannotAddDuplicates": {
+        "message": "Ich kann keinen doppelten Namenseintrag hinzufügen.",
+        "description": ""
+    },
+    "o_group": {
+        "message": "Gruppe",
+        "description": ""
+    },
+    "o_groupsUsed": {
+        "message": "Verwendete Gruppen",
+        "description": ""
+    },
+    "o_showSearchEverywhere": {
+        "message": "\"Überall suchen\" Option anzeigen.",
+        "description": ""
+    },
+    "o_showSearchEverywhereGroups": {
+        "message": "\"Überall suchen\" Option in Gruppen anzeigen.",
+        "description": ""
+    },
+    "o_tabs": {
+        "message": "Tabs",
+        "description": ""
+    },
+    "o_sortBy": {
+        "message": "Sortieren nach:",
+        "description": ""
+    }
+}

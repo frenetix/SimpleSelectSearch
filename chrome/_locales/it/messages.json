@@ -8,23 +8,23 @@
         "description": ""
     },
     "bg_searchStringOn": {
-        "message": "Search '%s' on",
+        "message": "Cerca in '%s'",
         "description": ""
     },
     "bg_searchEverywhere": {
-        "message": "Search everywhere!",
+        "message": "Cerca dappertutto!",
         "description": ""
     },
     "bg_openOnNewTab": {
-        "message": "Open on new tab",
+        "message": "Apri in una nuova scheda",
         "description": ""
     },
     "bg_options": {
-        "message": "Options...",
+        "message": "Opzioni...",
         "description": ""
     },
     "bg_extensionBlog": {
-        "message": "Extension's blog...",
+        "message": "Blog dell'estensione...",
         "description": ""
     },
     "bg_installMessage": {
@@ -36,11 +36,11 @@
         "description": ""
     },
     "o_name": {
-        "message": "Name",
+        "message": "Nome",
         "description": ""
     },
     "o_searchURL": {
-        "message": "Search URL",
+        "message": "Cerca URL",
         "description": ""
     },
     "o_cancel": {
@@ -48,11 +48,11 @@
         "description": ""
     },
     "o_edit": {
-        "message": "edit",
+        "message": "modificare",
         "description": ""
     },
     "o_new": {
-        "message": "new",
+        "message": "nuovo",
         "description": ""
     },
     "o_ok": {
@@ -60,7 +60,7 @@
         "description": ""
     },
     "o_sureYouWantToDelete": {
-        "message": "Sure you want to delete this row?",
+        "message": "Sei sicuro di voler eliminare questa linea?",
         "description": ""
     },
     "o_confirmImport": {
@@ -72,7 +72,7 @@
         "description": ""
     },
     "o_confirmRestore": {
-        "message": "I'm about to try and restore the config saved the last time you clicked on the *import* button",
+        "message": "Sto per cercare di ripristinare la configurazione salvata l'ultima volta che si è fatto clic sul pulsante di *importazione*",
         "description": ""
     },
     "o_restoreSuccesfull": {
@@ -80,19 +80,19 @@
         "description": ""
     },
     "o_nothingToRestore": {
-        "message": "Sorry, I've got nothing to restore",
+        "message": "Mi dispiace, non ho niente da ripristinare",
         "description": ""
     },
     "o_thankYou": {
-        "message": "Thank you!",
+        "message": "Grazie!",
         "description": ""
     },
     "o_type": {
-        "message": "Type",
+        "message": "Categoria",
         "description": ""
     },
     "o_language": {
-        "message": "Language",
+        "message": "Lingua",
         "description": ""
     },
     "o_moreSearchEngines": {
@@ -124,15 +124,7 @@
         "description": ""
     },
     "o_ungrouped": {
-        "message": "Ungrouped",
-        "description": ""
-    },
-    "o_type": {
-        "message": "Type",
-        "description": ""
-    },
-    "o_language": {
-        "message": "Language",
+        "message": "Non raggruppati",
         "description": ""
     },
     "o_helpHowDoI": {
@@ -160,19 +152,19 @@
         "description": ""
     },
     "importConfig": {
-        "message": "Import",
+        "message": "importa",
         "description": ""
     },
     "undoLastImport": {
-        "message": "Undo last import",
+        "message": "Annulla l'ultima importazione",
         "description": ""
     },
     "o_otherStuffYouCan": {
-        "message": "Other stuff you can configure",
+        "message": "Altra roba che puoi configurare",
         "description": ""
     },
     "o_openLinksInNewTab": {
-        "message": "Open links in new tab.",
+        "message": "Apri links in nuove schede.",
         "description": ""
     },
     "o_giveNewTabFocus": {
@@ -180,23 +172,23 @@
         "description": ""
     },
     "o_newTabPosition": {
-        "message": "New tab's position:",
+        "message": "Posizione nuova scheda:",
         "description": ""
     },
     "o_last": {
-        "message": "Last",
+        "message": "Ultima",
         "description": ""
     },
     "o_first": {
-        "message": "First",
+        "message": "Prima",
         "description": ""
     },
     "o_next": {
-        "message": "Next",
+        "message": "Successiva",
         "description": ""
     },
     "o_previous": {
-        "message": "Previous",
+        "message": "Precedente",
         "description": ""
     },
     "o_trackSearchEngines": {

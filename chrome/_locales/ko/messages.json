@@ -8,47 +8,47 @@
         "description": ""
     },
     "bg_searchStringOn": {
-        "message": "Search '%s' on",
+        "message": "검색: '%s'",
         "description": ""
     },
     "bg_searchEverywhere": {
-        "message": "Search everywhere!",
+        "message": "전체 검색 열기",
         "description": ""
     },
     "bg_openOnNewTab": {
-        "message": "Open on new tab",
+        "message": "새 탭에서 열기",
         "description": ""
     },
     "bg_options": {
-        "message": "Options...",
+        "message": "설정...",
         "description": ""
     },
     "bg_extensionBlog": {
-        "message": "Extension's blog...",
+        "message": "블로그 방문",
         "description": ""
     },
     "bg_installMessage": {
-        "message": "Extension succesfully installed. <br/> Check out on Options page to configure it, and to know about diferent ways to support your humble extension provider ;)",
+        "message": "확장 프로그램이 정상적으로 설치 되었습니다.<br/>옵션에서 세부 사항을 설정하거나 변경할 수 있습니다.",
         "description": ""
     },
     "bg_updateMessage": {
-        "message": "Extension succesfully updated to {VersionNumber}<br/>Visit <a href=http://simpleselectsearch.blogspot.com>my blog</a> for a list of improvements.",
+        "message": "{VersionNumber} 업데이트에 성공 하였습니다.<br/>업데이트 사항은<a href=http://simpleselectsearch.blogspot.com>공식 블로그</a>에서 확인 하실수 있습니다.",
         "description": ""
     },
     "o_name": {
-        "message": "Name",
+        "message": "이름",
         "description": ""
     },
     "o_searchURL": {
-        "message": "Search URL",
+        "message": "검색 URL",
         "description": ""
     },
     "o_cancel": {
-        "message": "cancel",
+        "message": "취소",
         "description": ""
     },
     "o_edit": {
-        "message": "edit",
+        "message": "편집",
         "description": ""
     },
     "o_new": {
@@ -56,11 +56,11 @@
         "description": ""
     },
     "o_ok": {
-        "message": "ok",
+        "message": "확인",
         "description": ""
     },
     "o_sureYouWantToDelete": {
-        "message": "Sure you want to delete this row?",
+        "message": "삭제 하시겠습니까?",
         "description": ""
     },
     "o_confirmImport": {
@@ -80,31 +80,31 @@
         "description": ""
     },
     "o_nothingToRestore": {
-        "message": "Sorry, I've got nothing to restore",
+        "message": "복원 할 수 없습니다.",
         "description": ""
     },
     "o_thankYou": {
-        "message": "Thank you!",
+        "message": "감사합니다.",
         "description": ""
     },
     "o_type": {
-        "message": "Type",
+        "message": "형식",
         "description": ""
     },
     "o_language": {
-        "message": "Language",
+        "message": "언어",
         "description": ""
     },
     "o_moreSearchEngines": {
-        "message": "More Search Engines",
+        "message": "더 많은 검색 엔진",
         "description": ""
     },
     "o_selectAURL": {
-        "message": "Please select a URL",
+        "message": "URL을 선택 하세요",
         "description": ""
     },
     "o_mySearchEngines": {
-        "message": "My Search Engines",
+        "message": "내 검색",
         "description": ""
     },
     "o_mySearchEnginesDesc": {
@@ -112,7 +112,7 @@
         "description": ""
     },
     "o_featuredSearchEngines": {
-        "message": "Featured Search Engines",
+        "message": "추천 검색",
         "description": ""
     },
     "o_featuredSearchEngnesDesc": {
@@ -120,19 +120,11 @@
         "description": ""
     },
     "o_groupBy": {
-        "message": "Group By:&nbsp;&nbsp;  ",
+        "message": "그룹: &nbsp;&nbsp;  ",
         "description": ""
     },
     "o_ungrouped": {
-        "message": "Ungrouped",
-        "description": ""
-    },
-    "o_type": {
-        "message": "Type",
-        "description": ""
-    },
-    "o_language": {
-        "message": "Language",
+        "message": "그룹 미지정",
         "description": ""
     },
     "o_helpHowDoI": {
@@ -152,7 +144,7 @@
         "description": ""
     },
     "o_importExport": {
-        "message": "Import/Export Config",
+        "message": "가져오기/내보내기",
         "description": ""
     },
     "o_importExportDescription": {
@@ -160,11 +152,11 @@
         "description": ""
     },
     "importConfig": {
-        "message": "Import",
+        "message": "가져오기",
         "description": ""
     },
     "undoLastImport": {
-        "message": "Undo last import",
+        "message": "최근 가져오기 실행 취소",
         "description": ""
     },
     "o_otherStuffYouCan": {
@@ -172,7 +164,7 @@
         "description": ""
     },
     "o_openLinksInNewTab": {
-        "message": "Open links in new tab.",
+        "message": "새로운 탭에서 링크 열기",
         "description": ""
     },
     "o_giveNewTabFocus": {
@@ -180,27 +172,27 @@
         "description": ""
     },
     "o_newTabPosition": {
-        "message": "New tab's position:",
+        "message": "새탭 위치:",
         "description": ""
     },
     "o_last": {
-        "message": "Last",
+        "message": "마지막",
         "description": ""
     },
     "o_first": {
-        "message": "First",
+        "message": "처음",
         "description": ""
     },
     "o_next": {
-        "message": "Next",
+        "message": "다음",
         "description": ""
     },
     "o_previous": {
-        "message": "Previous",
+        "message": "이전",
         "description": ""
     },
     "o_trackSearchEngines": {
-        "message": " Track search engines usage.",
+        "message": " 검색로그를 활성화 합니다.",
         "description": ""
     },
     "o_leavingThisCheckbox": {
@@ -216,11 +208,11 @@
         "description": ""
     },
     "o_searchEngines": {
-        "message": "Search engines",
+        "message": "검색 엔진",
         "description": ""
     },
     "o_help": {
-        "message": "Help",
+        "message": "도움말",
         "description": ""
     },
     "o_supportMe": {
@@ -228,19 +220,19 @@
         "description": ""
     },
     "o_advancedConfig": {
-        "message": "Advanced config",
+        "message": "고급 설정",
         "description": ""
     },
     "o_credits": {
-        "message": "Credits/Disclaimer",
+        "message": "이 프로그램은...",
         "description": ""
     },
     "o_checkOutMyBlog": {
-        "message": "Check out my blog for more.",
+        "message": "제작자 블로그 방문",
         "description": ""
     },
     "o_sort": {
-        "message": "Sort",
+        "message": "정렬",
         "description": ""
     },
     "o_incognito": {
@@ -252,11 +244,11 @@
         "description": ""
     },
     "o_areYouSure": {
-        "message": "Are you sure?",
+        "message": "진행 하시겠습니까?",
         "description": ""
     },
     "o_helpMeTranslate": {
-        "message": "Help me translate!",
+        "message": "번역을 도와주세요!",
         "description": ""
     },
     "o_GitHubContributors": {
@@ -272,31 +264,31 @@
         "description": ""
     },
     "o_cannotAddDuplicates": {
-        "message": "Sorry, I cannot add duplicate name entries.",
+        "message": "이미 존재하는 이름입니다.",
         "description": ""
     },
     "o_group": {
-        "message": "Group",
+        "message": "그룹",
         "description": ""
     },
     "o_groupsUsed": {
-        "message": "Used groups",
+        "message": "사용중인 그룹",
         "description": ""
     },
     "o_showSearchEverywhere": {
-        "message": "Show 'Search everywhere' option.",
+        "message": "'전체 검색 열기' 옵션을 표시 합니다.",
         "description": ""
     },
     "o_showSearchEverywhereGroups": {
-        "message": "Show 'Search everywhere' option within groups.",
+        "message": "현재 그룹의 '전체 검색 열기' 옵션을 표시 합니다.",
         "description": ""
     },
     "o_tabs": {
-        "message": "Tabs",
+        "message": "탭",
         "description": ""
     },
     "o_sortBy": {
-        "message": "Sort by:",
+        "message": "정렬 순서:",
         "description": ""
     }
 }

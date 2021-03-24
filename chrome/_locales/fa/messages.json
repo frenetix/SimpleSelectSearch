@@ -72,7 +72,7 @@
         "description": ""
     },
     "o_confirmRestore": {
-        "message": "I'm about to try and restore the config saved the last time you clicked on the *import* button",
+        "message": "من در مورد به سعی و پیکربندی ذخیره شده آخرین باری که شما را به کلیک بر روی ترمیم * واردات * دکمه",
         "description": ""
     },
     "o_restoreSuccesfull": {
@@ -125,14 +125,6 @@
     },
     "o_ungrouped": {
         "message": "Ungrouped",
-        "description": ""
-    },
-    "o_type": {
-        "message": "Type",
-        "description": ""
-    },
-    "o_language": {
-        "message": "Language",
         "description": ""
     },
     "o_helpHowDoI": {

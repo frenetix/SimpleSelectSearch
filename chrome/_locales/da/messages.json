@@ -1,0 +1,294 @@
+{
+    "extName": {
+        "message": "Simple = Select + Search",
+        "description": "Extension's name. Use   instead of spaces."
+    },
+    "extDescription": {
+        "message": "Højreklik på markeret tekst for at søge på flere søgemaskiner til Chrome. Understøtter gruppering af søgemaskiner, inkognito og meget mere.",
+        "description": ""
+    },
+    "bg_searchStringOn": {
+        "message": "Søg efter '%s' på",
+        "description": ""
+    },
+    "bg_searchEverywhere": {
+        "message": "Søg overalt!",
+        "description": ""
+    },
+    "bg_openOnNewTab": {
+        "message": "Åbn på ny fane",
+        "description": ""
+    },
+    "bg_options": {
+        "message": "Indstillinger...",
+        "description": ""
+    },
+    "bg_extensionBlog": {
+        "message": "Udvidelsens blog...",
+        "description": ""
+    },
+    "bg_installMessage": {
+        "message": "Udvidelsen succesfuldt installeret. <br/> Check siden med indstillinger for at konfigurere den, og for at få at vide om forskellige måder at støtte din ydmyge udvidelse udbyder ;)",
+        "description": ""
+    },
+    "bg_updateMessage": {
+        "message": "Udvidelse succesfuldt opdateret til {VersionNumber}<br/>Besøg<a href=http://simpleselectsearch.blogspot.com>min blog</a> for en liste over forbedringer.",
+        "description": ""
+    },
+    "o_name": {
+        "message": "Navn",
+        "description": ""
+    },
+    "o_searchURL": {
+        "message": "Søge-URL",
+        "description": ""
+    },
+    "o_cancel": {
+        "message": "Annuller",
+        "description": ""
+    },
+    "o_edit": {
+        "message": "Redigér",
+        "description": ""
+    },
+    "o_new": {
+        "message": "ny",
+        "description": ""
+    },
+    "o_ok": {
+        "message": "ok",
+        "description": ""
+    },
+    "o_sureYouWantToDelete": {
+        "message": "Sikker på du vil slette denne række?",
+        "description": ""
+    },
+    "o_confirmImport": {
+        "message": "Jeg vil prøve at analysere teksten på din import/eksport tekstboks... Hvis noget går galt... bare klik på *Fortryd sidste import* knappen. Jeg vil også anbefale at du gemmer en sikkerhedskopi af denne opsætning... for at være på den sikre side :)",
+        "description": ""
+    },
+    "o_importSuccesfull": {
+        "message": "Import succesfuld. Før genindlæsning af denne side skal du kontrollere din liste iver søgemaskiner for at sikre alt går godt. Hvis den er tom, så klik på *Fortryd sidste import* knappen.",
+        "description": ""
+    },
+    "o_confirmRestore": {
+        "message": "Jeg vil nu prøve at genoprette konfigurationen der blev gemt sidste gang du klikkede på *importér*-knappen",
+        "description": ""
+    },
+    "o_restoreSuccesfull": {
+        "message": "Konfigurationen gemt før sidste import er netop genoprettet... hvis dette ikke hjælper kan du altid nulstille indstillingerne til standardindstillingerne med knappen på siden 'Avancerede indstillinger'... eller måske prøve og indlæse en tidligere backup af konfigurationen hvis du har lavet en tidligere ;)",
+        "description": ""
+    },
+    "o_nothingToRestore": {
+        "message": "Desværre er der ikke noget at gendanne",
+        "description": ""
+    },
+    "o_thankYou": {
+        "message": "Tak!",
+        "description": ""
+    },
+    "o_type": {
+        "message": "Type",
+        "description": ""
+    },
+    "o_language": {
+        "message": "Sprog",
+        "description": ""
+    },
+    "o_moreSearchEngines": {
+        "message": "Flere søgemaskiner",
+        "description": ""
+    },
+    "o_selectAURL": {
+        "message": "Vælg venligst en URL",
+        "description": ""
+    },
+    "o_mySearchEngines": {
+        "message": "Min søgemaskiner",
+        "description": ""
+    },
+    "o_mySearchEnginesDesc": {
+        "message": "Disse er dine konfigurerede søgemaskiner. Vælg andre søgemaskiner fra listen med udvalgte søgemaskiner nedenfor eller opret din egen. Se hjælp for instruktioner.",
+        "description": ""
+    },
+    "o_featuredSearchEngines": {
+        "message": "Udvalgte søgemaskiner",
+        "description": ""
+    },
+    "o_featuredSearchEngnesDesc": {
+        "message": "Klik på en URL for at medtage den i din søgemaskine-liste.",
+        "description": ""
+    },
+    "o_groupBy": {
+        "message": "Gruppér efter:&nbsp;&nbsp;  ",
+        "description": ""
+    },
+    "o_ungrouped": {
+        "message": "Uden gruppe",
+        "description": ""
+    },
+    "o_helpHowDoI": {
+        "message": "Hjælp! Hvordan redigerer jeg listen med søgemaskiner?",
+        "description": ""
+    },
+    "o_helpHowDoIDescription": {
+        "message": "Det er virkelig nemt!<br/> Bare klik på en rækkes redigeringsikon (det med den lille blyant) eller bare klik på kolonnen \"navn\" og redigér dets værdier.  <ul>    <li>\"Navn\"-kolonnen henviser til hvad du vil se i kontekstmenuen.</li>    <li>\"Søge-URL\" refererer til den forespørgsel søgemaskinen skal foretage.</li>    <li><span class=\"searchString\">%s</span> symbolet vil blive erstattet med den markerede tekst i din browser.</li>  </ul>  Du kan bestemme rækkefølgen af dine søgemaskiner ved at trække dem op og ned... gør det i kolonnen \"#\" hvor op og ned pilene vises. Musemarkøren ændres når du er over det rigtige sted og du vil kunne regne det ud.  <h2>Her er en enkel måde at oprette din egen søge-URL:</h2>  <ul><li>Foretag en søgning på dit foretrukne websted efter ordet \"TESTSØGNING\".</li>    <li>Derefter kopieres URL'en der blev generet - det ser måske ud som det eksempel på IMDB: http://www.imdb.com/find?s=all;q=<span class=\"searchString\">TESTSØGNING</span>.</li>    <li>Herefter erstattes <span class=\"searchString\">TESTSØGNING</span> med <span class=\"searchString\">%s</span> og indsæt det i kolonnen \"Søge-URL\".</li>    <li>Derefter angives et navn til denne søge-URL og du er færdig!</li>  </ul>  Sørg for at checke først at siden du vil tilføje ikke findes på listen over udvalgte søgemaskiner. Jeg opdaterer tabellen fra tid til anden. Hvis du har forslag til denne liste er de mere end velkommne.  <br/> <br/> Du kan sortere URL'ernes rækkefølge ved at holde musen over første kolonne.",
+        "description": ""
+    },
+    "o_SupportThisHumble": {
+        "message": "Understøt denne ydmyge udvidelse-udvikler",
+        "description": ""
+    },
+    "o_SupportThisHumbleDescription": {
+        "message": "Denne udvidelse er naturligvis gratis - faktisk har jeg har lavet den for at bruge den selv... men hvis du er glad for  at bruge den og du ønsker at vise din påskønnelse er her en liste over ting, der kan gøre mig glad :)  <ul><li><b>Vis mig pengene:</b> Tryk på <b>donate</b>-knappen nederst til venstre på denne side... og send mig et par kroner!</li><li><b>Brug udvalgte Amazon-links:</b> Brug et af Amazon-links'ne fra siden med valgmuligheder, find ting ved hjælp af min udvidelse og køb det! Hvis du har brugt en af mine links virker det ikke hvis du selv oprettede linket - det vil koste dig det samme og Amazon vil give mig en belønning! :D... og nævnte jeg at det ikke koster dig noget!?</li><li><b>Guerrilla markedsføring:</b> <a href=\"http://twitter.com/home?status=OMG! Jeg bruger Simple=Select+Search-udvidelsen i Chrome og det styrer! http://bit.ly/HzSP8p @frenetix_\" title=\"Klik for at sende denne side til Twitter!\" target=\"_blank\">Share on Twitter</a>, <a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">post på Facebook</a>, G+ eller hvor du synes den udvidelse vil blive godt modtaget</li><li><b>Mere guerilla markedsføring:</b> Besøge min blog og post et link til en af disse posts. G+ indlæg du synes om.</li><li><b>Øg mit selvværd:</b> Vurder udvidelsen på Googles webbutik og fortæl hvor meget du elsker den!</li>  </ul>",
+        "description": ""
+    },
+    "o_importExport": {
+        "message": "Importér/Eksportér konfiguration",
+        "description": ""
+    },
+    "o_importExportDescription": {
+        "message": "Her er alle konfigurations-informationen. Bare kopier & gem den i en hvilken som helst tekstfil...<br/> Hvis du ønsker at importere din tidligere gemte konfiguration bare indsæt den her og klik på importér-knappen.<br/><br/>",
+        "description": ""
+    },
+    "importConfig": {
+        "message": "Importér",
+        "description": ""
+    },
+    "undoLastImport": {
+        "message": "Fortryd sidste import",
+        "description": ""
+    },
+    "o_otherStuffYouCan": {
+        "message": "Andre ting du kan konfigurere",
+        "description": ""
+    },
+    "o_openLinksInNewTab": {
+        "message": "Åbn links på ny fane.",
+        "description": ""
+    },
+    "o_giveNewTabFocus": {
+        "message": "Giv nye fane fokus.",
+        "description": ""
+    },
+    "o_newTabPosition": {
+        "message": "Ny fanes position:",
+        "description": ""
+    },
+    "o_last": {
+        "message": "Sidste",
+        "description": ""
+    },
+    "o_first": {
+        "message": "Første",
+        "description": ""
+    },
+    "o_next": {
+        "message": "Næste",
+        "description": ""
+    },
+    "o_previous": {
+        "message": "Tidligere",
+        "description": ""
+    },
+    "o_trackSearchEngines": {
+        "message": " Registrér brug af søgemaskiner.",
+        "description": ""
+    },
+    "o_leavingThisCheckbox": {
+        "message": "Registrerede oplysninger bliver udelukkende brugt af mig til statistisk analyseformål.  <br/>Ingen brugeroplysninger bliver registreret.  <br/>Ingen søgetermer registreres (kun den søgemaskine der anvendes). Du kan læse mere om dette på <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">min blog</a>.",
+        "description": ""
+    },
+    "eraseOptions": {
+        "message": "Gendan standardindstillingerne",
+        "description": ""
+    },
+    "o_developedBy": {
+        "message": "   Udviklet af <a href=\"https://plus.google.com/u/0/100927641416387074874/about\" target=\"_blank\">Diego Presno</a>. Følg mig på Twitter <a href=\"http://twitter.com/#!/frenetix_\" target=\"_blank\">@frenetix_</a>  <br /> Alle billeder/ikoner designet af <a href=\"http://germanrivas.com/\" target=\"_blank\">germanrivas.com</a>.<br/><br/>  <h2>Ansvarsfraskrivelse</h2> Vær venligst opmærksom på: brugen af denne udvidelse registreres af Google Analytics. Det registreres også hvilke søgemaskiner der er de mest anvendte af brugerne så jeg er i stand til at tilføje dem til listen med udvalgte søgemaskiner.<br/>  Udvidelsen registrerer ikke brugerens identitet eller hvad de søger efter.  Kun søgningens URL-syntaks registreres.<br/>  Ingen individuelle oplysninger vil blive delt med tredjepart. De eneste oplysninger der offentliggøres vil være om de mest anvendte websteder. Et eksempel på de offentliggjorte oplysninger kan findes på min <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">blog</a>.",
+        "description": ""
+    },
+    "o_searchEngines": {
+        "message": "Søgemaskiner",
+        "description": ""
+    },
+    "o_help": {
+        "message": "Hjælp",
+        "description": ""
+    },
+    "o_supportMe": {
+        "message": "Støt mig :)",
+        "description": ""
+    },
+    "o_advancedConfig": {
+        "message": "Avanceret opsætning",
+        "description": ""
+    },
+    "o_credits": {
+        "message": "Anerkendelser/Ansvarsfraskrivelse",
+        "description": ""
+    },
+    "o_checkOutMyBlog": {
+        "message": "Tjek min blog for mere.",
+        "description": ""
+    },
+    "o_sort": {
+        "message": "Sortér",
+        "description": ""
+    },
+    "o_incognito": {
+        "message": "Inkognito",
+        "description": ""
+    },
+    "o_resetDefaultSuccess": {
+        "message": "Du har nu standardindstillingerne :)",
+        "description": ""
+    },
+    "o_areYouSure": {
+        "message": "Er du sikker?",
+        "description": ""
+    },
+    "o_helpMeTranslate": {
+        "message": "Hjælp mig med at oversætte!",
+        "description": ""
+    },
+    "o_GitHubContributors": {
+        "message": "Super fantastiske <a href='https://github.com/frenetix/SimpleSelectSearch' target='_blank'>GitHub</a> bidragydere",
+        "description": ""
+    },
+    "o_CrowdinContributors": {
+        "message": "Super fantastiske <a href='https://crowdin.com/project/simpleselectsearch' target='_blank'>Crowdin</a> bidragydere (oversættere)",
+        "description": ""
+    },
+    "o_plusExplain": {
+        "message": "Plus versus mellemrum: nogle søgemaskiner anvender '+' i stedet for et mellemrum til at adskille ord du leder efter.",
+        "description": ""
+    },
+    "o_cannotAddDuplicates": {
+        "message": "Desværre, jeg kan ikke jeg tilføje poster med duplikerede navne.",
+        "description": ""
+    },
+    "o_group": {
+        "message": "Gruppe",
+        "description": ""
+    },
+    "o_groupsUsed": {
+        "message": "Anvendte grupper",
+        "description": ""
+    },
+    "o_showSearchEverywhere": {
+        "message": "Vis \"Søg overalt\" valgmulighed.",
+        "description": ""
+    },
+    "o_showSearchEverywhereGroups": {
+        "message": "Vis \"Søg overalt\" valgmulighed inden for grupper.",
+        "description": ""
+    },
+    "o_tabs": {
+        "message": "Faner",
+        "description": ""
+    },
+    "o_sortBy": {
+        "message": "Sortér efter:",
+        "description": ""
+    }
+}

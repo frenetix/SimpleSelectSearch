@@ -1,0 +1,294 @@
+{
+    "extName": {
+        "message": "Simple = Select + Search",
+        "description": "Extension's name. Use   instead of spaces."
+    },
+    "extDescription": {
+        "message": "Chrome için birden çok arama motorunda aramak için seçili yazıya sağ tıklayın. Gizlilik, gruplama motorları ve daha fazlasını destekler.",
+        "description": ""
+    },
+    "bg_searchStringOn": {
+        "message": "'%s' yazısını ara",
+        "description": ""
+    },
+    "bg_searchEverywhere": {
+        "message": "Her yerde ara!",
+        "description": ""
+    },
+    "bg_openOnNewTab": {
+        "message": "Yeni sekmede aç",
+        "description": ""
+    },
+    "bg_options": {
+        "message": "Ayarlar...",
+        "description": ""
+    },
+    "bg_extensionBlog": {
+        "message": "Uzantılar blog'u...",
+        "description": ""
+    },
+    "bg_installMessage": {
+        "message": "Uzantı başarıyla yüklendi.<br/> Uzantınızı ayarlamak ve mütevazı uzantı sağlayıcınıza destek olmanın farklı yollarını öğrenmek ;) için Ayarlar sayfasını kontrol ediniz",
+        "description": ""
+    },
+    "bg_updateMessage": {
+        "message": "Uzantınız başarıyla {VersionNumber} versiyonuna yükseltilmiştir<br/>İyileştirmelerin listesi için <a href=http://simpleselectsearch.blogspot.com>blog'umu</a> ziyaret edin.",
+        "description": ""
+    },
+    "o_name": {
+        "message": "İsim",
+        "description": ""
+    },
+    "o_searchURL": {
+        "message": "Arama URL'si",
+        "description": ""
+    },
+    "o_cancel": {
+        "message": "iptal",
+        "description": ""
+    },
+    "o_edit": {
+        "message": "düzenle",
+        "description": ""
+    },
+    "o_new": {
+        "message": "yeni",
+        "description": ""
+    },
+    "o_ok": {
+        "message": "tamam",
+        "description": ""
+    },
+    "o_sureYouWantToDelete": {
+        "message": "Bu kaydı silmek istediğinize emin misiniz?",
+        "description": ""
+    },
+    "o_confirmImport": {
+        "message": "Veri Al/ Ver yazı alanındaki yazıyı çözümlemeye çalışacağım... Eğer bir şeyler yanlış giderse... Sadece *son veri almayı geri al* butonuna tıklayın. Ayrıca bu yapılandırmanın bir kopyasını almanızı öneriyorum... n'olur n'olmaz :)",
+        "description": ""
+    },
+    "o_importSuccesfull": {
+        "message": "Veri alma başarılı. Sayfayı yüklemeden önce, Her şeyin yolunda gittiğinden emin olmak için Arama Motoru listenizi kontrol edin. Eğer Arama Motoru listeniz boş ise *son veri almayı geri al* butonuna tıklayın.",
+        "description": ""
+    },
+    "o_confirmRestore": {
+        "message": "Son *veri al* butonuna tıkladığınızda kayıt edilen yapılandırmanızı geri almaya çalışacağım",
+        "description": ""
+    },
+    "o_restoreSuccesfull": {
+        "message": "Son veri almada kayıt edilen yapılandırma geri alındı... Eğer bunun bir yardımı dokunmadıysa, Her zaman 'Gelişmiş Ayarlar' sayfasındaki buton ile ayarlarınızı varsayılan değerlere döndürebilirsiniz... Veya daha önce yapılandırmanızın bir yedeğini aldıysanız ona geri dönmeyi deneyebilirsiniz ;)",
+        "description": ""
+    },
+    "o_nothingToRestore": {
+        "message": "Üzgünüm, Geri alacak hiçbir şey bulamadım",
+        "description": ""
+    },
+    "o_thankYou": {
+        "message": "Teşekkürler!",
+        "description": ""
+    },
+    "o_type": {
+        "message": "Yaz -as a verb- ",
+        "description": ""
+    },
+    "o_language": {
+        "message": "Dil",
+        "description": ""
+    },
+    "o_moreSearchEngines": {
+        "message": "Daha fazla Arama Motoru",
+        "description": ""
+    },
+    "o_selectAURL": {
+        "message": "Lütfen bir URL seçiniz",
+        "description": ""
+    },
+    "o_mySearchEngines": {
+        "message": "Arama Motorlarım",
+        "description": ""
+    },
+    "o_mySearchEnginesDesc": {
+        "message": "Bunlar sizin yapılandırılmış arama motorlarınız. Diğer motorları alttaki Özelleştirilmiş Arama Motorları listesinden seçin veya kendinizinkini oluşturun. Yönergeler için yardıma bakın.",
+        "description": ""
+    },
+    "o_featuredSearchEngines": {
+        "message": "Özelleştirilmiş Arama Motorları",
+        "description": ""
+    },
+    "o_featuredSearchEngnesDesc": {
+        "message": "Arama Motorları listenize eklemek için URL yi tıklayın.",
+        "description": ""
+    },
+    "o_groupBy": {
+        "message": "Grupla:&nbsp;&nbsp;  ",
+        "description": ""
+    },
+    "o_ungrouped": {
+        "message": "Gruplanmamış",
+        "description": ""
+    },
+    "o_helpHowDoI": {
+        "message": "Yardım! Arama Motorları listesini nasıl düzenlerim?",
+        "description": ""
+    },
+    "o_helpHowDoIDescription": {
+        "message": "Bu gerçekten kolay! <br />  sadece düzenlemek istediğiniz satırın üstüne tıklayın daha sonra düzenleme istediğiniz alana tıklayıp değerini düzenleyin.  \n<ul>\n<li> \"İsim\" sütunu açılan menüde görünen alandır.</li>\n<li> \"Arama URL'si\" arama motorunun sorgunuzu yapmak için ihtiyacı olan URL düzeni.</li>\n<li> <span class=\"searchString\">%s</span> sembolü sizin seçtiğiniz yazı ile değiştirilecektir.</li>  \n</ul>\nArama motorunuzun sırasını tutup taşıyarak belirleyebilirsiniz... Bu işlemi üzerine gelince her yöne ok çıkan Sıralama \"Sort\" sütunundan yapabilirsiniz. Fareniz doğru alana geldiğinde değişecek ve anlayacaksınız.\n<h2>Kendi arama URL nizi oluşturmanın kısa yolu burda:</h2>  \n<ul>\n<li> Tercih ettiğiniz sitede \"MRAECT\" kelimesiyle bir arama gerçekleştirin.</li>\n<li> Daha sonra oluşan URL'yi, kopyalayın, yaklaşık şöyle görünecek örneğin IMDB: http://www.imdb.com/find?s=all;q=<span class=\"searchString\">MRAECT</span>.</li>\n<li>Şimdi <span class=\"searchString\">MRAECT</span> kelimesini <span class=\"searchString\">%s</span> ile değiştirin ve tamamını kopyalayıp \"Arama URL'si\" sütununa yapıştırın.</li>\n<li>Daha sonra bu aramayı nitelendiren bir isim verin hepsi bu kadar!</li>\n</ul>\n  Eklemek istediğiniz sitenin \"Özelleştirilmiş Arama Motorları\" tablosunda olmadığından emin olun. Ben bu tabloyu sürekli güncelleyeceğim. Eğer bu liste için bir öneriniz varsa, başımın üstünde yeri var.  <br/>  <br/> İlk sütununun üstüne gelerek, URL leri sıralayabilirsiniz.",
+        "description": ""
+    },
+    "o_SupportThisHumble": {
+        "message": "Bu mütevazı uzantı geliştiricisini destekleyin",
+        "description": ""
+    },
+    "o_SupportThisHumbleDescription": {
+        "message": "Tabiki bu uzantı ücretsiz -aslında ben bunu kendim kullanmak için yazdım-... Eğer gerçekten kullanmaktan hoşlandıysanız ve bu memnuniyetiniz göstermek isterseniz, işte beni mutlu edebilecek birkaç şeyin listesi :)\n <ul>\n<li><b>Bana yeşili gösterin:</b> Bu sayfanın en alt solundaki <b>Bağışla</b> butonuna tıklayın... ve bana birkaç dolar gönderi verin!</li>\n<li><b>Amazon özelleştirilmiş linklerini kullanın:</b> Ayarlar sayfasındaki herhangi özelleştirilmiş bağlantıdan birini kullanın, bu uzantıyı kullanıp arama yapın (Amazonda) ve satın alın! Eğer benim bağlantılarımdan birini kullanırsanız -eğer kendiniz oluşturursanız çalışmayacaktır-, sizin için birşey değişmeyecek ve Amazon bana güzel bir ücret ödeyecektir! :D... ve bahsetmediysem bunun size maliyeti sıfırdır!?</li>\n<li><b>Gerilla reklamcılığı:</b> <a href=\"http://twitter.com/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http://bit.ly/HzSP8p @frenetix_\" title=\"Click to send this page to Twitter!\" target=\"_blank\">Twitter da Paylaş</a>, <a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">Facebook a Gönder</a>, G+ veya bu uzantının her nerede iyi karşılanacağını düşünüyorsanız oraya</li>\n<li><b>Daha fazla Gerilla reklamcılığı:</b> blog umu ziyaret edin, bu linklerden herhangi birini yoruma ekleyin. Sevdiğiniz gönderileri G+ layın.</li>\n<li><b>Benim itibarımı yükseltin:</b> Google'ın web mağazasında bu uzantıyı oylayı, ne kadar sevdiğinizi anlatın!</li>\n</ul>",
+        "description": ""
+    },
+    "o_importExport": {
+        "message": "Yapılandırma Verisi Al / Ver",
+        "description": ""
+    },
+    "o_importExportDescription": {
+        "message": "Tüm yapılandırma bilgisi burada. Sadece kopyalayıp bir yazı dosyasına kaydedin...<br />  eğer daha önceden kayıt ettiğiniz bir yapılandırmayı almak isterseniz, sadece buraya yapıştırın ve veri al butonuna tıklayın.<br /><br />",
+        "description": ""
+    },
+    "importConfig": {
+        "message": "Veri Al",
+        "description": ""
+    },
+    "undoLastImport": {
+        "message": "Son veri almayı geri al",
+        "description": ""
+    },
+    "o_otherStuffYouCan": {
+        "message": "Ayarlayabileceğiniz diğer özellikler",
+        "description": ""
+    },
+    "o_openLinksInNewTab": {
+        "message": "Bağlantıyı yeni sekmede aç.",
+        "description": ""
+    },
+    "o_giveNewTabFocus": {
+        "message": "Yeni açılan sekmeye git.",
+        "description": ""
+    },
+    "o_newTabPosition": {
+        "message": "Yeni sekme konumu:",
+        "description": ""
+    },
+    "o_last": {
+        "message": "Son'a",
+        "description": ""
+    },
+    "o_first": {
+        "message": "İlk'e",
+        "description": ""
+    },
+    "o_next": {
+        "message": "Sonrakine",
+        "description": ""
+    },
+    "o_previous": {
+        "message": "Öncekine",
+        "description": ""
+    },
+    "o_trackSearchEngines": {
+        "message": " Arama motorları kullanımını takip et.",
+        "description": ""
+    },
+    "o_leavingThisCheckbox": {
+        "message": "Takip bilgisi benim tarafımdan sadece istatistiksel analiz için kullanılır.<br/>Hiç bir kullanıcı bilgisi takip edilmez.  <br/>Hiçbir aranan kelime takip edilmez (sadece arama motorunun kendisi). <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">Blog</a> sayfamda bununla alakalı daha fazlasını okuyabilirsiniz.",
+        "description": ""
+    },
+    "eraseOptions": {
+        "message": "Varsayılan değerlere geri dön",
+        "description": ""
+    },
+    "o_developedBy": {
+        "message": "   <a href=\"https://plus.google.com/u/0/100927641416387074874/about\" target=\"_blank\">Diego Presno</a> tarafından geliştirilmiştir. Beni Twitter da takip edin<a href=\"http://twitter.com/#!/frenetix_\" target=\"_blank\">@frenetix_</a>.  <br />  Tüm resim ve simgeler <a href=\"http://germanrivas.com/\" target=\"_blank\">germanrivas.com</a> tarafından tasarlanmıştır.<br/><br />  <h2>Sorumluluk Reddi</h2>  Lütfen dikkat: Bu uzantının kullanımı Google Analytics tarafından kontrol ediliyor. Ayrıca Özelleştirilmiş Arama Motorları listesine ekleye bilmem için kullanıcılar tarafından en çok kullanılan arama motorunu da takip ediyor.<br/>  Uzantı kullanıcısının kimlik bilgilerini ve hangi kelimeleri aradığını takip etmez. Sadece arama söz dizimi kayıt edilir.<br/>  Hiçbir kişisel bilgi üçüncü kimselerle paylaşılmaz. Yayınlanan tek bilgi en hangi sitenin kullanıldığı ile alakalıdır. Yayınlanan bilginin örneği <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">blog</a> umda bulunulabilir.",
+        "description": ""
+    },
+    "o_searchEngines": {
+        "message": "Arama Motorları",
+        "description": ""
+    },
+    "o_help": {
+        "message": "Yardım",
+        "description": ""
+    },
+    "o_supportMe": {
+        "message": "Beni Destekleyin :)",
+        "description": ""
+    },
+    "o_advancedConfig": {
+        "message": "Gelişmiş Yapılandırma",
+        "description": ""
+    },
+    "o_credits": {
+        "message": "Jenerik / Feragat",
+        "description": ""
+    },
+    "o_checkOutMyBlog": {
+        "message": "Daha fazlası için blog'umu ziyaret edin.",
+        "description": ""
+    },
+    "o_sort": {
+        "message": "Sırala",
+        "description": ""
+    },
+    "o_incognito": {
+        "message": "Gizlilik",
+        "description": ""
+    },
+    "o_resetDefaultSuccess": {
+        "message": "Şuan varsayılan ayarlara sahipsiniz :)",
+        "description": ""
+    },
+    "o_areYouSure": {
+        "message": "Emin misiniz?",
+        "description": ""
+    },
+    "o_helpMeTranslate": {
+        "message": "Çevirmeme yardım edin!",
+        "description": ""
+    },
+    "o_GitHubContributors": {
+        "message": "Süper müthiş <a href='https://github.com/frenetix/SimpleSelectSearch' target='_blank'>GitHub</a> destekçileri",
+        "description": ""
+    },
+    "o_CrowdinContributors": {
+        "message": "Süper müthiş <a href='https://crowdin.com/project/simpleselectsearch' target='_blank'>Crowdin</a> destekçileri (tercümanlar)",
+        "description": ""
+    },
+    "o_plusExplain": {
+        "message": "Artı ya karşı boşluk: bazı arama motorları aranılan kelimeleri ayırmak için '+' yerine boşluk kullanır.",
+        "description": ""
+    },
+    "o_cannotAddDuplicates": {
+        "message": "Üzgünüm, Aynı isimden tekrar ekleyemem.",
+        "description": ""
+    },
+    "o_group": {
+        "message": "Grup",
+        "description": ""
+    },
+    "o_groupsUsed": {
+        "message": "Kullanılan gruplar",
+        "description": ""
+    },
+    "o_showSearchEverywhere": {
+        "message": "'Her yerde ara' özelliğini göster.",
+        "description": ""
+    },
+    "o_showSearchEverywhereGroups": {
+        "message": "'Her yerde ara' özelliğini grup içinde göster.",
+        "description": ""
+    },
+    "o_tabs": {
+        "message": "Sekmeler",
+        "description": ""
+    },
+    "o_sortBy": {
+        "message": "Sırala:",
+        "description": ""
+    }
+}
