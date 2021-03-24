@@ -32,7 +32,7 @@
   	"description":""
   },
   "bg_updateMessage" : {
-  	"message":"Extension succesfully updated to {VersionNumber}<br/>Visit <a href=http://simpleselectsearch.blogspot.com>my blog</a> for a list of improvements.",
+  	"message":"Extension succesfully updated to {VersionNumber}<br/>Visit <a href=https://simpleselectsearch.blogspot.com>my blog</a> for a list of improvements.",
   	"description":""
   },
 
@@ -197,7 +197,7 @@
   <h2>Here's a simple way to create a Search URL of your own:</h2>
   <ul>
     <li>On your preferred site, perform a search for the word \"TESTSEARCH\".</li>
-    <li> Then just copy the URL that was generated within the site, that might look like this, for example, on IMDB: http://www.imdb.com/find?s=all;q=<span class=\"searchString\">TESTSEARCH</span>.</li>
+    <li> Then just copy the URL that was generated within the site, that might look like this, for example, on IMDB: https://www.imdb.com/find?s=all;q=<span class=\"searchString\">TESTSEARCH</span>.</li>
     <li>Now just replace <span class=\"searchString\">TESTSEARCH</span> with <span class=\"searchString\">%s</span> and paste it here, on the \"Search URL\" column.</li>
     <li>Then indicate a name to that Search URL and you're done!</li>
   </ul>
@@ -219,7 +219,7 @@
   <ul>
     <li><b>Show me the money:</b> Hit the <b>donate</b> button at the top right of this page... and send me a few bucks!</li>
     <li><b>Use Amazon's featured links:</b> Use any of the Amazon links featured on the options page, search stuff using my extension and buy it! If you used one of my links -it doesn't work if you created the link by yourself, it will cost you the same, and Amazon will pay me a handsome reward! :D... and did I mention it costs you zero!?</li>
-    <li><b>Guerrilla advertising:</b> <a href=\"http://twitter.com/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http://bit.ly/HzSP8p @frenetix_\" title=\"Click to send this page to Twitter!\" target=\"_blank\">Share on Twitter</a>, <a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">post on Facebook</a>, G+ or wherever you feel this extension might be well received</li>
+    <li><b>Guerrilla advertising:</b> <a href=\"https://twitter.com/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! https://bit.ly/HzSP8p @frenetix_\" title=\"Click to send this page to Twitter!\" target=\"_blank\">Share on Twitter</a>, <a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">post on Facebook</a>, G+ or wherever you feel this extension might be well received</li>
     <li><b>More Guerrilla advertising:</b> Visit my blog, post a comment link to any of those posts. G+ the posts you like.</li>
     <li><b>Boost my self esteem:</b> Rate the extension on Google's webstore, say how much you love it!</li>
 
@@ -315,7 +315,7 @@
 ,
   
   "o_hideThisLink" : {
-    "message":"Hide this link only if it really hurts your eyes!... <i>every time someone hides this link, <a href=\"http://2.bp.blogspot.com/-6FkW_onHQ1Y/TgNUqC5LD1I/AAAAAAAABCs/drzXBGoksys/s640/Kitten-Running.jpg\" target=\"_blank\">a kitten dies</a></i> :o(.",
+    "message":"Hide this link only if it really hurts your eyes!... <i>every time someone hides this link, <a href=\"https://2.bp.blogspot.com/-6FkW_onHQ1Y/TgNUqC5LD1I/AAAAAAAABCs/drzXBGoksys/s640/Kitten-Running.jpg\" target=\"_blank\">a kitten dies</a></i> :o(.",
     "description":""
   }
 
@@ -332,7 +332,7 @@
     "message":"Leaving this checkbox marked means I'll be tracking your search engines' usage.
   <br/>The gathered information is used by me, only for statistical analysis purposes.
   <br/>No user information is being tracked.
-  <br/>No search terms are being tracked (only the search engine used). You can read more about this on <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">my blog</a>.",
+  <br/>No search terms are being tracked (only the search engine used). You can read more about this on <a href=\"https://simpleselectsearch.blogspot.com/\" target=\"_blank\">my blog</a>.",
     "description":""
   }
 ,
@@ -346,15 +346,15 @@
   
   "o_developedBy" : {
     "message":" 
-  Developed by <a href=\"https://plus.google.com/u/0/100927641416387074874/about\" target=\"_blank\">Diego Presno</a>. Follow me on tweeter <a href=\"http://twitter.com/#!/frenetix_\" target=\"_blank\">@frenetix_</a>
+  Developed by <a href=\"https://plus.google.com/u/0/100927641416387074874/about\" target=\"_blank\">Diego Presno</a>. Follow me on tweeter <a href=\"https://twitter.com/#!/frenetix_\" target=\"_blank\">@frenetix_</a>
   <br />
-  All images/icons designed by <a href=\"http://germanrivas.com/\" target=\"_blank\">germanrivas.com</a>.<br/><br />
+  All images/icons designed by <a href=\"https://germanrivas.com/\" target=\"_blank\">germanrivas.com</a>.<br/><br />
   <h2>Disclaimer</h2>
   Please, be warned: the usage of this extension is being tracked by Google Analytics.
   It also tracks which search engines are the most used by users, so I can then be able to add them to the featured Search Engines list.<br/>
   The extension does not track the identity of its user, nor what terms they're looking for.
   Only the search URL syntax is being recorded.<br/>
-  No individual information will be shared with third parties. The only information published will be about the most used sites. An example of the published information can be found on my <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">blog</a>.",
+  No individual information will be shared with third parties. The only information published will be about the most used sites. An example of the published information can be found on my <a href=\"https://simpleselectsearch.blogspot.com/\" target=\"_blank\">blog</a>.",
     "description":""
   }
  ,
@@ -389,7 +389,7 @@
  ,
 
   "o_checkOutMyBlog" : {
-    "message":"Check out my <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">blog</a> for more. <br/> <br/> <a href=\"http://simpleselectsearch.blogspot.com/2012/11/help-me-translate.html\">Help me translate!</a>",
+    "message":"Check out my <a href=\"https://simpleselectsearch.blogspot.com/\" target=\"_blank\">blog</a> for more. <br/> <br/> <a href=\"https://simpleselectsearch.blogspot.com/2012/11/help-me-translate.html\">Help me translate!</a>",
     "description":""
   }
 

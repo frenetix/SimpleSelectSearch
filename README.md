@@ -9,7 +9,7 @@ Simple=Select+Search
 
 Simple=Select+Search (SSS in shorthand) is a Google Chrome extension which allows users an alternative to perform intuitive, simple yet powerful way to search the World Wide Web. Most natural and fastest way - just highlight text and click on search engine in context menu. No typing, no waiting, no struggling.
 
-More information on my [Blog](http://simpleselectsearch.blogspot.com/).
+More information on my [Blog](https://simpleselectsearch.blogspot.com/).
 
 ### FEATURES ###
 
