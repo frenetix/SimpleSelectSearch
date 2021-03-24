@@ -13,7 +13,7 @@ More information on my [Blog](https://simpleselectsearch.blogspot.com/).
 
 ### FEATURES ###
 
-:zero::four::one:
+:zero::four::three:
 - you can copy highligted text and call defined search engines for results
 - you can set own search engines (in native Google Chrome way! You can go to Settings > Search > Manage search engines, copy design engine, paste it into SSS options and it'll work!)
 - you can manage how context menu with engines will look like
@@ -25,7 +25,7 @@ More information on my [Blog](https://simpleselectsearch.blogspot.com/).
 
 ##### DEPLOYED VERSIONS #####
 
-:vs::zero::four::one:
+:vs::zero::four::three:
 Live on Chrome store circa 03/25/2021
 - Removing any HTTP reference for compliance requirements
 
