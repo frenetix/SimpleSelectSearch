@@ -1,6 +1,6 @@
 {
     "extName": {
-        "message": "Легко = выбери + ищи",
+        "message": "Просто = Выдели + Ищи",
         "description": "Extension's name. Use   instead of spaces."
     },
     "extDescription": {
@@ -8,7 +8,7 @@
         "description": ""
     },
     "bg_searchStringOn": {
-        "message": "Поиск «%s» на",
+        "message": "Искать \"%s\" на",
         "description": ""
     },
     "bg_searchEverywhere": {
@@ -28,7 +28,7 @@
         "description": ""
     },
     "bg_installMessage": {
-        "message": "Расширение успешно установлено. <br/> Откройте Настройки, чтобы его настроить и узнать разные способы поддержать Вашего скромного разработчика ;)",
+        "message": "Расширение успешно установлено. <br/> Откройте Настройки, чтобы изменить конфигурацию под себя и узнать разные способы поддержки вашего скромного разработчика ;)",
         "description": ""
     },
     "bg_updateMessage": {
