@@ -1,58 +1,58 @@
 {
     "extName": {
-        "message": "Simple = Select + Search",
+        "message": "Jednoduchost = Označ + Vyhledej",
         "description": "Extension's name. Use   instead of spaces."
     },
     "extDescription": {
-        "message": "Right click on selected text to search on multiple search engines for Chrome. Supports grouping engines, incongito, and more.",
+        "message": "Klepněte pravým tlačítkem myši na vybraný text a hledat pomocí mnoha vyhledávačů pro Chrome. Podpora seskupování vyhledávačů, incongito a další.",
         "description": ""
     },
     "bg_searchStringOn": {
-        "message": "Cercant \"%s\"",
+        "message": "Vyhledej '%s' pomocí",
         "description": ""
     },
     "bg_searchEverywhere": {
-        "message": "Cerca en qualsevol lloc!",
+        "message": "Vyhledej všude!",
         "description": ""
     },
     "bg_openOnNewTab": {
-        "message": "Obrir en una pestanya nova",
+        "message": "Otevřít v novém okně",
         "description": ""
     },
     "bg_options": {
-        "message": "Opcions...",
+        "message": "Možnosti...",
         "description": ""
     },
     "bg_extensionBlog": {
-        "message": "Bloc de l'extensió...",
+        "message": "Blog rozšíření...",
         "description": ""
     },
     "bg_installMessage": {
-        "message": "Extension succesfully installed. <br/> Check out on Options page to configure it, and to know about diferent ways to support your humble extension provider ;)",
+        "message": "Rozšíření se úspěšně nainstalovalo. <br/> Podívejte se na stránku Nastavení a upravte si ho a zjistěte jak podpořit skromného tvůrce tohoto rozšíření ;)",
         "description": ""
     },
     "bg_updateMessage": {
-        "message": "Extension succesfully updated to {VersionNumber}<br/>Visit <a href=http://simpleselectsearch.blogspot.com>my blog</a> for a list of improvements.",
+        "message": "Rozšíření se úspěšně aktualizovalo na {VersionNumber}<br/>Navštivte<a href=http://simpleselectsearch.blogspot.com>můj blog</a>pro seznam vylepšení.",
         "description": ""
     },
     "o_name": {
-        "message": "Nom",
+        "message": "Název",
         "description": ""
     },
     "o_searchURL": {
-        "message": "Cercar una URL",
+        "message": "Vyhledávací URL",
         "description": ""
     },
     "o_cancel": {
-        "message": "Cancel·lar",
+        "message": "zrušit",
         "description": ""
     },
     "o_edit": {
-        "message": "editar",
+        "message": "upravit",
         "description": ""
     },
     "o_new": {
-        "message": "nou",
+        "message": "nový",
         "description": ""
     },
     "o_ok": {
@@ -60,7 +60,7 @@
         "description": ""
     },
     "o_sureYouWantToDelete": {
-        "message": "Segur que voleu suprimir aquesta fila?",
+        "message": "Jste si jist, že chcete vymazat tento řádek?",
         "description": ""
     },
     "o_confirmImport": {
@@ -80,31 +80,31 @@
         "description": ""
     },
     "o_nothingToRestore": {
-        "message": "Ho sento, no tinc res a restaurar",
+        "message": "Sorry, I've got nothing to restore",
         "description": ""
     },
     "o_thankYou": {
-        "message": "Gràcies!",
+        "message": "Děkuji!",
         "description": ""
     },
     "o_type": {
-        "message": "Tipus",
+        "message": "Typ",
         "description": ""
     },
     "o_language": {
-        "message": "Idioma",
+        "message": "Jazyk",
         "description": ""
     },
     "o_moreSearchEngines": {
-        "message": "Més motors de cerca",
+        "message": "Více vyhledávačů",
         "description": ""
     },
     "o_selectAURL": {
-        "message": "Si us plau seleccioni un URL",
+        "message": "Prosím označte URL adresu",
         "description": ""
     },
     "o_mySearchEngines": {
-        "message": "Els meus cercadors",
+        "message": "Mé vyhledávače",
         "description": ""
     },
     "o_mySearchEnginesDesc": {
@@ -112,7 +112,7 @@
         "description": ""
     },
     "o_featuredSearchEngines": {
-        "message": "Motors de cerca destacats",
+        "message": "Vybrané vyhledávače",
         "description": ""
     },
     "o_featuredSearchEngnesDesc": {
@@ -120,15 +120,15 @@
         "description": ""
     },
     "o_groupBy": {
-        "message": "Agrupar per:&nbsp;&nbsp;  ",
+        "message": "Group By:&nbsp;&nbsp;  ",
         "description": ""
     },
     "o_ungrouped": {
-        "message": "No agrupades",
+        "message": "Neseskupené",
         "description": ""
     },
     "o_helpHowDoI": {
-        "message": "Ajuda! com puc editar llista dels motors de cerca?",
+        "message": "Help! how do I edit the Search Engines' list?",
         "description": ""
     },
     "o_helpHowDoIDescription": {
@@ -144,7 +144,7 @@
         "description": ""
     },
     "o_importExport": {
-        "message": "Configuració d'importació/exportació",
+        "message": "Import/Export konfigurační soubor",
         "description": ""
     },
     "o_importExportDescription": {
@@ -152,47 +152,47 @@
         "description": ""
     },
     "importConfig": {
-        "message": "importar",
+        "message": "Importovat",
         "description": ""
     },
     "undoLastImport": {
-        "message": "Desfés la darrera importació",
+        "message": "Vzít zpět poslední import",
         "description": ""
     },
     "o_otherStuffYouCan": {
-        "message": "Altres coses que es poden configurar",
+        "message": "Other stuff you can configure",
         "description": ""
     },
     "o_openLinksInNewTab": {
-        "message": "Obrir els enllaços en una pestanya nova nou.",
+        "message": "Otevírat odkazy v další kartě.",
         "description": ""
     },
     "o_giveNewTabFocus": {
-        "message": "Passar a la nova pestanya.",
+        "message": "Give new tab focus.",
         "description": ""
     },
     "o_newTabPosition": {
-        "message": "Posició de la nova pestanya:",
+        "message": "New tab's position:",
         "description": ""
     },
     "o_last": {
-        "message": "Darrer",
+        "message": "Poslední",
         "description": ""
     },
     "o_first": {
-        "message": "Primer",
+        "message": "První",
         "description": ""
     },
     "o_next": {
-        "message": "Següent",
+        "message": "Další",
         "description": ""
     },
     "o_previous": {
-        "message": "Anterior",
+        "message": "Předchozí",
         "description": ""
     },
     "o_trackSearchEngines": {
-        "message": " Seguiment de l'ús dels motors de cerca.",
+        "message": " Track search engines usage.",
         "description": ""
     },
     "o_leavingThisCheckbox": {
@@ -200,7 +200,7 @@
         "description": ""
     },
     "eraseOptions": {
-        "message": "Restaurar les opcions per defecte",
+        "message": "Restore default options",
         "description": ""
     },
     "o_developedBy": {
@@ -208,23 +208,23 @@
         "description": ""
     },
     "o_searchEngines": {
-        "message": "Motors de cerca",
+        "message": "Search engines",
         "description": ""
     },
     "o_help": {
-        "message": "Ajuda",
+        "message": "Help",
         "description": ""
     },
     "o_supportMe": {
-        "message": "Doneu-me suport :)",
+        "message": "Support me :)",
         "description": ""
     },
     "o_advancedConfig": {
-        "message": "Configuració avançada",
+        "message": "Advanced config",
         "description": ""
     },
     "o_credits": {
-        "message": "Crèdits/avís legal",
+        "message": "Credits/Disclaimer",
         "description": ""
     },
     "o_checkOutMyBlog": {

@@ -1,30 +1,30 @@
 {
     "extName": {
-        "message": "Simple = Select + Search",
+        "message": "Simple = markieren & suchen",
         "description": "Extension's name. Use   instead of spaces."
     },
     "extDescription": {
-        "message": "Right click on selected text to search on multiple search engines for Chrome. Supports grouping engines, incongito, and more.",
+        "message": "Chrome-Erweiterung, welche dir erlaubt mit nur einem Rechtsklick auf jeden beliebigen markierten Text eine mehrfach Suche auszuführen.\nUnterstützt gruppieren der Suchmaschinen, inkognito Modus und einiges mehr.",
         "description": ""
     },
     "bg_searchStringOn": {
-        "message": "Cercant \"%s\"",
+        "message": "Suche nach '%s'",
         "description": ""
     },
     "bg_searchEverywhere": {
-        "message": "Cerca en qualsevol lloc!",
+        "message": "Suche überall!",
         "description": ""
     },
     "bg_openOnNewTab": {
-        "message": "Obrir en una pestanya nova",
+        "message": "In neuem Tab öffnen",
         "description": ""
     },
     "bg_options": {
-        "message": "Opcions...",
+        "message": "Optionen...",
         "description": ""
     },
     "bg_extensionBlog": {
-        "message": "Bloc de l'extensió...",
+        "message": "Extension's blog...",
         "description": ""
     },
     "bg_installMessage": {
@@ -36,23 +36,23 @@
         "description": ""
     },
     "o_name": {
-        "message": "Nom",
+        "message": "Name",
         "description": ""
     },
     "o_searchURL": {
-        "message": "Cercar una URL",
+        "message": "Such-URL",
         "description": ""
     },
     "o_cancel": {
-        "message": "Cancel·lar",
+        "message": "abbrechen",
         "description": ""
     },
     "o_edit": {
-        "message": "editar",
+        "message": "bearbeiten",
         "description": ""
     },
     "o_new": {
-        "message": "nou",
+        "message": "neu",
         "description": ""
     },
     "o_ok": {
@@ -60,7 +60,7 @@
         "description": ""
     },
     "o_sureYouWantToDelete": {
-        "message": "Segur que voleu suprimir aquesta fila?",
+        "message": "Sicher, dass du diese Zeile löschen willst?",
         "description": ""
     },
     "o_confirmImport": {
@@ -80,31 +80,31 @@
         "description": ""
     },
     "o_nothingToRestore": {
-        "message": "Ho sento, no tinc res a restaurar",
+        "message": "Sorry, I've got nothing to restore",
         "description": ""
     },
     "o_thankYou": {
-        "message": "Gràcies!",
+        "message": "Thank you!",
         "description": ""
     },
     "o_type": {
-        "message": "Tipus",
+        "message": "Type",
         "description": ""
     },
     "o_language": {
-        "message": "Idioma",
+        "message": "Language",
         "description": ""
     },
     "o_moreSearchEngines": {
-        "message": "Més motors de cerca",
+        "message": "More Search Engines",
         "description": ""
     },
     "o_selectAURL": {
-        "message": "Si us plau seleccioni un URL",
+        "message": "Please select a URL",
         "description": ""
     },
     "o_mySearchEngines": {
-        "message": "Els meus cercadors",
+        "message": "My Search Engines",
         "description": ""
     },
     "o_mySearchEnginesDesc": {
@@ -112,7 +112,7 @@
         "description": ""
     },
     "o_featuredSearchEngines": {
-        "message": "Motors de cerca destacats",
+        "message": "Featured Search Engines",
         "description": ""
     },
     "o_featuredSearchEngnesDesc": {
@@ -120,15 +120,15 @@
         "description": ""
     },
     "o_groupBy": {
-        "message": "Agrupar per:&nbsp;&nbsp;  ",
+        "message": "Group By:&nbsp;&nbsp;  ",
         "description": ""
     },
     "o_ungrouped": {
-        "message": "No agrupades",
+        "message": "Ungrouped",
         "description": ""
     },
     "o_helpHowDoI": {
-        "message": "Ajuda! com puc editar llista dels motors de cerca?",
+        "message": "Help! how do I edit the Search Engines' list?",
         "description": ""
     },
     "o_helpHowDoIDescription": {
@@ -144,7 +144,7 @@
         "description": ""
     },
     "o_importExport": {
-        "message": "Configuració d'importació/exportació",
+        "message": "Import/Export Config",
         "description": ""
     },
     "o_importExportDescription": {
@@ -152,47 +152,47 @@
         "description": ""
     },
     "importConfig": {
-        "message": "importar",
+        "message": "Import",
         "description": ""
     },
     "undoLastImport": {
-        "message": "Desfés la darrera importació",
+        "message": "Undo last import",
         "description": ""
     },
     "o_otherStuffYouCan": {
-        "message": "Altres coses que es poden configurar",
+        "message": "Other stuff you can configure",
         "description": ""
     },
     "o_openLinksInNewTab": {
-        "message": "Obrir els enllaços en una pestanya nova nou.",
+        "message": "Open links in new tab.",
         "description": ""
     },
     "o_giveNewTabFocus": {
-        "message": "Passar a la nova pestanya.",
+        "message": "Give new tab focus.",
         "description": ""
     },
     "o_newTabPosition": {
-        "message": "Posició de la nova pestanya:",
+        "message": "New tab's position:",
         "description": ""
     },
     "o_last": {
-        "message": "Darrer",
+        "message": "Last",
         "description": ""
     },
     "o_first": {
-        "message": "Primer",
+        "message": "First",
         "description": ""
     },
     "o_next": {
-        "message": "Següent",
+        "message": "Next",
         "description": ""
     },
     "o_previous": {
-        "message": "Anterior",
+        "message": "Previous",
         "description": ""
     },
     "o_trackSearchEngines": {
-        "message": " Seguiment de l'ús dels motors de cerca.",
+        "message": " Track search engines usage.",
         "description": ""
     },
     "o_leavingThisCheckbox": {
@@ -200,7 +200,7 @@
         "description": ""
     },
     "eraseOptions": {
-        "message": "Restaurar les opcions per defecte",
+        "message": "Restore default options",
         "description": ""
     },
     "o_developedBy": {
@@ -208,23 +208,23 @@
         "description": ""
     },
     "o_searchEngines": {
-        "message": "Motors de cerca",
+        "message": "Search engines",
         "description": ""
     },
     "o_help": {
-        "message": "Ajuda",
+        "message": "Help",
         "description": ""
     },
     "o_supportMe": {
-        "message": "Doneu-me suport :)",
+        "message": "Support me :)",
         "description": ""
     },
     "o_advancedConfig": {
-        "message": "Configuració avançada",
+        "message": "Advanced config",
         "description": ""
     },
     "o_credits": {
-        "message": "Crèdits/avís legal",
+        "message": "Credits/Disclaimer",
         "description": ""
     },
     "o_checkOutMyBlog": {
@@ -236,7 +236,7 @@
         "description": ""
     },
     "o_incognito": {
-        "message": "Incognito",
+        "message": "Inkognito",
         "description": ""
     },
     "o_resetDefaultSuccess": {
@@ -248,7 +248,7 @@
         "description": ""
     },
     "o_helpMeTranslate": {
-        "message": "Help me translate!",
+        "message": "Hilf mit, bei der Übersetzung!",
         "description": ""
     },
     "o_GitHubContributors": {
@@ -256,31 +256,31 @@
         "description": ""
     },
     "o_CrowdinContributors": {
-        "message": "Super awesome <a href='https://crowdin.com/project/simpleselectsearch' target='_blank'>Crowdin</a> contributors (translators)",
+        "message": "Fantastische <a href='https://crowdin.com/project/simpleselectsearch' target='_blank'> Crowdin</a> Beitragende (Übersetzer)",
         "description": ""
     },
     "o_plusExplain": {
-        "message": "Plus versus space: some search engines use '+' instead of a space to separate words you're looking for.",
+        "message": "\"Plus\" im Vergleich zu \"Space\": einige Suchmaschinen verwenden ein ' +' anstatt einem Leerzeichen um Wörter zu trennen die Sie suchen.",
         "description": ""
     },
     "o_cannotAddDuplicates": {
-        "message": "Sorry, I cannot add duplicate name entries.",
+        "message": "Ich kann keinen doppelten Namenseintrag hinzufügen.",
         "description": ""
     },
     "o_group": {
-        "message": "Group",
+        "message": "Gruppe",
         "description": ""
     },
     "o_groupsUsed": {
-        "message": "Used groups",
+        "message": "Verwendete Gruppen",
         "description": ""
     },
     "o_showSearchEverywhere": {
-        "message": "Show 'Search everywhere' option.",
+        "message": "\"Überall suchen\" Option anzeigen.",
         "description": ""
     },
     "o_showSearchEverywhereGroups": {
-        "message": "Show 'Search everywhere' option within groups.",
+        "message": "\"Überall suchen\" Option in Gruppen anzeigen.",
         "description": ""
     },
     "o_tabs": {
@@ -288,7 +288,7 @@
         "description": ""
     },
     "o_sortBy": {
-        "message": "Sort by:",
+        "message": "Sortieren nach:",
         "description": ""
     }
 }
