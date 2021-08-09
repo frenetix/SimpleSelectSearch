@@ -80,7 +80,7 @@
         "description": ""
     },
     "o_nothingToRestore": {
-        "message": "Sorry, I've got nothing to restore",
+        "message": "Omlouváme se, ale nemám nic k obnovení",
         "description": ""
     },
     "o_thankYou": {
@@ -108,7 +108,7 @@
         "description": ""
     },
     "o_mySearchEnginesDesc": {
-        "message": "These are your configured search engines. Select other engines from the Featured Search Engines list below or create your own. Check the help for instructions.",
+        "message": "Toto jsou vaše nakonfigurované vyhledávače. Vyberte ostatní vyhledávače ze seznamu doporučených vyhledávačů níže nebo vytvořte vlastní. Podívejte se na nápovědu pro pokyny.",
         "description": ""
     },
     "o_featuredSearchEngines": {
@@ -116,11 +116,11 @@
         "description": ""
     },
     "o_featuredSearchEngnesDesc": {
-        "message": "Click on a URL to include it in your Search Engines' list.",
+        "message": "Klikněte na URL adresu, pro přidání do vašeho seznamu vyhledávačů.",
         "description": ""
     },
     "o_groupBy": {
-        "message": "Group By:&nbsp;&nbsp;  ",
+        "message": "Seskupeno podle:&nbsp;&nbsp;  ",
         "description": ""
     },
     "o_ungrouped": {
@@ -128,7 +128,7 @@
         "description": ""
     },
     "o_helpHowDoI": {
-        "message": "Help! how do I edit the Search Engines' list?",
+        "message": "Pomoc! Jak upravit seznam vyhledávačů?",
         "description": ""
     },
     "o_helpHowDoIDescription": {
@@ -136,7 +136,7 @@
         "description": ""
     },
     "o_SupportThisHumble": {
-        "message": "Support this humble extension developer",
+        "message": "Podpořte skromného vývojáře tohoto rozšíření",
         "description": ""
     },
     "o_SupportThisHumbleDescription": {
@@ -148,7 +148,7 @@
         "description": ""
     },
     "o_importExportDescription": {
-        "message": "Here's all the config info. Just copy & save it on any text file...<br />  If you want to import your previously saved config, just paste it here and click on the import button.<br /><br />",
+        "message": "Zde jsou všechny konfigurační informace. Stačí je zkopírovat a uložit v libovolném textovém souboru...<br />  Pokud chcete importovat dříve uloženou konfiguraci, stačí ji vložit sem a kliknout na tlačítko Importovat.<br /><br />",
         "description": ""
     },
     "importConfig": {
