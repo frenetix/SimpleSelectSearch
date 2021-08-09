@@ -160,7 +160,7 @@
         "description": ""
     },
     "o_otherStuffYouCan": {
-        "message": "Other stuff you can configure",
+        "message": "Další věci, které můžete konfigurovat",
         "description": ""
     },
     "o_openLinksInNewTab": {
@@ -168,7 +168,7 @@
         "description": ""
     },
     "o_giveNewTabFocus": {
-        "message": "Give new tab focus.",
+        "message": "Přepnout na nově otevřenou kartu.",
         "description": ""
     },
     "o_newTabPosition": {
@@ -256,7 +256,7 @@
         "description": ""
     },
     "o_CrowdinContributors": {
-        "message": "Super awesome <a href='https://crowdin.com/project/simpleselectsearch' target='_blank'>Crowdin</a> contributors (translators)",
+        "message": "Super úžasní <a href='https://crowdin.com/project/simpleselectsearch' target='_blank'>Crowdin</a> přispěvatelé (překladatelé)",
         "description": ""
     },
     "o_plusExplain": {
@@ -264,23 +264,23 @@
         "description": ""
     },
     "o_cannotAddDuplicates": {
-        "message": "Sorry, I cannot add duplicate name entries.",
+        "message": "Omlouvám se, ale nemohu přidat duplicitní položky názvu.",
         "description": ""
     },
     "o_group": {
-        "message": "Group",
+        "message": "Skupina",
         "description": ""
     },
     "o_groupsUsed": {
-        "message": "Used groups",
+        "message": "Použité skupiny",
         "description": ""
     },
     "o_showSearchEverywhere": {
-        "message": "Show 'Search everywhere' option.",
+        "message": "Zobrazit možnost 'Vyhledat všude'.",
         "description": ""
     },
     "o_showSearchEverywhereGroups": {
-        "message": "Show 'Search everywhere' option within groups.",
+        "message": "Zobrazit možnost 'Vyhledat všude' ve skupinách.",
         "description": ""
     },
     "o_tabs": {
