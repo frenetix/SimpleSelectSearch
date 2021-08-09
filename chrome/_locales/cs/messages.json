@@ -64,19 +64,19 @@
         "description": ""
     },
     "o_confirmImport": {
-        "message": "I'm about to try and parse the text on your import/export textbox... if something goes wrong... just click on the *undo last import* button. I would also recommend that you keep a backup copy of this config... just in case :)",
+        "message": "Chystám se zkusit použít text v textovém poli pro import/export... pokud se něco pokazí... stačí kliknout na tlačítko *vrátit zpět poslední import*. Také doporučuji, abyste si uchovávali záložní kopii tohoto nastavení... pro jistotu :)",
         "description": ""
     },
     "o_importSuccesfull": {
-        "message": "Import successfull. Before reloading this page, check your Search Engines list to make sure everything goes well. If it's empty, then hit the *undo last import* button.",
+        "message": "Import byl úspěšný. Před znovunačtením této stránky zkontrolujte seznam vyhledávačů a ujistěte se, že vše je v pořádku. Pokud je prázdný, stiskněte tlačítko *vrátit zpět poslední import*.",
         "description": ""
     },
     "o_confirmRestore": {
-        "message": "I'm about to try and restore the config saved the last time you clicked on the *import* button",
+        "message": "Chystám se zkusit obnovit konfiguraci naposledy uloženou po kliknutí na tlačítko *import*",
         "description": ""
     },
     "o_restoreSuccesfull": {
-        "message": "Config saved before last import was just restored... if this doesn't help, you can always reset the options to the default settings with the button in the 'Advanced settings' page... or might try and retrieve a config backup if you did one before ;)",
+        "message": "Konfigurace uložená před posledním importem byla právě obnovena... Pokud to nepomůže, můžete vždy obnovit výchozí nastavení tlačítkem na stránce 'Rozšířené nastavení'. . nebo může zkusit použít zálohu konfigurace, pokud jste ji předtím udělali ;)",
         "description": ""
     },
     "o_nothingToRestore": {
@@ -156,7 +156,7 @@
         "description": ""
     },
     "undoLastImport": {
-        "message": "Vzít zpět poslední import",
+        "message": "Vrátit zpět poslední import",
         "description": ""
     },
     "o_otherStuffYouCan": {
@@ -260,7 +260,7 @@
         "description": ""
     },
     "o_plusExplain": {
-        "message": "Plus versus space: some search engines use '+' instead of a space to separate words you're looking for.",
+        "message": "Plus versus mezera: některé vyhledávače namísto mezery používají '+' pro oddělení slov, která hledáte.",
         "description": ""
     },
     "o_cannotAddDuplicates": {
