@@ -172,7 +172,7 @@
         "description": ""
     },
     "o_newTabPosition": {
-        "message": "New tab's position:",
+        "message": "Pozice nové karty:",
         "description": ""
     },
     "o_last": {
@@ -192,15 +192,15 @@
         "description": ""
     },
     "o_trackSearchEngines": {
-        "message": " Track search engines usage.",
+        "message": " Sledovat používání vyhledávačů.",
         "description": ""
     },
     "o_leavingThisCheckbox": {
-        "message": "Tracked information is used by me, only for statistical analysis purposes.  <br/>No user information is being tracked.  <br/>No search terms are being tracked (only the search engine used). You can read more about this on <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">my blog</a>.",
+        "message": "Sledované informace používám pouze pro účely statistické analýzy.  <br/>Nejsou sledovány žádné informace o uživateli.  <br/>Žádné hledané výrazy nejsou sledovány (pouze použitý vyhledávač). Více o tom si můžete přečíst na <a href=\"http://simpleselectsearch.blogspot.com/\" target=\"_blank\">mém blogu</a>.",
         "description": ""
     },
     "eraseOptions": {
-        "message": "Restore default options",
+        "message": "Obnovit výchozí nastavení",
         "description": ""
     },
     "o_developedBy": {
@@ -208,31 +208,31 @@
         "description": ""
     },
     "o_searchEngines": {
-        "message": "Search engines",
+        "message": "Vyhledávače",
         "description": ""
     },
     "o_help": {
-        "message": "Help",
+        "message": "Nápověda",
         "description": ""
     },
     "o_supportMe": {
-        "message": "Support me :)",
+        "message": "Podpořte mě :)",
         "description": ""
     },
     "o_advancedConfig": {
-        "message": "Advanced config",
+        "message": "Rozšířené nastavení",
         "description": ""
     },
     "o_credits": {
-        "message": "Credits/Disclaimer",
+        "message": "Tvůrce/vyloučení odpovědnosti",
         "description": ""
     },
     "o_checkOutMyBlog": {
-        "message": "Check out my blog for more.",
+        "message": "Podívejte se na můj blog pro více informací.",
         "description": ""
     },
     "o_sort": {
-        "message": "Sort",
+        "message": "Řazení",
         "description": ""
     },
     "o_incognito": {
@@ -284,11 +284,11 @@
         "description": ""
     },
     "o_tabs": {
-        "message": "Tabs",
+        "message": "Karty",
         "description": ""
     },
     "o_sortBy": {
-        "message": "Sort by:",
+        "message": "Seřadit podle:",
         "description": ""
     }
 }
