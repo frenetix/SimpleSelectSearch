@@ -1,18 +1,18 @@
 {
     "extName": {
-        "message": "Jednoduchost = Označ + Vyhledej",
+        "message": "Simple = Označ + Vyhledej",
         "description": "Extension's name. Use   instead of spaces."
     },
     "extDescription": {
-        "message": "Klepněte pravým tlačítkem myši na vybraný text a hledat pomocí mnoha vyhledávačů pro Chrome. Podpora seskupování vyhledávačů, incongito a další.",
+        "message": "Klepněte pravým tlačítkem na vybraný text a vyhledávejte pomocí mnoha vyhledávačů pro Chrome. Podporuje seskupování vyhledávačů, anonymní a další.",
         "description": ""
     },
     "bg_searchStringOn": {
-        "message": "Vyhledej '%s' pomocí",
+        "message": "Vyhledat '%s' pomocí",
         "description": ""
     },
     "bg_searchEverywhere": {
-        "message": "Vyhledej všude!",
+        "message": "Vyhledat všude!",
         "description": ""
     },
     "bg_openOnNewTab": {
@@ -20,7 +20,7 @@
         "description": ""
     },
     "bg_options": {
-        "message": "Možnosti...",
+        "message": "Nastavení...",
         "description": ""
     },
     "bg_extensionBlog": {
@@ -236,11 +236,11 @@
         "description": ""
     },
     "o_incognito": {
-        "message": "Incognito",
+        "message": "Anonymně",
         "description": ""
     },
     "o_resetDefaultSuccess": {
-        "message": "You now have default settings :)",
+        "message": "Nyní máte výchozí nastavení :)",
         "description": ""
     },
     "o_areYouSure": {
