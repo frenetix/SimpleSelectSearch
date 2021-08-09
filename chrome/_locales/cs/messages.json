@@ -244,15 +244,15 @@
         "description": ""
     },
     "o_areYouSure": {
-        "message": "Are you sure?",
+        "message": "Jste si jisti?",
         "description": ""
     },
     "o_helpMeTranslate": {
-        "message": "Help me translate!",
+        "message": "Pomozte s překladem!",
         "description": ""
     },
     "o_GitHubContributors": {
-        "message": "Super awesome <a href='https://github.com/frenetix/SimpleSelectSearch' target='_blank'>GitHub</a> contributors",
+        "message": "Super úžasní <a href='https://github.com/frenetix/SimpleSelectSearch' target='_blank'>přispěvatelé na GitHub</a>",
         "description": ""
     },
     "o_CrowdinContributors": {
