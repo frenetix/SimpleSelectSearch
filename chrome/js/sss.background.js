@@ -102,15 +102,29 @@ function searchOnNewTab (urlSE, tab) {
 // ToDo: if incognito open in incognito
 function bulkSearch (info, tab, group) {
     var i;
+    var urlArray = [];
     for (i = 0; i < config.searchEngines.length; i++) {
         if (typeof group != "undefined") {
-            if (group == config.searchEngines[i].group)
-                searchOnNewTab(createURL(i, info), tab);
+            if (group == config.searchEngines[i].group) {
+                if (config.searchEverywhereGroupsNewWindow) {
+                    urlArray.push(createURL(i, info))
+                }
+                else {
+                    searchOnNewTab(createURL(i, info), tab);
+                }
+                
+            }
             trackGA(i);
         } else {
             searchOnNewTab(createURL(i, info), tab);
             trackGA(i);
         }
+    }
+    if (config.searchEverywhereGroupsNewWindow && typeof group != "undefined") {
+        chrome.windows.create({
+            "url": urlArray
+        });
+        console.log("i will open these URLs in a new window", urlArray)
     }
 }
 
@@ -304,9 +318,8 @@ if (typeof localStorage["config"] == 'undefined') {
 } else {
     config = JSON.parse(localStorage["config"]);
 
-    if (typeof config.searchEverywhere == "undefined") {
-        config.searchEverywhere = true; // FUTURE: remove after a while, this is as of 0.4 so users won't loose the SearchEverywhere option
-        config.searchEverywhereGroups = true;
+    if (typeof config.searchEverywhereGroupsNewWindow == "undefined") {
+        config.searchEverywhereGroupsNewWindow = false; // FUTURE: remove after a while, this is as of 0.5 so users won't loose the searchEverywhereGroups option
     }
     createMenu(); // Initialize menu
 }

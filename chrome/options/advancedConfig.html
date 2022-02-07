@@ -26,10 +26,16 @@
         <label i18n-content="o_showSearchEverywhere" for="searchEverywhere">Show "Search everywhere" option.</label>
     </div>
 
-    <div class="form-group">
-        <input type="checkbox" ng-model="localConfig.searchEverywhereGroups" id="searchEverywhereGroups">
+    <div class="form-group" >
+        <input type="checkbox" ng-disabled="!localConfig.searchEverywhere" ng-model="localConfig.searchEverywhereGroups" id="searchEverywhereGroups">
         <label i18n-content="o_showSearchEverywhereGroups" for="searchEverywhereGroups">Show "Search everywhere" option within groups.</label>
     </div>
+
+    <div class="form-group" >
+        <input type="checkbox" ng-disabled="!(localConfig.searchEverywhereGroups && localConfig.searchEverywhere)" ng-model="localConfig.searchEverywhereGroupsNewWindow" id="searchEverywhereGroupsNewWindow">
+        <label i18n-content="o_showSearchEverywhereGroupsNewWindow" for="searchEverywhereGroupsNewWindow">"Search everywhere" in new window. Overides incognito settings!</label>
+    </div>
+
 
     <div class="form-group">
         <h4 i18n-content="o_groupsUsed">Used groups</h4>

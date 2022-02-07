@@ -291,6 +291,10 @@
         "message": "Show 'Search everywhere' option within groups.",
         "description": ""
     },
+    "o_showSearchEverywhereGroupsNewWindow": {
+        "message": "'Search everywhere' in new window. Overides incognito settings!",
+        "description": ""
+    },
     "o_tabs": {
         "message": "Tabs",
         "description": ""
