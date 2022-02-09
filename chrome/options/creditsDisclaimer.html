@@ -1,43 +1,12 @@
 <section ng-controller='sssCredits'>
-    <h1 i18n-content="o_credits">Credits</h1>
-
-    <h3 i18n-content="o_GitHubContributors">Super awesome GitHub contributors</h3>
-    <div ng-repeat="x in dataGitHub" class="featuredURLs">
-        <ul>
-            <li><a ng-href="{{x.author.html_url}}" target="_blank">{{ x.author.login }}</a>
-            </li>
-        </ul>
-        <img ng-src="{{x.author.avatar_url}}" class="gitHubAvatar" />
-    </div>
-
-    <h3 i18n-content="o_CrowdinContributors">Super awesome Crowdin contributors</h3>
-    <div ng-repeat="x in dataCrowdin" class="featuredURLs">
-        <ul>
-            <li>
-                <a ng-href="https://crowdin.com/profile/{{x.profile}}" target="_blank">{{ (x.name) ? x.name : x.profile }}</a> 
-            </li>
-            <li>
-                {{ (x.name) ? "(" + x.profile + ")" : "" }}
-            </li>
-            <li>
-                {{x.language}}
-            </li>
-        </ul>
-    </div>
-
+    <h2>Disclaimer</h2> 
     <div class="jumbotron">
-        <h2>Thanks!</h2>
-        <p>Quite a few falks helped out with this.</p>
-        <p>I keep on bugging a few friends & colleagues about this now and then. Thank you all!!</p>
-        <p>I feel a special shout out is in order to Michał Kupczyński (<a href="https://github.com/ukoms" target="_blank">ukoms</a>), who suggested that I open this up to GitHub and so patiently answered so many newbie questions :D.</p>
-    </div>
-    <div class="jumbotron" i18n-content="o_developedBy">
         Developed by <a href="https://plus.google.com/u/0/100927641416387074874/about" target="_blank">Diego Presno</a>. Follow me on tweeter <a href="https://twitter.com/#!/frenetix_" target="_blank">@frenetix_</a>
         <br /> All images/icons designed by <a href="https://germanrivas.com/" target="_blank">germanrivas.com</a>.
         <br/>
         <br />
-        <h2>Disclaimer</h2> Please, be warned: the usage of this extension is being tracked by Google Analytics. It also tracks which search engines are the most used by users, so I can then be able to add them to the featured Search Engines list.
+        Please, be warned: the usage of this extension is being tracked by Google Analytics. It also tracks which search engines are the most used by users, so I can then be able to add them to the featured Search Engines list.
         <br/> The extension does not track the identity of its user, nor what terms they''re looking for. Only the search URL syntax is being recorded.
-        <br/> No individual information will be shared with third parties. The only information published will be about the most used sites. An example of the published information can be found on my <a href="https://simpleselectsearch.blogspot.com/" target="_blank">blog</a>.
+        <br/> No individual information will be shared with third parties.
     </div>
 </section>
