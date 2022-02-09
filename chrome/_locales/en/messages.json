@@ -148,7 +148,7 @@
         "description": ""
     },
     "o_SupportThisHumbleDescription": {
-        "message": "Of course, this extension is for free -I built it to use it myself, actually-... but if you really enjoy using it, and you'd like to show your appreciation, here's a list of things that might make me happy :)  <ul>    <li><b>Show me the money:</b> Hit the <b>donate</b> button at the top right of this page... and send me a few bucks!</li>    <li><b>Use Amazon's featured links:</b> Use any of the Amazon links featured on the options page, search stuff using my extension and buy it! If you used one of my links -it doesn't work if you created the link by yourself, it will cost you the same, and Amazon will pay me a handsome reward! :D... and did I mention it costs you zero!?</li>    <li><b>Guerrilla advertising:</b> <a href=\"http://twitter.com/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http://bit.ly/HzSP8p @frenetix_\" title=\"Click to send this page to Twitter!\" target=\"_blank\">Share on Twitter</a>, <a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">post on Facebook</a>, G+ or wherever you feel this extension might be well received</li>    <li><b>More Guerrilla advertising:</b> Visit my blog, post a comment link to any of those posts. G+ the posts you like.</li>    <li><b>Boost my self esteem:</b> Rate the extension on Google's webstore, say how much you love it!</li>  </ul>",
+        "message": "Of course, this extension is for free -I built it to use it myself, actually-... but if you really enjoy using it, and you'd like to show your appreciation, here's a list of things that might make me happy :)  <ul>    <li><b>Show me the money:</b> Hit the <b>donate</b> button at the top right of this page... and send me a few bucks!</li>     <li><b>Guerrilla advertising:</b> <a href=\"http://twitter.com/home?status=OMG! I'm using Simple=Select+Search extension on Chrome and it rocks! http://bit.ly/HzSP8p @frenetix_\" title=\"Click to send this page to Twitter!\" target=\"_blank\">Share on Twitter</a>, <a href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FHzSP8p\" target=\"_blank\">post on Facebook</a>, or wherever you feel this extension might be well received</li>    <li><b>More Guerrilla advertising:</b> Visit my blog, post a comment link to any of those posts.</li>    <li><b>Boost my self esteem:</b> Rate the extension on Google's webstore, say how much you love it!</li>  </ul>",
         "description": ""
     },
     "o_importExport": {
@@ -292,7 +292,7 @@
         "description": ""
     },
     "o_showSearchEverywhereGroupsNewWindow": {
-        "message": "'Search everywhere' in new window. Overides incognito settings!",
+        "message": "(New!) 'Search everywhere' in new window. Overides incognito settings!",
         "description": ""
     },
     "o_tabs": {
