@@ -127,14 +127,6 @@
         "message": "Ungrouped",
         "description": ""
     },
-    "o_type": {
-        "message": "Type",
-        "description": ""
-    },
-    "o_language": {
-        "message": "Language",
-        "description": ""
-    },
     "o_helpHowDoI": {
         "message": "Help! how do I edit the Search Engines' list?",
         "description": ""
