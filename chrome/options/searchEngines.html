@@ -2,23 +2,26 @@
 <p i18n-content="o_mySearchEnginesDesc"></p>
 
 <form class="form searchEngines">
+
+    <div class="row header">
+        <div class="col-md-1 text-center"><span i18n-content="o_sort">Sort</span>
+        </div>
+        <div class="col-md-1"><span i18n-content="o_name">Name</span>
+        </div>
+        <div class="col-md-6"><span i18n-content="o_searchURL">Search URL</span>
+        </div>
+        <div class="col-md-1"><span i18n-content="o_group">Group</span>
+        </div>
+        <div class="col-md-1 text-center" tooltip="{{ i18nTranslate('o_plusExplain') }}" tooltip-class="customClass">+ vs _</div>
+        <div class="col-md-1 text-center" i18n-content="o_incognito">Incognito</div>
+        <div class="col-md-1 text-center">
+            <button class="btn btn-primary glyphicon glyphicon-plus" ng-click="addSearchEngine()" ng-disabled="isDirty"></button>
+        </div>
+    </div>
+    
     <div data-as-sortable="board.dragControlListeners" data-ng-model="localConfig.searchEngines">
 
-        <div class="row header">
-            <div class="col-md-1 text-center"><span i18n-content="o_sort">Sort</span>
-            </div>
-            <div class="col-md-1"><span i18n-content="o_name">Name</span>
-            </div>
-            <div class="col-md-6"><span i18n-content="o_searchURL">Search URL</span>
-            </div>
-            <div class="col-md-1"><span i18n-content="o_group">Group</span>
-            </div>
-            <div class="col-md-1 text-center" tooltip="{{ i18nTranslate('o_plusExplain') }}" tooltip-class="customClass">+ vs _</div>
-            <div class="col-md-1 text-center" i18n-content="o_incognito">Incognito</div>
-            <div class="col-md-1 text-center">
-                <button class="btn btn-primary glyphicon glyphicon-plus" ng-click="addSearchEngine()" ng-disabled="isDirty"></button>
-            </div>
-        </div>
+
 
         <div ng-repeat="se in localConfig.searchEngines track by $index" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-class="{'danger': se.name == null}" data-as-sortable-item class="row div-table" ng-animate="'animate'">
             <div class="col-md-1 glyphicon glyphicon-menu-hamburger text-center" data-as-sortable-item-handle>
