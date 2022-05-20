@@ -5,7 +5,7 @@
   "description": "__MSG_extDescription__",
   "version": "0.6",
    "manifest_version": 2,
-  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com https://apis.google.com; object-src 'self'",
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
   "permissions": ["contextMenus"],
   "icons": {
     "16": "images/16.png",

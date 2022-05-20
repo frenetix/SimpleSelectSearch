@@ -29,17 +29,17 @@ angular.module('sss', ['ngAnimate', 'ui.sortable', 'ngSanitize', 'ui.bootstrap',
         "searchEverywhereGroups": false,
         "searchEngines": [
             {
-                "name": "Youtube",
-                "url": "https://www.youtube.com/results?search_query=%s&aq=f",
+                "name": "You.com",
+                "url": "https://you.com/search?q=%s&fromSearchBar=true",
                 "incognito": false,
                 "plus": false,
                 "group": null
             },
             {
-                "name": "IMDB",
-                "url": "https://www.imdb.com/find?q=%s&s=all",
+                "name": "Youtube",
+                "url": "https://www.youtube.com/results?search_query=%s&aq=f",
                 "incognito": false,
-                "plus": true,
+                "plus": false,
                 "group": null
             },
             {
@@ -70,6 +70,18 @@ angular.module('sss', ['ngAnimate', 'ui.sortable', 'ngSanitize', 'ui.bootstrap',
     ];
 
     service.featuredSearchEngines = [
+        {
+            "name": "YouCode",
+            "url": "https://you.com/search?q=%s&fromSearchBar=true&tbm=youcode",
+            "type": "IT",
+            "language": "English"
+        },
+        {
+            "name": "You.com Shopping",
+            "url": "https://you.com/search?q=%s&fromSearchBar=true&tbm=shop",
+            "type": "Commerce",
+            "language": "English"
+        },
         {
             "name": "Amazon",
             "url": "https://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=aps&linkCode=ur2&camp=1789&creative=9325",
