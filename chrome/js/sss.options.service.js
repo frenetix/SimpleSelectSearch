@@ -1,21 +1,6 @@
 angular.module('sss', ['ngAnimate', 'ui.sortable', 'ngSanitize', 'ui.bootstrap', 'ui.utils']).service('sssService', function () {
     var service = this;
 
-    function applyLocalization(tempConfig) {
-        var languageFound = false;
-        for (i in service.amazonSites) {
-            if (window.navigator.language.toLowerCase() == service.amazonSites[i].locale) {
-                tempConfig.searchEngines.splice(tempConfig.searchEngines.length, 0, JSON.parse('{"name": "' + service.amazonSites[i].name + '", "url": "' + service.amazonSites[i].url + '"}'));
-                languageFound = true;
-            }
-        }
-        if (!languageFound) {
-            tempConfig.searchEngines.splice(tempConfig.searchEngines.length, 0, JSON.parse('{"name": "' + service.amazonSites[0].name + '", "url": "' + service.amazonSites[0].url + '"}'));
-            tempConfig.searchEngines.splice(tempConfig.searchEngines.length, 0, JSON.parse('{"name": "' + service.amazonSites[1].name + '", "url": "' + service.amazonSites[1].url + '"}'));
-        }
-        return tempConfig;
-    }
-
     service.i18n = function (key) {
         return service.bg.i18n(key);
     };
@@ -51,23 +36,6 @@ angular.module('sss', ['ngAnimate', 'ui.sortable', 'ngSanitize', 'ui.bootstrap',
             }
         ]
     };
-
-    service.amazonSites = [
-        {
-            "locale": "en-us",
-            "name": "Amazon",
-            "url": "https://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=aps&linkCode=ur2&camp=1789&creative=9325",
-            "type": "Comerce",
-            "language": "English"
-        },
-        {
-            "locale": "en-gb",
-            "name": "Amazon UK",
-            "url": "https://www.amazon.co.uk/gp/search?ie=UTF8&keywords=%s&tag=sisese-21&index=aps&linkCode=ur2&camp=1634&creative=6738",
-            "type": "Comerce",
-            "language": "English"
-        }
-    ];
 
     service.featuredSearchEngines = [
         {
@@ -423,7 +391,7 @@ angular.module('sss', ['ngAnimate', 'ui.sortable', 'ngSanitize', 'ui.bootstrap',
     service.bg = chrome.extension.getBackgroundPage();
 
     if (typeof localStorage["config"] == "undefined") {
-        service.bg.config = applyLocalization(service.defaultConfig);
+        service.bg.config = service.defaultConfig;
         localStorage["config"] = JSON.stringify(service.bg.config);
         service.bg.createMenu();
     }
