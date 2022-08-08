@@ -42,13 +42,15 @@ angular.module('sss', ['ngAnimate', 'ui.sortable', 'ngSanitize', 'ui.bootstrap',
             "name": "YouCode",
             "url": "https://you.com/search?q=%s&fromSearchBar=true&tbm=youcode&utm_medium=cdpartner&utm_source=selectplussearch",
             "type": "IT",
-            "language": "English"
+            "language": "English",
+            "highlight": true
         },
         {
             "name": "You.com Shopping",
             "url": "https://you.com/search?q=%s&fromSearchBar=true&tbm=shop&utm_medium=cdpartner&utm_source=selectplussearch",
             "type": "Commerce",
-            "language": "English"
+            "language": "English",
+            "highlight": true
         },
         {
             "name": "Amazon",

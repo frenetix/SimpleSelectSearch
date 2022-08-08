@@ -379,6 +379,10 @@ body {
     box-shadow: 5px 5px 15px #f0f0f0;
 }
 
+.highlight {
+    background-color: #ffffbb;
+}
+
 .sortURLs div div {
     width: 100px;
     display: block;

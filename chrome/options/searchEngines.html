@@ -82,11 +82,11 @@
 </div>
 
 
-<div ng-repeat="x in featuredURLs | orderBy:sortType:sortReverse" ng-class="{'light': x.isUsed}" class="featuredURLs" ng-click="addSearchEngine(this)">
+<div ng-repeat="x in featuredURLs | orderBy:sortType:sortReverse" ng-class="{'highlight': x.highlight}" class="featuredURLs" ng-click="addSearchEngine(this)">
     <ul>
         <li>{{x.name}}</li>
         <li>{{x.type}}</li>
         <li>{{x.language}}</li>
     </ul>
-    <button ng-click="addSearchEngine(this)" class="btn btn-primary btn-sm glyphicon glyphicon-ok" ng-disabled="x.isUsed"></button>
+    <button ng-click="addSearchEngine(this)" class="btn btn-primary btn-sm glyphicon glyphicon-ok"></button>
 </div>
