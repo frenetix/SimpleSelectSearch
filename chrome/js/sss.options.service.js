@@ -15,7 +15,7 @@ angular.module('sss', ['ngAnimate', 'ui.sortable', 'ngSanitize', 'ui.bootstrap',
         "searchEngines": [
             {
                 "name": "You.com",
-                "url": "https://you.com/search?q=%s&fromSearchBar=true",
+                "url": "https://you.com/search?q=%s&fromSearchBar=true&utm_medium=cdpartner&utm_source=selectplussearch",
                 "incognito": false,
                 "plus": false,
                 "group": null
@@ -40,13 +40,13 @@ angular.module('sss', ['ngAnimate', 'ui.sortable', 'ngSanitize', 'ui.bootstrap',
     service.featuredSearchEngines = [
         {
             "name": "YouCode",
-            "url": "https://you.com/search?q=%s&fromSearchBar=true&tbm=youcode",
+            "url": "https://you.com/search?q=%s&fromSearchBar=true&tbm=youcode&utm_medium=cdpartner&utm_source=selectplussearch",
             "type": "IT",
             "language": "English"
         },
         {
             "name": "You.com Shopping",
-            "url": "https://you.com/search?q=%s&fromSearchBar=true&tbm=shop",
+            "url": "https://you.com/search?q=%s&fromSearchBar=true&tbm=shop&utm_medium=cdpartner&utm_source=selectplussearch",
             "type": "Commerce",
             "language": "English"
         },
