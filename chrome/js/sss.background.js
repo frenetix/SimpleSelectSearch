@@ -19,7 +19,7 @@ _gaq.push(['_trackPageview']);
 })();
 
 //Tracks google analytics
-function trackGA (idSE) {
+function trackGA(idSE) {
     // if (config.trackGA) { //TODO: temp comment for testing
     _gaq.push(['_trackEvent', 'Search Click', config.searchEngines[idSE].name, config.searchEngines[idSE].url]);
     // } else {
@@ -35,7 +35,7 @@ function trackGA (idSE) {
 // fixes stuff like & in search string
 // plus vs %20
 // replace %s with search string
-function createURL (idSE, info) {
+function createURL(idSE, info) {
     var selectedText = encodeURIComponent(info.selectionText);
     if (config.searchEngines[idSE].plus)
         selectedText = selectedText.replace(/%20/g, "+");
@@ -43,7 +43,7 @@ function createURL (idSE, info) {
 }
 
 // standard search function
-function genericSearch (info, tab, idSE) {
+function genericSearch(info, tab, idSE) {
     var urlSE = createURL(idSE, info);
     if (config.searchEngines[idSE].incognito) {
         chrome.windows.create({
@@ -62,21 +62,21 @@ function genericSearch (info, tab, idSE) {
 }
 
 // opens options.html
-function openOptions () {
+function openOptions() {
     chrome.tabs.create({
         "url": "options.html"
     });
 }
 
 // Enables/disables Open in new tab
-function checkOnNewTab () {
+function checkOnNewTab() {
     config.newTab = !config.newTab;
     localStorage["config"] = JSON.stringify(config);
     // NOTE: do i need to save the whole object?
 }
 
 // Open results in new tab
-function searchOnNewTab (urlSE, tab) {
+function searchOnNewTab(urlSE, tab) {
     if (tab.id > -1) {
         var newTab = {
             "url": urlSE,
@@ -100,22 +100,41 @@ function searchOnNewTab (urlSE, tab) {
 
 // Search everywhere!
 // ToDo: if incognito open in incognito
-function bulkSearch (info, tab, group) {
+function bulkSearch(info, tab, group) {
     var i;
+    var urlArray = [];
     for (i = 0; i < config.searchEngines.length; i++) {
         if (typeof group != "undefined") {
-            if (group == config.searchEngines[i].group)
-                searchOnNewTab(createURL(i, info), tab);
+            if (group == config.searchEngines[i].group) {
+                if (config.searchEverywhereGroupsNewWindow) {
+                    urlArray.push(createURL(i, info))
+                }
+                else {
+                    searchOnNewTab(createURL(i, info), tab);
+                }
+
+            }
             trackGA(i);
         } else {
-            searchOnNewTab(createURL(i, info), tab);
+            if (config.searchEverywhereGroupsNewWindow) {
+                urlArray.push(createURL(i, info))
+            }
+            else {
+                searchOnNewTab(createURL(i, info), tab);
+            }
             trackGA(i);
         }
+    }
+    if (config.searchEverywhereGroupsNewWindow) {
+        chrome.windows.create({
+            "url": urlArray
+        });
+        console.log("i will open these URLs in a new window", urlArray)
     }
 }
 
 // Create menu items
-function createMenu () {
+function createMenu() {
     chrome.contextMenus.removeAll(); // reset menu
     var SELength = config.searchEngines.length;
     var title = i18n("bg_searchStringOn"); // title for SSS menu
@@ -227,7 +246,7 @@ function createMenu () {
 
 // Menu helpers
 
-function createMenuSeparator (id, context) {
+function createMenuSeparator(id, context) {
     var id = chrome.contextMenus.create({
         "type": "separator",
         "parentId": id,
@@ -235,7 +254,7 @@ function createMenuSeparator (id, context) {
     });
 }
 
-function createMenuChild (title, id, onclick, checked) {
+function createMenuChild(title, id, onclick, checked) {
     if (typeof checked == "undefined") {
         var id = chrome.contextMenus.create({
             "title": title,
@@ -257,13 +276,13 @@ function createMenuChild (title, id, onclick, checked) {
 
 
 
-function i18n (key) {
+function i18n(key) {
     return chrome.i18n.getMessage(key);
 }
 
 
 //open Options if first time or updates happened
-function getVersion () {
+function getVersion() {
     var details = chrome.app.getDetails();
     return details.version;
 }
@@ -304,21 +323,22 @@ if (typeof localStorage["config"] == 'undefined') {
 } else {
     config = JSON.parse(localStorage["config"]);
 
-    if (typeof config.searchEverywhere == "undefined") {
-        config.searchEverywhere = true; // FUTURE: remove after a while, this is as of 0.4 so users won't loose the SearchEverywhere option
-        config.searchEverywhereGroups = true;
+    if (typeof config.searchEverywhereGroupsNewWindow == "undefined") {
+        config.searchEverywhereGroupsNewWindow = false; // FUTURE: remove after a while, this is as of 0.5 so users won't loose the searchEverywhereGroups option
     }
     createMenu(); // Initialize menu
 }
 
-function allEmptyGroups () {
+function allEmptyGroups() {
     for (var i = 0; i < config.searchEngines.length; i++) {
         if (config.searchEngines[i].group !== "none") return false;
     }
     return true;
+
+    //return searchEngines.reduce((acc, cur) => cur.group === null || cur.group.trim() === '' ? ++acc : acc, 0) === searchEngines.length;
 }
 
-function isEmptyOrNull (val) {
+function isEmptyOrNull(val) {
     if (typeof val == "undefined")
         return true;
     if (!val)

@@ -1,13 +1,13 @@
-<h1 i18n-content="o_importExport">Import/Export Config</h1>
+<h2 i18n-content="o_importExport">Import/Export Config</h2>
 <DIV i18n-content="o_importExportDescription">
-    Here''s all the config info. Just copy & save it on any text file...
+    Here's all the config info. Just copy & save it on any text file...
     <br /> If you want to import your previously saved config, just paste it here and click on the import button.
     <br />
     <br />
 </DIV>
-<form>
+<form class="import-export">
     <div class="form-group">
-        <textarea class="form-control" rows="12" ng-model="$parent.import"></textarea>
+        <textarea class="form-control" rows="10" ng-model="$parent.import"></textarea>
     </div>
     <div class="form-group">
         <a href="" class="btn btn-primary" ng-click="addConfirm('o_confirmImport',importConfig)" i18n-content="importConfig">Import</a>

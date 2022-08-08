@@ -1,21 +1,6 @@
 angular.module('sss', ['ngAnimate', 'ui.sortable', 'ngSanitize', 'ui.bootstrap', 'ui.utils']).service('sssService', function () {
     var service = this;
 
-    function applyLocalization(tempConfig) {
-        var languageFound = false;
-        for (i in service.amazonSites) {
-            if (window.navigator.language.toLowerCase() == service.amazonSites[i].locale) {
-                tempConfig.searchEngines.splice(tempConfig.searchEngines.length, 0, JSON.parse('{"name": "' + service.amazonSites[i].name + '", "url": "' + service.amazonSites[i].url + '"}'));
-                languageFound = true;
-            }
-        }
-        if (!languageFound) {
-            tempConfig.searchEngines.splice(tempConfig.searchEngines.length, 0, JSON.parse('{"name": "' + service.amazonSites[0].name + '", "url": "' + service.amazonSites[0].url + '"}'));
-            tempConfig.searchEngines.splice(tempConfig.searchEngines.length, 0, JSON.parse('{"name": "' + service.amazonSites[1].name + '", "url": "' + service.amazonSites[1].url + '"}'));
-        }
-        return tempConfig;
-    }
-
     service.i18n = function (key) {
         return service.bg.i18n(key);
     };
@@ -29,17 +14,17 @@ angular.module('sss', ['ngAnimate', 'ui.sortable', 'ngSanitize', 'ui.bootstrap',
         "searchEverywhereGroups": false,
         "searchEngines": [
             {
-                "name": "Youtube",
-                "url": "https://www.youtube.com/results?search_query=%s&aq=f",
+                "name": "You.com",
+                "url": "https://you.com/search?q=%s&fromSearchBar=true&utm_medium=cdpartner&utm_source=selectplussearch",
                 "incognito": false,
                 "plus": false,
                 "group": null
             },
             {
-                "name": "IMDB",
-                "url": "https://www.imdb.com/find?q=%s&s=all",
+                "name": "Youtube",
+                "url": "https://www.youtube.com/results?search_query=%s&aq=f",
                 "incognito": false,
-                "plus": true,
+                "plus": false,
                 "group": null
             },
             {
@@ -52,124 +37,22 @@ angular.module('sss', ['ngAnimate', 'ui.sortable', 'ngSanitize', 'ui.bootstrap',
         ]
     };
 
-    service.amazonSites = [
-        {
-            "locale": "en-us",
-            "name": "Amazon",
-            "url": "https://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=aps&linkCode=ur2&camp=1789&creative=9325",
-            "type": "Comerce",
-            "language": "English"
-        },
-        {
-            "locale": "en-us",
-            "name": "Amazon Kindle",
-            "url": "https://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=digital-text&linkCode=ur2&camp=1789&creative=9325",
-            "type": "Comerce",
-            "language": "English"
-        },
-        {
-            "locale": "de-de",
-            "name": "Amazon DE",
-            "url": "https://www.amazon.de/gp/search?ie=UTF8&keywords=%s&tag=sisese0b-21&index=aps&linkCode=ur2&camp=1638&creative=6742",
-            "type": "Comerce",
-            "language": "English"
-        },
-        {
-            "locale": "es-es",
-            "name": "Amazon ES",
-            "url": "https://www.amazon.es/gp/search?ie=UTF8&keywords=%s&tag=sisese0c-21&index=aps&linkCode=ur2&camp=3626&creative=24790",
-            "type": "Comerce",
-            "language": "English"
-        },
-        {
-            "locale": "it",
-            "name": "Amazon IT",
-            "url": "https://www.amazon.it/gp/search?ie=UTF8&keywords=%s&tag=sisese07-21&index=aps&linkCode=ur2&camp=3370&creative=23322",
-            "type": "Comerce",
-            "language": "English"
-        },
-        {
-            "locale": "en-us",
-            "name": "Amazon Mp3",
-            "url": "https://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=digital-music&linkCode=ur2&camp=1789&creative=9325",
-            "type": "Comerce",
-            "language": "English"
-        },
-        {
-            "locale": "en-us",
-            "name": "Amazon Music",
-            "url": "https://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=music&linkCode=ur2&camp=1789&creative=9325",
-            "type": "Comerce",
-            "language": "English"
-        },
-        {
-            "locale": "en-gb",
-            "name": "Amazon UK",
-            "url": "https://www.amazon.co.uk/gp/search?ie=UTF8&keywords=%s&tag=sisese-21&index=aps&linkCode=ur2&camp=1634&creative=6738",
-            "type": "Comerce",
-            "language": "English"
-        },
-        {
-            "locale": "en-ca",
-            "name": "Amazon Canada",
-            "url": "https://www.amazon.ca/gp/search?ie=UTF8&camp=15121&creative=330641&index=aps&keywords=%s&linkCode=ur2&tag=sisese0b-20",
-            "type": "Comerce",
-            "language": "English"
-        }
-    ];
-
     service.featuredSearchEngines = [
         {
+            "name": "YouCode",
+            "url": "https://you.com/search?q=%s&fromSearchBar=true&tbm=youcode&utm_medium=cdpartner&utm_source=selectplussearch",
+            "type": "IT",
+            "language": "English"
+        },
+        {
+            "name": "You.com Shopping",
+            "url": "https://you.com/search?q=%s&fromSearchBar=true&tbm=shop&utm_medium=cdpartner&utm_source=selectplussearch",
+            "type": "Commerce",
+            "language": "English"
+        },
+        {
             "name": "Amazon",
             "url": "https://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=aps&linkCode=ur2&camp=1789&creative=9325",
-            "type": "Commerce",
-            "language": "English"
-        },
-        {
-            "name": "Amazon Kindle",
-            "url": "https://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=digital-text&linkCode=ur2&camp=1789&creative=9325",
-            "type": "Commerce",
-            "language": "English"
-        },
-        {
-            "name": "Amazon DE",
-            "url": "https://www.amazon.de/gp/search?ie=UTF8&keywords=%s&tag=sisese0b-21&index=aps&linkCode=ur2&camp=1638&creative=6742",
-            "type": "Commerce",
-            "language": "English"
-        },
-        {
-            "name": "Amazon ES",
-            "url": "https://www.amazon.es/gp/search?ie=UTF8&keywords=%s&tag=sisese0c-21&index=aps&linkCode=ur2&camp=3626&creative=24790",
-            "type": "Commerce",
-            "language": "English"
-        },
-        {
-            "name": "Amazon IT",
-            "url": "https://www.amazon.it/gp/search?ie=UTF8&keywords=%s&tag=sisese07-21&index=aps&linkCode=ur2&camp=3370&creative=23322",
-            "type": "Commerce",
-            "language": "English"
-        },
-        {
-            "name": "Amazon JP",
-            "url": "https://www.amazon.co.jp/gp/search?ie=UTF8&keywords=%s&tag=sisese05-22&index=aps&linkCode=ur2&camp=247&creative=1211",
-            "type": "Commerce",
-            "language": "Japanese"
-        },
-        {
-            "name": "Amazon Mp3",
-            "url": "https://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=digital-music&linkCode=ur2&camp=1789&creative=9325",
-            "type": "Commerce",
-            "language": "English"
-        },
-        {
-            "name": "Amazon Music",
-            "url": "https://www.amazon.com/gp/search?ie=UTF8&keywords=%s&tag=sisese-20&index=music&linkCode=ur2&camp=1789&creative=9325",
-            "type": "Commerce",
-            "language": "English"
-        },
-        {
-            "name": "Amazon UK",
-            "url": "https://www.amazon.co.uk/gp/search?ie=UTF8&keywords=%s&tag=sisese-21&index=aps&linkCode=ur2&camp=1634&creative=6738",
             "type": "Commerce",
             "language": "English"
         },
@@ -508,7 +391,7 @@ angular.module('sss', ['ngAnimate', 'ui.sortable', 'ngSanitize', 'ui.bootstrap',
     service.bg = chrome.extension.getBackgroundPage();
 
     if (typeof localStorage["config"] == "undefined") {
-        service.bg.config = applyLocalization(service.defaultConfig);
+        service.bg.config = service.defaultConfig;
         localStorage["config"] = JSON.stringify(service.bg.config);
         service.bg.createMenu();
     }

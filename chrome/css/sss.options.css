@@ -12,6 +12,10 @@ a:focus,
 h1,
 h2 {
     color: #0084ae;
+    line-height:200%;
+}
+h3 {
+    line-height:200%;
 }
 
 .main ul {
@@ -37,12 +41,14 @@ select {
 
 .jumbotron {
     background-color: #f2f9fb;
+    line-height: 2.3rem;
 }
 /* Move down content because we have a fixed navbar that is 50px tall */
 
 body {
     padding-top: 50px;
     font-family: "Open Sans", sans-serif;
+    line-height: 2.3rem;
 }
 /*
 * Angular fixes (need to understand why I need this)
@@ -59,6 +65,9 @@ body {
  * content transition animation *
  */
 
+ .options-container {
+     padding: 1rem 2rem;
+ }
 .options-container.ng-enter {
     transition: 0.4s linear all;
 }
@@ -121,7 +130,7 @@ body {
     left: 0;
     z-index: 1000;
     display: block;
-    padding: 20px;
+    padding: 3rem;
     overflow-x: hidden;
     overflow-y: auto;
     /* Scrollable contents if viewport is shorter than content. */
@@ -142,6 +151,7 @@ body {
 .nav-sidebar > li > a {
     padding-right: 20px;
     padding-left: 20px;
+    cursor: pointer;
 }
 
 .nav-sidebar > .active > a,
@@ -297,7 +307,9 @@ body {
 .alert-container .ng-leave {
     opacity: 0 !important;
 }
-
+.form-group {
+    margin-bottom: 2rem;
+}
 .form-controls-alert {
     text-align: right;
 }
@@ -314,6 +326,12 @@ body {
 .form-controls-alert .btn {
     width: 100px;
 }
+.import-export textarea {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 3rem;
+    resize: vertical;
+}
+
 
 .featuredURLs {
     border-top: 0px;
@@ -374,4 +392,8 @@ body {
 .gitHubAvatar {
     width:30px;
     float: right;
+}
+
+.warning {
+    color: red;
 }
