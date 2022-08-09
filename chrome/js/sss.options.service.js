@@ -39,6 +39,13 @@ angular.module('sss', ['ngAnimate', 'ui.sortable', 'ngSanitize', 'ui.bootstrap',
 
     service.featuredSearchEngines = [
         {
+            "name": "You.com",
+            "url": "https://you.com/search?q=%s&fromSearchBar=true&utm_medium=cdpartner&utm_source=selectplussearch",
+            "language": "English",
+            "type": "Search tools",
+            "highlight": true
+        },
+        {
             "name": "YouCode",
             "url": "https://you.com/search?q=%s&fromSearchBar=true&tbm=youcode&utm_medium=cdpartner&utm_source=selectplussearch",
             "type": "IT",
