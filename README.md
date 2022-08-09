@@ -1,7 +1,7 @@
 Simple=Select+Search
 ====================
 
-###HIGHLIGHT & CLICK, THAT'S IT!### test
+###HIGHLIGHT & CLICK, THAT'S IT!###
 
 [![Crowdin](https://crowdin.net/badges/simpleselectsearch/localized.png)](https://crowdin.net/project/simpleselectsearch)
 
