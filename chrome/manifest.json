@@ -3,7 +3,7 @@
   "short_name" : "S=S+S",
   "default_locale": "en",
   "description": "__MSG_extDescription__",
-  "version": "0.6",
+  "version": "0.7.1",
    "manifest_version": 2,
   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
   "permissions": ["contextMenus"],
