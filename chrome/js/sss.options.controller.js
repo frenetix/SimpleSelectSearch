@@ -95,7 +95,9 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
         // Reset default options
         $scope.restoreDefaultOptions = function () {
 
-            sssService.bg._gaq.push(['_trackEvent', 'Options', 'Reset defaults', 'Reset defaults']);
+            sssService.bg.gtag('event', 'options', {
+                'options_action': 'Reset defaults'
+            });
 
             // ToDo: Try/catch goes here.
             $scope.backup = $scope.localConfig;
@@ -117,7 +119,9 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
         //Import JSON config
         $scope.importConfig = function () {
 
-            sssService.bg._gaq.push(['_trackEvent', 'Options', 'Import Config', 'Import Config']);
+            sssService.bg.gtag('event', 'options', {
+                'options_action': 'Import Config'
+            });
 
             // ToDo: Try/catch goes here.
             $scope.backup = $scope.localConfig;
@@ -136,7 +140,10 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
 
         //Undo last import 
         $scope.undoLastImport = function () {
-            sssService.bg._gaq.push(['_trackEvent', 'Options', 'Undo Import', 'Undo Import']);
+
+            sssService.bg.gtag('event', 'options', {
+                'options_action': 'Undo Import'
+            });
 
             // ToDo: implement Try/Catch here
             sssService.bg.config = $scope.backup;
@@ -193,4 +200,9 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
         }
 
         // Endregion
+
+        $scope.alerts.push({
+            type: "danger",
+            msg: sssService.bg.MENU_OPTIONS_MESSAGE
+        });
  }])

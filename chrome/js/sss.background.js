@@ -1,30 +1,65 @@
-var MENU_OPTIONS_MESSAGE = ""//" (new stuff!)"; // used only once, for options menu, but I get to change it every release so I left it up here.
+var MENU_OPTIONS_MESSAGE = "Hey there! For more than a decade, I've been keeping this extension free and running on pure love for coding. A small token of appreciation (like a coffee!) would surely give this hobbyist developer a nice boost. ☕️🙌💻"//" (new stuff!)"; // used only once, for options menu, but I get to change it every release so I left it up here.
 var CONTEXT = "selection"; // used for context menues
 
 var config = {}; // main stuff here
 
-// Region: Google Analytics stuff
+// Region: Google Analytics stuff UA
 
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-23660432-1']);
-_gaq.push(['_trackPageview']);
+// var _gaq = _gaq || [];
+// _gaq.push(['_setAccount', 'UA-23660432-1']);
+// _gaq.push(['_trackPageview']);
+
+// (function () {
+//     var ga = document.createElement('script');
+//     ga.type = 'text/javascript';
+//     ga.async = true;
+//     ga.src = 'https://ssl.google-analytics.com/ga.js';
+//     var s = document.getElementsByTagName('script')[0];
+//     s.parentNode.insertBefore(ga, s);
+// })();
+
+// //Tracks google analytics
+// function trackGA(idSE) {
+//     // if (config.trackGA) { //TODO: temp comment for testing
+//     _gaq.push(['_trackEvent', 'Search Click', config.searchEngines[idSE].name, config.searchEngines[idSE].url]);
+//     // } else {
+//     //     _gaq.push(['_trackEvent', 'Search Click', 'Confidential', 'Confidential']);
+//     // }
+// }
+
+// Endregion
+
+
+// Region: Google Analytics 4
+
+// Insert script like this: <script async src="https://www.googletagmanager.com/gtag/js?id=G-T03678Q4HK"></script>
 
 (function () {
     var ga = document.createElement('script');
     ga.type = 'text/javascript';
     ga.async = true;
-    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-T03678Q4HK';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(ga, s);
 })();
 
-//Tracks google analytics
+// Set up the Google Tag Manager data layer
+var dataLayer = dataLayer || [];
+function gtag() {
+    dataLayer.push(arguments);
+    console.log("gtag: ", arguments)
+}
+gtag('js', new Date());
+
+// Configure the Google Tag
+gtag('config', 'G-T03678Q4HK'); // Replace 'G-XXXXXXXXXX' with your GA4 property ID
+
+// Track a custom event
 function trackGA(idSE) {
-    // if (config.trackGA) { //TODO: temp comment for testing
-    _gaq.push(['_trackEvent', 'Search Click', config.searchEngines[idSE].name, config.searchEngines[idSE].url]);
-    // } else {
-    //     _gaq.push(['_trackEvent', 'Search Click', 'Confidential', 'Confidential']);
-    // }
+    gtag('event', 'search_menu', {
+        'search_engine_name': config.searchEngines[idSE].name,
+        'search_engine_url': config.searchEngines[idSE].url
+    });
 }
 
 // Endregion
@@ -294,7 +329,7 @@ var newOptionsSeen = localStorage['newOptionsSeen'];
 
 if (currVersion != prevVersion) {
     localStorage['version'] = currVersion;
-
+    openOptions();
     const config = JSON.parse(localStorage['config'])
     const searchEnginesConfig = config.searchEngines.reduce((acc, val) => {
         acc.incognito = +val.incognito
@@ -315,7 +350,10 @@ if (currVersion != prevVersion) {
         searchEngines: searchEnginesConfig
     }
 
-    _gaq.push(['_trackEvent', 'Config', 'Config', JSON.stringify(trackConfig)]);
+    // _gaq.push(['_trackEvent', 'Config', 'Config', JSON.stringify(trackConfig)]); OLD
+    gtag('event', 'Config', {
+        'Config': JSON.stringify(trackConfig)
+    });
 }
 
 if (typeof localStorage["config"] == 'undefined') {

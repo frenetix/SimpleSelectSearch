@@ -3,9 +3,9 @@
   "short_name" : "S=S+S",
   "default_locale": "en",
   "description": "__MSG_extDescription__",
-  "version": "0.7.1",
+  "version": "0.7.6212",
    "manifest_version": 2,
-  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "content_security_policy": "script-src 'self' https://www.googletagmanager.com 'sha256-bA2sjKnbqtrl9loSTY6h4G4jOiKtr80YXN3t2U2cZEA='; object-src 'self'",
   "permissions": ["contextMenus"],
   "icons": {
     "16": "images/16.png",
