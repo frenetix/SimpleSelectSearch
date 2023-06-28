@@ -95,7 +95,10 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
         // Reset default options
         $scope.restoreDefaultOptions = function () {
 
-            sssService.bg.gtag('event', 'options', {
+            // sssService.bg.gtag('event', 'options', {
+            //     'options_action': 'Reset defaults'
+            // });
+            sssService.bg.genericTrackingGA('options', {
                 'options_action': 'Reset defaults'
             });
 
@@ -119,7 +122,10 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
         //Import JSON config
         $scope.importConfig = function () {
 
-            sssService.bg.gtag('event', 'options', {
+            // sssService.bg.gtag('event', 'options', {
+            //     'options_action': 'Import Config'
+            // });
+            sssService.bg.genericTrackingGA('options', {
                 'options_action': 'Import Config'
             });
 
@@ -141,7 +147,10 @@ angular.module('sss').controller('sssData', ['$scope', '$sce', 'sssService',
         //Undo last import 
         $scope.undoLastImport = function () {
 
-            sssService.bg.gtag('event', 'options', {
+            // sssService.bg.gtag('event', 'options', {
+            //     'options_action': 'Undo Import'
+            // });
+            sssService.bg.genericTrackingGA('options', {
                 'options_action': 'Undo Import'
             });
 

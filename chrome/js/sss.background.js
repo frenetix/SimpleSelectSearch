@@ -34,33 +34,123 @@ var config = {}; // main stuff here
 
 // Insert script like this: <script async src="https://www.googletagmanager.com/gtag/js?id=G-T03678Q4HK"></script>
 
-(function () {
-    var ga = document.createElement('script');
-    ga.type = 'text/javascript';
-    ga.async = true;
-    ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-T03678Q4HK';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(ga, s);
-})();
+// (function () {
+//     var ga = document.createElement('script');
+//     ga.type = 'text/javascript';
+//     ga.async = true;
+//     ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-T03678Q4HK';
+//     var s = document.getElementsByTagName('script')[0];
+//     s.parentNode.insertBefore(ga, s);
+// })();
 
-// Set up the Google Tag Manager data layer
-var dataLayer = dataLayer || [];
-function gtag() {
-    dataLayer.push(arguments);
-    console.log("gtag: ", arguments)
+// // Set up the Google Tag Manager data layer
+// var dataLayer = dataLayer || [];
+// function gtag() {
+//     dataLayer.push(arguments);
+//     console.log("gtag: ", arguments)
+// }
+// gtag('js', new Date());
+
+// // Configure the Google Tag
+// gtag('config', 'G-T03678Q4HK'); // Replace 'G-XXXXXXXXXX' with your GA4 property ID
+
+// Starts code for Google Anlytics Meassurement protocol
+const MEASUREMENT_ID = `G-T03678Q4HK`;
+const API_SECRET = `01WmHl46QECjIBiKPmRqNg`;
+const DEFAULT_ENGAGEMENT_TIME_IN_MSEC = 100;
+const SESSION_EXPIRATION_IN_MIN = 30;
+
+// Keeps track of sessionID
+
+function getOrCreateSessionId() {
+    // Store session in memory storage
+    let {sessionData} = {}
+
+    try {
+        sessionData  = JSON.parse(localStorage['sessionData'])
+    }
+    catch {
+        console.log("it ididnt work")
+    }
+    // console.log("sessionData", sessionData)
+    // Check if session exists and is still valid
+    const currentTimeInMs = Date.now();
+    if (sessionData && sessionData.timestamp) {
+        // Calculate how long ago the session was last updated
+        const durationInMin = (currentTimeInMs - sessionData.timestamp) / 60000;
+        // Check if last update lays past the session expiration threshold
+        if (durationInMin > SESSION_EXPIRATION_IN_MIN) {
+            // Delete old session id to start a new session
+            sessionData = null;
+            // console.log("expiring session");
+        } else {
+            // Update timestamp to keep session alive
+            sessionData.timestamp = currentTimeInMs;
+            localStorage['sessionData'] = JSON.stringify(sessionData);
+            // console.log("keeping session alive");
+        }
+    }
+    if (!sessionData) {
+        // Create and store a new session
+        sessionData = {
+            session_id: currentTimeInMs.toString(),
+            timestamp: currentTimeInMs.toString(),
+        };
+        localStorage['sessionData'] = JSON.stringify(sessionData);
+        // console.log("creating a new session");
+    }
+    return sessionData.session_id;
 }
-gtag('js', new Date());
 
-// Configure the Google Tag
-gtag('config', 'G-T03678Q4HK'); // Replace 'G-XXXXXXXXXX' with your GA4 property ID
+// Creates new ID
+function newAnalyticsClientID() {
+    const newID = self.crypto.randomUUID();
+    localStorage['analytics_client_id'] = newID;
+    return newID;
+}
 
-// Track a custom event
+const analytics_client_id = localStorage['analytics_client_id'] || newAnalyticsClientID();
+
+// console.log("client id", analytics_client_id)
+
+
 function trackGA(idSE) {
-    gtag('event', 'search_menu', {
+    const params = {
         'search_engine_name': config.searchEngines[idSE].name,
         'search_engine_url': config.searchEngines[idSE].url
+    };
+    genericTrackingGA('search_menu',params);
+}
+
+
+// Track a custom event
+function genericTrackingGA(event_name, params) {
+    // gtag('event', 'search_menu', {
+    //     'search_engine_name': config.searchEngines[idSE].name,
+    //     'search_engine_url': config.searchEngines[idSE].url
+    // });
+
+    fetch(`https://www.google-analytics.com/mp/collect?measurement_id=${MEASUREMENT_ID}&api_secret=${API_SECRET}`, {
+        method: "POST",
+        body: JSON.stringify({
+            client_id: analytics_client_id,
+            events: [{
+                name: event_name,
+                params: {
+                    session_id: getOrCreateSessionId(),
+                    engagement_time_msec: DEFAULT_ENGAGEMENT_TIME_IN_MSEC,
+                    ...params
+                },
+            }]
+        })
     });
 }
+
+
+genericTrackingGA('background_init',{
+    'start_date': new Date(),
+    'browser_language' : navigator.language || navigator.userLanguage
+});
 
 // Endregion
 
@@ -164,7 +254,7 @@ function bulkSearch(info, tab, group) {
         chrome.windows.create({
             "url": urlArray
         });
-        console.log("i will open these URLs in a new window", urlArray)
+        // console.log("i will open these URLs in a new window", urlArray)
     }
 }
 
@@ -329,7 +419,7 @@ var newOptionsSeen = localStorage['newOptionsSeen'];
 
 if (currVersion != prevVersion) {
     localStorage['version'] = currVersion;
-    openOptions();
+    if (prevVersion != '0.7.2') openOptions(); // DON'T SHOW IF COMING FROM 0.7.2
     const config = JSON.parse(localStorage['config'])
     const searchEnginesConfig = config.searchEngines.reduce((acc, val) => {
         acc.incognito = +val.incognito
@@ -351,9 +441,10 @@ if (currVersion != prevVersion) {
     }
 
     // _gaq.push(['_trackEvent', 'Config', 'Config', JSON.stringify(trackConfig)]); OLD
-    gtag('event', 'Config', {
-        'Config': JSON.stringify(trackConfig)
-    });
+    // gtag('event', 'Config', {
+    //     'Config': JSON.stringify(trackConfig)
+    // });
+    genericTrackingGA('config',{'Config': JSON.stringify(trackConfig)})
 }
 
 if (typeof localStorage["config"] == 'undefined') {
@@ -361,9 +452,6 @@ if (typeof localStorage["config"] == 'undefined') {
 } else {
     config = JSON.parse(localStorage["config"]);
 
-    if (typeof config.searchEverywhereGroupsNewWindow == "undefined") {
-        config.searchEverywhereGroupsNewWindow = false; // FUTURE: remove after a while, this is as of 0.5 so users won't loose the searchEverywhereGroups option
-    }
     createMenu(); // Initialize menu
 }
 
