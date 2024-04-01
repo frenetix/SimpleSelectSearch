@@ -1,4 +1,24 @@
 chrome/.brackets.json
 
 .DS_Store
-.DS_Store?
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+build/
+
+# IDE/Editor specific files
+.vscode/
+
+
+# Logs
+*.log
+logs/
+log.txt
+
+# Dependency lock files
+package-lock.json
+yarn.lock

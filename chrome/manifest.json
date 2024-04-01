@@ -13,7 +13,7 @@
     "128": "images/128.png"
   },
   "background": {
-    "scripts": ["js/sss.background.js"]
+    "scripts": ["dist/bundle.js"]
   },
   "options_page": "options.html"
 }
