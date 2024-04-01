@@ -1,10 +1,10 @@
 {
   "name": "__MSG_extName__",
-  "short_name" : "S=S+S",
+  "short_name": "S=S+S",
   "default_locale": "en",
   "description": "__MSG_extDescription__",
-  "version": "0.7.3",
-   "manifest_version": 2,
+  "version": "0.8",
+  "manifest_version": 2,
   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
   "permissions": ["contextMenus"],
   "icons": {
