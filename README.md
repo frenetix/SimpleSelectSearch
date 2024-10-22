@@ -1,9 +1,15 @@
 Simple=Select+Search
 ====================
 
-###HIGHLIGHT & CLICK, THAT'S IT!###
+## This project is no longer maintaind. ##
 
-[![Crowdin](https://crowdin.net/badges/simpleselectsearch/localized.png)](https://crowdin.net/project/simpleselectsearch)
+As Chrome forced Manifest V3, this project is discontinued. I'm keeping this repo alive for future reference only. 
+
+If you're interested in this extension, you can learn more [here](https://simpleselectsearch.com).
+
+## ##
+
+#### HIGHLIGHT & CLICK, THAT'S IT! ####
 
 ### INTRODUCTION ###
 
