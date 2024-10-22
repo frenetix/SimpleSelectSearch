@@ -1,7 +1,7 @@
 Simple=Select+Search
 ====================
 
-## This project is no longer maintaind. ##
+## This project is no longer maintained. ##
 
 As Chrome forced Manifest V3, this project is discontinued. I'm keeping this repo alive for future reference only. 
 
